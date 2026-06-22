@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "imageAlt": "Fondo de nuestro equipo",
+    "title": "Nuestro equipo",
+    "subtitle": "Conoce a los líderes dedicados a brindar atención sensible al trauma y a guiar a nuestra comunidad hacia un futuro más prometedor."
+  },
+  "members": {
+    "jeanette": {
+      "title": "Directora clínica",
+      "bio": "Con más de 20 años de experiencia dedicada al bienestar infantil, Jeanette es una psicoterapeuta líder especializada en cuidado sensible al trauma, preservación familiar e intervenciones basadas en el apego."
+    },
+    "marissa": {
+      "title": "Directora de operaciones",
+      "bio": "Marissa supervisa las operaciones diarias de nuestros programas, asegurando una entrega eficiente de los servicios y una experiencia fluida para las comunidades que servimos."
+    },
+    "shing": {
+      "title": "Gerente de Wraparound",
+      "bio": "Shing aporta amplia experiencia en coordinación de cuidados, guiando a nuestros facilitadores para construir redes sólidas y de apoyo alrededor de las familias."
+    },
+    "mikalah": {
+      "title": "Gerente de Wraparound",
+      "bio": "Mikalah trabaja con pasión para apoyar a nuestros equipos en la creación de planes de cuidado individualizados que empoderan a los niños y a sus sistemas de apoyo."
+    }
+  }
+}

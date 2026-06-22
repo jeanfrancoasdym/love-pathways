@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "about": "Nosotros",
+    "whoWeAre": "Quiénes somos",
+    "ourTeam": "Nuestro equipo",
+    "ourImpact": "Nuestro impacto",
+    "ourProgram": "Nuestro programa",
+    "events": "Eventos",
+    "resources": "Recursos",
+    "resourceHub": "Centro de recursos",
+    "blog": "Blog",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto",
+    "donate": "Donar",
+    "careers": "Empleo"
+  },
+  "wordmark": {
+    "org": "Parents in Training Inc.",
+    "tagline": "Educación Basada en el Amor para Familias Adoptivas"
+  },
+  "footer": {
+    "beforeOrg": "es un programa de",
+    "afterOrg": "para ayudar a que las familias permanezcan juntas, brindando apoyo y servicios tanto a los niños como a los padres.",
+    "explore": "Explorar",
+    "contact": "Contacto",
+    "getSupport": "Recibir apoyo",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de privacidad"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "EN",
+    "es": "ES",
+    "switchToEs": "Cambiar a español",
+    "switchToEn": "Switch to English"
+  },
+  "a11y": {
+    "title": "Accesibilidad",
+    "textSize": "Tamaño de texto",
+    "zoom": "Zoom",
+    "highContrast": "Alto contraste",
+    "highlightLinks": "Resaltar enlaces",
+    "readableFont": "Fuente legible",
+    "reset": "Restablecer",
+    "open": "Opciones de accesibilidad",
+    "close": "Cerrar menú de accesibilidad",
+    "skipToContent": "Saltar al contenido principal"
+  }
+}

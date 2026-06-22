@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "imageAlt": "Events background",
+    "titleLead": "Upcoming",
+    "titleHighlight": "Events",
+    "subtitle": "Join our community for workshops, webinars, and gatherings."
+  },
+  "list": {
+    "eyebrow": "Save Your Spot",
+    "heading": "Upcoming Webinars & Workshops",
+    "empty": "No upcoming events at the moment. Please check back later.",
+    "modalityFallback": "Event",
+    "register": "Register here"
+  },
+  "missed": {
+    "title": "Did you miss a webinar?",
+    "description": "Don't worry! All our past webinars are recorded and uploaded to our Resource Hub so you can watch them at your own pace.",
+    "button": "Watch Past Webinars"
+  },
+  "newsletter": {
+    "title": "Don't miss any event",
+    "description": "Subscribe to our newsletter to receive updates about upcoming webinars, workshops, and community gatherings.",
+    "success": "Thank you for subscribing! Keep an eye on your inbox.",
+    "iframeTitle": "Newsletter submission",
+    "emailPlaceholder": "Your email address",
+    "submit": "Subscribe"
+  }
+}

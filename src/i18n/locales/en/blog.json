@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "imageAlt": "Blog background",
+    "titleBefore": "Our ",
+    "titleHighlight": "Insights",
+    "titleAfter": " & Stories",
+    "subtitle": "Educational resources, expert advice, and inspiring stories from the LEAF Wraparound community."
+  },
+  "filters": {
+    "heading": "Explore Topics",
+    "subheading": "Find the resources and stories that matter to you.",
+    "searchPlaceholder": "Search articles...",
+    "all": "All"
+  },
+  "loading": "Loading articles...",
+  "error": {
+    "title": "Oops! Something went wrong",
+    "message": "We couldn't load the articles at the moment. Please try again later."
+  },
+  "empty": {
+    "title": "No articles found",
+    "message": "Try adjusting your search or category filter.",
+    "clearFilters": "Clear all filters"
+  },
+  "post": {
+    "readArticle": "Read Article",
+    "readMore": "Read more",
+    "loadMore": "Load more",
+    "uncategorized": "Uncategorized"
+  },
+  "social": {
+    "heading": "Follow us for more content",
+    "facebookLabel": "Facebook",
+    "instagramLabel": "Instagram"
+  }
+}

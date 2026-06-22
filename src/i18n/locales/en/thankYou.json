@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "badge": "You're registered",
+    "title": "You're in! 🎉",
+    "confirmBefore": "Your spot for the",
+    "highlight": "When Trauma Walks Into the Classroom",
+    "confirmAfter": "webinar is officially confirmed."
+  },
+  "countdown": {
+    "heading": "Your webinar starts in",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Min",
+    "seconds": "Sec",
+    "live": "We're live now. Check your inbox for the link.",
+    "ended": "This webinar has ended. Catch the replay below."
+  },
+  "calendar": {
+    "eventTitle": "When Trauma Walks Into the Classroom",
+    "joinVia": "Join us via Zoom: "
+  },
+  "details": {
+    "heading": "Webinar Details",
+    "dateLabel": "Date",
+    "dateValue": "Tuesday, June 23rd",
+    "timeLabel": "Time",
+    "timeValue": "9:00 AM - 10:00 AM PST",
+    "locationLabel": "Location",
+    "locationValue": "Live on Zoom",
+    "locationNote": "Check your inbox for the exact link.",
+    "calendarPrompt": "Lock this time in your calendar now:",
+    "googleCalendar": "Google Calendar",
+    "outlookCalendar": "Outlook Calendar"
+  },
+  "resources": {
+    "prompt": "Looking for more resources?",
+    "watch": "Watch Past Webinars"
+  },
+  "social": {
+    "heading": "Stay Connected",
+    "description": "We share daily trauma-responsive tools and support for adoptive families on our social channels. Don't wait more to start finding relief.",
+    "facebookLabel": "Facebook",
+    "instagramLabel": "Instagram"
+  }
+}

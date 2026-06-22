@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "code": "404",
+    "title": "¡Vaya! Parece que te has salido del camino.",
+    "description": "No te preocupes, hasta los mejores navegantes se pierden a veces. Es posible que la página que buscas se haya movido, eliminado o que quizás nunca haya existido. ¡Vamos a llevarte de vuelta a terreno seguro!"
+  },
+  "cta": {
+    "home": "Volver al inicio",
+    "program": "Conoce nuestro programa"
+  }
+}

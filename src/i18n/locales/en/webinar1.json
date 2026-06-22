@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "badge": "FREE LIVE WEBINAR",
+    "titleBefore": "When ",
+    "titleHighlight": "Trauma Walks",
+    "titleAfter": " Into the Classroom",
+    "subtitle": "A free live training for adoptive and foster parents, kinship caregivers, and educators who want to help an overwhelmed child feel safe enough to learn.",
+    "description": "This training explores how trauma can impact a child's experience in school, including anxiety during transitions, emotional overwhelm in the classroom, and behaviors that are often misunderstood by educators.\n\nFamilies and professionals will learn how connection, emotional safety, and regulation can support children in building confidence and success at school without relying on fear, shame, or punishment."
+  },
+  "details": {
+    "dateLabel": "Date",
+    "dateValue": "Tuesday, June 23rd",
+    "timeLabel": "Time",
+    "timeValue": "9:00 AM - 10:00 AM PST",
+    "languageLabel": "Language",
+    "languageValue": "English"
+  },
+  "countdown": {
+    "heading": "The live session begins in",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Min",
+    "seconds": "Sec",
+    "live": "We're live now. Come on in.",
+    "ended": "This session has ended. Register to get the replay."
+  },
+  "forYou": {
+    "heading": "This is for you if...",
+    "items": [
+      "Your child melts down, shuts down, or \"acts out\" at school and no one can tell you why.",
+      "Mornings, drop-offs, or homework have turned into a daily battle.",
+      "You've been told it's \"just behavior,\" but your gut says it's something deeper.",
+      "You want to help your child without leaning on fear, shame, or punishment."
+    ]
+  },
+  "learn": {
+    "heading": "What you'll walk away with",
+    "items": [
+      "How trauma actually shows up in the classroom, and why it's so often misread as defiance.",
+      "Why transitions and \"small\" moments can trigger such big reactions.",
+      "Simple, love-based ways to bring safety and regulation to your child's school day.",
+      "How connection, not consequences, builds the confidence that lasts."
+    ]
+  },
+  "guide": {
+    "eyebrow": "Your guide",
+    "name": "Bryan Post",
+    "role": "Adoption, Attachment & Trauma Expert",
+    "bio": "Bryan Post is an internationally recognized expert in adoption, attachment, and trauma, and a leading voice in love-based, family-centered care. For decades he has helped families move from fear and conflict toward connection, calm, and lasting healing."
+  },
+  "trust": {
+    "heading": "Why families trust this training",
+    "audience": "Join adoptive and foster families from across California, supported by the Fear to Love methodology and the LEAF Wraparound team.",
+    "testimonials": [],
+    "stats": []
+  },
+  "agenda": {
+    "heading": "How the hour will flow",
+    "items": [
+      { "title": "The science", "desc": "What's really happening in a stressed child's brain and body." },
+      { "title": "The misreads", "desc": "Behaviors that look like defiance, but aren't." },
+      { "title": "The shift", "desc": "Practical, love-based tools you can use the very same day." },
+      { "title": "Live Q&A", "desc": "Bring your real situations. We'll work through them together." }
+    ]
+  },
+  "faq": {
+    "heading": "A few questions before you register",
+    "items": [
+      { "q": "Is it really free?", "a": "Yes. This live training is completely free for families and professionals." },
+      { "q": "What if I can't attend live?", "a": "Register anyway. We'll send you the replay so you can watch whenever it works for you." },
+      { "q": "Will it be recorded?", "a": "Yes. Everyone who registers receives the recording afterward." },
+      { "q": "Who is this for?", "a": "Adoptive and foster parents, kinship caregivers, and educators. No background or preparation needed." }
+    ]
+  },
+  "host": {
+    "imageAlt": "Bryan Post",
+    "label": "Hosted By",
+    "name": "Bryan Post",
+    "bio": "Internationally recognized expert in adoption, trauma, and family healing."
+  },
+  "cta": {
+    "reserve": "Reserve My Spot Now"
+  },
+  "ctaFinal": {
+    "line": "Your child isn't giving you a hard time. They're having a hard time. Let's learn how to help them feel safe.",
+    "button": "Yes, Save My Spot"
+  },
+  "privacy": "We respect your privacy. We'll only email you about this event, and you can unsubscribe anytime.",
+  "form": {
+    "title": "Save Your Spot",
+    "subtitle": "Reserve your seat for this free event."
+  }
+}

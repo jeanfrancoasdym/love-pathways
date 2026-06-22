@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "about": "About",
+    "whoWeAre": "Who We Are",
+    "ourTeam": "Our Team",
+    "ourImpact": "Our Impact",
+    "ourProgram": "Our Program",
+    "events": "Events",
+    "resources": "Resources",
+    "resourceHub": "Resource Hub",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "donate": "Donate",
+    "careers": "Careers"
+  },
+  "wordmark": {
+    "org": "Parents in Training Inc.",
+    "tagline": "Love-Based Education for Adoptive Families"
+  },
+  "footer": {
+    "beforeOrg": "is a",
+    "afterOrg": "program to help ensure families stay together, providing support and services to both children and parents.",
+    "explore": "Explore",
+    "contact": "Contact",
+    "getSupport": "Get Support",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy"
+  },
+  "language": {
+    "label": "Language",
+    "en": "EN",
+    "es": "ES",
+    "switchToEs": "Cambiar a español",
+    "switchToEn": "Switch to English"
+  },
+  "a11y": {
+    "title": "Accessibility",
+    "textSize": "Text size",
+    "zoom": "Zoom",
+    "highContrast": "High contrast",
+    "highlightLinks": "Highlight links",
+    "readableFont": "Readable font",
+    "reset": "Reset",
+    "open": "Accessibility options",
+    "close": "Close accessibility menu",
+    "skipToContent": "Skip to main content"
+  }
+}

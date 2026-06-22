@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title": "Resource Hub",
+    "subtitle": "Explore our comprehensive library of guides, videos, and podcasts covering trauma-responsive parenting, daily routines, and expert advice from our core team."
+  },
+  "section": {
+    "featured": "Featured Resources"
+  },
+  "tabs": {
+    "additionalTools": "Additional Tools",
+    "featured": "Featured",
+    "webinars": "Webinars",
+    "guides": "Guides",
+    "books": "Books",
+    "podcasts": "Podcasts",
+    "articles": "Articles"
+  },
+  "actions": {
+    "download": "Download",
+    "watchVideo": "Watch Video",
+    "learnMore": "Learn More..",
+    "listenNow": "Listen Now",
+    "getItNow": "Get it Now"
+  },
+  "filter": {
+    "relevance": "Relevance",
+    "popular": "Popular",
+    "recent": "Recent",
+    "oldest": "Oldest"
+  },
+  "empty": {
+    "title": "Coming Soon...",
+    "podcasts": "We are currently recording amazing podcasts for you. Stay tuned!",
+    "default": "We are preparing new content for you. Stay tuned!"
+  },
+  "social": {
+    "title": "Connect with us"
+  }
+}

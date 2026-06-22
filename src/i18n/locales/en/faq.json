@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "titleLead": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "subtitle": "Get clear answers about LEAF Wraparound: what it is, who qualifies, what it costs, and how to begin.",
+    "bgAlt": "FAQ background"
+  },
+  "list": {
+    "heading": "Common Clarifications & Support",
+    "subheading": "Find quick answers to help you navigate your family's journey.",
+    "entityDefinition": "LEAF Wraparound is a love-based, trauma-responsive support program for families who have adopted in California, offered as a program of the 501(c)(3) nonprofit Parents in Training Inc.",
+    "answerFirst": "LEAF Wraparound answers the most common questions adoptive families ask: what the program is, who qualifies, what it costs, and how to begin. LEAF provides education, family coaching, parent groups, and in-home support across 20+ Northern and Central California counties. Families who adopted through the foster system and receive Adoption Assistance Program (AAP) benefits have no out-of-pocket cost. No social-worker referral is needed to start."
+  },
+  "items": {
+    "what": {
+      "question": "What is the LEAF Wraparound program?",
+      "answerBefore": "is a love-based educational and support program specifically designed for adoptive families. We provide specialized coaching, training, and coordination to help families navigate challenges and build stronger, healthier relationships."
+    },
+    "eligible": {
+      "question": "Who is eligible for your services?",
+      "answer": "Our services are available to any family with an adopted child residing in any county within the state of California. We support families at all stages of their adoption journey."
+    },
+    "loveBased": {
+      "question": "What does 'Love-Based Education' mean?",
+      "answer": "It means our approach is rooted in compassion, empathy, and understanding. We believe that while love is the foundation, families also need specialized knowledge and tools (especially trauma-informed care) to truly thrive."
+    },
+    "getStarted": {
+      "question": "How do I get started with the program?",
+      "answer": "You can start by contacting us through our website or by attending one of our introductory webinars. We'll then schedule an initial consultation to understand your family's unique needs and how we can best support you."
+    },
+    "qualified": {
+      "question": "Are your staff qualified to work with traumatized children?",
+      "answer": "Yes, our staff are Certified Trauma-Informed and hold extensive experience in working with traumatized children and families. We operate under the direct clinical supervision of Jeanette Yoffe."
+    },
+    "cost": {
+      "question": "Is there a cost for your services?",
+      "answer": "Costs can vary depending on the specific services required and potential county funding. We are committed to making our support as accessible as possible and can discuss financial options during your initial consultation."
+    },
+    "highFidelity": {
+      "question": "What is High Fidelity Wraparound?",
+      "answer": "High Fidelity Wraparound (HFW) is an evidence-based care model recognized by the state of California. It brings together a team of professionals and trusted community members around your family to build a personalized support plan. Unlike traditional therapy, HFW focuses on your family's strengths, culture, and goals."
+    },
+    "counties": {
+      "question": "Which counties in California do you serve?",
+      "answer": "We currently serve families across 20+ counties in Northern and Central California, including Del Norte, Trinity, Mendocino, Shasta, Tehama, Glenn, Butte, Sonoma, Napa, Solano, Yolo, Sutter, Yuba, Sacramento, Placer, El Dorado, San Joaquin, Calaveras, Stanislaus, and Merced. If your county is not listed, please contact us. Our coverage is constantly expanding."
+    },
+    "duration": {
+      "question": "How long does the program last?",
+      "answer": "The program is flexible and adapts to each family's needs. On average, families participate for around 14 months. AAP may fund wraparound services for up to 18 months per episode, with the option to request an additional 18 months for a new episode or condition."
+    }
+  },
+  "cta": {
+    "heading": "Still have questions?",
+    "body": "We're here to help. Reach out to our team and we'll get back to you as soon as possible.",
+    "contact": "Contact Us",
+    "call": "Call Us: (707) 460-6070"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "eyebrow": "Educación basada en el amor",
+    "description": "Apoyo basado en el amor y sensible al trauma que ayuda a las familias adoptivas de California a sanar y permanecer unidas, sin costo para las familias del AAP.",
+    "ctaContact": "Contáctanos",
+    "ctaProgram": "Programa",
+    "slideAlt1": "Especialista de LEAF Wraparound brindando apoyo en el hogar a una familia adoptiva en California",
+    "slideAlt2": "Padres adoptivos recibiendo atención wraparound sensible al trauma a través de LEAF Wraparound",
+    "slideAlt3": "Educación y coaching basados en el amor para familias adoptivas en el norte de California",
+    "goToSlide": "Ir a la diapositiva {{number}}",
+    "slide2Eyebrow": "Sin costo para ti",
+    "slide2Title": "Apoyo que acompaña a tu familia donde está",
+    "slide2Desc": "Atención wraparound sensible al trauma para familias adoptivas en más de 20 condados de California, sin costo de bolsillo para las familias del AAP.",
+    "slide2CtaPrimary": "Conoce cómo te ayudamos",
+    "slide2CtaSecondary": "Programa",
+    "slide3Eyebrow": "Webinars en vivo gratuitos",
+    "slide3Title": "Aprende junto a otras familias adoptivas",
+    "slide3Desc": "Únete a nuestras capacitaciones gratuitas sobre trauma, apego y conexión, guiadas por expertos que entienden tu camino.",
+    "slide3CtaPrimary": "Ver eventos",
+    "slide3CtaSecondary": "Contáctanos"
+  },
+  "crisis": {
+    "eyebrow": "Quiénes somos",
+    "title": "Ayuda para familias adoptivas en crisis",
+    "description": "Somos un programa de Parents In Training Inc. Hemos desarrollado un Servicio Wraparound de Adopción con una metodología única basada en el amor. Es un programa educativo intensivo y sensible al trauma para padres adoptivos sobre cómo comprender y cuidar mejor a su hijo adoptado.",
+    "entityDefinition": "LEAF Wraparound (Educación Basada en el Amor para Familias Adoptivas) es un programa de acompañamiento integral para la adopción, basado en el amor y sensible al trauma, de Parents in Training Inc., que apoya a familias adoptivas en más de 20 condados del norte y centro de California.",
+    "noCostBefore": "Ayudamos a familias que han adoptado niños menores de 18 años en California que reciben beneficios a través del Programa de Asistencia para la Adopción. ",
+    "noCostBold": "No hay costo de bolsillo para las familias.",
+    "qualifyLink": "Comprueba si calificas",
+    "quote": "Cuando una familia recibe apoyo, un niño puede sanar."
+  },
+  "expertise": {
+    "quoteTitle": "Empoderando a los padres",
+    "quoteText": "Reduciendo el estrés y devolviendo la paz a tu hogar.",
+    "imageAlt": "Cuidado Wraparound",
+    "eyebrow": "Nuestra experiencia",
+    "titleLine1": "¿Qué es el acompañamiento integral",
+    "titleLine2": "(wraparound) para familias adoptivas?",
+    "description": "El camino de la adopción es hermoso, pero puede traer desafíos complejos. Wraparound es un enfoque basado en el trabajo en equipo que apoya a las familias adoptivas exactamente donde están. Hacemos lo que sea necesario para ayudar a tu hijo a sanar.",
+    "feature1Title": "Tú marcas el camino",
+    "feature1Text": "No te entregamos un manual genérico. La voz, la cultura y las metas específicas de tu familia son la base de tu plan de cuidado.",
+    "feature2Title": "Enfocándonos en las fortalezas",
+    "feature2Text": "La sanación no viene de enfocarse en los problemas. Usamos la profunda resiliencia de tu familia para superar los obstáculos.",
+    "feature3Title": "Construyendo tu comunidad",
+    "feature3Text": "No tienes que recorrer la vida posadopción a solas. Coordinamos con escuelas, terapeutas y tu red de apoyo.",
+    "cta": "Explora el programa"
+  },
+  "qualifies": {
+    "eyebrow": "Para familias como la tuya",
+    "title": "Estamos aquí para familias como la tuya",
+    "intro": "Si algo de esto te suena, LEAF se creó para tu familia. Sin formularios que aprobar, sin trámites complicados.",
+    "point1": "Estás criando a un hijo que adoptaste aquí en California",
+    "point2": "Tu hijo es menor de 18 años",
+    "point3": "Adoptaste a través del Programa de Asistencia para la Adopción (AAP)",
+    "point4": "Las cosas se sienten difíciles ahora, y la ayuda de siempre no ha sido suficiente",
+    "reassurance": "Siempre gratis para familias del AAP. Sin necesidad de referencia.",
+    "ctaPrimary": "Hablemos de tu familia",
+    "ctaSecondary": "O mira cómo funciona nuestro programa"
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "education": "Educación",
+    "familyCoaching": "Acompañamiento familiar",
+    "parentGroups": "Grupos de padres",
+    "inHomeSupport": "Apoyo en el hogar",
+    "goalEyebrow": "Nuestra meta número uno",
+    "goalTitle": "Reducir el estrés de los padres adoptivos.",
+    "goalText": "Queremos educar, ayudar y empoderar a los padres para que comprendan lo que se necesita para crear un entorno de sanación a largo plazo para sus hijos. Los pilares principales de nuestro programa son el amor y la educación.",
+    "quote": "\"Nuestro equipo está altamente calificado en enfoques de tratamiento sensibles al trauma con niños y sus familias, trabajando bajo la supervisión directa de Bryan Post y Jeanette Yoffe, LCSW.\""
+  },
+  "cta": {
+    "badge": "Da el siguiente paso",
+    "titleLine1": "¿Listo para comenzar tu",
+    "titleLine2": "camino basado en el amor?",
+    "description": "Únete a nuestro programa wraparound y obtén el apoyo que tu familia necesita para prosperar.",
+    "button": "Contáctanos hoy"
+  }
+}

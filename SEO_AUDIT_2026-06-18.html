@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEAF Wraparound — SEO Audit Report</title>
+<style>
+  :root {
+    --brand: #657ef6;
+    --dark: #192847;
+    --green: #add400;
+    --red: #e53e3e;
+    --orange: #dd6b20;
+    --yellow: #d69e2e;
+    --gray-bg: #f7f8fc;
+    --gray-border: #e2e8f0;
+    --text: #2d3748;
+    --muted: #718096;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: var(--gray-bg); color: var(--text); line-height: 1.6; }
+  .page { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+  /* Header */
+  .header { background: var(--dark); color: #fff; border-radius: 1rem; padding: 2rem 2.5rem; margin-bottom: 2rem; }
+  .header h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: .25rem; }
+  .header p { opacity: .65; font-size: .95rem; }
+  .header .meta { display: flex; gap: 2rem; margin-top: 1.25rem; flex-wrap: wrap; }
+  .header .meta span { font-size: .85rem; opacity: .75; }
+  .header .meta strong { opacity: 1; color: #fff; }
+
+  /* Score card */
+  .score-card { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
+  .score-box { background: #fff; border-radius: .75rem; padding: 1.25rem 1rem; text-align: center; border: 1px solid var(--gray-border); }
+  .score-box .number { font-size: 2.5rem; font-weight: 800; line-height: 1; }
+  .score-box .label { font-size: .8rem; color: var(--muted); margin-top: .35rem; text-transform: uppercase; letter-spacing: .05em; }
+  .score-box.total .number { color: var(--brand); }
+  .score-box.critical .number { color: var(--red); }
+  .score-box.warning .number { color: var(--orange); }
+  .score-box.passing .number { color: #38a169; }
+
+  /* Section headings */
+  h2 { font-size: 1.1rem; font-weight: 700; margin: 2rem 0 .75rem; padding-bottom: .5rem; border-bottom: 2px solid var(--gray-border); display: flex; align-items: center; gap: .5rem; }
+  h2 .badge { font-size: .75rem; padding: .2rem .55rem; border-radius: 9999px; font-weight: 600; }
+  h2 .badge.critical { background: #fff5f5; color: var(--red); border: 1px solid #fed7d7; }
+  h2 .badge.warning { background: #fffaf0; color: var(--orange); border: 1px solid #fbd38d; }
+  h2 .badge.opportunity { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+  h2 .badge.passing { background: #f0fff4; color: #276749; border: 1px solid #c6f6d5; }
+
+  /* Issue cards */
+  .issue { background: #fff; border-radius: .75rem; border: 1px solid var(--gray-border); padding: 1.25rem 1.5rem; margin-bottom: .75rem; border-left: 4px solid var(--gray-border); }
+  .issue.critical { border-left-color: var(--red); }
+  .issue.warning { border-left-color: var(--orange); }
+  .issue.opportunity { border-left-color: var(--brand); }
+  .issue.passing { border-left-color: #38a169; }
+  .issue h3 { font-size: .95rem; font-weight: 700; margin-bottom: .4rem; }
+  .issue.critical h3 { color: var(--red); }
+  .issue.warning h3 { color: var(--orange); }
+  .issue.opportunity h3 { color: #2b6cb0; }
+  .issue.passing h3 { color: #276749; }
+  .issue p { font-size: .875rem; color: var(--text); margin-bottom: .5rem; }
+  .issue p:last-child { margin-bottom: 0; }
+  .issue code { background: var(--gray-bg); border: 1px solid var(--gray-border); border-radius: .3rem; padding: .1rem .4rem; font-size: .82rem; font-family: 'Courier New', monospace; word-break: break-all; }
+  .issue .fix { font-size: .82rem; background: #f0fff4; border: 1px solid #c6f6d5; border-radius: .4rem; padding: .5rem .75rem; color: #276749; margin-top: .6rem; }
+  .issue .fix strong { display: block; margin-bottom: .2rem; }
+  .issue table { width: 100%; border-collapse: collapse; font-size: .82rem; margin-top: .5rem; }
+  .issue table th { text-align: left; padding: .35rem .5rem; background: var(--gray-bg); font-weight: 600; border: 1px solid var(--gray-border); }
+  .issue table td { padding: .35rem .5rem; border: 1px solid var(--gray-border); }
+  .issue table tr.flag td { background: #fff5f5; }
+  .issue .tag { display: inline-block; font-size: .75rem; padding: .15rem .45rem; border-radius: .3rem; margin-right: .3rem; font-weight: 600; }
+  .issue .tag.red { background: #fff5f5; color: var(--red); border: 1px solid #fed7d7; }
+  .issue .tag.green { background: #f0fff4; color: #276749; border: 1px solid #c6f6d5; }
+  .issue .tag.blue { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+
+  @media (max-width: 600px) {
+    .score-card { grid-template-columns: 1fr 1fr; }
+    .header .meta { gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>LEAF Wraparound — Technical SEO Audit</h1>
+    <p>vite-react-ssg static site · leafwraparound.com</p>
+    <div class="meta">
+      <span>Date: <strong>June 18, 2026</strong></span>
+      <span>Pages audited: <strong>15 EN + 15 ES = 30</strong></span>
+      <span>Build: <strong>dist/ (pre-rendered HTML)</strong></span>
+      <span>Auditor: <strong>Claude Code</strong></span>
+    </div>
+  </div>
+
+  <!-- Score -->
+  <div class="score-card">
+    <div class="score-box total">
+      <div class="number">77</div>
+      <div class="label">Overall Score /100</div>
+    </div>
+    <div class="score-box critical">
+      <div class="number">3</div>
+      <div class="label">Critical Issues</div>
+    </div>
+    <div class="score-box warning">
+      <div class="number">6</div>
+      <div class="label">Warnings</div>
+    </div>
+    <div class="score-box passing">
+      <div class="number">18</div>
+      <div class="label">Passing Items</div>
+    </div>
+  </div>
+
+  <!-- CRITICAL -->
+  <h2>Critical Issues <span class="badge critical">Must fix before launch</span></h2>
+
+  <div class="issue critical">
+    <h3>C1 — twitter:image tag missing on every page</h3>
+    <p>The <code>Seo.tsx</code> component sets <code>twitter:card</code>, <code>twitter:title</code>, and <code>twitter:description</code>, but never sets <code>meta name="twitter:image"</code>. When a LEAF page is shared on X/Twitter, the card will render with no image — a major engagement drop for a social-media-active brand.</p>
+    <p>Confirmed across all 30 pages (EN + ES). The <code>ogImage</code> variable is already available in <code>Seo.tsx</code> but is not forwarded to a Twitter meta tag.</p>
+    <div class="fix">
+      <strong>Fix (src/components/Seo.tsx):</strong>
+      Add after the existing twitter tags: <code>&lt;meta name="twitter:image" content={ogImage} /&gt;</code>
+    </div>
+  </div>
+
+  <div class="issue critical">
+    <h3>C2 — og:image is a placeholder on all 14 content pages</h3>
+    <p>Every page uses the same <code>/og-default.jpg</code> (1200×630, 41 KB — correct dimensions). But a single generic image used for all pages will:</p>
+    <ul style="font-size:.875rem; margin: .5rem 0 .5rem 1.2rem;">
+      <li>Produce low CTR on social shares for interior pages (the image has no page-specific context)</li>
+      <li>Prevent Google Discover from associating relevant images with specific pages</li>
+      <li>Make the Webinar pages especially weak — event cards without a visual are ignored</li>
+    </ul>
+    <p>The <code>Seo.tsx</code> source already includes a comment: <code>// TODO: real default OG image</code>, and branded <code>page-hero/</code> images exist in <code>dist/page-hero/</code> (24 .webp files including <code>event-calm.webp</code>, <code>hero-support.webp</code>, etc.).</p>
+    <div class="fix">
+      <strong>Fix:</strong> Pass a page-specific <code>image</code> prop to <code>&lt;Seo&gt;</code> in each major page component using the existing <code>page-hero/</code> assets. Minimum: Home, Our Program, Webinar 1, Webinar 2, Events, About.
+    </div>
+  </div>
+
+  <div class="issue critical">
+    <h3>C3 — 8 page titles are too short (under 30 chars)</h3>
+    <p>Titles under ~40 characters leave significant keyword real estate on the table. Google displays 50–60 characters; anything shorter misses mid-tail keywords and reduces click-through intent signals.</p>
+    <table>
+      <tr><th>Page</th><th>Title</th><th>Chars</th></tr>
+      <tr class="flag"><td>about-us.html</td><td>Who We Are | LEAF Wraparound</td><td>28</td></tr>
+      <tr class="flag"><td>our-program.html</td><td>Our Program | LEAF Wraparound</td><td>29</td></tr>
+      <tr class="flag"><td>contact-us.html</td><td>Contact Us | LEAF Wraparound</td><td>28</td></tr>
+      <tr class="flag"><td>blog.html</td><td>Blog | LEAF Wraparound</td><td>22</td></tr>
+      <tr class="flag"><td>career.html</td><td>Careers | LEAF Wraparound</td><td>25</td></tr>
+      <tr class="flag"><td>impact.html</td><td>Our Impact | LEAF Wraparound</td><td>28</td></tr>
+      <tr class="flag"><td>our-team.html</td><td>Our Team | LEAF Wraparound</td><td>26</td></tr>
+      <tr><td>resource-hub.html</td><td>Resource Hub | LEAF Wraparound</td><td>30</td></tr>
+      <tr><td>donate.html</td><td>Support Our Mission | LEAF Wraparound</td><td>37</td></tr>
+      <tr><td>index.html</td><td>LEAF Wraparound: Trauma-Responsive Adoption Support in California</td><td>65 ✓</td></tr>
+    </table>
+    <div class="fix">
+      <strong>Fix (src/i18n/ seo namespace):</strong> Expand short titles. Examples: "Who We Are | Adoptive Family Support | LEAF Wraparound" (53 chars), "Our Program | Trauma-Responsive Wraparound | LEAF" (49), "Contact Us | Adoptive Family Support in California | LEAF" etc.
+    </div>
+  </div>
+
+  <!-- WARNINGS -->
+  <h2>Warnings <span class="badge warning">Fix before launch preferred</span></h2>
+
+  <div class="issue warning">
+    <h3>W1 — Home and Our Program meta descriptions exceed 165 characters</h3>
+    <p>Google truncates descriptions at ~155–165 characters in SERPs. Two pages exceed this:</p>
+    <table>
+      <tr><th>Page</th><th>Length</th><th>Issue</th></tr>
+      <tr class="flag"><td>index.html</td><td>169 chars</td><td>4 chars over</td></tr>
+      <tr class="flag"><td>our-program.html</td><td>171 chars</td><td>6 chars over</td></tr>
+    </table>
+    <p>Also flagged (slightly short): <code>resource-hub.html</code> (117 chars), <code>privacy-policy.html</code> (111 chars) — these won't harm rankings but are below the optimal 140–160 range.</p>
+    <div class="fix">
+      <strong>Fix:</strong> Trim the Home and Our Program descriptions to ≤160 characters in the <code>seo</code> i18n namespace.
+    </div>
+  </div>
+
+  <div class="issue warning">
+    <h3>W2 — No twitter:image across all 30 pages (duplicates C1 — addressed in Seo.tsx)</h3>
+    <p>Covered under C1 — listed again as a warning for the ES pages where the same component is shared.</p>
+  </div>
+
+  <div class="issue warning">
+    <h3>W3 — Sitemap missing lastmod, priority, and changefreq</h3>
+    <p>The <code>dist/sitemap.xml</code> (30 URLs, correct hreflang structure) omits all optional but beneficial sitemap fields:</p>
+    <ul style="font-size:.875rem; margin: .5rem 0 .5rem 1.2rem;">
+      <li><code>&lt;lastmod&gt;</code> — tells Googlebot when content was last updated; important for blog and events pages</li>
+      <li><code>&lt;priority&gt;</code> — signals relative importance (Home = 1.0, key pages = 0.8, blog/privacy = 0.5)</li>
+      <li><code>&lt;changefreq&gt;</code> — hint for crawl frequency (home/events = weekly, static = monthly)</li>
+    </ul>
+    <p>File: <code>scripts/generate-sitemap.mjs</code></p>
+    <div class="fix">
+      <strong>Fix:</strong> Update <code>generate-sitemap.mjs</code> to include per-path lastmod (build date), priority tier, and changefreq in the <code>urlEntry</code> function.
+    </div>
+  </div>
+
+  <div class="issue warning">
+    <h3>W4 — Hero carousel image alt tags are generic ("Slide 1", "Slide 2", "Slide 3")</h3>
+    <p>Confirmed in <code>dist/index.html</code>: the three hero carousel images use <code>alt="Slide 1"</code>, <code>alt="Slide 2"</code>, <code>alt="Slide 3"</code>. These provide zero context to screen readers or image search crawlers. The supporting content image uses <code>alt="Wraparound Care"</code> — also weak.</p>
+    <p>Logo images correctly use the full <code>alt="LEAF Wraparound, a program of Parents in Training Inc."</code>.</p>
+    <div class="fix">
+      <strong>Fix (src/components/Home.tsx):</strong> Replace generic slide alts with descriptive ones, e.g.: "Adoptive family receiving wraparound support from LEAF team member", "Parent and child connecting at home with LEAF coaching support", "LEAF Wraparound community group for adoptive families in California".
+    </div>
+  </div>
+
+  <div class="issue warning">
+    <h3>W5 — Events, Blog, and Impact pages have no page-specific schema</h3>
+    <p>These three high-intent pages carry only the base Organization + WebSite schema (inherited from Layout.tsx). Missed opportunities:</p>
+    <table>
+      <tr><th>Page</th><th>Current Schema</th><th>Missing Schema</th></tr>
+      <tr><td>events.html</td><td>Organization, WebSite</td><td>ItemList of Events or Event nodes</td></tr>
+      <tr><td>blog.html</td><td>Organization, WebSite</td><td>Blog or ItemList of BlogPosting</td></tr>
+      <tr><td>impact.html</td><td>Organization, WebSite</td><td>DataFeed or Claim / StatisticalPopulation</td></tr>
+    </table>
+    <p>The webinar pages correctly use <code>Event</code> schema. The events listing page does not.</p>
+    <div class="fix">
+      <strong>Fix:</strong> Add <code>ItemList</code> schema to <code>Events.tsx</code> and <code>Blog.tsx</code> via the <code>jsonLd</code> prop on <code>&lt;Seo&gt;</code>.
+    </div>
+  </div>
+
+  <div class="issue warning">
+    <h3>W6 — og:locale is "es_ES" for Spanish pages — should be "es_US" or "es_419"</h3>
+    <p>The <code>Seo.tsx</code> component sets <code>og:locale</code> to <code>es_ES</code> for Spanish pages. The target audience is California / US-based Latino families, not Spain. Facebook/Meta uses locale for audience targeting and content matching.</p>
+    <p>Best options: <code>es_US</code> (US Spanish) or <code>es_419</code> (Latin American Spanish, less common in OG spec).</p>
+    <div class="fix">
+      <strong>Fix (src/components/Seo.tsx line 51):</strong> Change <code>"es_ES"</code> to <code>"es_US"</code>.
+    </div>
+  </div>
+
+  <!-- OPPORTUNITIES -->
+  <h2>Opportunities <span class="badge opportunity">Improve ranking potential</span></h2>
+
+  <div class="issue opportunity">
+    <h3>O1 — Webinar Event schema missing "performer" and "image" fields</h3>
+    <p>Both webinar pages have solid <code>Event</code> schema with <code>startDate</code>, <code>endDate</code>, <code>location</code> (VirtualLocation), <code>isAccessibleForFree</code>, and <code>description</code>. Two fields would significantly improve Google Events eligibility:</p>
+    <ul style="font-size:.875rem; margin: .5rem 0 .5rem 1.2rem;">
+      <li><code>"performer"</code>: Bryan Post and/or Jeanette Yoffe (Person nodes) — Google requires a speaker for rich results on webinar events</li>
+      <li><code>"image"</code>: an absolute URL to a 1:1, 4:3, or 16:9 image — required for Google Events rich cards</li>
+    </ul>
+  </div>
+
+  <div class="issue opportunity">
+    <h3>O2 — Donate page missing DonateAction or GiveAction schema</h3>
+    <p>The <code>/donate</code> page has only the base Organization schema. Adding a <code>DonateAction</code> node referencing the organization as recipient would help search engines surface the page in nonprofit/donation queries and supports Google's Knowledge Graph for LEAF as a nonprofit.</p>
+  </div>
+
+  <div class="issue opportunity">
+    <h3>O3 — No BreadcrumbList schema on interior pages</h3>
+    <p>Interior pages (Our Program, About Us, FAQ, etc.) have no <code>BreadcrumbList</code> schema. Breadcrumbs appear in Google SERPs and increase click-through rates by showing users where they are in the site hierarchy. With a flat site structure (most pages are one level deep), this is quick to implement.</p>
+    <div class="fix">
+      <strong>Quick implementation:</strong> Add a <code>BreadcrumbList</code> node to the <code>jsonLd</code> prop in each page component with two items: Home → [Page Name].
+    </div>
+  </div>
+
+  <div class="issue opportunity">
+    <h3>O4 — NGO schema type: add "LocalBusiness" or "GovernmentService" as additional @type for local pack eligibility</h3>
+    <p>Current Home schema uses <code>["NGO","Organization"]</code>. While <code>NGO</code> is valid schema.org, Google's local pack primarily recognizes <code>LocalBusiness</code> subtypes. Adding <code>"SocialService"</code> (a LocalBusiness subtype, valid for adoption/wraparound organizations) alongside NGO would improve local search visibility for queries like "adoption support Sacramento" or "wraparound services California".</p>
+  </div>
+
+  <div class="issue opportunity">
+    <h3>O5 — Sitemap includes /privacy-policy and /donate (low-value pages waste crawl budget)</h3>
+    <p>The <code>generate-sitemap.mjs</code> PATHS array includes <code>/privacy-policy</code> and <code>/donate</code>. Privacy policy pages are never ranked for organic traffic; including them dilutes crawl budget priority signaling. These pages should be either removed from the sitemap or given priority 0.1.</p>
+    <div class="fix">
+      <strong>Fix (scripts/generate-sitemap.mjs):</strong> Remove <code>"/privacy-policy"</code> from PATHS (it's indexed via internal links). Keep <code>"/donate"</code> but lower its priority.
+    </div>
+  </div>
+
+  <div class="issue opportunity">
+    <h3>O6 — No sitelinks search box schema or WebSite SearchAction</h3>
+    <p>The existing WebSite schema node does not include a <code>SearchAction</code> property. Adding this (pointing to a search URL pattern) enables Google to display a sitelinks search box in branded SERPs when users search for "LEAF Wraparound" directly.</p>
+  </div>
+
+  <div class="issue opportunity">
+    <h3>O7 — llms.txt is present but lacks structured sections for AI crawlers</h3>
+    <p><code>dist/llms.txt</code> exists (a positive signal for AI citation). Review its structure to ensure it follows the emerging llms.txt specification with <code># Title</code>, <code>&gt; tagline</code>, and labeled <code>## Section</code> headers, plus explicit links to key pages. This is forward-looking but increasingly important for AI-driven zero-click results.</p>
+  </div>
+
+  <!-- PASSING -->
+  <h2>Passing Items <span class="badge passing">Confirmed working correctly</span></h2>
+
+  <div class="issue passing">
+    <h3>robots.txt — Clean, no blocking</h3>
+    <p><code>public/robots.txt</code>: <code>User-agent: * / Allow: /</code> with correct Sitemap pointer to <code>https://leafwraparound.com/sitemap.xml</code>. No accidental directory blocks. Thank-you and 404 pages are excluded via <code>noindex</code> meta, not robots.txt (correct approach).</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>noindex on thank-you and 404 pages</h3>
+    <p><code>thank-you.html</code>, <code>thank-you-2.html</code>, <code>404.html</code>, <code>es/thank-you.html</code>, <code>es/thank-you-2.html</code>, <code>es/404.html</code> — all confirmed to have <code>meta name="robots" content="noindex, follow"</code>. No accidental indexing of conversion pages.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Canonical URLs — correct on all 30 pages</h3>
+    <p>EN pages point to <code>https://leafwraparound.com/{path}</code>; ES pages point to <code>https://leafwraparound.com/es/{path}</code>. No cross-language canonical collisions. The ES home canonical correctly resolves to <code>/es</code> (not <code>/</code>).</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>hreflang implementation — fully correct</h3>
+    <p>All 30 pages carry reciprocal hreflang: <code>hreflang="en"</code> pointing to the EN URL, <code>hreflang="es"</code> pointing to the ES URL, and <code>hreflang="x-default"</code> pointing to the EN URL. The sitemap mirrors this with <code>xhtml:link</code> alternates on every URL entry. Both the <code>&lt;head&gt;</code> tags and sitemap are consistent — this is the correct "belt and suspenders" approach.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Spanish page encoding — UTF-8, no mojibake</h3>
+    <p>Initial PowerShell read showed garbled characters, but this was a shell encoding issue. Reading with <code>[System.IO.File]::ReadAllText(path, UTF8)</code> confirmed all ES titles and descriptions render correctly: "Quiénes somos", "acompañamiento", "misión" — all proper accented characters. Files are UTF-8 without BOM (correct for web delivery).</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>H1 structure — exactly one H1 per page</h3>
+    <p>All 15 EN pages confirmed: 1 H1 each. No missing H1s, no duplicate H1s. Pages use correct heading hierarchy (H1 → H2 → H3 throughout).</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>OG image dimensions and existence</h3>
+    <p><code>og-default.jpg</code> is exactly 1200×630 pixels (ideal 1.91:1 ratio for Facebook/LinkedIn) and is present in both <code>public/</code> and <code>dist/</code>. File size is 41 KB (well under the 8 MB limit).</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Open Graph tags — complete set on all pages</h3>
+    <p>All pages carry: <code>og:type</code>, <code>og:title</code>, <code>og:description</code>, <code>og:url</code>, <code>og:image</code>, <code>og:locale</code>, <code>og:site_name</code>. Tag values are SSG-rendered in the static HTML — crawlers see them at first byte without JavaScript execution.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>FAQPage schema — 9 Q&amp;A pairs on /faq</h3>
+    <p><code>faq.html</code> contains a complete <code>FAQPage</code> schema with 9 <code>Question</code> + 9 <code>Answer</code> nodes. This makes the FAQ eligible for Google's FAQ rich results, which can double SERP real estate for adoption-support queries.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Webinar Event schema — core fields present</h3>
+    <p>Both webinar pages include: <code>Event</code> type, <code>name</code>, <code>startDate</code>, <code>endDate</code>, <code>description</code>, <code>eventAttendanceMode</code> (OnlineEventAttendanceMode), <code>eventStatus</code> (EventScheduled), <code>VirtualLocation</code> with URL, <code>isAccessibleForFree: true</code>, and <code>organizer</code> reference. <code>inLanguage</code> correctly switches to <code>"es"</code> on ES versions.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Organization JSON-LD — rich and complete</h3>
+    <p>The base Organization node in <code>Layout.tsx</code> includes: NGO+Organization @type, @id anchor, legal name, URL, description, email, telephone, postal address, 20 <code>areaServed</code> California county nodes, <code>knowsAbout</code> array, founder (Bryan Post), parent organization (Parents in Training Inc. with taxID and nonprofitStatus), and sameAs (Facebook, Instagram). This is exceptional depth for local nonprofit SEO.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Sitemap structure — 30 URLs, correct hreflang, thank-you/404 excluded</h3>
+    <p>15 paths × 2 (EN + ES) = 30 URLs. Every URL has reciprocal <code>xhtml:link</code> alternates. <code>/thank-you</code>, <code>/thank-you-2</code>, and <code>/404</code> are correctly excluded. The sitemap is correctly registered in robots.txt.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>SSG prerendering — all meta in static HTML</h3>
+    <p>Confirmed across <code>index.html</code>, <code>about-us.html</code>, <code>our-program.html</code>, <code>faq.html</code>, and <code>es.html</code>: all <code>&lt;title&gt;</code>, meta description, OG tags, hreflang, canonical, and JSON-LD are present in the raw HTML before any JavaScript executes. The <code>data-rh="true"</code> attribute on all tags confirms correct vite-react-ssg injection.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Unique titles and descriptions per page</h3>
+    <p>No duplicate title tags found across the 15 EN pages. Each page has a distinct description. The title format is consistent: <code>[Page Topic] | LEAF Wraparound</code> (interior pages) vs. <code>LEAF Wraparound: [Value Proposition] in [Location]</code> (homepage). This format is correct and crawler-friendly.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Logo image alt text — fully descriptive</h3>
+    <p>Header and footer logo both use: <code>alt="LEAF Wraparound, a program of Parents in Training Inc."</code> — includes brand name and parent org context. Correct for screen readers and image SEO.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Accessibility skip link present</h3>
+    <p><code>&lt;a href="#main-content"&gt;Skip to main content&lt;/a&gt;</code> is in the HTML at first child of body. Not strictly an SEO item, but Google's page experience signals include accessibility — this is correctly implemented.</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>Page-hero image assets exist for future OG use</h3>
+    <p><code>dist/page-hero/</code> contains 24 branded .webp images (collages, event photos, hero shots, mission backgrounds). These are immediately available to wire as page-specific <code>og:image</code> values once converted to JPG/PNG at 1200×630 (issue C2 above).</p>
+  </div>
+
+  <div class="issue passing">
+    <h3>inLanguage switches to "es" on all Spanish schema</h3>
+    <p>Verified: <code>es/about-us.html</code> and <code>es/webinar-registration.html</code> both carry <code>"inLanguage": "es"</code> in their JSON-LD nodes. The WebSite and Event schema correctly reflect the page language, not a hardcoded "en".</p>
+  </div>
+
+</div>
+</body>
+</html>

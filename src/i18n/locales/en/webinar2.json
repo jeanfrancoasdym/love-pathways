@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "badge": "FREE LIVE WEBINAR",
+    "titleBefore": "The ",
+    "titleHighlight": "Angry Child's",
+    "titleAfter": " Hidden Story",
+    "subtitle": "A free live webinar for adoptive and foster parents who are tired of the yelling, the power struggles, and the guilt, and ready to understand what their child's anger is really trying to say.",
+    "paragraph1": "In this engaging and practical webinar, foster and adoptive parent expert and adoptee psychotherapist Jeanette Yoffe, M.A., LMFT, will help parents understand the hidden messages beneath anger and learn attachment-based strategies that build connection rather than conflict.",
+    "paragraph2": "Participants will discover how early trauma, separation, and attachment disruptions impact a child's developing brain and nervous system, often causing children to react."
+  },
+  "details": {
+    "dateLabel": "Date",
+    "dateValue": "Thursday | June 25th",
+    "timeLabel": "Time",
+    "timeValue": "9:00 AM - 10:30 AM PST",
+    "languageLabel": "Language",
+    "languageValueEs": "Español",
+    "languageValueEn": "English"
+  },
+  "countdown": {
+    "heading": "The live session begins in",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Min",
+    "seconds": "Sec",
+    "live": "We're live now. Come on in.",
+    "ended": "This session has ended. Register to get the replay."
+  },
+  "forYou": {
+    "heading": "This is for you if...",
+    "items": [
+      "Your child's anger can go from zero to a hundred in seconds, and you never see it coming.",
+      "Time-outs, rewards, and consequences just aren't working anymore.",
+      "You love your child deeply, but some days you feel like you're walking on eggshells.",
+      "You want connection instead of conflict, but you're not sure how to get there."
+    ]
+  },
+  "learn": {
+    "heading": "What you'll walk away with",
+    "items": [
+      "The hidden messages underneath your child's anger, and what they're really asking for.",
+      "How early trauma, separation, and attachment disruptions shape a child's brain and nervous system.",
+      "Attachment-based strategies that build connection instead of escalating conflict.",
+      "What to do in the heat of the moment so it doesn't become a battle."
+    ]
+  },
+  "guide": {
+    "eyebrow": "Your guide",
+    "name": "Jeanette Yoffe, M.A., LMFT",
+    "role": "Adoptee, Psychotherapist & Adoption Expert",
+    "bio": "Jeanette Yoffe, M.A., LMFT, is a foster and adoptive parent expert and an adoptee psychotherapist. She has dedicated her career to helping families understand attachment and trauma, and to turning conflict into connection through compassionate, attachment-based care."
+  },
+  "trust": {
+    "heading": "Why families trust this webinar",
+    "audience": "Join adoptive and foster families from across California, supported by the Fear to Love methodology and the LEAF Wraparound team.",
+    "testimonials": [],
+    "stats": []
+  },
+  "agenda": {
+    "heading": "How the session will flow",
+    "items": [
+      { "title": "The hidden story", "desc": "What anger is really communicating beneath the surface." },
+      { "title": "The brain & body", "desc": "How trauma and attachment shape a child's reactions." },
+      { "title": "The tools", "desc": "Attachment-based strategies that calm conflict and rebuild trust." },
+      { "title": "Live Q&A", "desc": "Bring your hardest moments. Jeanette will walk you through them." }
+    ]
+  },
+  "faq": {
+    "heading": "A few questions before you register",
+    "items": [
+      { "q": "Is it really free?", "a": "Yes. This live webinar is completely free for families and professionals." },
+      { "q": "Is it available in Spanish?", "a": "Yes. You can register and attend in either English or Spanish." },
+      { "q": "What if I can't attend live?", "a": "Register anyway. We'll send you the replay so you can watch whenever it works for you." },
+      { "q": "Who is this for?", "a": "Adoptive and foster parents, kinship caregivers, and anyone supporting a child through big emotions." }
+    ]
+  },
+  "host": {
+    "label": "Hosted By",
+    "name": "Jeanette Yoffe",
+    "imageAlt": "Jeanette Yoffe",
+    "bio": "M.A., LMFT. Foster and adoptive parent expert and adoptee psychotherapist."
+  },
+  "cta": {
+    "mobileButton": "Reserve My Spot Now"
+  },
+  "ctaFinal": {
+    "line": "Behind every angry outburst is a child asking to feel safe. Let's learn to hear what they're really saying.",
+    "button": "Yes, Save My Spot"
+  },
+  "privacy": "We respect your privacy. We'll only email you about this event, and you can unsubscribe anytime.",
+  "form": {
+    "title": "Save Your Spot",
+    "subtitle": "Reserve your seat for this free event."
+  }
+}

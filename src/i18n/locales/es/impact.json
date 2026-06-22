@@ -1,0 +1,43 @@
+{
+  "video": {
+    "fallback": "Tu navegador no admite la etiqueta de video."
+  },
+  "hero": {
+    "alt": "Fondo de familia feliz",
+    "titleLead": "Nuestro",
+    "titleAccent": "impacto",
+    "subtitle": "Cada número aquí es una familia. Detrás de cada uno hay un padre o una madre que recuperó el equilibrio, un niño que encontró seguridad y un hogar que se hizo más fuerte."
+  },
+  "stats": {
+    "eyebrow": "Nuestro impacto",
+    "heading": "Una comunidad construida sobre el amor",
+    "intro": "A través de un apoyo dedicado y una empatía inquebrantable, hemos tenido el privilegio de acompañar a cientos de familias, ayudándolas a recorrer sus singulares trayectorias de adopción.",
+    "entityDefinition": "LEAF Wraparound es un programa de apoyo a la adopción, basado en el amor y sensible al trauma, de Parents in Training Inc., que ayuda a las familias adoptivas en más de 20 condados del norte y centro de California a construir hogares duraderos y sanadores.",
+    "answerCapsule": "Las familias que adoptaron a través del sistema de acogida y reciben beneficios del Programa de Asistencia para la Adopción (AAP) reciben educación, acompañamiento familiar, grupos de padres y apoyo en el hogar sin costo de bolsillo, todo con una sola meta: aliviar el estrés de los padres adoptivos y ayudarlos a construir un hogar duradero y sanador.",
+    "familiesSupported": {
+      "label": "Familias apoyadas",
+      "description": "Familias adoptivas que han encontrado fortaleza y sanación a través de nuestros servicios Wraparound."
+    },
+    "childrenSupported": {
+      "label": "Niños apoyados",
+      "description": "Niños a quienes se les dio la oportunidad de prosperar en entornos estables y llenos de amor."
+    },
+    "hoursOfSupport": {
+      "label": "Horas de apoyo",
+      "description": "Horas dedicadas a la terapia, el acompañamiento y la orientación educativa."
+    }
+  },
+  "testimonials": {
+    "heading": "Escucha sus historias",
+    "introBefore": "No solo confíes en nuestra palabra. Escucha las experiencias reales y conmovedoras de las familias que han crecido y sanado con la ayuda de",
+    "category": "Webinar y evento",
+    "adoptiveMother": "Madre adoptiva",
+    "realFamilyStory": "Historia real de una familia"
+  },
+  "cta": {
+    "heading": "Únete a nuestra familia en crecimiento",
+    "subtitle": "Ya sea que necesites apoyo o que quieras ayudarnos a llegar a más familias, aquí hay un lugar para ti.",
+    "primary": "Comunícate para recibir apoyo",
+    "secondary": "Empleo"
+  }
+}

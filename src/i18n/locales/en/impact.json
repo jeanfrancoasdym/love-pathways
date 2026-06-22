@@ -1,0 +1,43 @@
+{
+  "video": {
+    "fallback": "Your browser does not support the video tag."
+  },
+  "hero": {
+    "alt": "Happy family background",
+    "titleLead": "Our",
+    "titleAccent": "Impact",
+    "subtitle": "Every number here is a family. Behind each one is a parent who found steadier footing, a child who found safety, and a home that grew stronger."
+  },
+  "stats": {
+    "eyebrow": "Our Impact",
+    "heading": "A Community Built on Love",
+    "intro": "Through dedicated support and unwavering empathy, we've had the privilege of walking alongside hundreds of families, helping them navigate their unique adoption journeys.",
+    "entityDefinition": "LEAF Wraparound is a love-based, trauma-responsive adoption support program of Parents in Training Inc. that helps adoptive families across 20+ Northern and Central California counties build lasting, healing homes.",
+    "answerCapsule": "Families who adopted through the foster system and receive Adoption Assistance Program (AAP) benefits receive education, family coaching, parent groups, and in-home support at no out-of-pocket cost, all toward one goal: easing the stress on adoptive parents and helping them build a lasting, healing home.",
+    "familiesSupported": {
+      "label": "Families Supported",
+      "description": "Adoptive families who have found strength and healing through our wraparound services."
+    },
+    "childrenSupported": {
+      "label": "Children Supported",
+      "description": "Children given the opportunity to thrive in stable, loving environments."
+    },
+    "hoursOfSupport": {
+      "label": "Hours of Support",
+      "description": "Dedicated hours of therapy, coaching, and educational guidance."
+    }
+  },
+  "testimonials": {
+    "heading": "Hear Their Stories",
+    "introBefore": "Don't just take our word for it. Listen to the real, heartwarming experiences of the families who have grown and healed with the help of",
+    "category": "Webinar & Event",
+    "adoptiveMother": "Adoptive Mother",
+    "realFamilyStory": "Real Family Story"
+  },
+  "cta": {
+    "heading": "Join Our Growing Family",
+    "subtitle": "Whether you need support, or you want to help us reach more families, there is a place for you here.",
+    "primary": "Reach Out for Support",
+    "secondary": "Careers"
+  }
+}

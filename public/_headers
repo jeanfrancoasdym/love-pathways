@@ -1,0 +1,9 @@
+# Block search engines from indexing the temporary *.pages.dev URLs.
+# These rules are HOST-SCOPED: they apply ONLY to the pages.dev hostnames,
+# never to the real custom domain. When leafwraparound.com is connected it
+# indexes normally and nothing here needs to be changed or removed.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex

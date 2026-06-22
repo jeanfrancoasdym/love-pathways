@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "code": "404",
+    "title": "Oops! Looks like you've wandered off the trail.",
+    "description": "Don't worry, even the best navigators get lost sometimes. The page you're looking for might have been moved, deleted, or perhaps it never existed in the first place. Let's get you back to safe ground!"
+  },
+  "cta": {
+    "home": "Back to Home",
+    "program": "View Our Program"
+  }
+}

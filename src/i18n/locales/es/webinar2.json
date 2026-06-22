@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "badge": "WEBINAR EN VIVO GRATUITO",
+    "titleBefore": "La historia oculta del ",
+    "titleHighlight": "niño enojado",
+    "titleAfter": "",
+    "subtitle": "Un webinar en vivo y gratuito para padres adoptivos y de crianza temporal cansados de los gritos, las luchas de poder y la culpa, listos para entender qué intenta decir realmente el enojo de su hijo.",
+    "paragraph1": "En este webinar práctico y cercano, la experta en padres de acogida y adoptivos y psicoterapeuta adoptada Jeanette Yoffe, M.A., LMFT, ayudará a los padres a comprender los mensajes ocultos detrás del enojo y a aprender estrategias basadas en el apego que construyen conexión en lugar de conflicto.",
+    "paragraph2": "Los participantes descubrirán cómo el trauma temprano, la separación y las rupturas en el apego afectan el cerebro en desarrollo y el sistema nervioso del niño, lo que a menudo provoca que los niños reaccionen."
+  },
+  "details": {
+    "dateLabel": "Fecha",
+    "dateValue": "jueves | 25 de junio",
+    "timeLabel": "Hora",
+    "timeValue": "9:00 AM - 10:30 AM PST",
+    "languageLabel": "Idioma",
+    "languageValueEs": "Español",
+    "languageValueEn": "English"
+  },
+  "countdown": {
+    "heading": "La sesión en vivo comienza en",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Min",
+    "seconds": "Seg",
+    "live": "Estamos en vivo ahora. Pasa adelante.",
+    "ended": "Esta sesión ya terminó. Regístrate para recibir la grabación."
+  },
+  "forYou": {
+    "heading": "Esto es para ti si...",
+    "items": [
+      "El enojo de tu hijo pasa de cero a cien en segundos, y nunca lo ves venir.",
+      "Los tiempos fuera, los premios y las consecuencias ya no funcionan.",
+      "Amas profundamente a tu hijo, pero algunos días sientes que caminas sobre cáscaras de huevo.",
+      "Quieres conexión en lugar de conflicto, pero no sabes bien cómo lograrlo."
+    ]
+  },
+  "learn": {
+    "heading": "Lo que te llevarás",
+    "items": [
+      "Los mensajes ocultos detrás del enojo de tu hijo, y qué está pidiendo en realidad.",
+      "Cómo el trauma temprano, la separación y las rupturas del apego moldean el cerebro y el sistema nervioso del niño.",
+      "Estrategias basadas en el apego que construyen conexión en lugar de escalar el conflicto.",
+      "Qué hacer en el momento más difícil para que no se convierta en una batalla."
+    ]
+  },
+  "guide": {
+    "eyebrow": "Tu guía",
+    "name": "Jeanette Yoffe, M.A., LMFT",
+    "role": "Adoptada, psicoterapeuta y experta en adopción",
+    "bio": "Jeanette Yoffe, M.A., LMFT, es experta en padres de acogida y adoptivos y psicoterapeuta adoptada. Ha dedicado su carrera a ayudar a las familias a comprender el apego y el trauma, y a transformar el conflicto en conexión a través de un cuidado compasivo y basado en el apego."
+  },
+  "trust": {
+    "heading": "Por qué las familias confían en este webinar",
+    "audience": "Únete a familias adoptivas y de crianza temporal de toda California, acompañadas por la metodología Fear to Love (Del miedo al amor) y el equipo de LEAF Wraparound.",
+    "testimonials": [],
+    "stats": []
+  },
+  "agenda": {
+    "heading": "Cómo se desarrollará la sesión",
+    "items": [
+      { "title": "La historia oculta", "desc": "Qué comunica en realidad el enojo por debajo de la superficie." },
+      { "title": "El cerebro y el cuerpo", "desc": "Cómo el trauma y el apego moldean las reacciones del niño." },
+      { "title": "Las herramientas", "desc": "Estrategias basadas en el apego que calman el conflicto y reconstruyen la confianza." },
+      { "title": "Preguntas en vivo", "desc": "Trae tus momentos más difíciles. Jeanette los resolverá contigo." }
+    ]
+  },
+  "faq": {
+    "heading": "Algunas preguntas antes de registrarte",
+    "items": [
+      { "q": "¿De verdad es gratis?", "a": "Sí. Este webinar en vivo es completamente gratuito para familias y profesionales." },
+      { "q": "¿Está disponible en español?", "a": "Sí. Puedes registrarte y participar en inglés o en español." },
+      { "q": "¿Y si no puedo asistir en vivo?", "a": "Regístrate de todas formas. Te enviaremos la grabación para que la veas cuando te quede bien." },
+      { "q": "¿Para quién es?", "a": "Para padres adoptivos y de crianza temporal, cuidadores de parentesco y cualquier persona que acompañe a un niño en sus grandes emociones." }
+    ]
+  },
+  "host": {
+    "label": "Presentado por",
+    "name": "Jeanette Yoffe",
+    "imageAlt": "Jeanette Yoffe",
+    "bio": "M.A., LMFT. Experta en padres de acogida y adoptivos y psicoterapeuta adoptada."
+  },
+  "cta": {
+    "mobileButton": "Reserva mi lugar ahora"
+  },
+  "ctaFinal": {
+    "line": "Detrás de cada estallido de enojo hay un niño pidiendo sentirse seguro. Aprendamos a escuchar lo que de verdad está diciendo.",
+    "button": "Sí, reserva mi lugar"
+  },
+  "privacy": "Respetamos tu privacidad. Solo te escribiremos sobre este evento y puedes darte de baja cuando quieras.",
+  "form": {
+    "title": "Reserva tu lugar",
+    "subtitle": "Reserva tu asiento para este evento gratuito."
+  }
+}

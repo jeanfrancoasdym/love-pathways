@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lenis smooth scroll (see Layout.tsx). When active, native smooth-scroll must be
+   off so Lenis fully controls the position. */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+html.lenis,
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-brand-dark antialiased bg-brand-cream overflow-x-clip;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-brand-primary/20 text-brand-dark;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-7 py-3.5 rounded-full font-bold hover:bg-brand-dark transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-brand-secondary text-brand-dark px-7 py-3.5 rounded-full font-bold hover:bg-brand-primary hover:text-white transition-colors duration-300;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-brand-dark/15 text-brand-dark px-7 py-3.5 rounded-full font-bold hover:border-brand-dark hover:bg-brand-dark hover:text-white transition-colors duration-300;
+  }
+
+  .nav-link {
+    @apply text-brand-dark/70 hover:text-brand-dark font-semibold transition-colors;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 text-brand-primary font-display font-bold uppercase tracking-[0.18em] text-xs;
+  }
+}
+
+/* Custom scrollbar for tabs */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ---- Accessibility widget ---- */
+/* Skip-to-content link: hidden until focused via keyboard */
+.a11y-skip-link {
+  position: fixed;
+  left: 8px;
+  top: -120px;
+  z-index: 80;
+  background: #192847;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: top 0.2s ease;
+}
+.a11y-skip-link:focus {
+  top: 8px;
+  outline: 3px solid #657ef6;
+}
+
+/* Effects are scoped to #a11y-root so the widget itself stays unaffected */
+html.a11y-contrast #a11y-root {
+  filter: contrast(1.35);
+}
+html.a11y-highlight-links #a11y-root a {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+  font-weight: 700 !important;
+}
+html.a11y-readable-font #a11y-root,
+html.a11y-readable-font #a11y-root * {
+  font-family: Verdana, Tahoma, Geneva, sans-serif !important;
+  letter-spacing: 0.01em;
+}

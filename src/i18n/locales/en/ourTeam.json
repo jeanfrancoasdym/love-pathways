@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "imageAlt": "Our Team Background",
+    "title": "Our Team",
+    "subtitle": "Meet the leaders dedicated to providing trauma-informed care and guiding our community toward a brighter future."
+  },
+  "members": {
+    "jeanette": {
+      "title": "Clinical Director",
+      "bio": "With over 20 years of dedicated experience in child welfare, Jeanette is a leading psychotherapist specializing in trauma-informed care, family preservation, and attachment-based interventions."
+    },
+    "marissa": {
+      "title": "Director of Operations",
+      "bio": "Marissa oversees the daily operations of our programs, ensuring efficient delivery of services and a seamless experience for the communities we serve."
+    },
+    "shing": {
+      "title": "Wraparound Manager",
+      "bio": "Shing brings extensive experience in care coordination, guiding our facilitators to build strong, supportive networks around families."
+    },
+    "mikalah": {
+      "title": "Wraparound Manager",
+      "bio": "Mikalah works passionately to support our teams in creating individualized care plans that empower children and their support systems."
+    }
+  }
+}

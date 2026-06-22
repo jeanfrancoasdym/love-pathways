@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "titleLead": "Únete a nuestra ",
+    "titleHighlight": "misión",
+    "subtitle": "Ayúdanos a brindar esperanza, aliento y sanación a familias adoptivas en todo California.",
+    "imageAlt": "Fondo de carreras profesionales"
+  },
+  "whyJoin": {
+    "heading": "¿Por qué trabajar con nosotros?",
+    "introBefore": "En ",
+    "introAfter": ", somos más que un equipo: somos una comunidad de personas apasionadas y dedicadas a apoyar a las familias adoptivas mediante una metodología basada en el amor.",
+    "meaningfulTitle": "Trabajo con propósito",
+    "meaningfulDesc": "Marca una diferencia real en la vida de las familias adoptivas.",
+    "growthTitle": "Crecimiento y aprendizaje",
+    "growthDesc": "Capacitación continua en cuidado sensible al trauma y comportamiento infantil.",
+    "imageAlt": "Nuestro equipo"
+  },
+  "clinical": {
+    "eyebrow": "La estructura de nuestro equipo",
+    "heading": "Roles clínicos",
+    "subtitle": "Nuestro equipo clínico brinda el apoyo y la educación directa que las familias necesitan para prosperar.",
+    "roles": {
+      "wrapFacilitator": {
+        "title": "Facilitador de Wraparound",
+        "description": "Coordina el proceso de Wraparound, facilitando las reuniones del equipo y asegurando que la voz y las decisiones de la familia estén en el centro del plan. Actúa como el principal punto de contacto y guía en el camino de la familia."
+      },
+      "clinician": {
+        "title": "Clínico",
+        "description": "Brinda apoyo terapéutico especializado y sensible al trauma, e intervenciones conductuales para niños y familias. Trabaja bajo supervisión clínica directa para implementar estrategias de sanación basadas en el amor."
+      },
+      "parentPartner": {
+        "title": "Compañero de padres",
+        "description": "Una persona con experiencia vivida en el sistema de bienestar infantil o de adopción que ofrece apoyo entre pares y defensa de los padres. Aporta una empatía y orientación únicas basadas en su propio camino."
+      }
+    }
+  },
+  "administrative": {
+    "eyebrow": "El pilar de nuestra misión",
+    "heading": "Roles administrativos",
+    "subtitle": "Nuestro equipo administrativo garantiza que nuestras operaciones funcionen sin contratiempos, permitiendo que el personal clínico se enfoque por completo en las familias a las que servimos.",
+    "operationsTitle": "Operaciones y soporte",
+    "operationsDesc": "Incluye roles en recursos humanos, finanzas, administración de oficina y coordinación de programas. Estos profesionales hacen avanzar nuestra misión con integridad y eficiencia.",
+    "imageAlt": "Equipo administrativo"
+  },
+  "form": {
+    "titleLead": "Deja tu ",
+    "titleHighlight": "currículum",
+    "titleTrail": "aquí",
+    "introBefore": "Siempre estamos buscando personas apasionadas para unirse a nuestra misión. Cuéntanos sobre ti y por qué te gustaría trabajar con ",
+    "introAfter": ".",
+    "fullNameLabel": "Nombre completo *",
+    "fullNamePlaceholder": "Jane Doe",
+    "emailLabel": "Correo electrónico *",
+    "emailPlaceholder": "jane@example.com",
+    "categoryLabel": "Categoría *",
+    "categorySelect": "Selecciona una categoría",
+    "categoryClinical": "Rol clínico",
+    "categoryAdministrative": "Rol administrativo",
+    "positionLabel": "¿Qué puesto buscas y por qué? *",
+    "positionPlaceholder": "Cuéntanos sobre tu motivación...",
+    "uploadLabel": "Subir archivo *",
+    "uploadCta": "Haz clic para subir o arrastra y suelta",
+    "uploadHint": "tu currículum (PDF, DOC)",
+    "submit": "Enviar currículum"
+  }
+}

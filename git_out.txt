@@ -1,0 +1,45 @@
+
+
+--- GIT LOG FOR /src/components/About.tsx ---
+Command failed: git log -p -n 1 -- /src/components/About.tsx
+fatal: not a git repository (or any of the parent directories): .git
+
+
+--- GIT LOG FOR /src/components/Program.tsx ---
+Command failed: git log -p -n 1 -- /src/components/Program.tsx
+fatal: not a git repository (or any of the parent directories): .git
+
+
+--- GIT LOG FOR /src/components/Events.tsx ---
+Command failed: git log -p -n 1 -- /src/components/Events.tsx
+fatal: not a git repository (or any of the parent directories): .git
+
+
+--- GIT LOG FOR /src/components/FAQ.tsx ---
+Command failed: git log -p -n 1 -- /src/components/FAQ.tsx
+fatal: not a git repository (or any of the parent directories): .git
+
+
+--- GIT LOG FOR /src/components/Contact.tsx ---
+Command failed: git log -p -n 1 -- /src/components/Contact.tsx
+fatal: not a git repository (or any of the parent directories): .git
+
+
+--- GIT LOG FOR /src/components/Donate.tsx ---
+Command failed: git log -p -n 1 -- /src/components/Donate.tsx
+fatal: not a git repository (or any of the parent directories): .git
+
+
+--- GIT LOG FOR /src/components/Career.tsx ---
+Command failed: git log -p -n 1 -- /src/components/Career.tsx
+fatal: not a git repository (or any of the parent directories): .git
+
+
+--- GIT LOG FOR /src/components/Blog.tsx ---
+Command failed: git log -p -n 1 -- /src/components/Blog.tsx
+fatal: not a git repository (or any of the parent directories): .git
+
+
+--- GIT LOG FOR /src/components/Home.tsx ---
+Command failed: git log -p -n 1 -- /src/components/Home.tsx
+fatal: not a git repository (or any of the parent directories): .git

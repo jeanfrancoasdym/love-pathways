@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "eyebrow": "Love-Based Education",
+    "description": "Love-based, trauma-responsive support that helps California adoptive families heal and stay together, at no cost to AAP families.",
+    "ctaContact": "Contact Us",
+    "ctaProgram": "Our Program",
+    "slideAlt1": "LEAF Wraparound specialist providing in-home support to an adoptive family in California",
+    "slideAlt2": "Adoptive parents receiving trauma-responsive wraparound care through LEAF Wraparound",
+    "slideAlt3": "Love-based education and coaching for adoptive families in Northern California",
+    "goToSlide": "Go to slide {{number}}",
+    "slide2Eyebrow": "At No Cost To You",
+    "slide2Title": "Support that meets your family where you are",
+    "slide2Desc": "Trauma-responsive wraparound care for adoptive families across 20+ California counties, at no out-of-pocket cost to AAP families.",
+    "slide2CtaPrimary": "See How We Can Help",
+    "slide2CtaSecondary": "Our Program",
+    "slide3Eyebrow": "Free Live Webinars",
+    "slide3Title": "Learn alongside other adoptive families",
+    "slide3Desc": "Join our free trainings on trauma, attachment, and connection, led by experts who understand your journey.",
+    "slide3CtaPrimary": "Browse Events",
+    "slide3CtaSecondary": "Contact Us"
+  },
+  "crisis": {
+    "eyebrow": "Who Are We",
+    "title": "Help For Adoptive Families In Crisis",
+    "description": "We are a Parents In Training Inc. program. We have developed an Adoption Wraparound Service with a love-based unique methodology. This is an intense trauma-responsive educational program for adoptive parents on how to better understand and care for their adopted child.",
+    "entityDefinition": "LEAF Wraparound (Love-Based Education for Adoptive Families) is a love-based, trauma-responsive adoption wraparound program of Parents in Training Inc. that supports adoptive families across 20+ counties in Northern and Central California.",
+    "noCostBefore": "We help families who have adopted children under 18 in California receiving benefits through the Adoption Assistance Program. ",
+    "noCostBold": "There is no out-of-pocket cost to families.",
+    "qualifyLink": "See if you qualify",
+    "quote": "When a family is supported, a child can heal."
+  },
+  "expertise": {
+    "quoteTitle": "Empowering Parents",
+    "quoteText": "Reducing stress and bringing peace back to your home.",
+    "imageAlt": "Wraparound Care",
+    "eyebrow": "Our Expertise",
+    "titleLine1": "What is wraparound care",
+    "titleLine2": "for adoptive families?",
+    "description": "The adoption journey is beautiful, but it can bring complex challenges. Wraparound is a team-based approach that supports adoptive families exactly where they are. We do whatever it takes to help your child heal.",
+    "feature1Title": "You Lead the Way",
+    "feature1Text": "We don't hand you a generic manual. Your family's voice, culture, and specific goals are the foundation of your care plan.",
+    "feature2Title": "Focusing on Strengths",
+    "feature2Text": "Healing doesn't come from focusing on problems. We use your family's profound resilience to overcome hurdles.",
+    "feature3Title": "Building Your Village",
+    "feature3Text": "You don't have to navigate post-adoption life alone. We coordinate with schools, therapists, and your network.",
+    "cta": "Explore Program"
+  },
+  "qualifies": {
+    "eyebrow": "For families like yours",
+    "title": "We're here for families like yours",
+    "intro": "If any of this feels familiar, LEAF was built for your family. No forms to pass, no hoops to jump through.",
+    "point1": "You're raising a child you adopted here in California",
+    "point2": "Your child is under 18",
+    "point3": "You adopted through the Adoption Assistance Program (AAP)",
+    "point4": "Things feel hard right now, and the usual help hasn't been enough",
+    "reassurance": "Always free for AAP families. No referral needed.",
+    "ctaPrimary": "Let's talk about your family",
+    "ctaSecondary": "Or see how our program works"
+  },
+  "services": {
+    "title": "Our Services",
+    "education": "Education",
+    "familyCoaching": "Family Coaching",
+    "parentGroups": "Parent Groups",
+    "inHomeSupport": "In-home Support",
+    "goalEyebrow": "Our Number One Goal",
+    "goalTitle": "To reduce stress on the adoptive parents.",
+    "goalText": "We want to educate, help and empower parents to understand what it takes to create a long-term healing environment for their children. The main pillars of our program are love and education.",
+    "quote": "\"Our staff is highly qualified in trauma-responsive treatment approaches with children and their families, working under direct supervision of Bryan Post to Jeanette Yoffe, LCSW.\""
+  },
+  "cta": {
+    "badge": "Take the next step",
+    "titleLine1": "Ready to start your",
+    "titleLine2": "love-based journey?",
+    "description": "Join our wraparound program and get the support your family needs to thrive.",
+    "button": "Contact Us Today"
+  }
+}

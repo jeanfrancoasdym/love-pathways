@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "titleLead": "Join Our ",
+    "titleHighlight": "Mission",
+    "subtitle": "Help us provide hope, encouragement and healing to adoptive families across California.",
+    "imageAlt": "Career background"
+  },
+  "whyJoin": {
+    "heading": "Why Work With Us?",
+    "introBefore": "At ",
+    "introAfter": ", we're more than just a team. We're a community of passionate individuals dedicated to supporting adoptive families through a love-based methodology.",
+    "meaningfulTitle": "Meaningful Work",
+    "meaningfulDesc": "Make a real difference in the lives of adoptive families.",
+    "growthTitle": "Growth & Learning",
+    "growthDesc": "Continuous training in trauma-informed care and child behavior.",
+    "imageAlt": "Our Team"
+  },
+  "clinical": {
+    "eyebrow": "Our Team Structure",
+    "heading": "Clinical Roles",
+    "subtitle": "Our clinical team provides the direct support and education that families need to thrive.",
+    "roles": {
+      "wrapFacilitator": {
+        "title": "Wrap Facilitator",
+        "description": "Coordinates the wraparound process, facilitating team meetings and ensuring the family's voice and choice are at the center of the plan. They act as the primary point of contact and guide for the family's journey."
+      },
+      "clinician": {
+        "title": "Clinician",
+        "description": "Provides specialized trauma-informed therapeutic support and behavioral interventions for children and families. They work under direct clinical supervision to implement love-based healing strategies."
+      },
+      "parentPartner": {
+        "title": "Parent Partner",
+        "description": "A person with lived experience in the child welfare or adoption system who provides peer support and advocacy for parents. They offer unique empathy and guidance based on their own journey."
+      }
+    }
+  },
+  "administrative": {
+    "eyebrow": "The Backbone of Our Mission",
+    "heading": "Administrative Roles",
+    "subtitle": "Our administrative team ensures that our operations run smoothly, allowing our clinical staff to focus entirely on the families we serve.",
+    "operationsTitle": "Operations & Support",
+    "operationsDesc": "Includes roles in Human Resources, Finance, Office Management, and Program Coordination. These professionals keep our mission moving forward with integrity and efficiency.",
+    "imageAlt": "Administrative Team"
+  },
+  "form": {
+    "titleLead": "Leave your ",
+    "titleHighlight": "resume",
+    "titleTrail": "here",
+    "introBefore": "We're always looking for passionate people to join our mission. Tell us about yourself and why you'd like to work with ",
+    "introAfter": ".",
+    "fullNameLabel": "Full Name *",
+    "fullNamePlaceholder": "Jane Doe",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "jane@example.com",
+    "categoryLabel": "Category *",
+    "categorySelect": "Select a category",
+    "categoryClinical": "Clinical Role",
+    "categoryAdministrative": "Administrative Role",
+    "positionLabel": "What position are you looking for and why? *",
+    "positionPlaceholder": "Tell us about your motivation...",
+    "uploadLabel": "Upload file *",
+    "uploadCta": "Click to upload or drag and drop",
+    "uploadHint": "your resume (PDF, DOC)",
+    "submit": "Submit Resume"
+  }
+}

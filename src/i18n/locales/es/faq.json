@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "titleLead": "Preguntas",
+    "titleHighlight": "frecuentes",
+    "subtitle": "Obtén respuestas claras sobre LEAF Wraparound: qué es, quién califica, cuánto cuesta y cómo empezar.",
+    "bgAlt": "Fondo de preguntas frecuentes"
+  },
+  "list": {
+    "heading": "Aclaraciones comunes y apoyo",
+    "subheading": "Encuentra respuestas rápidas que te ayudarán a recorrer el camino de tu familia.",
+    "entityDefinition": "LEAF Wraparound es un programa de apoyo basado en el amor y sensible al trauma para familias que han adoptado en California, ofrecido como un programa de la organización sin fines de lucro 501(c)(3) Parents in Training Inc.",
+    "answerFirst": "LEAF Wraparound responde las preguntas más comunes de las familias adoptivas: qué es el programa, quién califica, cuánto cuesta y cómo empezar. LEAF brinda educación, acompañamiento familiar, grupos de padres y apoyo en el hogar en más de 20 condados del norte y centro de California. Las familias que adoptaron a través del sistema de crianza temporal y reciben beneficios del Programa de Asistencia para la Adopción (AAP) no tienen costo de bolsillo. No se necesita una referencia de un trabajador social para comenzar."
+  },
+  "items": {
+    "what": {
+      "question": "¿Qué es el programa LEAF Wraparound?",
+      "answerBefore": "es un programa educativo y de apoyo basado en el amor, diseñado específicamente para familias adoptivas. Brindamos acompañamiento, capacitación y coordinación especializados para ayudar a las familias a enfrentar los desafíos y construir relaciones más fuertes y saludables."
+    },
+    "eligible": {
+      "question": "¿Quién es elegible para sus servicios?",
+      "answer": "Nuestros servicios están disponibles para cualquier familia con un hijo adoptado que resida en cualquier condado dentro del estado de California. Apoyamos a las familias en todas las etapas de su camino de adopción."
+    },
+    "loveBased": {
+      "question": "¿Qué significa \"Educación Basada en el Amor\"?",
+      "answer": "Significa que nuestro enfoque está arraigado en la compasión, la empatía y la comprensión. Creemos que, aunque el amor es la base, las familias también necesitan conocimientos y herramientas especializados (especialmente el cuidado sensible al trauma) para realmente prosperar."
+    },
+    "getStarted": {
+      "question": "¿Cómo empiezo con el programa?",
+      "answer": "Puedes comenzar contactándonos a través de nuestro sitio web o asistiendo a uno de nuestros webinars introductorios. Luego programaremos una consulta inicial para comprender las necesidades únicas de tu familia y cómo podemos apoyarte mejor."
+    },
+    "qualified": {
+      "question": "¿Su personal está capacitado para trabajar con niños que han vivido un trauma?",
+      "answer": "Sí, nuestro personal está certificado en cuidado sensible al trauma y cuenta con amplia experiencia trabajando con niños y familias que han vivido un trauma. Operamos bajo la supervisión clínica directa de Jeanette Yoffe."
+    },
+    "cost": {
+      "question": "¿Tiene algún costo recibir sus servicios?",
+      "answer": "Los costos pueden variar según los servicios específicos que se necesiten y el posible financiamiento del condado. Estamos comprometidos a hacer que nuestro apoyo sea lo más accesible posible y podemos conversar sobre las opciones financieras durante tu consulta inicial."
+    },
+    "highFidelity": {
+      "question": "¿Qué es el acompañamiento Wraparound High Fidelity (Alta fidelidad)?",
+      "answer": "Wraparound High Fidelity (Alta fidelidad), o HFW por sus siglas en inglés, es un modelo de atención basado en evidencia reconocido por el estado de California. Reúne a un equipo de profesionales y personas de confianza de la comunidad alrededor de tu familia para construir un plan de apoyo personalizado. A diferencia de la terapia tradicional, HFW se enfoca en las fortalezas, la cultura y las metas de tu familia."
+    },
+    "counties": {
+      "question": "¿En qué condados de California atienden?",
+      "answer": "Actualmente atendemos a familias en más de 20 condados del norte y centro de California, incluidos Del Norte, Trinity, Mendocino, Shasta, Tehama, Glenn, Butte, Sonoma, Napa, Solano, Yolo, Sutter, Yuba, Sacramento, Placer, El Dorado, San Joaquin, Calaveras, Stanislaus y Merced. Si tu condado no aparece en la lista, comunícate con nosotros. Nuestra cobertura se amplía constantemente."
+    },
+    "duration": {
+      "question": "¿Cuánto dura el programa?",
+      "answer": "El programa es flexible y se adapta a las necesidades de cada familia. En promedio, las familias participan alrededor de 14 meses. El AAP puede financiar los servicios de wraparound hasta por 18 meses por episodio, con la opción de solicitar 18 meses adicionales para un nuevo episodio o condición."
+    }
+  },
+  "cta": {
+    "heading": "¿Aún tienes preguntas?",
+    "body": "Estamos aquí para ayudarte. Comunícate con nuestro equipo y te responderemos lo antes posible.",
+    "contact": "Contáctanos",
+    "call": "Llámanos: (707) 460-6070"
+  }
+}

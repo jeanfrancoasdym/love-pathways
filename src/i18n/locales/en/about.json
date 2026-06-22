@@ -1,0 +1,77 @@
+{
+  "values": {
+    "love": {
+      "name": "Love",
+      "description": "Love is the foundation of LEAF's work with adoptive families."
+    },
+    "integrity": {
+      "name": "Integrity",
+      "description": "We prioritize honesty and transparency in all our interactions."
+    },
+    "relationship": {
+      "name": "Relationship",
+      "description": "Fostering deep connections within adoptive families and the larger community."
+    },
+    "responsibility": {
+      "name": "Responsibility",
+      "description": "We ensure our actions are thoughtful and impactful."
+    },
+    "effort": {
+      "name": "Effort",
+      "description": "We are committed to working hard and passionately."
+    }
+  },
+  "hero": {
+    "imageAlt": "About us background",
+    "titlePart1": "About ",
+    "titlePart2": "Us",
+    "subtitle": "Love-based qualified support services for adoptive families in California."
+  },
+  "missionVision": {
+    "eyebrow": "What Drives Us",
+    "heading": "Our mission and vision",
+    "intro": "The beliefs that guide how we walk alongside every adoptive family."
+  },
+  "mission": {
+    "heading": "Our Mission",
+    "body": "To provide love-based qualified support services for adoptive families in California that encourage a healthy, wholesome and thriving environment for parents and children, guided by education and understanding."
+  },
+  "vision": {
+    "heading": "Our Vision",
+    "body": "To be an inspiration for adoptive families in a world where everyone has a place for connection, belonging, and an opportunity to learn, develop, and reach their bliss."
+  },
+  "founder": {
+    "eyebrow": "Founder",
+    "namePart1": "BRYAN ",
+    "namePart2": "POST",
+    "lead": "An adopted and former foster child, Bryan Post has become one of America's foremost child behavior and adoption experts.",
+    "body": "A renowned clinician, lecturer, and acclaimed author, Bryan has dedicated his life's work to helping parents and professionals around the world find true peace and healing for challenging children and families through his pioneering application of a love-based, family-centered approach to parenting.",
+    "facebookAriaLabel": "Bryan Post Facebook",
+    "instagramAriaLabel": "Bryan Post Instagram",
+    "photoAlt": "Bryan Post",
+    "learnMore": "LEARN MORE"
+  },
+  "identity": {
+    "badge": "Our Identity",
+    "headingPart1": "A Single Goal: ",
+    "headingPart2": "Keeping Families Together",
+    "quote": "\"We believe that every family deserves the chance to thrive, not just survive.\"",
+    "card1": {
+      "title": "The Heart of Our Mission",
+      "bodyAfterBrand": "was founded to ensure families stay together safely. We establish environments where every member has the tools to grow."
+    },
+    "card2": {
+      "title": "Beyond Just Love",
+      "body": "Love is our foundation, but comprehension is the key. Our staff bring extensive clinical experience to support children and families."
+    },
+    "card3": {
+      "title": "100% Commitment",
+      "body": "We are fully dedicated to the well-being of adoptive families in California, providing support when it matters most."
+    }
+  },
+  "coreValues": {
+    "heading": "Our Core Values",
+    "introBeforeBrand": "These principles guide everything we do at",
+    "introAfterBrand": "."
+  }
+}

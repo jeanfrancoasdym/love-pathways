@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "badge": "WEBINAR EN VIVO GRATUITO",
+    "titleBefore": "Cuando el ",
+    "titleHighlight": "trauma entra",
+    "titleAfter": " al aula",
+    "subtitle": "Una capacitación en vivo y gratuita para padres adoptivos y de crianza temporal, cuidadores de parentesco y educadores que quieren ayudar a un niño sobrepasado a sentirse lo bastante seguro para aprender.",
+    "description": "Esta capacitación explora cómo el trauma puede afectar la experiencia de un niño en la escuela, incluyendo la ansiedad durante las transiciones, la sobrecarga emocional en el aula y los comportamientos que los educadores suelen malinterpretar.\n\nLas familias y los profesionales aprenderán cómo la conexión, la seguridad emocional y la regulación pueden ayudar a los niños a desarrollar confianza y a tener éxito en la escuela sin recurrir al miedo, la vergüenza ni el castigo."
+  },
+  "details": {
+    "dateLabel": "Fecha",
+    "dateValue": "martes 23 de junio",
+    "timeLabel": "Hora",
+    "timeValue": "9:00 a. m. - 10:00 a. m. PST",
+    "languageLabel": "Idioma",
+    "languageValue": "Inglés"
+  },
+  "countdown": {
+    "heading": "La sesión en vivo comienza en",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Min",
+    "seconds": "Seg",
+    "live": "Estamos en vivo ahora. Pasa adelante.",
+    "ended": "Esta sesión ya terminó. Regístrate para recibir la grabación."
+  },
+  "forYou": {
+    "heading": "Esto es para ti si...",
+    "items": [
+      "Tu hijo explota, se cierra o \"se porta mal\" en la escuela y nadie sabe explicarte por qué.",
+      "Las mañanas, las despedidas o las tareas se han vuelto una batalla diaria.",
+      "Te han dicho que es \"solo conducta\", pero tu instinto te dice que hay algo más profundo.",
+      "Quieres ayudar a tu hijo sin recurrir al miedo, la vergüenza ni el castigo."
+    ]
+  },
+  "learn": {
+    "heading": "Lo que te llevarás",
+    "items": [
+      "Cómo se manifiesta de verdad el trauma en el aula, y por qué tan a menudo se confunde con desafío.",
+      "Por qué las transiciones y los momentos \"pequeños\" pueden provocar reacciones tan grandes.",
+      "Formas sencillas y basadas en el amor de llevar seguridad y regulación al día escolar de tu hijo.",
+      "Cómo la conexión, no las consecuencias, construye la confianza que perdura."
+    ]
+  },
+  "guide": {
+    "eyebrow": "Tu guía",
+    "name": "Bryan Post",
+    "role": "Experto en adopción, apego y trauma",
+    "bio": "Bryan Post es un experto reconocido internacionalmente en adopción, apego y trauma, y una voz líder en el cuidado familiar basado en el amor. Durante décadas ha ayudado a familias a pasar del miedo y el conflicto hacia la conexión, la calma y una sanación duradera."
+  },
+  "trust": {
+    "heading": "Por qué las familias confían en esta capacitación",
+    "audience": "Únete a familias adoptivas y de crianza temporal de toda California, acompañadas por la metodología Fear to Love (Del miedo al amor) y el equipo de LEAF Wraparound.",
+    "testimonials": [],
+    "stats": []
+  },
+  "agenda": {
+    "heading": "Cómo se desarrollará la hora",
+    "items": [
+      { "title": "La ciencia", "desc": "Qué ocurre realmente en el cerebro y el cuerpo de un niño estresado." },
+      { "title": "Las malinterpretaciones", "desc": "Conductas que parecen desafío, pero no lo son." },
+      { "title": "El cambio", "desc": "Herramientas prácticas y basadas en el amor que puedes usar ese mismo día." },
+      { "title": "Preguntas en vivo", "desc": "Trae tus situaciones reales. Las resolvemos juntos." }
+    ]
+  },
+  "faq": {
+    "heading": "Algunas preguntas antes de registrarte",
+    "items": [
+      { "q": "¿De verdad es gratis?", "a": "Sí. Esta capacitación en vivo es completamente gratuita para familias y profesionales." },
+      { "q": "¿Y si no puedo asistir en vivo?", "a": "Regístrate de todas formas. Te enviaremos la grabación para que la veas cuando te quede bien." },
+      { "q": "¿Se grabará?", "a": "Sí. Todas las personas que se registren reciben la grabación después." },
+      { "q": "¿Para quién es?", "a": "Para padres adoptivos y de crianza temporal, cuidadores de parentesco y educadores. No necesitas experiencia ni preparación previa." }
+    ]
+  },
+  "host": {
+    "imageAlt": "Bryan Post",
+    "label": "Presentado por",
+    "name": "Bryan Post",
+    "bio": "Experto reconocido internacionalmente en adopción, trauma y sanación familiar."
+  },
+  "cta": {
+    "reserve": "Reservar mi lugar ahora"
+  },
+  "ctaFinal": {
+    "line": "Tu hijo no te está dando un mal rato. Está pasando un mal rato. Aprendamos a ayudarlo a sentirse seguro.",
+    "button": "Sí, reserva mi lugar"
+  },
+  "privacy": "Respetamos tu privacidad. Solo te escribiremos sobre este evento y puedes darte de baja cuando quieras.",
+  "form": {
+    "title": "Reserva tu lugar",
+    "subtitle": "Reserva tu asiento para este evento gratuito."
+  }
+}

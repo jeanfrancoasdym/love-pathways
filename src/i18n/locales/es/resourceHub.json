@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title": "Centro de recursos",
+    "subtitle": "Explora nuestra completa biblioteca de guías, videos y podcasts sobre crianza sensible al trauma, rutinas diarias y consejos de expertos de nuestro equipo principal."
+  },
+  "section": {
+    "featured": "Recursos destacados"
+  },
+  "tabs": {
+    "additionalTools": "Herramientas adicionales",
+    "featured": "Destacados",
+    "webinars": "Webinars",
+    "guides": "Guías",
+    "books": "Libros",
+    "podcasts": "Podcasts",
+    "articles": "Artículos"
+  },
+  "actions": {
+    "download": "Descargar",
+    "watchVideo": "Ver video",
+    "learnMore": "Conoce más",
+    "listenNow": "Escuchar ahora",
+    "getItNow": "Obtenlo ahora"
+  },
+  "filter": {
+    "relevance": "Relevancia",
+    "popular": "Populares",
+    "recent": "Recientes",
+    "oldest": "Más antiguos"
+  },
+  "empty": {
+    "title": "Próximamente...",
+    "podcasts": "Estamos grabando podcasts increíbles para ti. ¡Mantente atento!",
+    "default": "Estamos preparando contenido nuevo para ti. ¡Mantente atento!"
+  },
+  "social": {
+    "title": "Conéctate con nosotros"
+  }
+}

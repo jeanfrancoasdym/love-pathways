@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "imageAlt": "Fondo del blog",
+    "titleBefore": "Nuestras ",
+    "titleHighlight": "ideas",
+    "titleAfter": " e historias",
+    "subtitle": "Recursos educativos, consejos de expertos e historias inspiradoras de la comunidad de LEAF Wraparound."
+  },
+  "filters": {
+    "heading": "Explora temas",
+    "subheading": "Encuentra los recursos y las historias que más te importan.",
+    "searchPlaceholder": "Buscar artículos...",
+    "all": "Todas"
+  },
+  "loading": "Cargando artículos...",
+  "error": {
+    "title": "¡Ups! Algo salió mal",
+    "message": "No pudimos cargar los artículos en este momento. Inténtalo de nuevo más tarde."
+  },
+  "empty": {
+    "title": "No se encontraron artículos",
+    "message": "Intenta ajustar tu búsqueda o el filtro de categoría.",
+    "clearFilters": "Borrar todos los filtros"
+  },
+  "post": {
+    "readArticle": "Leer artículo",
+    "readMore": "Leer más",
+    "loadMore": "Ver más",
+    "uncategorized": "Sin categoría"
+  },
+  "social": {
+    "heading": "Síguenos para más contenido",
+    "facebookLabel": "Facebook",
+    "instagramLabel": "Instagram"
+  }
+}

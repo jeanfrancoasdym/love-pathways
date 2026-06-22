@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "titleLead": "Contact",
+    "titleHighlight": "Us",
+    "subtitle": "We are here to provide hope, encouragement and healing.",
+    "bgAlt": "Contact background"
+  },
+  "info": {
+    "heading": "Get in Touch",
+    "intro": "Whether you're a family in need of support, a potential partner, or just want to learn more about our work, we'd love to hear from you.",
+    "email": {
+      "title": "Email Us"
+    },
+    "phone": {
+      "title": "Call Us",
+      "number": "(707) 460-6070",
+      "hours": "Mon-Fri, 9am - 5pm PST"
+    },
+    "location": {
+      "title": "Our Location",
+      "line1": "2151 River Plaza Dr. 225",
+      "line2": "Sacramento, CA 95833"
+    }
+  },
+  "social": {
+    "lead": "Follow our journey and join the conversation on social media.",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "form": {
+    "iframeTitle": "Contact form"
+  }
+}

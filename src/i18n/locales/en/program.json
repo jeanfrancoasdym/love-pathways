@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "imageAlt": "Program background",
+    "eyebrow": "We Want To Help You",
+    "titleBefore": "Let's Begin This ",
+    "titleHighlight": "Process",
+    "titleAfter": " Together",
+    "subtitle": "Our goal is to educate and empower parents so they can better understand how to create a long-term healing environment for their children."
+  },
+  "approach": {
+    "title": "What is High-Fidelity Wraparound support?",
+    "intro": "At LEAF, true healing doesn’t come from a one-size-fits-all manual. We build a safety net around your family's unique reality.",
+    "block1": {
+      "title": "Empowering Your Voice",
+      "desc": "Our foundation is built entirely on family voice and choice. Your plan is deeply individualized to your specific needs, and completely culturally respectful to your traditions."
+    },
+    "block2": {
+      "title": "Building Your Village",
+      "desc": "We use a strengths-based, team-based model. Professionals work alongside you, but we also integrate natural supports (friends, neighbors) so your care is truly community-based."
+    },
+    "block3": {
+      "title": "Relentless Commitment",
+      "desc": "We are strictly outcomes-based, tracking clear goals. Above all, our promise is persistence: we work alongside you through every challenge until you reach a better place."
+    },
+    "imageAlt": "Our Approach"
+  },
+  "gettingStarted": {
+    "badge": "Stage 1: First Steps",
+    "title": "How do I get started with LEAF Wraparound?",
+    "imageAlt": "Consultation",
+    "quote": "\"We consider it a successful outcome when the family feels empowered.\"",
+    "steps": {
+      "requestSupport": {
+        "title": "Request Support",
+        "desc": "Wraparound services can be requested by members of the immediate family."
+      },
+      "completeForm": {
+        "title": "Complete Initial Form",
+        "desc": "Once the initial form is completed, a representative will be in touch to discuss the program and explain the requirements."
+      },
+      "consultation": {
+        "title": "Personal Consultation",
+        "desc": "We'll discuss your specific situation and how our love-based methodology can best support your family."
+      }
+    }
+  },
+  "phases": {
+    "badge": "Stage 2: Clinical Delivery",
+    "title": "The 4 Phases of Wraparound Care",
+    "titleLead": "The 4 Phases of ",
+    "titleAccent": "Wraparound Care",
+    "intro": "Following your personal consultation, our High Fidelity Wraparound model kicks in. We use four distinct phases to guide and support your family's journey toward independence.",
+    "label": "Phase",
+    "corePrinciple": "Core Principle",
+    "cta": "Contact Us Now",
+    "items": {
+      "engagement": {
+        "title": "Engagement",
+        "desc": "Focused on listening to your story, building trust, and identifying your support team.",
+        "principle": "Family Voice & Choice"
+      },
+      "planDevelopment": {
+        "title": "Plan Development",
+        "desc": "Creating a personalized strategy that reflects your culture and unique strengths.",
+        "principle": "Individualized & Culturally Respectful"
+      },
+      "implementation": {
+        "title": "Implementation",
+        "desc": "Putting the plan into action, tracking progress, and making adjustments with your team.",
+        "principle": "Team-Based & Outcomes-Based"
+      },
+      "transition": {
+        "title": "Transition",
+        "desc": "Preparing for independence by strengthening natural community supports.",
+        "principle": "Natural Supports & Persistence"
+      }
+    }
+  },
+  "reach": {
+    "titleLine1": "OUR",
+    "titleLine2": "REACH",
+    "serving": "Serving 20 California Counties",
+    "description": "We've strategically expanded our footprint to ensure that no adoptive family in Northern and Central California has to walk their journey alone.",
+    "cardTitleLine1": "Expanding our",
+    "cardTitleLine2": "Circle of Care.",
+    "cardDescription": "Our mission is to reach every family in need. If you reside outside these counties, please reach out. We are constantly evaluating new areas for expansion to bring healing where it's needed most.",
+    "cta": "Contact Our Team",
+    "tagInHome": "In-Home Support",
+    "tagFamilyCoaching": "Family Coaching",
+    "tagClinical": "Clinical Expertise",
+    "statLabel": "Counties",
+    "mapTitle": "Map of the 20 California counties served by LEAF Wraparound",
+    "mapDesc": "LEAF Wraparound serves families across 20 counties in Northern and Central California. Each served county is filled in and marked with a pin.",
+    "listHeading": "Counties we serve",
+    "servedLabel": "Served"
+  }
+}

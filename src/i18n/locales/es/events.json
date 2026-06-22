@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "imageAlt": "Fondo de eventos",
+    "titleLead": "Próximos",
+    "titleHighlight": "eventos",
+    "subtitle": "Únete a nuestra comunidad en talleres, webinars y encuentros."
+  },
+  "list": {
+    "eyebrow": "Reserva tu lugar",
+    "heading": "Próximos webinars y talleres",
+    "empty": "No hay próximos eventos por el momento. Vuelve a consultar más tarde.",
+    "modalityFallback": "Evento",
+    "register": "Regístrate aquí"
+  },
+  "missed": {
+    "title": "¿Te perdiste un webinar?",
+    "description": "¡No te preocupes! Todos nuestros webinars anteriores están grabados y disponibles en nuestro Centro de recursos para que puedas verlos a tu propio ritmo.",
+    "button": "Ver webinars anteriores"
+  },
+  "newsletter": {
+    "title": "No te pierdas ningún evento",
+    "description": "Suscríbete a nuestro boletín para recibir novedades sobre próximos webinars, talleres y encuentros comunitarios.",
+    "success": "¡Gracias por suscribirte! Mantente atento a tu bandeja de entrada.",
+    "iframeTitle": "Envío del boletín",
+    "emailPlaceholder": "Tu correo electrónico",
+    "submit": "Suscribirme"
+  }
+}

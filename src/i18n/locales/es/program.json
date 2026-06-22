@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "imageAlt": "Fondo del programa",
+    "eyebrow": "Queremos ayudarte",
+    "titleBefore": "Comencemos este ",
+    "titleHighlight": "proceso",
+    "titleAfter": " juntos",
+    "subtitle": "Nuestra meta es educar y empoderar a los padres para que comprendan mejor cómo crear un entorno de sanación duradero para sus hijos."
+  },
+  "approach": {
+    "title": "¿Qué es el apoyo Wraparound High Fidelity (Alta fidelidad)?",
+    "intro": "En LEAF, la verdadera sanación no proviene de un manual único para todos. Construimos una red de apoyo en torno a la realidad única de tu familia.",
+    "block1": {
+      "title": "Empoderar tu voz",
+      "desc": "Nuestra base se construye por completo sobre la voz y las decisiones de la familia. Tu plan está profundamente individualizado según tus necesidades específicas y es completamente respetuoso de tus tradiciones culturales."
+    },
+    "block2": {
+      "title": "Construir tu comunidad",
+      "desc": "Usamos un modelo basado en fortalezas y en equipo. Los profesionales trabajan junto a ti, pero también integramos apoyos naturales (amigos, vecinos) para que tu cuidado sea verdaderamente comunitario."
+    },
+    "block3": {
+      "title": "Compromiso incansable",
+      "desc": "Nos enfocamos estrictamente en resultados, dando seguimiento a metas claras. Por encima de todo, nuestra promesa es la persistencia: trabajamos junto a ti en cada desafío hasta que alcances un lugar mejor."
+    },
+    "imageAlt": "Nuestro enfoque"
+  },
+  "gettingStarted": {
+    "badge": "Etapa 1: primeros pasos",
+    "title": "¿Cómo empiezo con LEAF Wraparound?",
+    "imageAlt": "Consulta",
+    "quote": "\"Consideramos que es un resultado exitoso cuando la familia se siente empoderada.\"",
+    "steps": {
+      "requestSupport": {
+        "title": "Solicitar apoyo",
+        "desc": "Los servicios de Wraparound pueden ser solicitados por miembros de la familia inmediata."
+      },
+      "completeForm": {
+        "title": "Completar el formulario inicial",
+        "desc": "Una vez completado el formulario inicial, un representante se pondrá en contacto para hablar sobre el programa y explicar los requisitos."
+      },
+      "consultation": {
+        "title": "Consulta personal",
+        "desc": "Conversaremos sobre tu situación específica y cómo nuestra metodología basada en el amor puede apoyar mejor a tu familia."
+      }
+    }
+  },
+  "phases": {
+    "badge": "Etapa 2: atención clínica",
+    "title": "Las 4 fases del cuidado Wraparound",
+    "titleLead": "Las 4 fases del ",
+    "titleAccent": "cuidado Wraparound",
+    "intro": "Tras tu consulta personal, entra en acción nuestro modelo Wraparound High Fidelity. Usamos cuatro fases distintas para guiar y apoyar el camino de tu familia hacia la independencia.",
+    "label": "Fase",
+    "corePrinciple": "Principio fundamental",
+    "cta": "Contáctanos ahora",
+    "items": {
+      "engagement": {
+        "title": "Vinculación",
+        "desc": "Centrada en escuchar tu historia, generar confianza e identificar tu equipo de apoyo.",
+        "principle": "Voz y decisiones de la familia"
+      },
+      "planDevelopment": {
+        "title": "Desarrollo del plan",
+        "desc": "Crear una estrategia personalizada que refleje tu cultura y tus fortalezas únicas.",
+        "principle": "Individualizado y culturalmente respetuoso"
+      },
+      "implementation": {
+        "title": "Implementación",
+        "desc": "Poner el plan en acción, dar seguimiento al progreso y hacer ajustes junto a tu equipo.",
+        "principle": "Basado en el equipo y en resultados"
+      },
+      "transition": {
+        "title": "Transición",
+        "desc": "Prepararse para la independencia fortaleciendo los apoyos naturales de la comunidad.",
+        "principle": "Apoyos naturales y persistencia"
+      }
+    }
+  },
+  "reach": {
+    "titleLine1": "NUESTRO",
+    "titleLine2": "ALCANCE",
+    "serving": "Atendemos 20 condados de California",
+    "description": "Hemos ampliado estratégicamente nuestra presencia para asegurar que ninguna familia adoptiva del norte y centro de California tenga que recorrer su camino sola.",
+    "cardTitleLine1": "Ampliando nuestro",
+    "cardTitleLine2": "círculo de cuidado.",
+    "cardDescription": "Nuestra misión es llegar a cada familia que lo necesite. Si vives fuera de estos condados, comunícate con nosotros. Evaluamos constantemente nuevas zonas para expandirnos y llevar sanación donde más se necesita.",
+    "cta": "Contacta a nuestro equipo",
+    "tagInHome": "Apoyo en el hogar",
+    "tagFamilyCoaching": "Acompañamiento familiar",
+    "tagClinical": "Experiencia clínica",
+    "statLabel": "Condados",
+    "mapTitle": "Mapa de los 20 condados de California que atiende LEAF Wraparound",
+    "mapDesc": "LEAF Wraparound atiende a familias en 20 condados del norte y centro de California. Cada condado atendido aparece coloreado y marcado con un pin.",
+    "listHeading": "Condados que atendemos",
+    "servedLabel": "Atendido"
+  }
+}
