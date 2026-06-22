@@ -4,7 +4,7 @@
 import { writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
-const ORIGIN = "https://leafwraparound.com";
+const ORIGIN = "https://lovepathways.org";
 
 // Indexable routes only. Thank-you pages and 404 are intentionally excluded
 // (they render <Seo noindex>), as is the "*" catch-all.

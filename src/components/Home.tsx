@@ -104,7 +104,7 @@ function HeroCarousel() {
                 <p className="font-sans text-lg font-bold uppercase tracking-[0.22em] text-slate-600 md:text-xl">{slide.eyebrow}</p>
                 {slide.brand ? (
                   <h1 className="font-display text-5xl font-bold leading-[1.02] tracking-tight text-[#002f6c] sm:text-6xl md:text-7xl lg:text-8xl">
-                    <span className="notranslate" translate="no">LEAF WRAPAROUND</span>
+                    <span className="notranslate" translate="no">LOVE PATHWAYS WRAPAROUND</span>
                   </h1>
                 ) : (
                   <h2 className="font-display text-4xl font-bold leading-[1.06] tracking-tight text-[#002f6c] md:text-5xl lg:text-6xl">{slide.title}</h2>
@@ -158,7 +158,7 @@ export default function Home() {
         pageKey="home"
         path="/"
         jsonLd={serviceLd(lng, {
-          name: "LEAF Wraparound Services",
+          name: "Love Pathways Wraparound Services",
           description:
             "Love-based, trauma-responsive wraparound services that help adoptive families in California stay together through education, family coaching, parent groups, and in-home support, at no out-of-pocket cost to AAP families.",
           path: "/our-program",

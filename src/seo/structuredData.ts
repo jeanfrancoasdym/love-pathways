@@ -39,18 +39,11 @@ export function organizationLd() {
       "@type": ["NGO", "Organization"],
       name: parentOrg.name,
       url: parentOrg.url,
-      taxID: parentOrg.ein,
       nonprofitStatus: parentOrg.nonprofitStatus,
-      foundingDate: parentOrg.foundingDate,
-      sameAs: parentOrg.sameAs,
-      address: {
-        "@type": "PostalAddress",
-        postOfficeBoxNumber: "6358",
-        addressLocality: "Eureka",
-        addressRegion: "CA",
-        postalCode: "95502-6358",
-        addressCountry: "US",
-      },
+      ...(parentOrg.ein ? { taxID: parentOrg.ein } : {}),
+      ...(parentOrg.foundingDate ? { foundingDate: parentOrg.foundingDate } : {}),
+      ...(parentOrg.sameAs.length ? { sameAs: parentOrg.sameAs } : {}),
+      // TODO: add Revive Behavioral Healthcare postal address when provided.
     },
     sameAs: org.sameAs,
   };
@@ -161,8 +154,8 @@ export function collectionPageLd(lng: Lng, opts: { name: string; description: st
 export function blogPageLd(lng: Lng) {
   return {
     "@type": "Blog",
-    name: "Adoption & Trauma Parenting Blog | LEAF Wraparound",
-    description: "Educational articles, expert advice, and inspiring stories on trauma-responsive parenting and adoption from LEAF Wraparound.",
+    name: "Adoption & Trauma Parenting Blog | Love Pathways Wraparound",
+    description: "Educational articles, expert advice, and inspiring stories on trauma-responsive parenting and adoption from Love Pathways Wraparound.",
     url: localeUrl(lng, "/blog"),
     inLanguage: lng,
     publisher: { "@id": ORG_ID },
@@ -172,8 +165,8 @@ export function blogPageLd(lng: Lng) {
 export function aboutPageLd(lng: Lng) {
   return {
     "@type": "AboutPage",
-    name: "Our Impact | LEAF Wraparound Adoptive Family Results",
-    description: "Real stories and measurable results: how LEAF Wraparound helps adoptive families in California heal, regulate, and stay together.",
+    name: "Our Impact | Love Pathways Wraparound Adoptive Family Results",
+    description: "Real stories and measurable results: how Love Pathways Wraparound helps adoptive families in California heal, regulate, and stay together.",
     url: localeUrl(lng, "/impact"),
     inLanguage: lng,
     about: { "@id": ORG_ID },

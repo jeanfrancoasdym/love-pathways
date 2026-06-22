@@ -26,8 +26,8 @@ export default function OurTeam() {
     },
     {
       key: "mikalah",
-      name: "Mikalah Post",
-      image: "https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media/69f3af3d0549a7387e2c4c4f.webp",
+      name: "Dr. Alicia Williams",
+      image: "https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media/69a744b8618c8d5cb2996194.png",
     }
   ];
 

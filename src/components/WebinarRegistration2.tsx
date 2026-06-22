@@ -41,7 +41,7 @@ export default function WebinarRegistration2() {
               endDate: END,
               url: localeUrl(lng, "/webinar-event2"),
               locationUrl: localeUrl(lng, "/webinar-event2"),
-              performer: { "@type": "Organization", name: "LEAF Wraparound" },
+              performer: { "@type": "Organization", name: "Love Pathways Wraparound" },
               image: `${siteOrigin}/page-hero/event-calm.webp`,
             }),
             breadcrumbLd(lng, [

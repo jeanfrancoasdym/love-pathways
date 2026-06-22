@@ -140,7 +140,7 @@ export default function Impact() {
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-4xl font-display font-bold text-brand-dark">{t("testimonials.heading")}</h2>
             <p className="text-lg text-slate-600">
-              {t("testimonials.introBefore")}{" "}<span className="notranslate" translate="no">LEAF Wraparound</span>.
+              {t("testimonials.introBefore")}{" "}<span className="notranslate" translate="no">Love Pathways Wraparound</span>.
             </p>
           </div>
 

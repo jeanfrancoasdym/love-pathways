@@ -2,18 +2,18 @@
   "hero": {
     "titleLead": "Frequently Asked",
     "titleHighlight": "Questions",
-    "subtitle": "Get clear answers about LEAF Wraparound: what it is, who qualifies, what it costs, and how to begin.",
+    "subtitle": "Get clear answers about Love Pathways Wraparound: what it is, who qualifies, what it costs, and how to begin.",
     "bgAlt": "FAQ background"
   },
   "list": {
     "heading": "Common Clarifications & Support",
     "subheading": "Find quick answers to help you navigate your family's journey.",
-    "entityDefinition": "LEAF Wraparound is a love-based, trauma-responsive support program for families who have adopted in California, offered as a program of the 501(c)(3) nonprofit Parents in Training Inc.",
-    "answerFirst": "LEAF Wraparound answers the most common questions adoptive families ask: what the program is, who qualifies, what it costs, and how to begin. LEAF provides education, family coaching, parent groups, and in-home support across 20+ Northern and Central California counties. Families who adopted through the foster system and receive Adoption Assistance Program (AAP) benefits have no out-of-pocket cost. No social-worker referral is needed to start."
+    "entityDefinition": "Love Pathways Wraparound is a love-based, trauma-responsive support program for families who have adopted in California, offered as a program of Revive Behavioral Healthcare.",
+    "answerFirst": "Love Pathways Wraparound answers the most common questions adoptive families ask: what the program is, who qualifies, what it costs, and how to begin. Love Pathways provides education, family coaching, parent groups, and in-home support across 10 California counties. Families who adopted through the foster system and receive Adoption Assistance Program (AAP) benefits have no out-of-pocket cost. No social-worker referral is needed to start."
   },
   "items": {
     "what": {
-      "question": "What is the LEAF Wraparound program?",
+      "question": "What is the Love Pathways Wraparound program?",
       "answerBefore": "is a love-based educational and support program specifically designed for adoptive families. We provide specialized coaching, training, and coordination to help families navigate challenges and build stronger, healthier relationships."
     },
     "eligible": {
@@ -42,7 +42,7 @@
     },
     "counties": {
       "question": "Which counties in California do you serve?",
-      "answer": "We currently serve families across 20+ counties in Northern and Central California, including Del Norte, Trinity, Mendocino, Shasta, Tehama, Glenn, Butte, Sonoma, Napa, Solano, Yolo, Sutter, Yuba, Sacramento, Placer, El Dorado, San Joaquin, Calaveras, Stanislaus, and Merced. If your county is not listed, please contact us. Our coverage is constantly expanding."
+      "answer": "We currently serve families across 10 California counties: Merced, Calaveras, Contra Costa, San Joaquin, Stanislaus, Alameda, Santa Clara, Madera, Fresno, and Tulare. If your county is not listed, please contact us. Our coverage is constantly expanding."
     },
     "duration": {
       "question": "How long does the program last?",

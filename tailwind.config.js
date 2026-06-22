@@ -7,19 +7,24 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Love Pathways palette (Brandbook July 2025). Mapped onto the LEAF
+        // template's semantic slots so every existing class adopts LP colors.
         brand: {
-          primary: '#657ef6',
-          secondary: '#add400',
-          dark: '#192847',
-          light: '#bfd9e1',
-          cream: '#faf8f4',
-          mist: '#eef4f6',
+          primary: '#f7a4a5',   // signature pink (gradient start, primary accent)
+          secondary: '#ffc774', // golden yellow (CTA / emphasis)
+          accent: '#f8a866',    // orange (secondary warm accent)
+          dark: '#232323',      // charcoal (text + dark sections)
+          light: '#ffe9b6',     // light yellow (gradient end / soft tint)
+          cream: '#f9f2e8',     // primary warm background
+          mist: '#fdf4ea',      // soft warm tint (replaces LEAF's cool mist)
         }
       },
       fontFamily: {
-        sans: ['League Spartan', 'sans-serif'],
-        display: ['League Spartan', 'sans-serif'],
-        serif: ['Fraunces', 'Georgia', 'serif'],
+        // LP brandbook: Manrope only (no serif). serif slot also maps to Manrope
+        // so any inherited font-serif class still renders on-brand.
+        sans: ['Manrope', 'sans-serif'],
+        display: ['Manrope', 'sans-serif'],
+        serif: ['Manrope', 'sans-serif'],
       },
       keyframes: {
         marquee: {

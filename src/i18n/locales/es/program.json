@@ -9,7 +9,7 @@
   },
   "approach": {
     "title": "¿Qué es el apoyo Wraparound High Fidelity (Alta fidelidad)?",
-    "intro": "En LEAF, la verdadera sanación no proviene de un manual único para todos. Construimos una red de apoyo en torno a la realidad única de tu familia.",
+    "intro": "En Love Pathways, la verdadera sanación no proviene de un manual único para todos. Construimos una red de apoyo en torno a la realidad única de tu familia.",
     "block1": {
       "title": "Empoderar tu voz",
       "desc": "Nuestra base se construye por completo sobre la voz y las decisiones de la familia. Tu plan está profundamente individualizado según tus necesidades específicas y es completamente respetuoso de tus tradiciones culturales."
@@ -26,7 +26,7 @@
   },
   "gettingStarted": {
     "badge": "Etapa 1: primeros pasos",
-    "title": "¿Cómo empiezo con LEAF Wraparound?",
+    "title": "¿Cómo empiezo con Love Pathways Wraparound?",
     "imageAlt": "Consulta",
     "quote": "\"Consideramos que es un resultado exitoso cuando la familia se siente empoderada.\"",
     "steps": {
@@ -79,8 +79,8 @@
   "reach": {
     "titleLine1": "NUESTRO",
     "titleLine2": "ALCANCE",
-    "serving": "Atendemos 20 condados de California",
-    "description": "Hemos ampliado estratégicamente nuestra presencia para asegurar que ninguna familia adoptiva del norte y centro de California tenga que recorrer su camino sola.",
+    "serving": "Atendemos 10 condados de California",
+    "description": "Hemos ampliado estratégicamente nuestra presencia para asegurar que ninguna familia adoptiva de California tenga que recorrer su camino sola.",
     "cardTitleLine1": "Ampliando nuestro",
     "cardTitleLine2": "círculo de cuidado.",
     "cardDescription": "Nuestra misión es llegar a cada familia que lo necesite. Si vives fuera de estos condados, comunícate con nosotros. Evaluamos constantemente nuevas zonas para expandirnos y llevar sanación donde más se necesita.",
@@ -89,8 +89,8 @@
     "tagFamilyCoaching": "Acompañamiento familiar",
     "tagClinical": "Experiencia clínica",
     "statLabel": "Condados",
-    "mapTitle": "Mapa de los 20 condados de California que atiende LEAF Wraparound",
-    "mapDesc": "LEAF Wraparound atiende a familias en 20 condados del norte y centro de California. Cada condado atendido aparece coloreado y marcado con un pin.",
+    "mapTitle": "Mapa de los 10 condados de California que atiende Love Pathways Wraparound",
+    "mapDesc": "Love Pathways Wraparound atiende a familias en 10 condados de California. Cada condado atendido aparece coloreado y marcado con un pin.",
     "listHeading": "Condados que atendemos",
     "servedLabel": "Atendido"
   }

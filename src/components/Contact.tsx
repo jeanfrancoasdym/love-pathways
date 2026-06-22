@@ -44,8 +44,8 @@ export default function Contact() {
                 <div>
                   <h4 className="text-xl font-display font-bold text-brand-dark">{t("info.email.title")}</h4>
                   <p className="text-slate-500">
-                    <a href="mailto:contact@leafwraparound.com" className="hover:text-brand-primary transition-colors">
-                      contact@leafwraparound.com
+                    <a href="mailto:contact@lovepathways.org" className="hover:text-brand-primary transition-colors">
+                      contact@lovepathways.org
                     </a>
                   </p>
                 </div>

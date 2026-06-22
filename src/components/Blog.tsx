@@ -39,7 +39,7 @@ export async function blogLoader() {
         link: formattedLink,
         category: row[4]?.trim() || 'Uncategorized',
         image: row[5]?.trim() || brandPlaceholderImg,
-        author: "LEAF Wraparound",
+        author: "Love Pathways Wraparound",
         featured: index === 0,
       };
     }).filter((p) => p !== null);

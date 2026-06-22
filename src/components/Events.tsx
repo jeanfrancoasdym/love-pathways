@@ -97,7 +97,7 @@ export default function Events() {
 
   return (
     <div className="pb-0">
-      <Seo pageKey="events" path="/events" jsonLd={graph(organizationLd(), webSiteLd(lng), collectionPageLd(lng, { name: "Events & Webinars | LEAF Wraparound", description: "Upcoming webinars, workshops, and gatherings for adoptive families hosted by LEAF Wraparound.", path: "/events" }), breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Events & Webinars", path: "/events" }]))} />
+      <Seo pageKey="events" path="/events" jsonLd={graph(organizationLd(), webSiteLd(lng), collectionPageLd(lng, { name: "Events & Webinars | Love Pathways Wraparound", description: "Upcoming webinars, workshops, and gatherings for adoptive families hosted by Love Pathways Wraparound.", path: "/events" }), breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Events & Webinars", path: "/events" }]))} />
       {/* Hero Section */}
       <PageHero
         image="/page-hero/hero-community.webp"

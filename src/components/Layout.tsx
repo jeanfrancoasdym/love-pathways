@@ -13,8 +13,8 @@ import { graph, organizationLd, webSiteLd } from "../seo/structuredData";
 function Wordmark({ dark = false }: { dark?: boolean }) {
   return (
     <img
-      src={dark ? "/leaf-logo-white.svg" : "/leaf-logo.svg"}
-      alt="LEAF Wraparound, a program of Parents in Training Inc."
+      src={dark ? "/love-logo-white.svg" : "/love-logotype-dark.png"}
+      alt="Love Pathways Wraparound, a program of Revive Behavioral Healthcare"
       className="h-12 w-auto"
     />
   );
@@ -89,7 +89,7 @@ export default function Layout() {
       <header className="sticky top-0 z-50 w-full bg-brand-cream border-b border-brand-dark/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <Link to={to("/")} aria-label="LEAF Wraparound: Home">
+            <Link to={to("/")} aria-label="Love Pathways Wraparound: Home">
               <Wordmark />
             </Link>
 
@@ -210,7 +210,7 @@ export default function Layout() {
             <div className="md:col-span-5">
               <Wordmark dark />
               <p className="text-white/60 max-w-sm leading-relaxed mt-5 text-[15px]">
-                {" "}LEAF WRAPAROUND{" "}{t("footer.beforeOrg")}{" "}
+                {" "}Love Pathways Wraparound{" "}{t("footer.beforeOrg")}{" "}
                 <a
                   href={parentOrg.url}
                   target="_blank"
@@ -265,7 +265,7 @@ export default function Layout() {
 
           <div className="border-t border-white/10 mt-14 pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/40 text-sm">
             <span>
-              © {new Date().getFullYear()}{" "}LEAF Wraparound. {t("footer.rights")}
+              © {new Date().getFullYear()}{" "}Love Pathways. {t("footer.rights")}
             </span>
             <Link to={to("/privacy-policy")} className="hover:text-white/70 transition-colors">
               {t("footer.privacy")}

@@ -1,23 +1,9 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="34.60" height="34.60" viewBox="3.00 1.00 34.60 34.60"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,40.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M123 282 l-82 -47 -1 -57 c0 -31 4 -60 10 -63 6 -4 10 16 10 54 l0
-59 71 41 c40 23 75 40 78 39 3 -2 36 -20 74 -41 l67 -39 2 -61 1 -62 7 65 c3
-36 6 65 6 66 -1 0 -23 13 -51 29 -27 15 -64 36 -80 46 l-30 18 -82 -47z"/>
-<path d="M141 236 c-14 -25 -8 -116 7 -116 15 0 28 86 17 114 l-11 27 -13 -25z"/>
-<path d="M193 212 c-6 -10 -9 -32 -6 -48 4 -23 2 -26 -7 -14 -9 13 -11 12 -8
--5 2 -11 10 -21 18 -23 22 -4 42 53 30 84 -11 29 -12 29 -27 6z"/>
-<path d="M278 204 c-3 -38 -4 -84 0 -84 1 0 9 5 16 12 9 9 11 23 5 46 -9 40
--18 52 -21 26z"/>
-<path d="M100 161 c0 -17 5 -33 10 -36 6 -4 10 8 10 29 0 20 -4 36 -10 36 -5
-0 -10 -13 -10 -29z"/>
-<path d="M240 145 c0 -14 5 -25 10 -25 6 0 10 11 10 25 0 14 -4 25 -10 25 -5
-0 -10 -11 -10 -25z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Love Pathways">
+  <defs>
+    <linearGradient id="lp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7a4a5"/>
+      <stop offset="100%" stop-color="#ffe9b6"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#lp)" d="M32 12C27 3 10 5 10 19c0 11 12 22 22 33 10-11 22-22 22-33C54 5 37 3 32 12Z"/>
 </svg>

@@ -2,18 +2,18 @@
   "hero": {
     "titleLead": "Preguntas",
     "titleHighlight": "frecuentes",
-    "subtitle": "Obtén respuestas claras sobre LEAF Wraparound: qué es, quién califica, cuánto cuesta y cómo empezar.",
+    "subtitle": "Obtén respuestas claras sobre Love Pathways Wraparound: qué es, quién califica, cuánto cuesta y cómo empezar.",
     "bgAlt": "Fondo de preguntas frecuentes"
   },
   "list": {
     "heading": "Aclaraciones comunes y apoyo",
     "subheading": "Encuentra respuestas rápidas que te ayudarán a recorrer el camino de tu familia.",
-    "entityDefinition": "LEAF Wraparound es un programa de apoyo basado en el amor y sensible al trauma para familias que han adoptado en California, ofrecido como un programa de la organización sin fines de lucro 501(c)(3) Parents in Training Inc.",
-    "answerFirst": "LEAF Wraparound responde las preguntas más comunes de las familias adoptivas: qué es el programa, quién califica, cuánto cuesta y cómo empezar. LEAF brinda educación, acompañamiento familiar, grupos de padres y apoyo en el hogar en más de 20 condados del norte y centro de California. Las familias que adoptaron a través del sistema de crianza temporal y reciben beneficios del Programa de Asistencia para la Adopción (AAP) no tienen costo de bolsillo. No se necesita una referencia de un trabajador social para comenzar."
+    "entityDefinition": "Love Pathways Wraparound es un programa de apoyo basado en el amor y sensible al trauma para familias que han adoptado en California, ofrecido como un programa de Revive Behavioral Healthcare.",
+    "answerFirst": "Love Pathways Wraparound responde las preguntas más comunes de las familias adoptivas: qué es el programa, quién califica, cuánto cuesta y cómo empezar. Love Pathways brinda educación, acompañamiento familiar, grupos de padres y apoyo en el hogar en 10 condados de California. Las familias que adoptaron a través del sistema de crianza temporal y reciben beneficios del Programa de Asistencia para la Adopción (AAP) no tienen costo de bolsillo. No se necesita una referencia de un trabajador social para comenzar."
   },
   "items": {
     "what": {
-      "question": "¿Qué es el programa LEAF Wraparound?",
+      "question": "¿Qué es el programa Love Pathways Wraparound?",
       "answerBefore": "es un programa educativo y de apoyo basado en el amor, diseñado específicamente para familias adoptivas. Brindamos acompañamiento, capacitación y coordinación especializados para ayudar a las familias a enfrentar los desafíos y construir relaciones más fuertes y saludables."
     },
     "eligible": {
@@ -42,7 +42,7 @@
     },
     "counties": {
       "question": "¿En qué condados de California atienden?",
-      "answer": "Actualmente atendemos a familias en más de 20 condados del norte y centro de California, incluidos Del Norte, Trinity, Mendocino, Shasta, Tehama, Glenn, Butte, Sonoma, Napa, Solano, Yolo, Sutter, Yuba, Sacramento, Placer, El Dorado, San Joaquin, Calaveras, Stanislaus y Merced. Si tu condado no aparece en la lista, comunícate con nosotros. Nuestra cobertura se amplía constantemente."
+      "answer": "Actualmente atendemos a familias en 10 condados de California: Merced, Calaveras, Contra Costa, San Joaquin, Stanislaus, Alameda, Santa Clara, Madera, Fresno y Tulare. Si tu condado no aparece en la lista, comunícate con nosotros. Nuestra cobertura se amplía constantemente."
     },
     "duration": {
       "question": "¿Cuánto dura el programa?",

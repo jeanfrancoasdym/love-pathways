@@ -1,13 +1,13 @@
 // Canonical site data - single source of truth for contact info, socials,
 // GHL form integrations, image URLs, counties, and live data feeds.
-// Moved out of individual components (which had these hardcoded + duplicated).
-// Translatable copy does NOT live here - it lives in public/locales/{en,es}/*.json.
+// LOVE PATHWAYS edition (cloned from the LEAF template, re-skinned for LP).
+// Translatable copy does NOT live here - it lives in src/i18n/locales/{en,es}/*.json.
 
 export const contact = {
   phone: "(707) 460-6070",
   phoneHref: "tel:+17074606070",
-  email: "contact@leafwraparound.com",
-  emailHref: "mailto:contact@leafwraparound.com",
+  email: "contact@lovepathways.org",
+  emailHref: "mailto:contact@lovepathways.org",
   addressLine1: "2151 River Plaza Dr. 225",
   addressLine2: "Sacramento, CA 95833",
   addressFull: "2151 River Plaza Dr. 225, Sacramento, CA 95833",
@@ -15,41 +15,46 @@ export const contact = {
 };
 
 export const socials = {
-  facebook: "https://www.facebook.com/leafwraparound/",
-  instagram: "https://www.instagram.com/leafwraparound/",
+  facebook: "https://www.facebook.com/lovepathways/",
+  instagram: "https://www.instagram.com/lovepathwayswraparound/",
+  // Bryan Post is a shared presenter across LEAF + LP.
   bryanFacebook: "https://www.facebook.com/BryanPost32",
   bryanInstagram: "https://www.instagram.com/bryanpostofficial/",
 };
 
+// Love Pathways is a program of Revive Behavioral Healthcare (per the LP source).
+// TODO(confirm): exact Revive URL (revivebhc.org vs revibhc.org), EIN, founding
+// date, mailing address, and nonprofit/charity profiles. Left blank until confirmed
+// so we don't publish wrong legal/structured-data values.
 export const parentOrg = {
-  name: "Parents in Training Inc.",
-  url: "https://parentsintraining.org",
-  ein: "68-0340537",
-  foundingDate: "1994", // Incorporated in Delaware 09/09/1994
+  name: "Revive Behavioral Healthcare",
+  url: "https://revivebhc.org",
+  ein: "", // TODO confirm
+  foundingDate: "", // TODO confirm
   nonprofitStatus: "Nonprofit501c3",
-  mailingAddress: "PO BOX 6358, Eureka, CA 95502-6358",
-  // Verified nonprofit profiles (the entity stack) - these belong to PIT.
-  sameAs: [
-    "https://www.charitynavigator.org/ein/680340537",
-    "https://www.guidestar.org/profile/68-0340537",
-  ],
+  mailingAddress: "", // TODO confirm
+  sameAs: [], // TODO confirm Revive's verified nonprofit profiles
 };
 
-// Production origin - used for absolute canonical/hreflang/sitemap URLs (W8).
-// Adjust if the deployed domain differs.
-export const siteOrigin = "https://leafwraparound.com";
+// Production origin - used for absolute canonical/hreflang/sitemap URLs.
+export const siteOrigin = "https://lovepathways.org";
 
 // ---- GHL form integrations -------------------------------------------------
-// All forms live on go.leafwraparound.com EXCEPT donate (placeholder, api.leadconnectorhq.com).
+// GHL form integrations — IDs taken verbatim from the LP source code.
+// Webinars + contact are served from go.leafwraparound.com; the newsletter is
+// served from Revive's GHL domain go.revivebhc.org (as in the LP source).
 export const ghl = {
   embedScript: "https://go.leafwraparound.com/js/form_embed.js",
   formBase: "https://go.leafwraparound.com/widget/form",
-  contactFormId: "56qNv2dotSdrRoscMYP4",
+  contactFormId: "yXT3uwETc1ISIRP2WEbV", // "New Lead Application - English"
+  webinar1FormId: "JgsTFKb06Ot8qmHm2l2V", // When Trauma Walks Into the Classroom
+  webinar2FormIdEn: "4a3pOWBobMWA3YKzVUGX", // The Angry Child's Hidden Story (EN)
+  webinar2FormIdEs: "qRYfmYsXlINKEREZxEnt", // The Angry Child's Hidden Story (ES)
+  // Newsletter lives on Revive's GHL domain in the LP source.
+  newsletterEmbedScript: "https://go.revivebhc.org/js/form_embed.js",
+  newsletterFormBase: "https://go.revivebhc.org/widget/form",
   newsletterFormId: "8asB4SU6ZWg9kAVQASrY",
-  webinar1FormId: "KpYpqHrTdIwGu1IuX5BS",
-  webinar2FormIdEn: "PCVevdi3AxldwVCJxYvp",
-  webinar2FormIdEs: "18WsqETDZtWuRdwMNGwv",
-  careerFormId: "ynD7ZloTY5w1Yzq4CVFr", // "CV upload leaf website"
+  careerFormId: "TODO_LP_CAREER_FORM_ID", // LP source uses a plain (non-GHL) career form
   // Donate is still a placeholder until a real form id is provided.
   donateEmbedScript: "https://api.leadconnectorhq.com/js/form_embed.js",
   donateFormBase: "https://api.leadconnectorhq.com/widget/form",
@@ -57,18 +62,18 @@ export const ghl = {
 };
 
 // ---- Images ----------------------------------------------------------------
-// Real assets on the LEAF CDN (KEEP - must survive). picsum.photos placeholders
-// are NOT listed here; they get replaced with real/Unsplash images in W9.
+// People photos live on the shared CDN workspace. Scene/hero images are LEAF
+// leftovers and get replaced with warm LP-appropriate photos in F4.
 const CDN = "https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media";
 
 export const images = {
   // People (KEEP)
   bryanPortrait: `${CDN}/69d53dba3d829c73b2ab1fa4.webp`,
   jeanette: `${CDN}/6a0b6235dbe569a25de76ee0.png`,
+  alicia: `${CDN}/69a744b8618c8d5cb2996194.png`, // Dr. Alicia Williams (Exec. Director)
   marissa: `${CDN}/69f38abb45cd849493278cb9.jpg`,
   shing: `${CDN}/69f395694ad535b652ef5318.jpeg`,
-  mikalah: `${CDN}/69f3af3d0549a7387e2c4c4f.webp`,
-  // Backgrounds / scenes (KEEP)
+  // Backgrounds / scenes (TODO F4: swap for warm LP-appropriate images)
   teamHero: `${CDN}/69e94b1c5df4011c24000137.jpg`,
   careerTeam: `${CDN}/69d53fd9a7dcb4cff01a093e.webp`,
   careerAdmin: `${CDN}/69ef98138acd760bf8d06ff7.jpeg`,
@@ -77,26 +82,24 @@ export const images = {
   homeFinalCta: `${CDN}/69e947e89ff45b49cc9655da.webp`,
 };
 
-// Branded gradient placeholder (data URI) for CMS items (blog posts, events,
-// resources) whose sheet row has no image - replaces random picsum fallbacks.
+// Branded gradient placeholder (data URI) for CMS items with no image.
+// LP signature gradient: pink (#f7a4a5) -> light yellow (#ffe9b6).
 export const brandPlaceholderImg =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23657ef6'/%3E%3Cstop offset='1' stop-color='%23192847'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g)'/%3E%3Ccircle cx='640' cy='120' r='220' fill='%23ffffff' opacity='0.05'/%3E%3C/svg%3E";
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f7a4a5'/%3E%3Cstop offset='1' stop-color='%23ffe9b6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g)'/%3E%3Ccircle cx='640' cy='120' r='220' fill='%23ffffff' opacity='0.18'/%3E%3C/svg%3E";
 
 // ---- Service area ----------------------------------------------------------
+// Love Pathways' own county list (from the LP source).
 export const counties = [
-  "Del Norte", "Napa", "Trinity", "Sacramento", "Merced",
-  "Mendocino", "Shasta", "Glenn", "Tehama", "Sutter",
-  "Placer", "San Joaquin", "Solano", "Sonoma", "Butte",
-  "Yuba", "El Dorado", "Yolo", "Stanislaus", "Calaveras",
+  "Merced", "Calaveras", "Contra Costa", "San Joaquin", "Stanislaus",
+  "Alameda", "Santa Clara", "Madera", "Fresno", "Tulare",
 ];
 
 // ---- Organization entity (for JSON-LD structured data / SEO / AEO·GEO·LLMO) -
-// Some fields are placeholders the team must confirm - marked TODO.
 export const org = {
-  name: "LEAF Wraparound",
-  legalName: "LEAF WRAPAROUND LLC",
+  name: "Love Pathways Wraparound",
+  legalName: "Love Pathways Wraparound", // TODO confirm legal entity name
   url: siteOrigin,
-  logo: "", // TODO: real LEAF logo asset URL (also used for favicon)
+  logo: "", // TODO: official LP logo asset URL (also used for favicon)
   founder: "Bryan Post",
   serviceType: "Adoption wraparound services",
   knowsAbout: [
@@ -107,19 +110,19 @@ export const org = {
     "Attachment-based parenting",
     "Adoption Assistance Program (AAP)",
   ],
-  // LEAF's own profiles. The nonprofit identity (EIN, 501c3, Charity Navigator,
-  // see parentOrg).
-  // GuideStar, founding date) lives on the parent org, Parents in Training Inc.
+  // LP's own profiles. Nonprofit identity (EIN, 501c3) lives on the parent org,
+  // Revive Behavioral Healthcare (see parentOrg).
   sameAs: [socials.facebook, socials.instagram],
 };
 
 // ---- Live data feeds (Google Sheets published as CSV) ----------------------
-// Confirmed active by the client. Consumed via src/lib/csv.ts.
+// Love Pathways' own published Google Sheets (from the LP source). Resources
+// happens to use the same sheet as LEAF; events + blog are LP-specific.
 export const feeds = {
   events:
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRPjdgkSVVvQWF66t9OBGFJfE4K12FuuNSwpNm0Zbk6QHroHov80GgM8IRaUCENejplWvfWnjGWXihF/pub?gid=0&single=true&output=csv",
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSlOoUgNufpCa7a-XJ_4ZU-TxdCCoGLUO5pKhrXjzl8TyPuo4MIedSshddjnDlNiOVjko_K4KYMatdM/pub?gid=0&single=true&output=csv",
   blog:
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vT201GBlS67wK8HLDhc6VchvJfaorTnU1RbG7RZDu9gNlJbNZJ87bMsjHPgv2zyabnbPnER-muEMNR7/pub?gid=0&single=true&output=csv",
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQo4zgGZgLfGZf19eLuYNSJtdbjtdx2JLFmHZ8ENjLrY6AusgHfoyVedBZZx9igP4T-TjoqgCl1cYRC/pub?gid=0&single=true&output=csv",
   resources:
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vQlK6Dmjqhk5mQ1akDMSd6FZQozjWmqjqGuavp3LRs15Oj9w8_iIq80qm5kUPATMdduMF7hfVJLMrdp/pub?gid=0&single=true&output=csv",
 };

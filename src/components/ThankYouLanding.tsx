@@ -92,9 +92,9 @@ export default function ThankYouLanding({ ns, heroImage, startIso, endIso, zoomL
   const icsContent = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Leaf Wraparound//Webinar//EN",
+    "PRODID:-//Love Pathways Wraparound//Webinar//EN",
     "BEGIN:VEVENT",
-    `UID:${ns}-${startCal}@leafwraparound.com`,
+    `UID:${ns}-${startCal}@lovepathways.org`,
     `DTSTAMP:${startCal}`,
     `DTSTART:${startCal}`,
     `DTEND:${endCal}`,

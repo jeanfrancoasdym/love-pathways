@@ -33,7 +33,7 @@ export default function Donate() {
             <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-6 leading-tight">
               {t("main.heading")}
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">{" "}<span className="notranslate" translate="no">LEAF Wraparound</span>{" "}{t("main.intro")}
+            <p className="text-lg text-slate-600 leading-relaxed mb-6">{" "}<span className="notranslate" translate="no">Love Pathways Wraparound</span>{" "}{t("main.intro")}
             </p>
             <p className="text-lg text-slate-600 leading-relaxed mb-10">
               {t("main.body")}

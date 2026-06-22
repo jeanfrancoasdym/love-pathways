@@ -11,7 +11,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: t("items.what.question"),
-      answer: <><span className="notranslate" translate="no">LEAF Wraparound</span>{" "}{t("items.what.answerBefore")}</>,
+      answer: <><span className="notranslate" translate="no">Love Pathways Wraparound</span>{" "}{t("items.what.answerBefore")}</>,
     },
     {
       question: t("items.eligible.question"),
@@ -50,7 +50,7 @@ export default function FAQ() {
   // Plain-text mirror of the FAQ for the FAQPage JSON-LD (the visible answers
   // can contain JSX, which structured data can't use).
   const faqSchema = [
-    { question: t("items.what.question"), answer: `LEAF Wraparound ${t("items.what.answerBefore")}` },
+    { question: t("items.what.question"), answer: `Love Pathways Wraparound ${t("items.what.answerBefore")}` },
     { question: t("items.eligible.question"), answer: t("items.eligible.answer") },
     { question: t("items.loveBased.question"), answer: t("items.loveBased.answer") },
     { question: t("items.getStarted.question"), answer: t("items.getStarted.answer") },

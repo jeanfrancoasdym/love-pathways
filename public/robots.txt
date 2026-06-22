@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://leafwraparound.com/sitemap.xml
+Sitemap: https://lovepathways.org/sitemap.xml

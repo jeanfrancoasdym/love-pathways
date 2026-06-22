@@ -67,7 +67,7 @@ export default function Seo({ pageKey, path, image, type = "website", jsonLd, no
       <meta property="og:url" content={canonical} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:locale" content={lng === "es" ? "es_US" : "en_US"} />
-      <meta property="og:site_name" content="LEAF Wraparound" />
+      <meta property="og:site_name" content="Love Pathways Wraparound" />
       {nodes.map((node, i) => (
         <script key={i} type="application/ld+json">{JSON.stringify(node)}</script>
       ))}
