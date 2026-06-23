@@ -14,9 +14,9 @@ export default function Donate() {
     <div className="pb-0 bg-white">
       <Seo pageKey="donate" path="/donate" jsonLd={graph(organizationLd(), webSiteLd(lng), donateActionLd(), breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Donate", path: "/donate" }]))} />
       {/* Hero Section */}
-      <section className="bg-brand-dark py-10 md:py-14 px-4 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">{t("hero.title")}</h1>
-        <p className="text-xl text-brand-light max-w-3xl mx-auto leading-relaxed">
+      <section className="bg-brand-cream py-10 md:py-14 px-4 text-center">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-dark mb-6">{t("hero.title")}</h1>
+        <p className="text-xl text-brand-dark/70 max-w-3xl mx-auto leading-relaxed">
           {t("hero.subtitle")}
         </p>
       </section>

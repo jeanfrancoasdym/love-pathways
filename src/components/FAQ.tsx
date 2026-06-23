@@ -132,21 +132,21 @@ export default function FAQ() {
 
       {/* Still have questions? */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-        <div className="bg-brand-dark py-8 md:py-12 px-8 md:py-12 md:py-8 md:py-12 md:px-16 rounded-[3rem] text-center text-white">
+        <div className="bg-brand-cream py-8 md:py-12 px-8 md:py-12 md:py-8 md:py-12 md:px-16 rounded-[3rem] text-center text-brand-dark">
           <div className="w-20 h-20 bg-brand-primary/20 rounded-full flex items-center justify-center text-brand-primary mx-auto mb-10">
             <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
             </svg>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8">{t("cta.heading")}</h2>
-          <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-brand-dark/70 max-w-2xl mx-auto leading-relaxed">
             {t("cta.body")}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 mt-16 md:mt-24">
             <a href={to("/contact-us")} className="inline-flex bg-brand-primary text-white px-10 py-4 rounded-lg font-display font-bold text-xl hover:bg-brand-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 items-center justify-center">
               {t("cta.contact")}
             </a>
-            <a href="tel:7074606070" className="inline-flex bg-white/10 text-white px-10 py-4 rounded-lg font-display font-bold text-xl hover:bg-white/20 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 items-center justify-center border border-white/20">
+            <a href="tel:7074606070" className="inline-flex bg-white text-brand-dark px-10 py-4 rounded-lg font-display font-bold text-xl hover:bg-slate-50 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 items-center justify-center border border-brand-dark/10">
               {t("cta.call")}
             </a>
           </div>

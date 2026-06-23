@@ -206,36 +206,36 @@ export default function Program() {
 
             {/* Right Column: Circle of Care card + county name index below it */}
             <div className="space-y-12">
-              <div className="p-10 md:p-14 bg-brand-dark rounded-[3rem] text-white relative overflow-hidden group shadow-2xl">
+              <div className="p-10 md:p-14 bg-brand-cream rounded-[3rem] text-brand-dark relative overflow-hidden group shadow-2xl">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/20 rounded-full -mr-32 -mt-32 blur-3xl group-hover:bg-brand-primary/30 transition-colors" />
                 <div className="relative z-10 space-y-6">
                   <div className="space-y-6">
                     <h4 className="text-4xl md:text-5xl font-display font-bold leading-tight">
                       {t("reach.cardTitleLine1")} <br />
-                      <span className="text-brand-secondary">{t("reach.cardTitleLine2")}</span>
+                      <span className="text-brand-primary">{t("reach.cardTitleLine2")}</span>
                     </h4>
-                    <p className="text-slate-400 text-lg leading-relaxed">
+                    <p className="text-brand-dark/70 text-lg leading-relaxed">
                       {t("reach.cardDescription")}
                     </p>
                   </div>
-                  
+
                   <div className="space-y-10">
-                    <a href={to("/contact-us")} className="w-full bg-white text-brand-dark px-10 py-6 font-display font-bold text-xl hover:bg-slate-50 transition-all rounded-lg shadow-xl flex items-center justify-center gap-3 group/btn">
+                    <a href={to("/contact-us")} className="w-full bg-brand-primary text-white px-10 py-6 font-display font-bold text-xl hover:bg-brand-dark transition-all rounded-lg shadow-xl flex items-center justify-center gap-3 group/btn">
                       {t("reach.cta")}
                       <ArrowRight className="group-hover/btn:translate-x-2 transition-transform" />
                     </a>
 
                     <div className="flex flex-wrap gap-x-6 gap-y-4">
-                      <div className="flex items-center gap-2 text-xs text-white font-display font-bold uppercase tracking-widest">
-                        <div className="w-1.5 h-1.5 rounded-full bg-brand-secondary" />
+                      <div className="flex items-center gap-2 text-xs text-brand-dark font-display font-bold uppercase tracking-widest">
+                        <div className="w-1.5 h-1.5 rounded-full bg-brand-primary" />
                         {t("reach.tagInHome")}
                       </div>
-                      <div className="flex items-center gap-2 text-xs text-white font-display font-bold uppercase tracking-widest">
-                        <div className="w-1.5 h-1.5 rounded-full bg-brand-secondary" />
+                      <div className="flex items-center gap-2 text-xs text-brand-dark font-display font-bold uppercase tracking-widest">
+                        <div className="w-1.5 h-1.5 rounded-full bg-brand-primary" />
                         {t("reach.tagFamilyCoaching")}
                       </div>
-                      <div className="flex items-center gap-2 text-xs text-white font-display font-bold uppercase tracking-widest">
-                        <div className="w-1.5 h-1.5 rounded-full bg-brand-secondary" />
+                      <div className="flex items-center gap-2 text-xs text-brand-dark font-display font-bold uppercase tracking-widest">
+                        <div className="w-1.5 h-1.5 rounded-full bg-brand-primary" />
                         {t("reach.tagClinical")}
                       </div>
                     </div>

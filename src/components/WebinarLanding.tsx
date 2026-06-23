@@ -296,12 +296,12 @@ export default function WebinarLanding({
       </section>
 
       {/* ===================== 4 · REGISTER (guide on navy + wide 2-column form) ===================== */}
-      <section className="relative overflow-hidden bg-brand-dark py-16 md:py-20">
+      <section className="relative overflow-hidden bg-brand-cream py-16 md:py-20">
         <div aria-hidden className="pointer-events-none absolute -right-40 -top-40 h-[40rem] w-[40rem] rounded-full bg-brand-primary/15 blur-[120px]" />
         <div className="relative z-10 mx-auto grid max-w-[85rem] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-14 lg:px-8">
           {/* guide — large photo, no frame; lower body fades into the navy so it never touches the text */}
           <Reveal>
-            <div className="text-center text-white lg:text-left">
+            <div className="text-center text-brand-dark lg:text-left">
               <div className="relative mx-auto h-72 w-full max-w-sm lg:mx-0 lg:h-[22rem] lg:max-w-md">
                 <motion.img
                   initial={{ opacity: 0, scale: 1.05 }}
@@ -313,20 +313,20 @@ export default function WebinarLanding({
                   referrerPolicy="no-referrer"
                   className="absolute inset-0 h-full w-full object-contain object-bottom"
                 />
-                <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-brand-dark to-transparent" />
+                <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-brand-cream to-transparent" />
               </div>
               <div className="relative z-10 -mt-10">
-                <span className="font-display text-sm font-bold uppercase tracking-[0.22em] text-brand-secondary">{t("guide.eyebrow")}</span>
+                <span className="font-display text-sm font-bold uppercase tracking-[0.22em] text-brand-primary">{t("guide.eyebrow")}</span>
                 <h2 className="mt-2 font-display text-3xl font-bold leading-[1.05] md:text-4xl">{presenterName}</h2>
                 <p className="mt-2 font-display text-lg font-semibold text-brand-primary">{presenterRole}</p>
-                <p className="mt-3 leading-relaxed text-slate-300">{t("guide.bio")}</p>
+                <p className="mt-3 leading-relaxed text-brand-dark/70">{t("guide.bio")}</p>
                 <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
-                  <span className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2.5 text-sm font-semibold text-white ring-1 ring-white/15">
-                    <Calendar size={16} className="text-brand-secondary" />
+                  <span className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-brand-dark ring-1 ring-brand-dark/10">
+                    <Calendar size={16} className="text-brand-primary" />
                     {t("details.dateValue")}
                   </span>
-                  <span className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2.5 text-sm font-semibold text-white ring-1 ring-white/15">
-                    <Clock size={16} className="text-brand-secondary" />
+                  <span className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-brand-dark ring-1 ring-brand-dark/10">
+                    <Clock size={16} className="text-brand-primary" />
                     {t("details.timeValue")}
                   </span>
                 </div>
@@ -441,20 +441,20 @@ export default function WebinarLanding({
       </section>
 
       {/* ===================== 11 · FINAL CTA ===================== */}
-      <section className="relative overflow-hidden bg-brand-dark py-20 md:py-28">
+      <section className="relative overflow-hidden bg-brand-cream py-20 md:py-28">
         <div className="pointer-events-none absolute -right-20 -top-20 h-96 w-96 rounded-full bg-brand-primary/20 blur-[100px]" />
         <div className="pointer-events-none absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-brand-secondary/15 blur-[100px]" />
         <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
-            <p className="mx-auto max-w-2xl font-display text-2xl font-bold leading-snug text-white md:text-4xl">{t("ctaFinal.line")}</p>
+            <p className="mx-auto max-w-2xl font-display text-2xl font-bold leading-snug text-brand-dark md:text-4xl">{t("ctaFinal.line")}</p>
             <button
               onClick={scrollToForm}
-              className="group mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-brand-primary px-10 py-5 font-display text-lg font-bold text-white shadow-2xl transition-colors duration-300 hover:bg-brand-secondary hover:text-brand-dark"
+              className="group mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-brand-primary px-10 py-5 font-display text-lg font-bold text-white shadow-2xl transition-colors duration-300 hover:bg-brand-dark hover:text-white"
             >
               {t("ctaFinal.button")}
               <ArrowRight size={20} className="transition-transform group-hover:translate-x-1.5" />
             </button>
-            <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-slate-400">{t("privacy")}</p>
+            <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-brand-dark/70">{t("privacy")}</p>
           </Reveal>
         </div>
       </section>

@@ -450,7 +450,7 @@ export default function Home() {
 
       {/* CTA Section — two-column with a tilted, drifting photo */}
       <section className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 md:py-16 lg:px-8">
-        <div className="relative overflow-hidden rounded-[3rem] bg-brand-dark shadow-2xl">
+        <div className="relative overflow-hidden rounded-[3rem] bg-brand-cream shadow-2xl">
           {/* glowing orbs */}
           <div className="pointer-events-none absolute -right-40 -top-40 h-[40rem] w-[40rem] rounded-full bg-brand-primary/25 blur-[120px]" />
           <div className="pointer-events-none absolute -bottom-40 -left-40 h-[40rem] w-[40rem] rounded-full bg-brand-secondary/15 blur-[120px]" />
@@ -458,20 +458,20 @@ export default function Home() {
           <div className="relative z-10 grid items-center gap-8 lg:grid-cols-2 lg:gap-4">
             {/* text */}
             <div className="px-8 pt-12 pb-2 md:px-14 md:py-16 lg:pb-16">
-              <span className="mb-7 inline-flex items-center gap-2.5 rounded-full bg-white/10 px-5 py-2.5 text-[12px] font-bold uppercase tracking-[0.2em] text-white ring-1 ring-white/20 backdrop-blur-md">
-                <Heart size={15} className="text-brand-secondary" fill="currentColor" />
+              <span className="mb-7 inline-flex items-center gap-2.5 rounded-full bg-white px-5 py-2.5 text-[12px] font-bold uppercase tracking-[0.2em] text-brand-primary ring-1 ring-brand-dark/10 backdrop-blur-md border border-brand-dark/5">
+                <Heart size={15} className="text-brand-primary" fill="currentColor" />
                 {t("cta.badge")}
               </span>
-              <h2 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-6xl">
+              <h2 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-brand-dark md:text-6xl">
                 {t("cta.titleLine1")}{" "}
                 <span className="text-brand-primary">{t("cta.titleLine2")}</span>
               </h2>
-              <p className="mt-7 max-w-lg text-lg leading-relaxed text-slate-300 md:text-xl">
+              <p className="mt-7 max-w-lg text-lg leading-relaxed text-brand-dark/70 md:text-xl">
                 {t("cta.description")}
               </p>
               <Link
                 to={to("/contact-us")}
-                className="group mt-9 inline-flex items-center justify-center gap-3 rounded-full bg-white px-9 py-4 font-display text-lg font-bold text-brand-dark shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:bg-brand-secondary"
+                className="group mt-9 inline-flex items-center justify-center gap-3 rounded-full bg-brand-primary px-9 py-4 font-display text-lg font-bold text-white shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:bg-brand-dark"
               >
                 {t("cta.button")}
                 <ArrowRight size={20} className="transition-transform group-hover:translate-x-1.5" />
@@ -481,7 +481,7 @@ export default function Home() {
             {/* tilted drifting photo */}
             <div className="relative min-h-[260px] px-8 pb-12 md:py-16 lg:min-h-[460px] lg:px-0">
               <ParallaxFloat distance={40} className="relative z-10 mx-auto max-w-sm lg:absolute lg:right-12 lg:top-1/2 lg:max-w-md lg:-translate-y-1/2">
-                <div className="rotate-[3deg] overflow-hidden rounded-[2rem] shadow-2xl ring-4 ring-white/10">
+                <div className="rotate-[3deg] overflow-hidden rounded-[2rem] shadow-2xl ring-4 ring-white">
                   <img src="/page-hero/vision-belonging.webp" alt="" aria-hidden className="aspect-[4/3] w-full object-cover object-center" />
                 </div>
               </ParallaxFloat>

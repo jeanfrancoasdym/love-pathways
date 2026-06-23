@@ -91,7 +91,7 @@ export default function Career() {
       </section>
 
       {/* Clinical Roles */}
-      <section id="clinical-roles" className="py-10 md:py-12 bg-brand-dark relative overflow-hidden">
+      <section id="clinical-roles" className="py-10 md:py-12 bg-brand-cream relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute top-10 left-10 w-64 h-64 bg-brand-primary rounded-full blur-[100px]" />
@@ -100,21 +100,21 @@ export default function Career() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 space-y-4">
-            <div className="text-brand-secondary font-display font-bold uppercase tracking-widest text-sm">{t("clinical.eyebrow")}</div>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white">{t("clinical.heading")}</h2>
-            <p className="text-xl text-slate-300 font-sans max-w-2xl mx-auto">
+            <div className="text-brand-primary font-display font-bold uppercase tracking-widest text-sm">{t("clinical.eyebrow")}</div>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-dark">{t("clinical.heading")}</h2>
+            <p className="text-xl text-brand-dark/70 font-sans max-w-2xl mx-auto">
               {t("clinical.subtitle")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {clinicalRoles.map((role) => (
-              <div key={role.title} className="bg-white/5 backdrop-blur-sm p-10 rounded-[2.5rem] shadow-sm border border-white/10 space-y-6 hover:bg-white/10 transition-all group">
+              <div key={role.title} className="bg-white border border-brand-dark/5 backdrop-blur-sm p-10 rounded-[2.5rem] shadow-sm space-y-6 hover:bg-white transition-all group">
                 <div className="w-14 h-14 bg-brand-primary/20 rounded-2xl flex items-center justify-center text-brand-primary group-hover:scale-110 transition-transform">
                   <role.icon size={28} />
                 </div>
-                <h3 className="text-2xl font-display font-bold text-white">{role.title}</h3>
-                <p className="text-slate-300 leading-relaxed">
+                <h3 className="text-2xl font-display font-bold text-brand-dark">{role.title}</h3>
+                <p className="text-brand-dark/70 leading-relaxed">
                   {role.description}
                 </p>
               </div>

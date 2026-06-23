@@ -108,25 +108,25 @@ export default function Impact() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-brand-dark p-8 shadow-2xl md:p-12 lg:p-16">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-brand-cream p-8 shadow-2xl md:p-12 lg:p-16">
             {/* dotted texture (world-map feel) */}
             <div
               aria-hidden="true"
               className="absolute inset-0 opacity-[0.06]"
-              style={{ backgroundImage: "radial-gradient(#ffffff 1.2px, transparent 1.2px)", backgroundSize: "26px 26px" }}
+              style={{ backgroundImage: "radial-gradient(#232323 1.2px, transparent 1.2px)", backgroundSize: "26px 26px" }}
             />
-            <div className="relative grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-y-0 md:divide-x md:divide-white/10">
+            <div className="relative grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-y-0 md:divide-x md:divide-brand-dark/10">
               {stats.map((stat, idx) => (
                 <div key={idx} className="flex flex-col items-start px-2 md:px-8 lg:px-10">
                   <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-brand-primary text-white shadow-lg">
                     <stat.icon size={26} />
                   </div>
-                  <div className="font-display text-5xl font-bold leading-none text-white md:text-6xl">
+                  <div className="font-display text-5xl font-bold leading-none text-brand-dark md:text-6xl">
                     <CountUp value={stat.value} />
                   </div>
-                  <div className="my-5 h-px w-12 bg-white/20" />
-                  <h4 className="mb-2 font-display text-xl font-bold text-white">{stat.label}</h4>
-                  <p className="text-sm leading-relaxed text-slate-300">{stat.description}</p>
+                  <div className="my-5 h-px w-12 bg-brand-dark/20" />
+                  <h4 className="mb-2 font-display text-xl font-bold text-brand-dark">{stat.label}</h4>
+                  <p className="text-sm leading-relaxed text-brand-dark/70">{stat.description}</p>
                 </div>
               ))}
             </div>

@@ -245,20 +245,20 @@ export default function ThankYouLanding({ ns, heroImage, startIso, endIso, zoomL
       </section>
 
       {/* ===================== SOCIAL ===================== */}
-      <section className="relative overflow-hidden bg-brand-dark py-16 md:py-24">
+      <section className="relative overflow-hidden bg-brand-cream py-16 md:py-24">
         <div className="pointer-events-none absolute -right-20 -top-20 h-96 w-96 rounded-full bg-brand-primary/20 blur-[100px]" />
         <div className="pointer-events-none absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-brand-secondary/15 blur-[100px]" />
         <div className="relative z-10 mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <h2 className="font-display text-3xl font-bold text-brand-secondary md:text-4xl">{t("social.heading")}</h2>
-            <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-slate-200">{t("social.description")}</p>
+            <h2 className="font-display text-3xl font-bold text-brand-dark md:text-4xl">{t("social.heading")}</h2>
+            <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-brand-dark/70">{t("social.description")}</p>
             <div className="mt-9 flex items-center justify-center gap-5">
               <a
                 href="https://www.facebook.com/lovepathways"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t("social.facebookLabel")}
-                className="flex h-16 w-16 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition-all duration-300 hover:-translate-y-1 hover:bg-brand-primary"
+                className="flex h-16 w-16 items-center justify-center rounded-full bg-white border border-brand-dark/5 text-brand-primary ring-1 ring-brand-dark/10 transition-all duration-300 hover:-translate-y-1 hover:bg-brand-primary hover:text-white"
               >
                 <Facebook size={28} strokeWidth={1.5} />
               </a>
@@ -267,7 +267,7 @@ export default function ThankYouLanding({ ns, heroImage, startIso, endIso, zoomL
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t("social.instagramLabel")}
-                className="flex h-16 w-16 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition-all duration-300 hover:-translate-y-1 hover:bg-brand-primary"
+                className="flex h-16 w-16 items-center justify-center rounded-full bg-white border border-brand-dark/5 text-brand-primary ring-1 ring-brand-dark/10 transition-all duration-300 hover:-translate-y-1 hover:bg-brand-primary hover:text-white"
               >
                 <Instagram size={28} strokeWidth={1.5} />
               </a>
