@@ -47,7 +47,7 @@ export default function Career() {
       <section className="relative py-12 md:py-10 md:py-14 overflow-hidden bg-white">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-brand-primary/5 to-transparent pointer-events-none" />
         {/* Subtle pattern */}
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#002f6c 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#232323 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
         <div className="absolute top-1/4 -left-10 text-brand-primary/5 pointer-events-none z-0">
           <Users size={600} strokeWidth={0.1} />
         </div>
@@ -127,7 +127,7 @@ export default function Career() {
       <section className="py-10 md:py-12 bg-brand-secondary/5 relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-secondary/10 rounded-full blur-[100px] pointer-events-none" />
-        <div className="absolute top-0 right-0 w-full h-full opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'linear-gradient(45deg, #add400 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        <div className="absolute top-0 right-0 w-full h-full opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'linear-gradient(45deg, #f8a866 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

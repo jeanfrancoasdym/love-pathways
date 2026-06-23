@@ -103,11 +103,11 @@ function HeroCarousel() {
               <div className="max-w-4xl space-y-6 pt-24 pb-16 md:py-10">
                 <p className="font-sans text-lg font-bold uppercase tracking-[0.22em] text-slate-600 md:text-xl">{slide.eyebrow}</p>
                 {slide.brand ? (
-                  <h1 className="font-display text-5xl font-bold leading-[1.02] tracking-tight text-[#002f6c] sm:text-6xl md:text-7xl lg:text-8xl">
+                  <h1 className="font-display text-5xl font-bold leading-[1.02] tracking-tight text-[#232323] sm:text-6xl md:text-7xl lg:text-8xl">
                     <span className="notranslate" translate="no">LOVE PATHWAYS WRAPAROUND</span>
                   </h1>
                 ) : (
-                  <h2 className="font-display text-4xl font-bold leading-[1.06] tracking-tight text-[#002f6c] md:text-5xl lg:text-6xl">{slide.title}</h2>
+                  <h2 className="font-display text-4xl font-bold leading-[1.06] tracking-tight text-[#232323] md:text-5xl lg:text-6xl">{slide.title}</h2>
                 )}
                 <p className="max-w-2xl font-sans text-xl leading-relaxed text-slate-700 md:text-2xl">{slide.description}</p>
                 <div className="flex flex-col gap-4 pt-4 sm:flex-row sm:flex-wrap">
@@ -117,7 +117,7 @@ function HeroCarousel() {
                       href={cta.href}
                       className={
                         cta.primary
-                          ? "w-full rounded-lg border-2 border-[#8DC63F] bg-[#8DC63F] px-10 py-5 text-center text-lg font-bold uppercase tracking-wide text-white shadow-lg transition-colors hover:border-brand-dark hover:bg-brand-dark sm:w-auto sm:min-w-[15rem]"
+                          ? "w-full rounded-lg border-2 border-brand-secondary bg-brand-secondary px-10 py-5 text-center text-lg font-bold uppercase tracking-wide text-brand-dark shadow-lg transition-colors hover:border-brand-dark hover:bg-brand-dark hover:text-white sm:w-auto sm:min-w-[15rem]"
                           : "w-full rounded-lg border-2 border-brand-dark bg-transparent px-10 py-5 text-center text-lg font-bold uppercase tracking-wide text-brand-dark shadow-lg transition-colors hover:bg-brand-dark hover:text-white sm:w-auto sm:min-w-[15rem]"
                       }
                     >
@@ -138,7 +138,7 @@ function HeroCarousel() {
               key={idx}
               onClick={() => setCurrentSlide(idx)}
               className={`w-8 md:w-10 h-2 rounded-none transition-all cursor-pointer ghl-carousel-dot ${
-                currentSlide === idx ? "bg-[#8DC63F] scale-110" : "bg-white/50 scale-100"
+                currentSlide === idx ? "bg-brand-primary scale-110" : "bg-white/50 scale-100"
               }`}
               aria-label={t("hero.goToSlide", { number: idx + 1 })}
             />
@@ -170,7 +170,7 @@ export default function Home() {
       {/* Crisis Help Section */}
       <section className="relative max-w-full overflow-hidden py-16 md:py-24 bg-brand-cream">
         {/* Decorative Watermark & Pattern */}
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(#002f6c 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(#232323 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
         <div className="absolute top-1/2 right-[-5%] -translate-y-1/2 text-brand-primary/5 pointer-events-none z-0">
           <HeartPulse size={600} strokeWidth={0.2} />
         </div>
@@ -180,7 +180,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             {/* Left Column: heading + intro + supportive quote */}
             <div className="flex flex-col items-start">
-              <span className="text-[#8DC63F] font-display font-bold uppercase tracking-widest text-sm mb-4 bg-white shadow-sm px-4 py-2 rounded border border-slate-100">
+              <span className="text-[#232323] font-display font-bold uppercase tracking-widest text-sm mb-4 bg-white shadow-sm px-4 py-2 rounded border border-slate-100">
                 {t("crisis.eyebrow")}
               </span>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-dark leading-tight">
@@ -400,7 +400,7 @@ export default function Home() {
       {/* Services & Goals */}
       <section className="relative overflow-hidden py-10 md:py-12 bg-white">
         {/* Decorative Watermark & Pattern */}
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle, #002f6c 1px, transparent 1px), radial-gradient(circle, #002f6c 1px, transparent 1px)', backgroundSize: '40px 40px', backgroundPosition: '0 0, 20px 20px' }}></div>
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle, #232323 1px, transparent 1px), radial-gradient(circle, #232323 1px, transparent 1px)', backgroundSize: '40px 40px', backgroundPosition: '0 0, 20px 20px' }}></div>
         <div className="absolute top-0 right-[-10%] text-brand-primary/5 pointer-events-none z-0">
           <Sprout size={700} strokeWidth={0.2} />
         </div>

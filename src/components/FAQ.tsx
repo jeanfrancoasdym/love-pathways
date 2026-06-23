@@ -82,7 +82,7 @@ export default function FAQ() {
 
       {/* FAQ List */}
       <section className="relative max-w-full overflow-hidden bg-slate-50 pt-10 pb-16 md:pt-14 md:pb-20">
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#002f6c 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#232323 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
         <div className="absolute top-20 -left-10 text-brand-secondary/10 pointer-events-none z-0">
           <HelpCircle size={600} strokeWidth={0.2} />
         </div>

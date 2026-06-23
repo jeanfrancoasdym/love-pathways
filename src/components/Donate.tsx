@@ -39,7 +39,7 @@ export default function Donate() {
               {t("main.body")}
             </p>
 
-            <div className="bg-slate-50 border-l-4 border-[#8DC63F] p-6 rounded-r-xl">
+            <div className="bg-slate-50 border-l-4 border-[#f8a866] p-6 rounded-r-xl">
               <p className="text-slate-800 font-bold italic leading-relaxed">
                 {t("main.quote")}
               </p>

@@ -29,7 +29,7 @@ export default function About() {
 
       {/* Mission & Vision */}
       <section className="relative overflow-hidden bg-white py-16 md:py-20">
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#002f6c 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#232323 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-14 max-w-3xl text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-brand-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">
@@ -93,7 +93,7 @@ export default function About() {
 
       {/* Our Identity / Story - Redesigned for digestibility */}
       <section className="relative max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12 overflow-hidden bg-slate-50">
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #002f6c 0, #002f6c 1px, transparent 1px, transparent 24px)' }}></div>
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #232323 0, #232323 1px, transparent 1px, transparent 24px)' }}></div>
         <div className="absolute bottom-0 left-[-10%] text-brand-secondary/10 pointer-events-none z-0 rotate-45">
           <Shield size={700} strokeWidth={0.2} />
         </div>

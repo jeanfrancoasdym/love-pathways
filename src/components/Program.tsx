@@ -56,7 +56,7 @@ export default function Program() {
 
       {/* Our Approach */}
       <section id="our-approach" className="relative bg-slate-50 py-10 md:py-14 overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #002f6c 1.5px, transparent 1.5px)', backgroundSize: '40px 40px' }}></div>
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #232323 1.5px, transparent 1.5px)', backgroundSize: '40px 40px' }}></div>
         <div className="absolute top-1/2 right-[-5%] -translate-y-1/2 text-brand-primary/5 pointer-events-none z-0">
           <HeartPulse size={600} strokeWidth={0.2} />
         </div>
@@ -133,7 +133,7 @@ export default function Program() {
 
       {/* Stage 1: Getting Started (Logistics) */}
       <section id="getting-started" className="relative bg-white py-10 md:py-14 overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #002f6c 0, #002f6c 1px, transparent 1px, transparent 24px)' }}></div>
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #232323 0, #232323 1px, transparent 1px, transparent 24px)' }}></div>
         <div className="absolute bottom-[-10%] left-[-5%] text-brand-secondary/10 pointer-events-none z-0">
           <ClipboardCheck size={700} strokeWidth={0.2} />
         </div>

@@ -142,7 +142,7 @@ export default function Blog() {
 
         {/* Blog Content */}
         <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24 z-10 overflow-hidden">
-          <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03] scale-150" style={{ backgroundImage: 'radial-gradient(circle, #002f6c 1.5px, transparent 1.5px)', backgroundSize: '40px 40px' }}></div>
+          <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03] scale-150" style={{ backgroundImage: 'radial-gradient(circle, #232323 1.5px, transparent 1.5px)', backgroundSize: '40px 40px' }}></div>
           
           {loading ? (
             <div className="flex flex-col items-center justify-center py-20 relative z-10">
@@ -290,7 +290,7 @@ export default function Blog() {
         </div>
         <div className="flex items-center justify-center gap-6">
           <a 
-            href="https://www.facebook.com/leafwraparound" 
+            href="https://www.facebook.com/lovepathways"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-full bg-white hover:bg-brand-primary text-brand-primary hover:text-white flex items-center justify-center transition-all duration-300 hover:-translate-y-1 shadow-sm border border-slate-200 hover:border-transparent hover:shadow-md"
@@ -299,7 +299,7 @@ export default function Blog() {
             <Facebook size={22} strokeWidth={2} />
           </a>
           <a 
-            href="https://www.instagram.com/leafwraparound/" 
+            href="https://www.instagram.com/lovepathwayswraparound/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-full bg-white hover:bg-brand-primary text-brand-primary hover:text-white flex items-center justify-center transition-all duration-300 hover:-translate-y-1 shadow-sm border border-slate-200 hover:border-transparent hover:shadow-md"

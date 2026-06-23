@@ -448,7 +448,7 @@ export default function ResourceHub() {
             <h3 className="text-lg font-display font-bold text-brand-dark mb-5">{t("social.title")}</h3>
             <div className="flex items-center gap-4">
               <a 
-                href="https://www.facebook.com/leafwraparound" 
+                href="https://www.facebook.com/lovepathways"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group flex items-center justify-center w-12 h-12 bg-slate-50 text-slate-400 hover:text-[#1877F2] hover:bg-slate-100 rounded-full transition-all duration-300 shadow-sm hover:shadow"
@@ -456,7 +456,7 @@ export default function ResourceHub() {
                 <Facebook size={22} className="transition-transform group-hover:scale-110" />
               </a>
               <a 
-                href="https://www.instagram.com/leafwraparound/" 
+                href="https://www.instagram.com/lovepathwayswraparound/"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group flex items-center justify-center w-12 h-12 bg-slate-50 text-slate-400 hover:text-[#E4405F] hover:bg-slate-100 rounded-full transition-all duration-300 shadow-sm hover:shadow"

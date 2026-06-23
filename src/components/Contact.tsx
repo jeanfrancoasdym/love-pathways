@@ -22,7 +22,7 @@ export default function Contact() {
 
       {/* Contact Form & Info */}
       <section className="relative w-full py-12 md:py-20 overflow-hidden bg-white min-h-[850px]">
-        <div className="absolute inset-0 z-[1] pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #002f6c 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
+        <div className="absolute inset-0 z-[1] pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #232323 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
         <div className="absolute bottom-[-10%] right-[-5%] text-brand-primary/5 pointer-events-none z-[1] rotate-12">
           <Heart size={600} strokeWidth={0.2} />
         </div>
@@ -81,7 +81,7 @@ export default function Contact() {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="https://www.instagram.com/leafwraparound/"
+                  href="https://www.instagram.com/lovepathwayswraparound/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-brand-primary font-bold hover:underline"
@@ -89,7 +89,7 @@ export default function Contact() {
                   {t("social.instagram")}
                 </a>
                 <a
-                  href="https://www.facebook.com/leafwraparound/"
+                  href="https://www.facebook.com/lovepathways/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-brand-primary font-bold hover:underline"

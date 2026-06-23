@@ -254,7 +254,7 @@ export default function ThankYouLanding({ ns, heroImage, startIso, endIso, zoomL
             <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-slate-200">{t("social.description")}</p>
             <div className="mt-9 flex items-center justify-center gap-5">
               <a
-                href="https://www.facebook.com/leafwraparound"
+                href="https://www.facebook.com/lovepathways"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t("social.facebookLabel")}
@@ -263,7 +263,7 @@ export default function ThankYouLanding({ ns, heroImage, startIso, endIso, zoomL
                 <Facebook size={28} strokeWidth={1.5} />
               </a>
               <a
-                href="https://www.instagram.com/leafwraparound/"
+                href="https://www.instagram.com/lovepathwayswraparound/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t("social.instagramLabel")}

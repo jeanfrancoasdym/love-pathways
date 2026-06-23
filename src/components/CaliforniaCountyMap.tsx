@@ -76,13 +76,13 @@ export default function CaliforniaCountyMap({ active, onActive }: SharedProps) {
                 key={c.fips}
                 variants={countyVar}
                 d={c.d}
-                fill={isActive ? "#192847" : "#657ef6"}
+                fill={isActive ? "#232323" : "#f7a4a5"}
                 stroke="#ffffff"
                 strokeWidth={1}
                 tabIndex={0}
                 role="button"
                 aria-label={`${c.name} — ${t("reach.servedLabel")}`}
-                className="cursor-pointer outline-none transition-colors duration-200 motion-reduce:transition-none [&:focus-visible]:stroke-[#add400] [&:focus-visible]:[stroke-width:2]"
+                className="cursor-pointer outline-none transition-colors duration-200 motion-reduce:transition-none [&:focus-visible]:stroke-[#f8a866] [&:focus-visible]:[stroke-width:2]"
                 onMouseEnter={() => onActive(c.fips)}
                 onMouseLeave={() => onActive((a) => (a === c.fips ? null : a))}
                 onFocus={() => onActive(c.fips)}
@@ -99,10 +99,10 @@ export default function CaliforniaCountyMap({ active, onActive }: SharedProps) {
             return (
               <motion.g key={c.fips} variants={pinVar}>
                 <g transform={`translate(${c.cx} ${c.cy})`}>
-                  {isActive && <circle cx={0} cy={-9.5} r={11} fill="#add400" opacity={0.35} />}
+                  {isActive && <circle cx={0} cy={-9.5} r={11} fill="#ffc774" opacity={0.35} />}
                   <path
                     d={PIN_PATH}
-                    fill={isActive ? "#add400" : "#192847"}
+                    fill={isActive ? "#ffc774" : "#232323"}
                     stroke="#ffffff"
                     strokeWidth={1}
                     className="transition-colors duration-200 motion-reduce:transition-none"
@@ -123,7 +123,7 @@ export default function CaliforniaCountyMap({ active, onActive }: SharedProps) {
               width={label.w}
               height={24}
               rx={6}
-              fill="#192847"
+              fill="#232323"
             />
             <text
               x={label.x}

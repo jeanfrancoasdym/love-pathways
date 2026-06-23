@@ -203,59 +203,59 @@ export default function Layout() {
 
       <main id="main-content" className="flex-grow"><Outlet /></main>
 
-      {/* Footer */}
-      <footer className="bg-brand-dark text-white">
+      {/* Footer — warm/cream (Love Pathways brandbook avoids dark backgrounds) */}
+      <footer className="bg-brand-cream text-brand-dark border-t border-brand-dark/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
             <div className="md:col-span-5">
-              <Wordmark dark />
-              <p className="text-white/60 max-w-sm leading-relaxed mt-5 text-[15px]">
+              <Wordmark />
+              <p className="text-brand-dark/70 max-w-sm leading-relaxed mt-5 text-[15px]">
                 {" "}Love Pathways Wraparound{" "}{t("footer.beforeOrg")}{" "}
                 <a
                   href={parentOrg.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline decoration-brand-primary/60 underline-offset-4 hover:text-white transition-colors"
+                  className="font-semibold underline decoration-brand-primary/60 underline-offset-4 hover:text-brand-dark transition-colors"
                 >
                   {t("wordmark.org")}
                 </a>{" "}
                 {t("footer.afterOrg")}
               </p>
-              <div className="inline-flex items-center gap-2 mt-6 bg-white/5 border border-white/10 rounded-full px-4 py-2">
-                <Heart size={14} className="text-brand-secondary" fill="currentColor" />
-                <span className="text-sm font-bold tracking-wide text-brand-light">#ChooseLove</span>
+              <div className="inline-flex items-center gap-2 mt-6 bg-brand-primary/10 border border-brand-primary/20 rounded-full px-4 py-2">
+                <Heart size={14} className="text-brand-primary" fill="currentColor" />
+                <span className="text-sm font-bold tracking-wide text-brand-dark">#ChooseLove</span>
               </div>
             </div>
 
             <div className="md:col-span-3">
-              <h2 className="font-display font-bold mb-5 text-sm uppercase tracking-[0.16em] text-white/50">{t("footer.explore")}</h2>
-              <ul className="space-y-3 text-white/70 text-[15px] font-medium">
-                <li><Link to={to("/about-us")} className="hover:text-brand-light transition-colors">{t("nav.whoWeAre")}</Link></li>
-                <li><Link to={to("/our-program")} className="hover:text-brand-light transition-colors">{t("nav.ourProgram")}</Link></li>
-                <li><Link to={to("/impact")} className="hover:text-brand-light transition-colors">{t("nav.ourImpact")}</Link></li>
-                <li><Link to={to("/events")} className="hover:text-brand-light transition-colors">{t("nav.events")}</Link></li>
-                <li><Link to={to("/blog")} className="hover:text-brand-light transition-colors">{t("nav.blog")}</Link></li>
-                <li><Link to={to("/career")} className="hover:text-brand-light transition-colors">{t("nav.careers")}</Link></li>
+              <h2 className="font-display font-bold mb-5 text-sm uppercase tracking-[0.16em] text-brand-dark/50">{t("footer.explore")}</h2>
+              <ul className="space-y-3 text-brand-dark/70 text-[15px] font-medium">
+                <li><Link to={to("/about-us")} className="hover:text-brand-primary transition-colors">{t("nav.whoWeAre")}</Link></li>
+                <li><Link to={to("/our-program")} className="hover:text-brand-primary transition-colors">{t("nav.ourProgram")}</Link></li>
+                <li><Link to={to("/impact")} className="hover:text-brand-primary transition-colors">{t("nav.ourImpact")}</Link></li>
+                <li><Link to={to("/events")} className="hover:text-brand-primary transition-colors">{t("nav.events")}</Link></li>
+                <li><Link to={to("/blog")} className="hover:text-brand-primary transition-colors">{t("nav.blog")}</Link></li>
+                <li><Link to={to("/career")} className="hover:text-brand-primary transition-colors">{t("nav.careers")}</Link></li>
               </ul>
             </div>
 
             <div className="md:col-span-4">
-              <h2 className="font-display font-bold mb-5 text-sm uppercase tracking-[0.16em] text-white/50">{t("footer.contact")}</h2>
-              <ul className="space-y-4 text-white/70 text-[15px]">
+              <h2 className="font-display font-bold mb-5 text-sm uppercase tracking-[0.16em] text-brand-dark/50">{t("footer.contact")}</h2>
+              <ul className="space-y-4 text-brand-dark/70 text-[15px]">
                 <li className="flex items-start gap-3">
-                  <MapPin size={18} className="text-brand-light shrink-0 mt-0.5" />
+                  <MapPin size={18} className="text-brand-primary shrink-0 mt-0.5" />
                   <span>{contact.addressFull}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Mail size={18} className="text-brand-light shrink-0 mt-0.5" />
-                  <a href={contact.emailHref} className="hover:text-brand-light transition-colors">
+                  <Mail size={18} className="text-brand-primary shrink-0 mt-0.5" />
+                  <a href={contact.emailHref} className="hover:text-brand-primary transition-colors">
                     {contact.email}
                   </a>
                 </li>
               </ul>
               <Link
                 to={to("/contact-us")}
-                className="inline-flex items-center gap-2 mt-7 text-brand-secondary font-bold group"
+                className="inline-flex items-center gap-2 mt-7 text-brand-dark font-bold group hover:text-brand-primary transition-colors"
               >
                 {t("footer.getSupport")}
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -263,11 +263,11 @@ export default function Layout() {
             </div>
           </div>
 
-          <div className="border-t border-white/10 mt-14 pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/40 text-sm">
+          <div className="border-t border-brand-dark/10 mt-14 pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-brand-dark/50 text-sm">
             <span>
               © {new Date().getFullYear()}{" "}Love Pathways. {t("footer.rights")}
             </span>
-            <Link to={to("/privacy-policy")} className="hover:text-white/70 transition-colors">
+            <Link to={to("/privacy-policy")} className="hover:text-brand-dark transition-colors">
               {t("footer.privacy")}
             </Link>
           </div>

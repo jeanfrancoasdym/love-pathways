@@ -79,12 +79,14 @@ export async function eventsLoader() {
 function internalEventRoute(link?: string): string | null {
   if (!link) return null;
   let path = String(link).trim();
-  const m = path.match(/^https?:\/\/(?:www\.)?leafwraparound\.com(\/[^\s]*)?$/i);
+  const m = path.match(/^https?:\/\/(?:www\.)?(?:lovepathways\.org|leafwraparound\.com)(\/[^\s]*)?$/i);
   if (m) path = m[1] || "/";
   if (!path.startsWith("/")) return null;
-  return path
-    .replace(/^\/webinar-event1\b.*$/i, "/webinar-event1")
-    .replace(/^\/webinar-event2\b.*$/i, "/webinar-event2");
+  // Only bridge URLs that have a real SPA landing; everything else (e.g. dated
+  // GHL registration pages) returns null and opens externally.
+  if (/^\/(webinars-2|webinar-event2)\b/i.test(path)) return "/webinar-event2";
+  if (/^\/(webinars|webinar-event1)\b/i.test(path)) return "/webinar-event1";
+  return null;
 }
 
 export default function Events() {
@@ -107,7 +109,7 @@ export default function Events() {
 
       {/* Events Grid */}
       <section className="relative max-w-full mx-auto py-10 md:py-14 bg-white overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #002f6c 0, #002f6c 1px, transparent 1px, transparent 24px)' }}></div>
+        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #232323 0, #232323 1px, transparent 1px, transparent 24px)' }}></div>
         <div className="absolute top-1/4 -right-10 text-brand-primary/5 pointer-events-none z-0">
           <Calendar size={600} strokeWidth={0.2} />
         </div>
