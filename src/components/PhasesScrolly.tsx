@@ -167,7 +167,7 @@ function PhasesCTA({ t, to }: { t: T; to: (p: string) => string }) {
   return (
     <Link
       to={to("/contact-us")}
-      className="group relative inline-flex items-center justify-center gap-4 overflow-hidden rounded-full bg-gradient-to-br from-brand-primary to-[#4f6ae8] px-12 py-6 font-display text-2xl font-bold text-white shadow-[0_20px_50px_-12px_rgba(101,126,246,0.75)] ring-1 ring-white/15 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_64px_-10px_rgba(101,126,246,0.95)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-primary/50 md:px-16 md:py-8 md:text-3xl"
+      className="group relative inline-flex items-center justify-center gap-4 overflow-hidden rounded-full bg-gradient-to-br from-brand-secondary to-brand-accent px-12 py-6 font-display text-2xl font-bold text-brand-dark shadow-[0_20px_50px_-12px_rgba(248,168,102,0.7)] ring-1 ring-brand-dark/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_64px_-10px_rgba(248,168,102,0.9)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-secondary/50 md:px-16 md:py-8 md:text-3xl"
     >
       {/* light-sweep shine that crosses the button on hover */}
       <span
