@@ -55,7 +55,7 @@ function PhasesHeading({ t }: { t: T }) {
         <span className="h-1.5 w-1.5 rounded-full bg-brand-secondary" />
         {t("phases.badge")}
       </span>
-      <h2 className="font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-5xl lg:whitespace-nowrap lg:text-[clamp(2.75rem,4.6vw,4.5rem)]">
+      <h2 className="font-display text-3xl font-bold leading-[1.05] tracking-tight md:text-4xl lg:whitespace-nowrap lg:text-[clamp(2rem,3.2vw,3rem)]">
         {t("phases.titleLead")}
         <span className="italic text-brand-secondary">{t("phases.titleAccent")}</span>
       </h2>
@@ -87,12 +87,12 @@ function PhaseColumnContent({ phase, t, reveal, align = "justify-center pt-[26vh
       className={`absolute inset-0 flex flex-col gap-5 px-7 pb-10 transition-transform duration-300 group-hover:-translate-y-1.5 lg:px-9 ${align}`}
       style={{ textShadow: "0 2px 18px rgba(0,0,0,0.6)" }}
     >
-      <motion.p style={tagA} className="font-display text-5xl font-black leading-none text-brand-secondary lg:text-6xl">
+      <motion.p style={tagA} className="font-display text-4xl font-black leading-none text-brand-secondary lg:text-5xl">
         {phase.num}
       </motion.p>
 
       <motion.div style={titleA}>
-        <h3 className="font-display text-4xl font-bold leading-[1.05] text-white [overflow-wrap:anywhere] lg:text-[clamp(1.75rem,2.4vw,3rem)]">
+        <h3 className="font-display text-2xl font-bold leading-[1.05] text-white [overflow-wrap:anywhere] md:text-3xl lg:text-[clamp(1.5rem,1.9vw,2.1rem)]">
           {t(`phases.items.${phase.key}.title`)}
         </h3>
         <motion.span
@@ -101,7 +101,7 @@ function PhaseColumnContent({ phase, t, reveal, align = "justify-center pt-[26vh
         />
       </motion.div>
 
-      <motion.p style={descA} className="max-w-sm text-lg leading-relaxed text-white/90 lg:text-xl">
+      <motion.p style={descA} className="max-w-sm text-base leading-relaxed text-white/90 lg:text-lg">
         {t(`phases.items.${phase.key}.desc`)}
       </motion.p>
     </div>
@@ -167,7 +167,7 @@ function PhasesCTA({ t, to }: { t: T; to: (p: string) => string }) {
   return (
     <Link
       to={to("/contact-us")}
-      className="group relative inline-flex items-center justify-center gap-4 overflow-hidden rounded-full bg-gradient-to-br from-brand-secondary to-brand-accent px-12 py-6 font-display text-2xl font-bold text-brand-dark shadow-[0_20px_50px_-12px_rgba(248,168,102,0.7)] ring-1 ring-brand-dark/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_64px_-10px_rgba(248,168,102,0.9)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-secondary/50 md:px-16 md:py-8 md:text-3xl"
+      className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full bg-gradient-to-br from-brand-secondary to-brand-accent px-8 py-4 font-display text-lg font-bold text-brand-dark shadow-[0_16px_40px_-14px_rgba(248,168,102,0.7)] ring-1 ring-brand-dark/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_52px_-12px_rgba(248,168,102,0.9)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-secondary/50 md:px-11 md:py-5 md:text-xl"
     >
       {/* light-sweep shine that crosses the button on hover */}
       <span
@@ -175,7 +175,7 @@ function PhasesCTA({ t, to }: { t: T; to: (p: string) => string }) {
         className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
       />
       <span className="relative">{t("phases.cta")}</span>
-      <ArrowRight className="relative h-7 w-7 shrink-0 transition-transform duration-300 group-hover:translate-x-2 md:h-8 md:w-8" />
+      <ArrowRight className="relative h-5 w-5 shrink-0 transition-transform duration-300 group-hover:translate-x-2 md:h-6 md:w-6" />
     </Link>
   );
 }

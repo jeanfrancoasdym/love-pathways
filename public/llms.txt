@@ -1,25 +1,25 @@
-# LEAF Wraparound
+# Love Pathways Wraparound
 
-> Love-based, trauma-responsive wraparound services for adoptive families in California, at no out-of-pocket cost to Adoption Assistance Program (AAP) families. A program of Parents in Training Inc., grounded in the Fear to Love methodology.
+> Love-based, trauma-responsive wraparound services for adoptive families in California, at no out-of-pocket cost to Adoption Assistance Program (AAP) families. A program of Revive Behavioral Healthcare, grounded in a love-based, family-centered methodology and founded by adoption and child-behavior expert Bryan Post.
 
-LEAF Wraparound helps adoptive families stay together through education, family coaching, parent groups, and in-home support across 20+ California counties. No referral is required: if your adopted child is under 18 and your family receives AAP benefits, you likely qualify automatically. The program operates only within California.
+Love Pathways Wraparound helps adoptive families heal and stay together through education, family coaching, parent groups, and in-home support across 10 California counties (Merced, Calaveras, Contra Costa, San Joaquin, Stanislaus, Alameda, Santa Clara, Madera, Fresno, and Tulare). No referral is required: if your adopted child is under 18 and your family receives AAP benefits, you likely qualify automatically. The program operates only within California.
 
 ## Core pages
-- [Our Program](https://leafwraparound.com/our-program): The wraparound model, its four phases (Engagement, Plan Development, Implementation, Transition), eligibility criteria, and the 20+ California counties served.
-- [About LEAF Wraparound](https://leafwraparound.com/about-us): Mission, vision, core values (Love, Integrity, Relationship, Responsibility, Effort), and the organization's philosophy.
-- [Our Team](https://leafwraparound.com/our-team): Clinical and program leadership, including founder Jeanette Yoffe, M.A., M.F.T.
-- [Our Impact](https://leafwraparound.com/impact): 500+ families supported, 1,200+ children served, 15,000+ hours of care — real stories and outcomes.
-- [FAQ](https://leafwraparound.com/faq): Eligibility, cost, High Fidelity Wraparound explanation, counties served, and how to get started.
-- [Contact](https://leafwraparound.com/contact-us): Reach the LEAF team in Sacramento, CA for support, referrals, or partnership inquiries.
+- [Our Program](https://lovepathways.org/our-program): The wraparound model, its four phases (Engagement, Plan Development, Implementation, Transition), eligibility criteria, and the 10 California counties served.
+- [About Love Pathways](https://lovepathways.org/about-us): Mission, vision, core values (Love, Integrity, Relationship, Responsibility, Effort), and founder Bryan Post's love-based philosophy.
+- [Our Team](https://lovepathways.org/our-team): Clinical and program leadership, including Executive Director Dr. Williams, Clinical Director Jeanette Yoffe, Director of Operations Marissa, and Wraparound Manager Shing.
+- [Our Impact](https://lovepathways.org/impact): Hundreds of adoptive families supported across California, with real stories and outcomes.
+- [FAQ](https://lovepathways.org/faq): Eligibility, cost, what wraparound care means, counties served, and how to get started.
+- [Contact](https://lovepathways.org/contact-us): Reach the Love Pathways team in Sacramento, CA for support, referrals, or partnership inquiries.
 
 ## Resources & Events
-- [Resource Hub](https://leafwraparound.com/resource-hub): Free guides, books, recorded webinars, and tools for adoptive parents on trauma-informed parenting.
-- [Events & Webinars](https://leafwraparound.com/events): Upcoming free webinars and workshops for adoptive families in California.
-- [Blog](https://leafwraparound.com/blog): Articles on trauma-responsive parenting, adoption challenges, and the Fear to Love methodology.
+- [Resource Hub](https://lovepathways.org/resource-hub): Free guides, books, recorded webinars, and tools for adoptive parents on trauma-responsive parenting.
+- [Events & Webinars](https://lovepathways.org/events): Upcoming free webinars and workshops for adoptive families in California.
+- [Blog](https://lovepathways.org/blog): Articles on trauma-responsive parenting, adoption challenges, and the love-based methodology.
 
 ## Get Involved
-- [Careers](https://leafwraparound.com/career): Open roles for wraparound facilitators, clinicians, and parent partners.
-- [Donate](https://leafwraparound.com/donate): Support LEAF Wraparound's mission to keep adoptive families together.
+- [Careers](https://lovepathways.org/career): Open roles for wraparound facilitators, clinicians, and parent partners.
+- [Donate](https://lovepathways.org/donate): Support Love Pathways Wraparound's mission to keep adoptive families together.
 
 ## Spanish
-- [Versión en español](https://leafwraparound.com/es): The full site is available in Spanish under the /es path.
+- [Versión en español](https://lovepathways.org/es): The full site is available in Spanish under the /es path.

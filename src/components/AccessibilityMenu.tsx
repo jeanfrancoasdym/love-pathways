@@ -10,7 +10,7 @@ type A11ySettings = {
 };
 
 const DEFAULTS: A11ySettings = { fontScale: 1, zoom: 1, contrast: false, links: false, readable: false };
-const STORAGE_KEY = "leaf-a11y";
+const STORAGE_KEY = "lp-a11y";
 const ZOOM_LEVELS = [1, 1.1, 1.25, 1.5];
 
 function load(): A11ySettings {

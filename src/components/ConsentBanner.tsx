@@ -46,6 +46,12 @@ export default function ConsentBanner({ gtmId = "" }: { gtmId?: string }) {
       return;
     }
     if (choice === "denied") return;
+    // Honor Global Privacy Control (CCPA/CPRA): a GPC signal is treated as a
+    // "do not sell/share" opt-out -> no banner shown, no trackers load.
+    if (typeof navigator !== "undefined" && (navigator as { globalPrivacyControl?: boolean }).globalPrivacyControl === true) {
+      try { localStorage.setItem(STORAGE_KEY, "denied"); } catch { /* storage blocked */ }
+      return;
+    }
     setShow(true);
   }, [gtmId]);
 
@@ -63,8 +69,8 @@ export default function ConsentBanner({ gtmId = "" }: { gtmId?: string }) {
 
   const es = lng === "es";
   const text = es
-    ? "Usamos cookies y tecnologías similares para analítica y para mejorar tu experiencia. Puedes aceptar o rechazar el seguimiento no esencial."
-    : "We use cookies and similar technologies for analytics and to improve your experience. You can accept or reject non-essential tracking.";
+    ? "Usamos cookies y tecnologías similares para analítica, publicidad y para mejorar tu experiencia. Puedes aceptar o rechazar el seguimiento no esencial."
+    : "We use cookies and similar technologies for analytics, advertising, and to improve your experience. You can accept or reject non-essential tracking.";
   const accept = es ? "Aceptar" : "Accept";
   const reject = es ? "Rechazar" : "Reject";
   const learn = es ? "Política de Privacidad" : "Privacy Policy";

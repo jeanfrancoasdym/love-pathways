@@ -33,12 +33,13 @@ export default function PrivacyPolicy() {
             {lng === "es" ? (
               <>
                 <h2 className="font-display text-2xl font-bold text-brand-dark">Cookies, tecnologías de seguimiento y tus opciones de privacidad</h2>
-                <p>Usamos cookies y tecnologías similares. Las esenciales son necesarias para que el sitio funcione. Con tu consentimiento, también usamos tecnologías opcionales de analítica provistas por terceros:</p>
+                <p>Usamos cookies y tecnologías similares. Las esenciales son necesarias para que el sitio funcione. Con tu consentimiento, también usamos tecnologías opcionales de analítica y publicidad provistas por terceros:</p>
                 <ul className="list-disc space-y-1 pl-6">
-                  <li><strong>Google Analytics</strong> (Google LLC, vía Google Tag Manager) — analítica del sitio web.</li>
-                  <li><strong>Microsoft Clarity</strong> (Microsoft Corporation) — análisis de uso e interacción.</li>
+                  <li><strong>Google Analytics 4</strong> (Google LLC, vía Google Tag Manager) — analítica del sitio web.</li>
+                  <li><strong>Meta Pixel</strong> (Meta Platforms, Inc.) — medición publicitaria y creación de audiencias.</li>
+                  <li><strong>Microsoft Clarity</strong> (Microsoft Corporation) — análisis de uso e interacción, incluida la repetición de sesión (grabación de clics, desplazamiento e interacciones similares).</li>
                 </ul>
-                <p>Estas tecnologías pueden recopilar tu dirección IP, identificadores de dispositivo/navegador y tu actividad en el sitio, y compartirlos con dichos proveedores para fines de analítica. <strong>Solo se activan después de que las aceptas</strong> en nuestro aviso de cookies. Puedes rechazarlas y cambiar tu elección en cualquier momento con el enlace <strong>“Your Privacy Choices”</strong> al pie de cualquier página.</p>
+                <p>Estas tecnologías pueden recopilar tu dirección IP, identificadores de dispositivo/navegador y tu actividad en el sitio, y compartirlos con dichos proveedores para fines de analítica y publicidad. <strong>Solo se activan después de que las aceptas</strong> en nuestro aviso de cookies. Puedes rechazarlas y cambiar tu elección en cualquier momento con el enlace <strong>“Your Privacy Choices”</strong> al pie de cualquier página.</p>
                 <h2 className="font-display text-2xl font-bold text-brand-dark pt-2">Tus derechos de privacidad en California (CCPA/CPRA)</h2>
                 <p>Si resides en California, tienes derecho a conocer/acceder, eliminar y corregir tu información personal, y a optar por no participar en la “venta” o “compartición” de tu información personal para publicidad conductual entre contextos. No vendemos tu información personal por dinero. Para ejercer tus derechos u optar por no participar, usa <strong>“Your Privacy Choices”</strong> o escríbenos a <a className="text-brand-primary underline" href="mailto:contact@lovepathways.org">contact@lovepathways.org</a>. No te discriminaremos por ejercer estos derechos.</p>
                 <p className="text-sm text-slate-500">Última actualización: junio de 2026.</p>
@@ -46,12 +47,13 @@ export default function PrivacyPolicy() {
             ) : (
               <>
                 <h2 className="font-display text-2xl font-bold text-brand-dark">Cookies, Tracking Technologies &amp; Your Privacy Choices</h2>
-                <p>We use cookies and similar technologies. Essential ones are required for the site to function. With your consent, we also use optional analytics technologies provided by third parties:</p>
+                <p>We use cookies and similar technologies. Essential ones are required for the site to function. With your consent, we also use optional analytics and advertising technologies provided by third parties:</p>
                 <ul className="list-disc space-y-1 pl-6">
-                  <li><strong>Google Analytics</strong> (Google LLC, via Google Tag Manager) — website analytics.</li>
-                  <li><strong>Microsoft Clarity</strong> (Microsoft Corporation) — usage and interaction analytics.</li>
+                  <li><strong>Google Analytics 4</strong> (Google LLC, via Google Tag Manager) — website analytics.</li>
+                  <li><strong>Meta Pixel</strong> (Meta Platforms, Inc.) — advertising measurement and audience building.</li>
+                  <li><strong>Microsoft Clarity</strong> (Microsoft Corporation) — usage and interaction analytics, including session replay (recording of clicks, scrolling, and similar interactions).</li>
                 </ul>
-                <p>These technologies may collect your IP address, device/browser identifiers, and your activity on our site, and share it with those providers for analytics purposes. <strong>They load only after you accept</strong> them in our cookie notice. You can reject them, and change your choice at any time using the <strong>“Your Privacy Choices”</strong> link at the bottom of any page.</p>
+                <p>These technologies may collect your IP address, device/browser identifiers, and your activity on our site, and share it with those providers for analytics and advertising purposes. <strong>They load only after you accept</strong> them in our cookie notice. You can reject them, and change your choice at any time using the <strong>“Your Privacy Choices”</strong> link at the bottom of any page.</p>
                 <h2 className="font-display text-2xl font-bold text-brand-dark pt-2">Your California Privacy Rights (CCPA/CPRA)</h2>
                 <p>If you are a California resident, you have the right to know/access, delete, and correct your personal information, and to opt out of the “sale” or “sharing” of your personal information for cross-context behavioral advertising. We do not sell your personal information for money. To exercise your rights or opt out, use <strong>“Your Privacy Choices”</strong> or contact us at <a className="text-brand-primary underline" href="mailto:contact@lovepathways.org">contact@lovepathways.org</a>. We will not discriminate against you for exercising these rights.</p>
                 <p className="text-sm text-slate-500">Last updated: June 2026.</p>

@@ -58,7 +58,7 @@ export default function Career() {
               <div className="space-y-4">
                 <h2 className="text-4xl font-display font-bold text-brand-dark">{t("whyJoin.heading")}</h2>
                 <p className="text-lg text-slate-600 leading-relaxed">
-                  {t("whyJoin.introBefore")}<span className="notranslate" translate="no">Leaf Wraparound</span>{t("whyJoin.introAfter")}
+                  {t("whyJoin.introBefore")}<span className="notranslate" translate="no">Love Pathways Wraparound</span>{t("whyJoin.introAfter")}
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -188,13 +188,13 @@ export default function Career() {
               </h2>
 
               <p className="text-slate-500 text-lg leading-relaxed max-w-md">
-                {t("form.introBefore")}<span className="notranslate" translate="no">Leaf Wraparound</span>{t("form.introAfter")}
+                {t("form.introBefore")}<span className="notranslate" translate="no">Love Pathways Wraparound</span>{t("form.introAfter")}
               </p>
             </div>
 
             {/* Right Column: Form Card */}
             <div className="lg:col-span-7 bg-white rounded-[32px] p-8 md:p-12 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] border border-slate-100 relative">
-              <GhlForm formId={ghl.careerFormId} name="CV upload leaf website" height={620} className="w-full" />
+              <GhlForm formId={ghl.careerFormId} name="CV upload love pathways website" height={620} className="w-full" />
             </div>
             
           </div>

@@ -75,7 +75,7 @@ export default function About() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" style={{ textShadow: "0 2px 14px rgba(0,0,0,0.5)" }}>
           <div className="mb-8 text-center">
             <h2 className="font-display text-3xl font-bold text-white md:text-4xl">{t("coreValues.heading")}</h2>
-            <p className="mx-auto mt-2 max-w-2xl text-sm text-slate-200">{t("coreValues.introBeforeBrand")}{" "}<span className="notranslate" translate="no">Leaf Wraparound</span>{t("coreValues.introAfterBrand")}</p>
+            <p className="mx-auto mt-2 max-w-2xl text-sm text-slate-200">{t("coreValues.introBeforeBrand")}{" "}<span className="notranslate" translate="no">Love Pathways Wraparound</span>{t("coreValues.introAfterBrand")}</p>
           </div>
           <div className="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3 lg:grid-cols-5 lg:divide-x lg:divide-white/10">
             {values.map((value) => (
@@ -119,7 +119,7 @@ export default function About() {
               </div>
               <div className="space-y-3">
                 <h3 className="text-2xl font-display font-bold text-brand-dark">{t("identity.card1.title")}</h3>
-                <p className="text-slate-600 leading-relaxed">{" "}<span className="notranslate" translate="no">Leaf Wraparound</span>{" "}{t("identity.card1.bodyAfterBrand")}
+                <p className="text-slate-600 leading-relaxed">{" "}<span className="notranslate" translate="no">Love Pathways Wraparound</span>{" "}{t("identity.card1.bodyAfterBrand")}
                 </p>
               </div>
             </div>
