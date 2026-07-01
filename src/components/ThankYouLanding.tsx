@@ -245,7 +245,7 @@ export default function ThankYouLanding({ ns, heroImage, startIso, endIso, zoomL
       </section>
 
       {/* ===================== SOCIAL ===================== */}
-      <section className="relative overflow-hidden bg-brand-cream py-16 md:py-24">
+      <section className="relative overflow-hidden bg-white py-16 md:py-24">
         <div className="pointer-events-none absolute -right-20 -top-20 h-96 w-96 rounded-full bg-brand-primary/20 blur-[100px]" />
         <div className="pointer-events-none absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-brand-secondary/15 blur-[100px]" />
         <div className="relative z-10 mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">

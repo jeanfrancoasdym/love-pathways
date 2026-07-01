@@ -3,7 +3,7 @@
     "badge": "You're registered",
     "title": "You're in! 🎉",
     "confirmBefore": "Your spot for the",
-    "highlight": "The Angry Child's Hidden Story",
+    "highlight": "Substance Use & the Teen Trauma Brain",
     "confirmAfter": "webinar is officially confirmed."
   },
   "countdown": {
@@ -16,16 +16,15 @@
     "ended": "This webinar has ended. Catch the replay below."
   },
   "calendar": {
-    "eventTitle": "The Angry Child's Hidden Story: Attachment-Informed Tools for Adoptive Families",
-    "joinVia": "Join us via Zoom: ",
-    "eventDescription": "In this engaging and practical webinar, foster and adoptive parent expert and adoptee psychotherapist Jeanette Yoffe, M.A., LMFT, will help parents understand the hidden messages beneath anger and learn attachment-based strategies that build connection rather than conflict. Participants will discover how early trauma, separation, and attachment disruptions impact a child's developing brain and nervous system, often causing children to react."
+    "eventTitle": "Substance Use & the Teen Trauma Brain",
+    "joinVia": "Join us via Zoom: "
   },
   "details": {
     "heading": "Webinar Details",
     "dateLabel": "Date",
-    "dateValue": "Thursday | June 25th",
+    "dateValue": "Tuesday, July 28th",
     "timeLabel": "Time",
-    "timeValue": "9:00 AM - 10:30 AM PST",
+    "timeValue": "9:00 AM - 10:00 AM PST",
     "locationLabel": "Location",
     "locationValue": "Live on Zoom",
     "locationNote": "Check your inbox for the exact link.",

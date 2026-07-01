@@ -3,7 +3,7 @@
     "badge": "Estás registrado",
     "title": "¡Ya estás dentro! 🎉",
     "confirmBefore": "Tu lugar para el webinar",
-    "highlight": "Cuando el trauma entra al aula",
+    "highlight": "Cuando el amor no parece suficiente",
     "confirmAfter": "está oficialmente confirmado."
   },
   "countdown": {
@@ -16,19 +16,20 @@
     "ended": "Este webinar ya terminó. Mira la grabación más abajo."
   },
   "calendar": {
-    "eventTitle": "Cuando el trauma entra al aula",
-    "joinVia": "Únete por Zoom: "
+    "eventTitle": "Cuando el amor no parece suficiente: comprender el apego, la conducta y la sanación",
+    "joinVia": "Únete por Zoom: ",
+    "eventDescription": "Esta presentación explora cómo las experiencias tempranas moldean el apego, por qué la conducta suele ser una forma de comunicación, y cómo el trauma puede influir en el cerebro, el cuerpo y las relaciones de un niño. Los participantes obtendrán estrategias prácticas e informadas por el trauma para comprender las conductas desafiantes, fortalecer la conexión y fomentar la sanación, y conocerán la ciencia de la epigenética."
   },
   "details": {
     "heading": "Detalles del webinar",
     "dateLabel": "Fecha",
-    "dateValue": "martes 23 de junio",
+    "dateValue": "martes | 14 de julio",
     "timeLabel": "Hora",
-    "timeValue": "9:00 AM - 10:00 AM PST",
+    "timeValue": "9:00 AM - 10:30 AM PST",
     "locationLabel": "Ubicación",
     "locationValue": "En vivo por Zoom",
-    "locationNote": "Revisa tu bandeja de entrada para encontrar el enlace exacto.",
-    "calendarPrompt": "Reserva este horario en tu calendario ahora:",
+    "locationNote": "Revisa tu bandeja de entrada para el enlace exacto.",
+    "calendarPrompt": "Reserva esta fecha en tu calendario ahora:",
     "googleCalendar": "Google Calendar",
     "outlookCalendar": "Outlook Calendar"
   },
@@ -38,7 +39,7 @@
   },
   "social": {
     "heading": "Mantente conectado",
-    "description": "Cada día compartimos herramientas sensibles al trauma y apoyo para familias adoptivas en nuestras redes sociales. No esperes más para empezar a encontrar alivio.",
+    "description": "Compartimos a diario herramientas sensibles al trauma y apoyo para familias adoptivas en nuestras redes sociales. No esperes más para empezar a encontrar alivio.",
     "facebookLabel": "Facebook",
     "instagramLabel": "Instagram"
   }

@@ -3,7 +3,7 @@
     "badge": "Estás registrado",
     "title": "¡Ya estás dentro! 🎉",
     "confirmBefore": "Tu lugar para el webinar",
-    "highlight": "La historia oculta del niño enojado",
+    "highlight": "El uso de sustancias y el cerebro adolescente",
     "confirmAfter": "está oficialmente confirmado."
   },
   "countdown": {
@@ -16,20 +16,19 @@
     "ended": "Este webinar ya terminó. Mira la grabación más abajo."
   },
   "calendar": {
-    "eventTitle": "La historia oculta del niño enojado: herramientas basadas en el apego para familias adoptivas",
-    "joinVia": "Únete por Zoom: ",
-    "eventDescription": "En este webinar práctico y cercano, la experta en padres de acogida y adoptivos y psicoterapeuta adoptada Jeanette Yoffe, M.A., LMFT, ayudará a los padres a comprender los mensajes ocultos detrás del enojo y a aprender estrategias basadas en el apego que construyen conexión en lugar de conflicto. Los participantes descubrirán cómo el trauma temprano, la separación y las rupturas del apego impactan el cerebro en desarrollo y el sistema nervioso del niño, a menudo provocando que reaccione."
+    "eventTitle": "El uso de sustancias y el cerebro adolescente",
+    "joinVia": "Únete por Zoom: "
   },
   "details": {
     "heading": "Detalles del webinar",
     "dateLabel": "Fecha",
-    "dateValue": "jueves | 25 de junio",
+    "dateValue": "martes 28 de julio",
     "timeLabel": "Hora",
-    "timeValue": "9:00 AM - 10:30 AM PST",
+    "timeValue": "9:00 AM - 10:00 AM PST",
     "locationLabel": "Ubicación",
     "locationValue": "En vivo por Zoom",
-    "locationNote": "Revisa tu bandeja de entrada para el enlace exacto.",
-    "calendarPrompt": "Reserva esta fecha en tu calendario ahora:",
+    "locationNote": "Revisa tu bandeja de entrada para encontrar el enlace exacto.",
+    "calendarPrompt": "Reserva este horario en tu calendario ahora:",
     "googleCalendar": "Google Calendar",
     "outlookCalendar": "Outlook Calendar"
   },
@@ -39,7 +38,7 @@
   },
   "social": {
     "heading": "Mantente conectado",
-    "description": "Compartimos a diario herramientas sensibles al trauma y apoyo para familias adoptivas en nuestras redes sociales. No esperes más para empezar a encontrar alivio.",
+    "description": "Cada día compartimos herramientas sensibles al trauma y apoyo para familias adoptivas en nuestras redes sociales. No esperes más para empezar a encontrar alivio.",
     "facebookLabel": "Facebook",
     "instagramLabel": "Instagram"
   }

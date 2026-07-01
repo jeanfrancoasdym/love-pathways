@@ -28,6 +28,8 @@ type WebinarLandingProps = {
   learnImage: string;
   presenterImage: string;
   presenterImageAlt?: string;
+  presenterImage2?: string;
+  presenterImageAlt2?: string;
   languageValue?: string;
   form: React.ReactNode;
   seo?: React.ReactNode;
@@ -69,7 +71,7 @@ function AnimatedHeadline({ before, highlight, after }: { before: string; highli
       variants={container}
       initial="hidden"
       animate="show"
-      className="font-display text-4xl font-bold leading-[1.08] text-white md:text-6xl lg:text-[4rem]"
+      className="font-display text-5xl font-bold leading-[1.04] text-white md:text-7xl lg:text-[5.5rem]"
     >
       {words.map((p, i) => (
         <motion.span
@@ -162,6 +164,8 @@ export default function WebinarLanding({
   learnImage,
   presenterImage,
   presenterImageAlt,
+  presenterImage2,
+  presenterImageAlt2,
   languageValue,
   form,
   seo,
@@ -211,7 +215,7 @@ export default function WebinarLanding({
         </motion.div>
         <div aria-hidden className="absolute inset-0 bg-gradient-to-br from-brand-dark/90 via-brand-dark/75 to-brand-dark/90" />
 
-        <div className="relative z-10 mx-auto w-full max-w-4xl px-4 py-14 text-center sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto w-full max-w-5xl px-4 py-14 text-center sm:px-6 lg:px-8">
           <motion.span
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -296,31 +300,43 @@ export default function WebinarLanding({
       </section>
 
       {/* ===================== 4 · REGISTER (guide on navy + wide 2-column form) ===================== */}
-      <section className="relative overflow-hidden bg-brand-cream py-16 md:py-20">
+      <section className="relative overflow-hidden bg-white pt-24 pb-20 md:pt-32 md:pb-28">
         <div aria-hidden className="pointer-events-none absolute -right-40 -top-40 h-[40rem] w-[40rem] rounded-full bg-brand-primary/15 blur-[120px]" />
-        <div className="relative z-10 mx-auto grid max-w-[85rem] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-14 lg:px-8">
+        <div className="relative z-10 mx-auto grid max-w-[85rem] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-20 lg:px-8">
           {/* guide — large photo, no frame; lower body fades into the navy so it never touches the text */}
           <Reveal>
-            <div className="text-center text-brand-dark lg:text-left">
-              <div className="relative mx-auto h-72 w-full max-w-sm lg:mx-0 lg:h-[22rem] lg:max-w-md">
-                <motion.img
-                  initial={{ opacity: 0, scale: 1.05 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                  src={presenterImage}
-                  alt={presenterImageAlt ?? presenterName}
-                  referrerPolicy="no-referrer"
-                  className="absolute inset-0 h-full w-full object-contain object-bottom"
-                />
-                <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-brand-cream to-transparent" />
-              </div>
-              <div className="relative z-10 -mt-10">
-                <span className="font-display text-sm font-bold uppercase tracking-[0.22em] text-brand-primary">{t("guide.eyebrow")}</span>
-                <h2 className="mt-2 font-display text-3xl font-bold leading-[1.05] md:text-4xl">{presenterName}</h2>
-                <p className="mt-2 font-display text-lg font-semibold text-brand-primary">{presenterRole}</p>
-                <p className="mt-3 leading-relaxed text-brand-dark/70">{t("guide.bio")}</p>
-                <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
+            {presenterImage2 ? (
+              /* Two presenters — same cut-out photo style as the single guide, side by side */
+              <div className="text-center text-brand-dark 2xl:-ml-20 min-[1800px]:-ml-40">
+                <span className="font-display text-base font-bold uppercase tracking-[0.28em] text-brand-dark">{t("guide.eyebrow")}</span>
+                <div className="mt-3 grid grid-cols-2 gap-12 sm:gap-20 2xl:gap-x-24 min-[1800px]:gap-x-32">
+                  {[
+                    { img: presenterImage, alt: presenterImageAlt ?? presenterName, name: presenterName, role: presenterRole, bio: t("guide.bio") },
+                    { img: presenterImage2, alt: presenterImageAlt2 ?? t("guide2.name"), name: t("guide2.name"), role: t("guide2.role"), bio: t("guide2.bio") },
+                  ].map((g, i) => (
+                    <div key={i}>
+                      <div className="relative h-72 w-full sm:h-80 lg:h-[26rem]">
+                        <motion.img
+                          initial={{ opacity: 0, scale: 1.05 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                          src={g.img}
+                          alt={g.alt}
+                          referrerPolicy="no-referrer"
+                          className="absolute inset-0 h-full w-full object-contain object-bottom"
+                        />
+                        <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-white to-transparent" />
+                      </div>
+                      <div className="relative z-10 -mt-6 text-left">
+                        <h3 className="flex min-h-[3.9rem] items-center justify-center font-display text-2xl font-bold leading-tight md:text-3xl">{g.name}</h3>
+                        <p className="mt-1 flex min-h-[2.8rem] items-center justify-center font-display text-base font-semibold text-brand-primary">{g.role}</p>
+                        <p className="mt-2 text-base leading-relaxed text-brand-dark/70">{g.bio}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 flex flex-wrap justify-center gap-3">
                   <span className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-brand-dark ring-1 ring-brand-dark/10">
                     <Calendar size={16} className="text-brand-primary" />
                     {t("details.dateValue")}
@@ -329,9 +345,49 @@ export default function WebinarLanding({
                     <Clock size={16} className="text-brand-primary" />
                     {t("details.timeValue")}
                   </span>
+                  <span className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-brand-dark ring-1 ring-brand-dark/10">
+                    <Globe size={16} className="text-brand-primary" />
+                    {langValue}
+                  </span>
                 </div>
               </div>
-            </div>
+            ) : (
+              <div className="text-center text-brand-dark lg:text-left">
+                <div className="relative mx-auto h-72 w-full max-w-sm lg:mx-0 lg:h-[22rem] lg:max-w-md">
+                  <motion.img
+                    initial={{ opacity: 0, scale: 1.05 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                    src={presenterImage}
+                    alt={presenterImageAlt ?? presenterName}
+                    referrerPolicy="no-referrer"
+                    className="absolute inset-0 h-full w-full object-contain object-bottom"
+                  />
+                  <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-white to-transparent" />
+                </div>
+                <div className="relative z-10 -mt-10">
+                  <span className="font-display text-base font-bold uppercase tracking-[0.28em] text-brand-dark">{t("guide.eyebrow")}</span>
+                  <h2 className="mt-2 font-display text-3xl font-bold leading-[1.05] md:text-4xl">{presenterName}</h2>
+                  <p className="mt-2 font-display text-lg font-semibold text-brand-primary">{presenterRole}</p>
+                  <p className="mt-3 leading-relaxed text-brand-dark/70">{t("guide.bio")}</p>
+                  <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
+                    <span className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-brand-dark ring-1 ring-brand-dark/10">
+                      <Calendar size={16} className="text-brand-primary" />
+                      {t("details.dateValue")}
+                    </span>
+                    <span className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-brand-dark ring-1 ring-brand-dark/10">
+                      <Clock size={16} className="text-brand-primary" />
+                      {t("details.timeValue")}
+                    </span>
+                    <span className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-brand-dark ring-1 ring-brand-dark/10">
+                      <Globe size={16} className="text-brand-primary" />
+                      {langValue}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            )}
           </Reveal>
 
           {/* form — wide column so the GHL form lays out in 2 columns and stays short */}
@@ -441,7 +497,7 @@ export default function WebinarLanding({
       </section>
 
       {/* ===================== 11 · FINAL CTA ===================== */}
-      <section className="relative overflow-hidden bg-brand-cream py-20 md:py-28">
+      <section className="relative overflow-hidden bg-white py-20 md:py-28">
         <div className="pointer-events-none absolute -right-20 -top-20 h-96 w-96 rounded-full bg-brand-primary/20 blur-[100px]" />
         <div className="pointer-events-none absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-brand-secondary/15 blur-[100px]" />
         <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">

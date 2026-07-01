@@ -1,75 +1,61 @@
 import { Calendar, Clock, ArrowRight, Video } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLoaderData, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { feeds, ghl } from "../data/site";
+import { ghl } from "../data/site";
 import { breadcrumbLd, collectionPageLd, graph, organizationLd, webSiteLd } from "../seo/structuredData";
-import { fetchSheet } from "../lib/csv";
 import { useLocale } from "../i18n/useLocale";
 import Seo from "./Seo";
 import PageHero from "./PageHero";
 import EnglishContentBadge from "./EnglishContentBadge";
 
-// Theme-matched card background, chosen by keywords in the event title so any
-// future webinar gets a relevant atmospheric photo automatically (the sheet's
-// own Image column is intentionally ignored). All photos are free Unsplash
-// images downloaded at build time into /page-hero — see fetch-hero-images.mjs.
-const EVENT_IMAGE_THEMES: { img: string; keywords: string[] }[] = [
-  { img: "/page-hero/event-school.webp", keywords: ["classroom", "school", "teacher", "educator", "student", "learning"] },
-  { img: "/page-hero/event-calm.webp", keywords: ["defian", "chaos", "meltdown", "tantrum", "calm", "regulat", "stress", "no\""] },
-  { img: "/page-hero/event-connection.webp", keywords: ["anger", "angry", "attachment", "outburst", "aggress", "bond", "connect"] },
-  // event-family is the default / catch-all (adoptive, foster, family, parenting).
+// Upcoming events are defined here in code (no external sheet). Each event
+// disappears automatically once its end time (endsAt, in UTC) has passed. Card
+// images are free-license photos in /page-hero chosen to fit each title.
+export type LpEvent = {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  time: string;
+  endsAt: string;
+  locationLink: string;
+  modality: string;
+  image: string;
+};
+
+export const EVENTS: LpEvent[] = [
+  {
+    id: "when-love",
+    title: "When Love Doesn't Feel Like Enough: Understanding Attachment, Behavior, and Healing",
+    description: "How early experiences shape attachment, why behavior is often communication, and trauma-informed strategies to strengthen connection and foster healing.",
+    date: "Tuesday, July 14th",
+    time: "9:00 AM - 10:30 AM PST",
+    endsAt: "2026-07-14T17:30:00Z",
+    locationLink: "/webinar-event1",
+    modality: "Live Webinar",
+    image: "/page-hero/event-connection.webp",
+  },
+  // "Substance Use & the Teen Trauma Brain" (Bryan Post, /webinar-event1) is
+  // hidden from Events until its GHL registration form is ready. The landing
+  // page still exists; restore this card once the form iframe is provided:
+  // {
+  //   id: "substance-use", title: "Substance Use & the Teen Trauma Brain",
+  //   description: "How trauma affects the developing teen brain, why dopamine and emotional pain drive risky behavior, and how connection builds safety and healthier coping.",
+  //   date: "Tuesday, July 28th", time: "9:00 AM - 10:00 AM PST",
+  //   endsAt: "2026-07-28T17:00:00Z", locationLink: "/webinar-event2",
+  //   modality: "Live Webinar", image: "/page-hero/event-teen.webp",
+  // },
 ];
-const EVENT_IMAGE_DEFAULT = "/page-hero/event-family.webp";
 
-function eventImage(title?: string): string {
-  const t = (title || "").toLowerCase();
-  for (const theme of EVENT_IMAGE_THEMES) {
-    if (theme.keywords.some((k) => t.includes(k))) return theme.img;
-  }
-  return EVENT_IMAGE_DEFAULT;
-}
-
-// Runs at BUILD time (and on client navigation): fetches + parses the events
-// sheet so upcoming events are baked into the prerendered HTML.
+// Build/navigation-time filter: drop events whose end time has already passed,
+// soonest first. The component re-filters on the client so an event also drops
+// off live the moment its end time passes.
 export async function eventsLoader() {
-  try {
-    const rows = await fetchSheet(feeds.events);
-    // Expected columns: 0: Event Name, 1: Description, 2: Time, 3: Date, 4: Location_Link, 5: Modality, 6: Image
-    const parsedEvents = rows.slice(1).map((row, index) => {
-      if (row.length < 5) return null;
-      const rawLink = row[4]?.trim();
-      const formattedLink = rawLink ? (rawLink.startsWith('http') ? rawLink : `https://${rawLink}`) : '';
-      return {
-        id: index,
-        title: row[0]?.trim(),
-        description: row[1]?.trim(),
-        time: row[2]?.trim(),
-        date: row[3]?.trim(),
-        locationLink: formattedLink,
-        modality: row[5]?.trim(),
-        image: row[6]?.trim(),
-      };
-    }).filter((e) => e !== null);
-
-    // Only today and future, sorted ascending (closest first).
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const upcomingEvents = parsedEvents.filter((event: any) => {
-      if (!event.date) return false;
-      const [year, month, day] = event.date.split('-').map(Number);
-      return new Date(year, month - 1, day) >= today;
-    });
-    upcomingEvents.sort((a: any, b: any) => {
-      const [ay, am, ad] = a.date.split('-').map(Number);
-      const [by, bm, bd] = b.date.split('-').map(Number);
-      return new Date(ay, am - 1, ad).getTime() - new Date(by, bm - 1, bd).getTime();
-    });
-    return upcomingEvents;
-  } catch (err) {
-    console.error("Error fetching events:", err);
-    return [];
-  }
+  const now = Date.now();
+  return EVENTS.filter((e) => new Date(e.endsAt).getTime() > now).sort(
+    (a, b) => new Date(a.endsAt).getTime() - new Date(b.endsAt).getTime()
+  );
 }
 
 // When an event's link points to THIS site (a relative /path or a
@@ -96,6 +82,15 @@ export default function Events() {
   const loading = false;
   const error = false;
   const [subscribed, setSubscribed] = useState(false);
+
+  // Client-side re-filter: an event drops off the moment its end time passes.
+  const [now, setNow] = useState<number | null>(null);
+  useEffect(() => {
+    setNow(Date.now());
+    const id = setInterval(() => setNow(Date.now()), 60000);
+    return () => clearInterval(id);
+  }, []);
+  const visibleEvents = now === null ? events : events.filter((e: any) => new Date(e.endsAt).getTime() > now);
 
   return (
     <div className="pb-0">
@@ -128,7 +123,7 @@ export default function Events() {
           <div className="flex justify-center items-center py-20">
             <div className="w-12 h-12 border-4 border-brand-primary/20 border-t-brand-primary rounded-full animate-spin"></div>
           </div>
-        ) : error || events.length === 0 ? (
+        ) : error || visibleEvents.length === 0 ? (
           <div className="bg-slate-50 border border-slate-200 rounded-[3rem] p-16 text-center space-y-6">
             <div className="w-20 h-20 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto text-brand-primary shadow-sm">
               <Calendar size={40} />
@@ -137,14 +132,14 @@ export default function Events() {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {events.map((event) => (
+            {visibleEvents.map((event) => (
               <div
                 key={event.id}
                 className="group relative flex min-h-[22rem] overflow-hidden rounded-[2rem] shadow-sm transition-shadow hover:shadow-xl"
               >
                 {/* Theme-matched background photo */}
                 <img
-                  src={eventImage(event.title)}
+                  src={event.image}
                   alt=""
                   aria-hidden="true"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -154,7 +149,7 @@ export default function Events() {
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/95 via-brand-dark/45 to-brand-dark/10" />
 
                 {/* Content */}
-                <div className="relative z-10 flex w-full flex-col justify-end p-8 md:p-10 text-white">
+                <div className="relative z-10 flex w-full flex-col p-8 md:p-10 text-white">
                   <div className="mb-4 flex flex-wrap items-center gap-2 text-sm">
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm">
                       <Calendar size={14} className="text-brand-secondary" /> {event.date}
@@ -175,7 +170,7 @@ export default function Events() {
                   </p>
                   {(() => {
                     const internal = internalEventRoute(event.locationLink);
-                    const cls = "mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-6 py-3 font-display font-bold text-brand-primary transition-colors hover:bg-brand-secondary hover:text-brand-dark";
+                    const cls = "mt-auto flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-4 font-display font-bold text-brand-primary shadow-lg transition-colors hover:bg-brand-secondary hover:text-brand-dark";
                     return internal ? (
                       <Link to={to(internal)} className={cls}>
                         {t("list.register")} <ArrowRight size={18} />

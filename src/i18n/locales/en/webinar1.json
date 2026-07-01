@@ -1,19 +1,21 @@
 {
   "hero": {
     "badge": "FREE LIVE WEBINAR",
-    "titleBefore": "When ",
-    "titleHighlight": "Trauma Walks",
-    "titleAfter": " Into the Classroom",
-    "subtitle": "A free live training for adoptive and foster parents, kinship caregivers, and educators who want to help an overwhelmed child feel safe enough to learn.",
-    "description": "This training explores how trauma can impact a child's experience in school, including anxiety during transitions, emotional overwhelm in the classroom, and behaviors that are often misunderstood by educators.\n\nFamilies and professionals will learn how connection, emotional safety, and regulation can support children in building confidence and success at school without relying on fear, shame, or punishment."
+    "titleBefore": "When Love Doesn't ",
+    "titleHighlight": "Feel Like Enough",
+    "titleAfter": "",
+    "subtitle": "A free live webinar for adoptive and foster parents on why behavior is often a form of communication, and how attachment and connection support real healing.",
+    "paragraph1": "Parenting a child who has experienced trauma can be both rewarding and incredibly challenging. This presentation explores how early experiences shape attachment, why behavior is often a form of communication, and how trauma can influence a child's brain, body, and relationships.",
+    "paragraph2": "Participants will gain practical, trauma-informed strategies to better understand challenging behaviors, strengthen connection, and foster healing. The session also introduces the science of epigenetics, offering hope that safe, nurturing relationships can support resilience and positive change over time."
   },
   "details": {
     "dateLabel": "Date",
-    "dateValue": "Tuesday, June 23rd",
+    "dateValue": "Tuesday | July 14th",
     "timeLabel": "Time",
-    "timeValue": "9:00 AM - 10:00 AM PST",
+    "timeValue": "9:00 AM - 10:30 AM PST",
     "languageLabel": "Language",
-    "languageValue": "English"
+    "languageValueEs": "Español",
+    "languageValueEn": "English"
   },
   "countdown": {
     "heading": "The live session begins in",
@@ -27,62 +29,67 @@
   "forYou": {
     "heading": "This is for you if...",
     "items": [
-      "Your child melts down, shuts down, or \"acts out\" at school and no one can tell you why.",
-      "Mornings, drop-offs, or homework have turned into a daily battle.",
-      "You've been told it's \"just behavior,\" but your gut says it's something deeper.",
-      "You want to help your child without leaning on fear, shame, or punishment."
+      "You love your child deeply, but love alone doesn't seem to calm the hard moments.",
+      "The behavior feels confusing, and you're not sure what it's trying to tell you.",
+      "You want to understand what is happening in your child's brain and body.",
+      "You're looking for practical, trauma-informed tools, not just theory."
     ]
   },
   "learn": {
     "heading": "What you'll walk away with",
     "items": [
-      "How trauma actually shows up in the classroom, and why it's so often misread as defiance.",
-      "Why transitions and \"small\" moments can trigger such big reactions.",
-      "Simple, love-based ways to bring safety and regulation to your child's school day.",
-      "How connection, not consequences, builds the confidence that lasts."
+      "How early experiences shape attachment, and why behavior is often communication.",
+      "How trauma can influence a child's brain, body, and relationships.",
+      "Practical, trauma-informed strategies to understand behavior and strengthen connection.",
+      "The science of epigenetics, and the hope that nurturing relationships bring lasting change."
     ]
   },
   "guide": {
-    "eyebrow": "Your guide",
-    "name": "Bryan Post",
-    "role": "Adoption, Attachment & Trauma Expert",
-    "bio": "Bryan Post is an internationally recognized expert in adoption, attachment, and trauma, and a leading voice in love-based, family-centered care. For decades he has helped families move from fear and conflict toward connection, calm, and lasting healing."
+    "eyebrow": "Your guides",
+    "name": "Dr. Alicia Williams",
+    "role": "Executive Director",
+    "bio": "Blends 25+ years in education and social work with trauma-informed care to guide families toward regulation."
+  },
+  "guide2": {
+    "name": "Jeanette Yoffe, M.A., LMFT",
+    "role": "Guest Presenter, Adoptee & Psychotherapist",
+    "bio": "An adoptee psychotherapist who helps foster and adoptive families turn conflict into connection."
   },
   "trust": {
-    "heading": "Why families trust this training",
+    "heading": "Why families trust this webinar",
     "audience": "Join adoptive and foster families from across California, supported by the Fear to Love methodology and the Love Pathways Wraparound team.",
     "testimonials": [],
     "stats": []
   },
   "agenda": {
-    "heading": "How the hour will flow",
+    "heading": "How the session will flow",
     "items": [
-      { "title": "The science", "desc": "What's really happening in a stressed child's brain and body." },
-      { "title": "The misreads", "desc": "Behaviors that look like defiance, but aren't." },
-      { "title": "The shift", "desc": "Practical, love-based tools you can use the very same day." },
-      { "title": "Live Q&A", "desc": "Bring your real situations. We'll work through them together." }
+      { "title": "Attachment 101", "desc": "How early experiences shape the way a child bonds and responds." },
+      { "title": "Behavior as communication", "desc": "What challenging behavior is really trying to say." },
+      { "title": "Brain, body & epigenetics", "desc": "How trauma, and healing, reach the brain, body, and even our biology." },
+      { "title": "Tools & live Q&A", "desc": "Practical strategies you can use, plus time for your questions." }
     ]
   },
   "faq": {
-    "heading": "A few questions before you register",
+    "heading": "Frequently asked questions",
     "items": [
-      { "q": "Is it really free?", "a": "Yes. This live training is completely free for families and professionals." },
+      { "q": "Is it really free?", "a": "Yes. This live webinar is completely free for families and professionals." },
+      { "q": "Is it available in Spanish?", "a": "Yes. You can register and attend in either English or Spanish." },
       { "q": "What if I can't attend live?", "a": "Register anyway. We'll send you the replay so you can watch whenever it works for you." },
-      { "q": "Will it be recorded?", "a": "Yes. Everyone who registers receives the recording afterward." },
-      { "q": "Who is this for?", "a": "Adoptive and foster parents, kinship caregivers, and educators. No background or preparation needed." }
+      { "q": "Who is this for?", "a": "Adoptive and foster parents, kinship caregivers, and anyone supporting a child through big emotions." }
     ]
   },
   "host": {
-    "imageAlt": "Bryan Post",
     "label": "Hosted By",
-    "name": "Bryan Post",
-    "bio": "Internationally recognized expert in adoption, trauma, and family healing."
+    "name": "Dr. Alicia Williams & Jeanette Yoffe",
+    "imageAlt": "Dr. Alicia Williams",
+    "bio": "Executive Director Dr. Alicia Williams, with guest presenter Jeanette Yoffe, M.A., LMFT."
   },
   "cta": {
-    "reserve": "Reserve My Spot Now"
+    "mobileButton": "Reserve My Spot Now"
   },
   "ctaFinal": {
-    "line": "Your child isn't giving you a hard time. They're having a hard time. Let's learn how to help them feel safe.",
+    "line": "When love alone doesn't feel like enough, understanding is the bridge. Let's build it together.",
     "button": "Yes, Save My Spot"
   },
   "privacy": "We respect your privacy. We'll only email you about this event, and you can unsubscribe anytime.",

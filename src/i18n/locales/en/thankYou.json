@@ -3,7 +3,7 @@
     "badge": "You're registered",
     "title": "You're in! 🎉",
     "confirmBefore": "Your spot for the",
-    "highlight": "When Trauma Walks Into the Classroom",
+    "highlight": "When Love Doesn't Feel Like Enough",
     "confirmAfter": "webinar is officially confirmed."
   },
   "countdown": {
@@ -16,15 +16,16 @@
     "ended": "This webinar has ended. Catch the replay below."
   },
   "calendar": {
-    "eventTitle": "When Trauma Walks Into the Classroom",
-    "joinVia": "Join us via Zoom: "
+    "eventTitle": "When Love Doesn't Feel Like Enough: Understanding Attachment, Behavior, and Healing",
+    "joinVia": "Join us via Zoom: ",
+    "eventDescription": "This presentation explores how early experiences shape attachment, why behavior is often a form of communication, and how trauma can influence a child's brain, body, and relationships. Participants will gain practical, trauma-informed strategies to better understand challenging behaviors, strengthen connection, and foster healing, and are introduced to the science of epigenetics."
   },
   "details": {
     "heading": "Webinar Details",
     "dateLabel": "Date",
-    "dateValue": "Tuesday, June 23rd",
+    "dateValue": "Tuesday | July 14th",
     "timeLabel": "Time",
-    "timeValue": "9:00 AM - 10:00 AM PST",
+    "timeValue": "9:00 AM - 10:30 AM PST",
     "locationLabel": "Location",
     "locationValue": "Live on Zoom",
     "locationNote": "Check your inbox for the exact link.",
