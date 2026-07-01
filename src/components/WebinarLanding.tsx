@@ -301,7 +301,7 @@ export default function WebinarLanding({
 
       {/* ===================== 4 · REGISTER (guide on navy + wide 2-column form) ===================== */}
       <section className="relative overflow-hidden bg-white pt-24 pb-20 md:pt-32 md:pb-28">
-        <div aria-hidden className="pointer-events-none absolute -right-40 -top-40 h-[40rem] w-[40rem] rounded-full bg-brand-primary/15 blur-[120px]" />
+        <div aria-hidden className="pointer-events-none absolute -right-40 -top-40 h-[40rem] w-[40rem] rounded-full bg-brand-primary/15 blur-[120px] transform-gpu will-change-transform" />
         <div className="relative z-10 mx-auto grid max-w-[85rem] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-20 lg:px-8">
           {/* guide — large photo, no frame; lower body fades into the navy so it never touches the text */}
           <Reveal>
@@ -498,8 +498,8 @@ export default function WebinarLanding({
 
       {/* ===================== 11 · FINAL CTA ===================== */}
       <section className="relative overflow-hidden bg-white py-20 md:py-28">
-        <div className="pointer-events-none absolute -right-20 -top-20 h-96 w-96 rounded-full bg-brand-primary/20 blur-[100px]" />
-        <div className="pointer-events-none absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-brand-secondary/15 blur-[100px]" />
+        <div className="pointer-events-none absolute -right-20 -top-20 h-96 w-96 rounded-full bg-brand-primary/20 blur-[100px] transform-gpu will-change-transform" />
+        <div className="pointer-events-none absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-brand-secondary/15 blur-[100px] transform-gpu will-change-transform" />
         <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
             <p className="mx-auto max-w-2xl font-display text-2xl font-bold leading-snug text-brand-dark md:text-4xl">{t("ctaFinal.line")}</p>
