@@ -4,7 +4,6 @@ import { Link, useLocation, Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Menu, X, ChevronDown, ArrowRight, Heart, MapPin, Mail } from "lucide-react";
 import AccessibilityMenu from "./AccessibilityMenu";
-import ConsentBanner from "./ConsentBanner";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLocale } from "../i18n/useLocale";
 import { contact, parentOrg } from "../data/site";
@@ -269,16 +268,6 @@ export default function Layout() {
               © {new Date().getFullYear()}{" "}Love Pathways. {t("footer.rights")}
             </span>
             <div className="flex items-center gap-5">
-              <button
-                type="button"
-                onClick={() => {
-                  try { localStorage.removeItem("lp-consent"); } catch { /* storage blocked */ }
-                  window.location.reload();
-                }}
-                className="hover:text-brand-dark transition-colors"
-              >
-                {lng === "es" ? "Tus opciones de privacidad" : "Your Privacy Choices"}
-              </button>
               <Link to={to("/privacy-policy")} className="hover:text-brand-dark transition-colors">
                 {t("footer.privacy")}
               </Link>
@@ -288,7 +277,6 @@ export default function Layout() {
       </footer>
       </div>
       <AccessibilityMenu />
-      <ConsentBanner gtmId="GTM-TV4DHFQ5" />
     </>
   );
 }
