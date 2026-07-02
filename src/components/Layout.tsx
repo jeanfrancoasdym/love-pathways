@@ -98,7 +98,7 @@ export default function Layout() {
               {navItems.map((item) =>
                 item.dropdown ? (
                   <div key={item.key} className="relative group">
-                    <button className="nav-link text-[15px] flex items-center gap-1 py-2">
+                    <button className="nav-link text-[14px] flex items-center gap-1 py-2">
                       {t("nav." + item.key)}
                       <ChevronDown size={14} className="transition-transform duration-300 group-hover:rotate-180" />
                     </button>
@@ -108,7 +108,7 @@ export default function Layout() {
                           <Link
                             key={subItem.path}
                             to={to(subItem.path)}
-                            className={`px-4 py-2.5 text-[15px] font-semibold rounded-xl hover:bg-brand-cream transition-colors ${
+                            className={`px-4 py-2.5 text-[14px] font-semibold rounded-xl hover:bg-brand-cream transition-colors ${
                               isActive(subItem.path) ? "text-brand-primary" : "text-brand-dark/70 hover:text-brand-dark"
                             }`}
                           >
@@ -122,7 +122,7 @@ export default function Layout() {
                   <Link
                     key={item.path}
                     to={to(item.path!)}
-                    className={`nav-link text-[15px] py-2 relative ${isActive(item.path) ? "text-brand-dark" : ""}`}
+                    className={`nav-link text-[14px] py-2 relative ${isActive(item.path) ? "text-brand-dark" : ""}`}
                   >
                     {t("nav." + item.key)}
                     {isActive(item.path) && (
@@ -135,7 +135,7 @@ export default function Layout() {
                 <LanguageSwitcher />
                 {/* Donate hidden until the page is ready — restore when launching */}
                 {/*
-                <Link to={to("/donate")} className="btn-outline !px-6 !py-3 text-[15px]">
+                <Link to={to("/donate")} className="btn-outline !px-6 !py-3 text-[14px]">
                   {t("nav.donate")}
                 </Link>
                 */}
@@ -205,11 +205,11 @@ export default function Layout() {
 
       {/* Footer — warm/cream (Love Pathways brandbook avoids dark backgrounds) */}
       <footer className="bg-brand-cream text-brand-dark border-t border-brand-dark/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
             <div className="md:col-span-5">
               <Wordmark />
-              <p className="text-brand-dark/70 max-w-sm leading-relaxed mt-5 text-[15px]">
+              <p className="text-brand-dark/70 max-w-sm leading-relaxed mt-5 text-[14px]">
                 {" "}Love Pathways Wraparound{" "}{t("footer.beforeOrg")}{" "}
                 <a
                   href={parentOrg.url}
@@ -229,7 +229,7 @@ export default function Layout() {
 
             <div className="md:col-span-3">
               <h2 className="font-display font-bold mb-5 text-sm uppercase tracking-[0.16em] text-brand-dark/50">{t("footer.explore")}</h2>
-              <ul className="space-y-3 text-brand-dark/70 text-[15px] font-medium">
+              <ul className="space-y-3 text-brand-dark/70 text-[14px] font-medium">
                 <li><Link to={to("/about-us")} className="hover:text-brand-primary transition-colors">{t("nav.whoWeAre")}</Link></li>
                 <li><Link to={to("/our-program")} className="hover:text-brand-primary transition-colors">{t("nav.ourProgram")}</Link></li>
                 <li><Link to={to("/impact")} className="hover:text-brand-primary transition-colors">{t("nav.ourImpact")}</Link></li>
@@ -241,7 +241,7 @@ export default function Layout() {
 
             <div className="md:col-span-4">
               <h2 className="font-display font-bold mb-5 text-sm uppercase tracking-[0.16em] text-brand-dark/50">{t("footer.contact")}</h2>
-              <ul className="space-y-4 text-brand-dark/70 text-[15px]">
+              <ul className="space-y-4 text-brand-dark/70 text-[14px]">
                 <li className="flex items-start gap-3">
                   <MapPin size={18} className="text-brand-primary shrink-0 mt-0.5" />
                   <span>{contact.addressFull}</span>

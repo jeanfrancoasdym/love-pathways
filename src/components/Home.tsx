@@ -101,7 +101,7 @@ function HeroCarousel() {
           <div className="absolute inset-0 z-20">
             <div className="mx-auto flex h-full max-w-[88rem] flex-col justify-center px-4 sm:px-6 lg:px-8">
               <div className="max-w-4xl space-y-6 pt-24 pb-16 md:py-10">
-                <p className="font-sans text-lg font-bold uppercase tracking-[0.22em] text-slate-600 md:text-xl">{slide.eyebrow}</p>
+                <p className="font-sans text-lg font-bold uppercase tracking-[0.22em] text-brand-primary md:text-xl">{slide.eyebrow}</p>
                 {slide.brand ? (
                   <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-[#232323] sm:text-5xl md:text-6xl lg:text-7xl">
                     <span className="notranslate" translate="no">LOVE PATHWAYS WRAPAROUND</span>
@@ -174,7 +174,7 @@ export default function Home() {
         <div className="absolute top-1/2 right-[-5%] -translate-y-1/2 text-brand-primary/5 pointer-events-none z-0">
           <HeartPulse size={600} strokeWidth={0.2} />
         </div>
-        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-primary/5 blur-[80px] pointer-events-none z-0"></div>
+        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-primary/5 blur-[80px] pointer-events-none z-0 transform-gpu will-change-transform">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
