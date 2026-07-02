@@ -184,7 +184,7 @@ export default function Home() {
                 {t("crisis.eyebrow")}
               </span>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-dark leading-tight">
-                {t("crisis.title")}
+                {t("crisis.titleLine1")} <span className="text-brand-primary">{t("crisis.titleLine2")}</span>
               </h2>
               <div className="w-12 h-1.5 bg-brand-primary mt-6 mb-8"></div>
               <p className="text-lg text-slate-600 leading-relaxed">

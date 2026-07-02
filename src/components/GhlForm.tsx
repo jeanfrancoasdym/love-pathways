@@ -97,7 +97,7 @@ export default function GhlForm({
   }, [onSubmitRedirect, navigate, to]);
 
   return (
-    <div className={`relative ${className ?? ""}`} style={{ minHeight: height }}>
+    <div className={`relative ${className ?? ""}`} style={{ minHeight: height }} data-lenis-prevent>
       <iframe
         src={`${formBase}/${formId}`}
         id={`inline-${formId}`}
