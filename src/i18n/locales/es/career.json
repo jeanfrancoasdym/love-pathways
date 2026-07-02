@@ -7,6 +7,8 @@
   },
   "whyJoin": {
     "heading": "¿Por qué trabajar con nosotros?",
+    "headingLine1": "¿Por qué trabajar ",
+    "headingLine2": "con nosotros?",
     "introBefore": "En ",
     "introAfter": ", somos más que un equipo: somos una comunidad de personas apasionadas y dedicadas a apoyar a las familias adoptivas mediante una metodología basada en el amor.",
     "meaningfulTitle": "Trabajo con propósito",
@@ -18,6 +20,8 @@
   "clinical": {
     "eyebrow": "La estructura de nuestro equipo",
     "heading": "Roles clínicos",
+    "headingLine1": "Roles ",
+    "headingLine2": "clínicos",
     "subtitle": "Nuestro equipo clínico brinda el apoyo y la educación directa que las familias necesitan para prosperar.",
     "roles": {
       "wrapFacilitator": {
@@ -37,6 +41,8 @@
   "administrative": {
     "eyebrow": "El pilar de nuestra misión",
     "heading": "Roles administrativos",
+    "headingLine1": "Roles ",
+    "headingLine2": "administrativos",
     "subtitle": "Nuestro equipo administrativo garantiza que nuestras operaciones funcionen sin contratiempos, permitiendo que el personal clínico se enfoque por completo en las familias a las que servimos.",
     "operationsTitle": "Operaciones y soporte",
     "operationsDesc": "Incluye roles en recursos humanos, finanzas, administración de oficina y coordinación de programas. Estos profesionales hacen avanzar nuestra misión con integridad y eficiencia.",

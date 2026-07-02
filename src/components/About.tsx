@@ -32,11 +32,11 @@ export default function About() {
         <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#232323 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" />
+            <span className="inline-flex items-center gap-2 rounded-full bg-brand-secondary/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-brand-dark">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-secondary" />
               {t("missionVision.eyebrow")}
             </span>
-            <h2 className="mt-5 font-display text-4xl font-bold text-brand-dark md:text-5xl">{t("missionVision.heading")}</h2>
+            <h2 className="mt-5 font-display text-4xl font-bold text-brand-dark md:text-5xl">{t("missionVision.headingLine1")}<span className="text-brand-primary">{t("missionVision.headingLine2")}</span></h2>
             <p className="mt-4 text-lg text-slate-600">{t("missionVision.intro")}</p>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -74,7 +74,7 @@ export default function About() {
       <ParallaxSection image="/page-hero/values-sunset.webp" overlayClassName="bg-brand-dark/55" className="py-10 md:py-12">
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" style={{ textShadow: "0 2px 14px rgba(0,0,0,0.5)" }}>
           <div className="mb-8 text-center">
-            <h2 className="font-display text-3xl font-bold text-white md:text-4xl">{t("coreValues.heading")}</h2>
+            <h2 className="font-display text-3xl font-bold text-white md:text-4xl">{t("coreValues.headingLine1")}<span className="text-brand-primary">{t("coreValues.headingLine2")}</span></h2>
             <p className="mx-auto mt-2 max-w-2xl text-sm text-slate-200">{t("coreValues.introBeforeBrand")}{" "}<span className="notranslate" translate="no">Love Pathways Wraparound</span>{t("coreValues.introAfterBrand")}</p>
           </div>
           <div className="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3 lg:grid-cols-5 lg:divide-x lg:divide-white/10">
@@ -155,8 +155,8 @@ export default function About() {
 
       {/* Meet Our Founder */}
       <section className="bg-brand-dark text-white py-12 md:py-8 md:py-12 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-primary/10 rounded-full -mr-48 -mt-48 blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-secondary/10 rounded-full -ml-32 -mb-32 blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-primary/10 rounded-full -mr-48 -mt-48 blur-3xl transform-gpu will-change-transform" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-secondary/10 rounded-full -ml-32 -mb-32 blur-3xl transform-gpu will-change-transform" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">

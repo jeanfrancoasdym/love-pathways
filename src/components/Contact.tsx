@@ -23,7 +23,7 @@ export default function Contact() {
       {/* Contact Form & Info */}
       <section className="relative w-full py-12 md:py-20 overflow-hidden bg-white min-h-[850px]">
         <div className="absolute inset-0 z-[1] pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #232323 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
-        <div className="absolute bottom-[-10%] right-[-5%] text-brand-primary/5 pointer-events-none z-[1] rotate-12">
+        <div className="absolute bottom-[-10%] right-[-5%] text-brand-primary/5 pointer-events-none z-[1] rotate-12 transform-gpu will-change-transform">
           <Heart size={600} strokeWidth={0.2} />
         </div>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -31,7 +31,7 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="lg:col-span-5 space-y-12">
             <div className="space-y-4">
-              <h2 className="text-4xl font-display font-bold text-brand-dark">{t("info.heading")}</h2>
+              <h2 className="text-4xl font-display font-bold text-brand-dark">{t("info.headingLead")} <span className="text-brand-primary">{t("info.headingHighlight")}</span></h2>
               <p className="text-lg text-slate-600 leading-relaxed">
                 {t("info.intro")}
               </p>

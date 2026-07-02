@@ -73,13 +73,14 @@ export const images = {
   alicia: `${CDN}/69a744b8618c8d5cb2996194.png`, // Dr. Alicia Williams (Exec. Director)
   marissa: `${CDN}/69f38abb45cd849493278cb9.jpg`,
   shing: `${CDN}/69f395694ad535b652ef5318.jpeg`,
-  // Backgrounds / scenes (TODO F4: swap for warm LP-appropriate images)
-  teamHero: `${CDN}/69e94b1c5df4011c24000137.jpg`,
-  careerTeam: `${CDN}/69d53fd9a7dcb4cff01a093e.webp`,
-  careerAdmin: `${CDN}/69ef98138acd760bf8d06ff7.jpeg`,
-  homeHero: `${CDN}/69e947bda48992f689b7b3a6.webp`,
-  homeWraparound: `${CDN}/69d6c8ce3d829c73b2f0532e.webp`,
-  homeFinalCta: `${CDN}/69e947e89ff45b49cc9655da.webp`,
+  // Backgrounds / scenes — swapped for warm, distinct LP-appropriate photos
+  // (free-license Unsplash, no attribution required). Made distinct from LEAF.
+  teamHero: "/page-hero/home-hero-3.webp",
+  careerTeam: "/page-hero/career-why.webp",
+  careerAdmin: "/page-hero/career-admin.webp",
+  homeHero: "/page-hero/home-hero-1.webp",
+  homeWraparound: "/page-hero/home-wraparound.webp",
+  homeFinalCta: "/page-hero/home-hero-2.webp",
 };
 
 // Branded gradient placeholder (data URI) for CMS items with no image.

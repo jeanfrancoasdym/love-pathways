@@ -1,6 +1,8 @@
 {
   "hero": {
     "title": "Resource Hub",
+    "titleLine1": "Resource ",
+    "titleLine2": "Hub",
     "subtitle": "Explore our comprehensive library of guides, videos, and podcasts covering trauma-responsive parenting, daily routines, and expert advice from our core team."
   },
   "section": {
@@ -34,6 +36,8 @@
     "default": "We are preparing new content for you. Stay tuned!"
   },
   "social": {
-    "title": "Connect with us"
+    "title": "Connect with us",
+    "titleLine1": "Connect with ",
+    "titleLine2": "us"
   }
 }

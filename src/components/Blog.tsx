@@ -83,8 +83,8 @@ export default function Blog() {
     <div className="pb-0 bg-slate-100 relative overflow-hidden">
       <Seo pageKey="blog" path="/blog" jsonLd={graph(organizationLd(), webSiteLd(lng), blogPageLd(lng), breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }]))} />
       {/* Global Background Decorations */}
-      <div className="absolute top-[10%] -left-24 w-96 h-96 bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-[40%] -right-24 w-96 h-96 bg-brand-secondary/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-[10%] -left-24 w-96 h-96 bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none transform-gpu will-change-transform" />
+      <div className="absolute top-[40%] -right-24 w-96 h-96 bg-brand-secondary/5 rounded-full blur-[120px] pointer-events-none transform-gpu will-change-transform" />
 
       {/* Hero Section */}
       <PageHero
@@ -100,7 +100,7 @@ export default function Blog() {
             {/* Header & Search */}
             <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 border-b border-slate-200 pb-6">
               <div>
-                <h2 className="text-3xl font-display font-bold text-brand-dark">{t("filters.heading")}</h2>
+                <h2 className="text-3xl font-display font-bold text-brand-dark">{t("filters.headingLine1")}<span className="text-brand-primary">{t("filters.headingLine2")}</span></h2>
                 <p className="text-slate-500 mt-2">{t("filters.subheading")}</p>
               </div>
               
@@ -286,7 +286,7 @@ export default function Blog() {
       {/* Social Follow CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-10 mb-16 border-t border-slate-200 flex flex-col items-center justify-center gap-6 relative z-10 text-center">
         <div className="text-brand-dark font-display font-bold text-2xl">
-          {t("social.heading")}
+          {t("social.headingLine1")}<span className="text-brand-primary">{t("social.headingLine2")}</span>
         </div>
         <div className="flex items-center justify-center gap-6">
           <a 

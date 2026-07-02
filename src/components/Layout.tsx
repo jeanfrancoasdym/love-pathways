@@ -54,6 +54,13 @@ export default function Layout() {
   // Global smooth scrolling (client only). Lenis lerps wheel/touch input so the
   // page glides instead of jumping per notch, and feeds the scroll-linked effects.
   useEffect(() => {
+    // Skip Lenis on the Contact page: its cross-origin GHL form iframe swallows
+    // wheel events, so smooth-scroll freezes the page when the cursor is over the
+    // form. Native scroll handles the iframe correctly. Other routes keep Lenis.
+    if (/\/contact-us\/?$/.test(location.pathname)) {
+      lenisRef.current = null;
+      return;
+    }
     // lerp = continuous interpolation (buttery, glides). Using `duration` instead
     // animates per wheel-notch, which feels stepped ("block by block").
     const lenis = new Lenis({ lerp: 0.1, smoothWheel: true, wheelMultiplier: 1 });
@@ -69,7 +76,7 @@ export default function Layout() {
       lenis.destroy();
       lenisRef.current = null;
     };
-  }, []);
+  }, [location.pathname]);
 
   useEffect(() => {
     setIsMenuOpen(false);

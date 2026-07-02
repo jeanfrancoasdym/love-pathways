@@ -2,6 +2,8 @@
   "hero": {
     "imageAlt": "Our Team Background",
     "title": "Our Team",
+    "titleLine1": "Our",
+    "titleLine2": "Team",
     "subtitle": "Meet the leaders dedicated to providing trauma-informed care and guiding our community toward a brighter future."
   },
   "members": {

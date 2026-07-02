@@ -7,6 +7,8 @@
   },
   "list": {
     "heading": "Common Clarifications & Support",
+    "headingLead": "Common Clarifications &",
+    "headingHighlight": "Support",
     "subheading": "Find quick answers to help you navigate your family's journey.",
     "entityDefinition": "Love Pathways Wraparound is a love-based, trauma-responsive support program for families who have adopted in California, offered as a program of Revive Behavioral Healthcare.",
     "answerFirst": "Love Pathways Wraparound answers the most common questions adoptive families ask: what the program is, who qualifies, what it costs, and how to begin. Love Pathways provides education, family coaching, parent groups, and in-home support across 10 California counties. Families who adopted through the foster system and receive Adoption Assistance Program (AAP) benefits have no out-of-pocket cost. No social-worker referral is needed to start."
@@ -51,6 +53,8 @@
   },
   "cta": {
     "heading": "Still have questions?",
+    "headingLead": "Still have",
+    "headingHighlight": "questions?",
     "body": "We're here to help. Reach out to our team and we'll get back to you as soon as possible.",
     "contact": "Contact Us",
     "call": "Call Us: (707) 460-6070"

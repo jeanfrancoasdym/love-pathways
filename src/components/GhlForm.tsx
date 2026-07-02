@@ -96,8 +96,26 @@ export default function GhlForm({
     return () => window.removeEventListener("message", handler);
   }, [onSubmitRedirect, navigate, to]);
 
+  // The GHL embed script auto-resizes the iframe as the form's content height
+  // changes. Notify the page (Lenis smooth-scroll listens to "resize") so its
+  // cached scroll limit stays in sync — otherwise scrolling near the form jumps.
+  useEffect(() => {
+    const el = document.getElementById(`inline-${formId}`);
+    if (!el || typeof ResizeObserver === "undefined") return;
+    let raf = 0;
+    const ro = new ResizeObserver(() => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
+    });
+    ro.observe(el);
+    return () => {
+      ro.disconnect();
+      cancelAnimationFrame(raf);
+    };
+  }, [formId]);
+
   return (
-    <div className={`relative ${className ?? ""}`} style={{ minHeight: height }} data-lenis-prevent>
+    <div className={`relative ${className ?? ""}`} style={{ minHeight: height }}>
       <iframe
         src={`${formBase}/${formId}`}
         id={`inline-${formId}`}

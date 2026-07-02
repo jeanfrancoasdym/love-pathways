@@ -2,6 +2,8 @@
   "hero": {
     "imageAlt": "Fondo de nuestro equipo",
     "title": "Nuestro equipo",
+    "titleLine1": "Nuestro",
+    "titleLine2": "equipo",
     "subtitle": "Conoce a los líderes dedicados a brindar atención sensible al trauma y a guiar a nuestra comunidad hacia un futuro más prometedor."
   },
   "members": {

@@ -8,12 +8,16 @@
   "list": {
     "eyebrow": "Save Your Spot",
     "heading": "Upcoming Webinars & Workshops",
+    "headingLead": "Upcoming Webinars &",
+    "headingHighlight": "Workshops",
     "empty": "No upcoming events at the moment. Please check back later.",
     "modalityFallback": "Event",
     "register": "Register here"
   },
   "missed": {
     "title": "Did you miss a webinar?",
+    "titleLead": "Did you miss a",
+    "titleHighlight": "webinar?",
     "description": "Don't worry! All our past webinars are recorded and uploaded to our Resource Hub so you can watch them at your own pace.",
     "button": "Watch Past Webinars"
   },

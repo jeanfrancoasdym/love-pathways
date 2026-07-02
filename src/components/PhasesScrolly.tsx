@@ -17,10 +17,10 @@ type Phase = { key: string; num: string; bg: string; icon: LucideIcon };
 
 // Each phase: themed photo + a meaningful icon.
 const PHASES: Phase[] = [
-  { key: "engagement", num: "1", bg: "/page-hero/phase-photo-1.webp", icon: MessagesSquare },
-  { key: "planDevelopment", num: "2", bg: "/page-hero/phase-photo-2.webp", icon: ClipboardList },
-  { key: "implementation", num: "3", bg: "/page-hero/phase-photo-3.webp", icon: HeartHandshake },
-  { key: "transition", num: "4", bg: "/page-hero/phase-photo-4.webp", icon: Compass },
+  { key: "engagement", num: "1", bg: "/page-hero/phase-tall-1.webp", icon: MessagesSquare },
+  { key: "planDevelopment", num: "2", bg: "/page-hero/phase-tall-2.webp", icon: ClipboardList },
+  { key: "implementation", num: "3", bg: "/page-hero/phase-tall-3.webp", icon: HeartHandshake },
+  { key: "transition", num: "4", bg: "/page-hero/phase-tall-4.webp", icon: Compass },
 ];
 
 const N = PHASES.length;

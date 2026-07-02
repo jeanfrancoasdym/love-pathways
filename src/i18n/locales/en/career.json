@@ -7,6 +7,8 @@
   },
   "whyJoin": {
     "heading": "Why Work With Us?",
+    "headingLine1": "Why Work ",
+    "headingLine2": "With Us?",
     "introBefore": "At ",
     "introAfter": ", we're more than just a team. We're a community of passionate individuals dedicated to supporting adoptive families through a love-based methodology.",
     "meaningfulTitle": "Meaningful Work",
@@ -18,6 +20,8 @@
   "clinical": {
     "eyebrow": "Our Team Structure",
     "heading": "Clinical Roles",
+    "headingLine1": "Clinical ",
+    "headingLine2": "Roles",
     "subtitle": "Our clinical team provides the direct support and education that families need to thrive.",
     "roles": {
       "wrapFacilitator": {
@@ -37,6 +41,8 @@
   "administrative": {
     "eyebrow": "The Backbone of Our Mission",
     "heading": "Administrative Roles",
+    "headingLine1": "Administrative ",
+    "headingLine2": "Roles",
     "subtitle": "Our administrative team ensures that our operations run smoothly, allowing our clinical staff to focus entirely on the families we serve.",
     "operationsTitle": "Operations & Support",
     "operationsDesc": "Includes roles in Human Resources, Finance, Office Management, and Program Coordination. These professionals keep our mission moving forward with integrity and efficiency.",

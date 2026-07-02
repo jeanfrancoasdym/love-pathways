@@ -8,6 +8,8 @@
   },
   "filters": {
     "heading": "Explore Topics",
+    "headingLine1": "Explore ",
+    "headingLine2": "Topics",
     "subheading": "Find the resources and stories that matter to you.",
     "searchPlaceholder": "Search articles...",
     "all": "All"
@@ -30,6 +32,8 @@
   },
   "social": {
     "heading": "Follow us for more content",
+    "headingLine1": "Follow us for more ",
+    "headingLine2": "content",
     "facebookLabel": "Facebook",
     "instagramLabel": "Instagram"
   }

@@ -65,7 +65,7 @@ export default function Program() {
             <div className="order-2 lg:order-1">
             <div className="mb-8">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-4 leading-tight">
-                {t("approach.title")}
+                {t("approach.titleLine1")}<span className="text-brand-primary">{t("approach.titleLine2")}</span>
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed">
                 {t("approach.intro")}
@@ -145,7 +145,7 @@ export default function Program() {
                   <ShieldCheck size={18} />
                   {t("gettingStarted.badge")}
                 </div>
-                <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-dark">{t("gettingStarted.title")}</h2>
+                <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-dark">{t("gettingStarted.titleLine1")}<span className="text-brand-primary">{t("gettingStarted.titleLine2")}</span>{t("gettingStarted.titleLine3")}</h2>
               </div>
               <div className="space-y-12">
                 {logisticsSteps.map((step, idx) => (
@@ -163,7 +163,7 @@ export default function Program() {
             </div>
             <div className="relative lg:ml-8 mt-12 lg:mt-0">
               <img
-                src="https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media/69d53f15a7dcb4cff019dc33.webp"
+                src="/page-hero/program-care.webp"
                 alt={t("gettingStarted.imageAlt")}
                 className="rounded-[3rem] shadow-2xl w-full object-cover"
                 referrerPolicy="no-referrer"
@@ -207,7 +207,7 @@ export default function Program() {
             {/* Right Column: Circle of Care card + county name index below it */}
             <div className="space-y-12">
               <div className="p-10 md:p-14 bg-brand-cream rounded-[3rem] text-brand-dark relative overflow-hidden group shadow-2xl">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/20 rounded-full -mr-32 -mt-32 blur-3xl group-hover:bg-brand-primary/30 transition-colors" />
+                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/20 rounded-full -mr-32 -mt-32 blur-3xl group-hover:bg-brand-primary/30 transition-colors transform-gpu will-change-transform" />
                 <div className="relative z-10 space-y-6">
                   <div className="space-y-6">
                     <h4 className="text-4xl md:text-5xl font-display font-bold leading-tight">

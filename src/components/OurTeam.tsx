@@ -37,7 +37,7 @@ export default function OurTeam() {
       {/* Hero Section */}
       <PageHero
         image="/page-hero/hero-community.webp"
-        title={t("hero.title")}
+        title={<>{t("hero.titleLine1")} <span className="text-brand-primary">{t("hero.titleLine2")}</span></>}
         subtitle={t("hero.subtitle")}
       />
 

@@ -32,9 +32,9 @@ export default function Career() {
     <div className="pb-0 bg-slate-50/50 relative overflow-hidden">
       <Seo pageKey="career" path="/career" jsonLd={graph(organizationLd(), webSiteLd(lng), breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Careers", path: "/career" }]))} />
       {/* Global Background Decorations */}
-      <div className="absolute top-[20%] -left-24 w-96 h-96 bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-[50%] -right-24 w-96 h-96 bg-brand-secondary/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[10%] left-[10%] w-64 h-64 bg-brand-light/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-[20%] -left-24 w-96 h-96 bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none transform-gpu will-change-transform" />
+      <div className="absolute top-[50%] -right-24 w-96 h-96 bg-brand-secondary/5 rounded-full blur-[120px] pointer-events-none transform-gpu will-change-transform" />
+      <div className="absolute bottom-[10%] left-[10%] w-64 h-64 bg-brand-light/10 rounded-full blur-[100px] pointer-events-none transform-gpu will-change-transform" />
 
       {/* Hero Section */}
       <PageHero
@@ -56,7 +56,7 @@ export default function Career() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h2 className="text-4xl font-display font-bold text-brand-dark">{t("whyJoin.heading")}</h2>
+                <h2 className="text-4xl font-display font-bold text-brand-dark">{t("whyJoin.headingLine1")}<span className="text-brand-primary">{t("whyJoin.headingLine2")}</span></h2>
                 <p className="text-lg text-slate-600 leading-relaxed">
                   {t("whyJoin.introBefore")}<span className="notranslate" translate="no">Love Pathways Wraparound</span>{t("whyJoin.introAfter")}
                 </p>
@@ -80,7 +80,7 @@ export default function Career() {
             </div>
             <div className="relative">
               <img
-                src="https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media/69d53fd9a7dcb4cff01a093e.webp"
+                src="/page-hero/career-why.webp"
                 alt={t("whyJoin.imageAlt")}
                 className="rounded-[3rem] shadow-2xl"
                 referrerPolicy="no-referrer"
@@ -94,14 +94,14 @@ export default function Career() {
       <section id="clinical-roles" className="py-10 md:py-12 bg-brand-cream relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-brand-primary rounded-full blur-[100px]" />
-          <div className="absolute bottom-10 right-10 w-64 h-64 bg-brand-secondary rounded-full blur-[100px]" />
+          <div className="absolute top-10 left-10 w-64 h-64 bg-brand-primary rounded-full blur-[100px] transform-gpu will-change-transform" />
+          <div className="absolute bottom-10 right-10 w-64 h-64 bg-brand-secondary rounded-full blur-[100px] transform-gpu will-change-transform" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 space-y-4">
             <div className="text-brand-primary font-display font-bold uppercase tracking-widest text-sm">{t("clinical.eyebrow")}</div>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-dark">{t("clinical.heading")}</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-dark">{t("clinical.headingLine1")}<span className="text-brand-secondary">{t("clinical.headingLine2")}</span></h2>
             <p className="text-xl text-brand-dark/70 font-sans max-w-2xl mx-auto">
               {t("clinical.subtitle")}
             </p>
@@ -126,14 +126,14 @@ export default function Career() {
       {/* Administrative Roles */}
       <section className="py-10 md:py-12 bg-brand-secondary/5 relative overflow-hidden">
         {/* Decorative elements */}
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-secondary/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-secondary/10 rounded-full blur-[100px] pointer-events-none transform-gpu will-change-transform" />
         <div className="absolute top-0 right-0 w-full h-full opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'linear-gradient(45deg, #f8a866 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media/69ef98138acd760bf8d06ff7.jpeg"
+                src="/page-hero/career-admin.webp"
                 alt={t("administrative.imageAlt")}
                 className="rounded-[3rem] shadow-xl"
                 referrerPolicy="no-referrer"
@@ -142,7 +142,7 @@ export default function Career() {
             <div className="space-y-8 order-1 lg:order-2">
               <div className="space-y-4">
                 <div className="text-brand-secondary font-display font-bold uppercase tracking-widest text-sm">{t("administrative.eyebrow")}</div>
-                <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-dark">{t("administrative.heading")}</h2>
+                <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-dark">{t("administrative.headingLine1")}<span className="text-brand-primary">{t("administrative.headingLine2")}</span></h2>
                 <p className="text-lg text-slate-600 leading-relaxed">
                   {t("administrative.subtitle")}
                 </p>
@@ -169,8 +169,8 @@ export default function Career() {
       <section id="resume-form" className="py-10 md:py-14 bg-slate-50 relative overflow-hidden">
         {/* Decorative Background Orbs */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none">
-          <div className="absolute -top-40 -left-40 w-96 h-96 bg-brand-primary/20 rounded-full blur-3xl opacity-70" />
-          <div className="absolute bottom-0 -right-20 w-[30rem] h-[30rem] bg-brand-secondary/20 rounded-full blur-3xl opacity-70" />
+          <div className="absolute -top-40 -left-40 w-96 h-96 bg-brand-primary/20 rounded-full blur-3xl opacity-70 transform-gpu will-change-transform" />
+          <div className="absolute bottom-0 -right-20 w-[30rem] h-[30rem] bg-brand-secondary/20 rounded-full blur-3xl opacity-70 transform-gpu will-change-transform" />
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

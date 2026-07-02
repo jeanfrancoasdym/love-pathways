@@ -15,7 +15,7 @@ export default function Donate() {
       <Seo pageKey="donate" path="/donate" jsonLd={graph(organizationLd(), webSiteLd(lng), donateActionLd(), breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Donate", path: "/donate" }]))} />
       {/* Hero Section */}
       <section className="bg-brand-cream py-10 md:py-14 px-4 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-dark mb-6">{t("hero.title")}</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-dark mb-6">{t("hero.titleLine1")}<span className="text-brand-secondary">{t("hero.titleLine2")}</span></h1>
         <p className="text-xl text-brand-dark/70 max-w-3xl mx-auto leading-relaxed">
           {t("hero.subtitle")}
         </p>
@@ -31,7 +31,7 @@ export default function Donate() {
               <Heart size={32} />
             </div>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-6 leading-tight">
-              {t("main.heading")}
+              {t("main.headingLine1")}<span className="text-brand-primary">{t("main.headingLine2")}</span>
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">{" "}<span className="notranslate" translate="no">Love Pathways Wraparound</span>{" "}{t("main.intro")}
             </p>
@@ -48,7 +48,7 @@ export default function Donate() {
 
           {/* Form / Iframe Placeholder */}
           <div className="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-100 shadow-xl w-full min-h-[600px] flex flex-col relative overflow-hidden">
-             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 transform-gpu will-change-transform" />
              
              {/* Donate form - placeholder id until a real GHL donation form is provided */}
              <GhlForm

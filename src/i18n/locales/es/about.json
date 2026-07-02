@@ -30,6 +30,8 @@
   "missionVision": {
     "eyebrow": "Lo que nos mueve",
     "heading": "Nuestra misión y visión",
+    "headingLine1": "Nuestra misión y ",
+    "headingLine2": "visión",
     "intro": "Las convicciones que guían cómo acompañamos a cada familia adoptiva."
   },
   "mission": {
@@ -71,6 +73,8 @@
   },
   "coreValues": {
     "heading": "Nuestros valores fundamentales",
+    "headingLine1": "Nuestros valores ",
+    "headingLine2": "fundamentales",
     "introBeforeBrand": "Estos principios guían todo lo que hacemos en",
     "introAfterBrand": "."
   }

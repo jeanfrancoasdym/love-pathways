@@ -9,6 +9,8 @@
   },
   "approach": {
     "title": "¿Qué es el apoyo Wraparound High Fidelity (Alta fidelidad)?",
+    "titleLine1": "¿Qué es el apoyo ",
+    "titleLine2": "Wraparound High Fidelity (Alta fidelidad)?",
     "intro": "En Love Pathways, la verdadera sanación no proviene de un manual único para todos. Construimos una red de apoyo en torno a la realidad única de tu familia.",
     "block1": {
       "title": "Empoderar tu voz",
@@ -27,6 +29,9 @@
   "gettingStarted": {
     "badge": "Etapa 1: primeros pasos",
     "title": "¿Cómo empiezo con Love Pathways Wraparound?",
+    "titleLine1": "¿Cómo ",
+    "titleLine2": "empiezo",
+    "titleLine3": " con Love Pathways Wraparound?",
     "imageAlt": "Consulta",
     "quote": "\"Consideramos que es un resultado exitoso cuando la familia se siente empoderada.\"",
     "steps": {

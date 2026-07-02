@@ -256,7 +256,7 @@ export default function ResourceHub() {
         {/* Header Section */}
       <PageHero
         image="/page-hero/hero-landscape.webp"
-        title={t("hero.title")}
+        title={<>{t("hero.titleLine1")}<span className="text-brand-secondary">{t("hero.titleLine2")}</span></>}
         subtitle={t("hero.subtitle")}
       />
 
@@ -445,7 +445,7 @@ export default function ResourceHub() {
         {/* Social Follow Section */}
         <div className="mt-20 pt-10 border-t border-slate-200">
           <div className="flex flex-col items-center justify-center text-center">
-            <h3 className="text-lg font-display font-bold text-brand-dark mb-5">{t("social.title")}</h3>
+            <h3 className="text-lg font-display font-bold text-brand-dark mb-5">{t("social.titleLine1")}<span className="text-brand-primary">{t("social.titleLine2")}</span></h3>
             <div className="flex items-center gap-4">
               <a 
                 href="https://www.facebook.com/lovepathways"

@@ -87,6 +87,15 @@ html.lenis,
   outline: 3px solid #f7a4a5;
 }
 
+/* Lenis smooth-scroll + cross-origin iframes (GHL forms): iframes swallow wheel
+   events, so page scroll freezes when the cursor is over the form (Contact,
+   webinars). Disable the iframe's pointer events ONLY while a scroll is in
+   progress (.lenis-scrolling) so the wheel bubbles to the page; the form stays
+   fully interactive the moment scrolling stops. (Lenis issue #398.) */
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
 /* Effects are scoped to #a11y-root so the widget itself stays unaffected */
 html.a11y-contrast #a11y-root {
   filter: contrast(1.35);

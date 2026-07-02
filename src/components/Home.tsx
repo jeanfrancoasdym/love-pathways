@@ -36,7 +36,7 @@ function HeroCarousel() {
 
   const slides = [
     {
-      image: "https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media/69e947bda48992f689b7b3a6.webp",
+      image: "/page-hero/home-hero-1.webp",
       duration: 7000,
       brand: true,
       eyebrow: t("hero.eyebrow"),
@@ -47,7 +47,7 @@ function HeroCarousel() {
       ],
     },
     {
-      image: "https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media/69e947e89ff45b49cc9655da.webp",
+      image: "/page-hero/home-hero-2.webp",
       duration: 6000,
       eyebrow: t("hero.slide2Eyebrow"),
       title: t("hero.slide2Title"),
@@ -58,7 +58,7 @@ function HeroCarousel() {
       ],
     },
     {
-      image: "https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media/69e94b1c5df4011c24000137.jpg",
+      image: "/page-hero/home-hero-3.webp",
       duration: 6000,
       eyebrow: t("hero.slide3Eyebrow"),
       title: t("hero.slide3Title"),
@@ -101,10 +101,10 @@ function HeroCarousel() {
           <div className="absolute inset-0 z-20">
             <div className="mx-auto flex h-full max-w-[88rem] flex-col justify-center px-4 sm:px-6 lg:px-8">
               <div className="max-w-4xl space-y-6 pt-24 pb-16 md:py-10">
-                <p className="font-sans text-lg font-bold uppercase tracking-[0.22em] text-brand-primary md:text-xl">{slide.eyebrow}</p>
+                <p className="font-sans text-lg font-bold uppercase tracking-[0.22em] text-brand-dark md:text-xl">{slide.eyebrow}</p>
                 {slide.brand ? (
-                  <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-[#232323] sm:text-5xl md:text-6xl lg:text-7xl">
-                    <span className="notranslate" translate="no">LOVE PATHWAYS WRAPAROUND</span>
+                  <h1 className="font-display text-xl font-bold leading-none tracking-tight text-[#232323] whitespace-nowrap sm:text-3xl md:text-4xl lg:text-5xl">
+                    <span className="notranslate" translate="no"><span className="text-brand-primary">LOVE PATHWAYS</span> WRAPAROUND</span>
                   </h1>
                 ) : (
                   <h2 className="font-display text-4xl font-bold leading-[1.06] tracking-tight text-[#232323] md:text-5xl lg:text-6xl">{slide.title}</h2>
@@ -285,7 +285,7 @@ export default function Home() {
               <ParallaxFloat distance={32} className="relative z-10">
                 <div className="relative rotate-[-2deg] overflow-hidden rounded-[2.5rem] shadow-2xl ring-1 ring-slate-900/5">
                   <img
-                    src="https://assets.cdn.filesafe.space/jQg8LJhvILD2H4cnIhvZ/media/69d6c8ce3d829c73b2f0532e.webp"
+                    src="/page-hero/home-wraparound.webp"
                     alt={t("expertise.imageAlt")}
                     className="aspect-[4/3] w-full object-cover object-center"
                     referrerPolicy="no-referrer"
@@ -334,7 +334,7 @@ export default function Home() {
               {t("qualifies.eyebrow")}
             </span>
             <h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-brand-dark md:text-5xl">
-              {t("qualifies.title")}
+              {t("qualifies.titleLine1")} <span className="text-brand-primary">{t("qualifies.titleLine2")}</span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">{t("qualifies.intro")}</p>
           </motion.div>
@@ -428,7 +428,7 @@ export default function Home() {
 
             <div className="lg:col-span-7 bg-white/80 backdrop-blur-md p-10 md:p-14 rounded-[3rem] border border-slate-200 flex flex-col justify-center shadow-xl relative overflow-hidden">
                {/* Inner decorative bloom */}
-              <div className="absolute -top-32 -right-32 w-80 h-80 bg-brand-secondary/20 blur-[60px] rounded-full pointer-events-none"></div>
+              <div className="absolute -top-32 -right-32 w-80 h-80 bg-brand-secondary/20 blur-[60px] rounded-full pointer-events-none transform-gpu will-change-transform"></div>
 
               <div className="mb-8 relative z-10">
                 <div className="text-brand-primary font-display font-bold uppercase tracking-widest text-sm mb-4">{t("services.goalEyebrow")}</div>
@@ -452,8 +452,8 @@ export default function Home() {
       <section className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 md:py-16 lg:px-8">
         <div className="relative overflow-hidden rounded-[3rem] bg-brand-cream shadow-2xl">
           {/* glowing orbs */}
-          <div className="pointer-events-none absolute -right-40 -top-40 h-[40rem] w-[40rem] rounded-full bg-brand-primary/25 blur-[120px]" />
-          <div className="pointer-events-none absolute -bottom-40 -left-40 h-[40rem] w-[40rem] rounded-full bg-brand-secondary/15 blur-[120px]" />
+          <div className="pointer-events-none absolute -right-40 -top-40 h-[40rem] w-[40rem] rounded-full bg-brand-primary/25 blur-[120px] transform-gpu will-change-transform" />
+          <div className="pointer-events-none absolute -bottom-40 -left-40 h-[40rem] w-[40rem] rounded-full bg-brand-secondary/15 blur-[120px] transform-gpu will-change-transform" />
 
           <div className="relative z-10 grid items-center gap-8 lg:grid-cols-2 lg:gap-4">
             {/* text */}

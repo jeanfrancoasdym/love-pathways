@@ -105,7 +105,7 @@ export default function Events() {
       {/* Events Grid */}
       <section className="relative max-w-full mx-auto py-10 md:py-14 bg-white overflow-hidden">
         <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #232323 0, #232323 1px, transparent 1px, transparent 24px)' }}></div>
-        <div className="absolute top-1/4 -right-10 text-brand-primary/5 pointer-events-none z-0">
+        <div className="absolute top-1/4 -right-10 text-brand-primary/5 pointer-events-none z-0 transform-gpu will-change-transform">
           <Calendar size={600} strokeWidth={0.2} />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" id="dynamic-events-container">
@@ -116,7 +116,7 @@ export default function Events() {
             <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" />
             {t("list.eyebrow")}
           </span>
-          <h2 className="mt-5 font-display text-3xl md:text-4xl font-bold text-brand-dark">{t("list.heading")}</h2>
+          <h2 className="mt-5 font-display text-3xl md:text-4xl font-bold text-brand-dark">{t("list.headingLead")} <span className="text-brand-secondary">{t("list.headingHighlight")}</span></h2>
         </div>
 
         {loading ? (
@@ -198,7 +198,7 @@ export default function Events() {
               <Video size={22} />
             </div>
             <div>
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-brand-dark">{t("missed.title")}</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-brand-dark">{t("missed.titleLead")} <span className="text-brand-primary">{t("missed.titleHighlight")}</span></h2>
               <p className="mt-1.5 text-slate-600 max-w-xl">{t("missed.description")}</p>
             </div>
           </div>

@@ -83,12 +83,12 @@ export default function FAQ() {
       {/* FAQ List */}
       <section className="relative max-w-full overflow-hidden bg-slate-50 pt-10 pb-16 md:pt-14 md:pb-20">
         <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#232323 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }}></div>
-        <div className="absolute top-20 -left-10 text-brand-secondary/10 pointer-events-none z-0">
+        <div className="absolute top-20 -left-10 text-brand-secondary/10 pointer-events-none z-0 transform-gpu will-change-transform">
           <HelpCircle size={600} strokeWidth={0.2} />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10 space-y-4">
-          <p className="text-xl text-brand-dark font-medium max-w-2xl mx-auto">
+          <p className="text-xl text-brand-dark/70 font-medium max-w-2xl mx-auto">
             {t("list.entityDefinition")}
           </p>
           <p className="text-lg text-slate-500 font-sans max-w-3xl mx-auto">
@@ -97,7 +97,7 @@ export default function FAQ() {
         </div>
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-dark">
-            {t("list.heading")}
+            {t("list.headingLead")} <span className="text-brand-primary">{t("list.headingHighlight")}</span>
           </h2>
           <p className="text-xl text-slate-500 font-sans max-w-2xl mx-auto">
             {t("list.subheading")}
@@ -138,7 +138,7 @@ export default function FAQ() {
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
             </svg>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8">{t("cta.heading")}</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8">{t("cta.headingLead")} <span className="text-brand-secondary">{t("cta.headingHighlight")}</span></h2>
           <p className="text-xl md:text-2xl text-brand-dark/70 max-w-2xl mx-auto leading-relaxed">
             {t("cta.body")}
           </p>

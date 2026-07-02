@@ -1,6 +1,8 @@
 {
   "hero": {
     "title": "Centro de recursos",
+    "titleLine1": "Centro de ",
+    "titleLine2": "recursos",
     "subtitle": "Explora nuestra completa biblioteca de guías, videos y podcasts sobre crianza sensible al trauma, rutinas diarias y consejos de expertos de nuestro equipo principal."
   },
   "section": {
@@ -34,6 +36,8 @@
     "default": "Estamos preparando contenido nuevo para ti. ¡Mantente atento!"
   },
   "social": {
-    "title": "Conéctate con nosotros"
+    "title": "Conéctate con nosotros",
+    "titleLine1": "Conéctate con ",
+    "titleLine2": "nosotros"
   }
 }

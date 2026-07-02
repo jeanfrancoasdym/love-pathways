@@ -138,7 +138,7 @@ export default function Impact() {
       <section className="py-20 md:py-28 bg-slate-50 border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="text-4xl font-display font-bold text-brand-dark">{t("testimonials.heading")}</h2>
+            <h2 className="text-4xl font-display font-bold text-brand-dark">{t("testimonials.headingLine1")}<span className="text-brand-primary">{t("testimonials.headingLine2")}</span></h2>
             <p className="text-lg text-slate-600">
               {t("testimonials.introBefore")}{" "}<span className="notranslate" translate="no">Love Pathways Wraparound</span>.
             </p>

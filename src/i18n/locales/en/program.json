@@ -9,6 +9,8 @@
   },
   "approach": {
     "title": "What is High-Fidelity Wraparound support?",
+    "titleLine1": "What is High-Fidelity ",
+    "titleLine2": "Wraparound support?",
     "intro": "At Love Pathways, true healing doesn’t come from a one-size-fits-all manual. We build a safety net around your family's unique reality.",
     "block1": {
       "title": "Empowering Your Voice",
@@ -27,6 +29,9 @@
   "gettingStarted": {
     "badge": "Stage 1: First Steps",
     "title": "How do I get started with Love Pathways Wraparound?",
+    "titleLine1": "How do I ",
+    "titleLine2": "get started",
+    "titleLine3": " with Love Pathways Wraparound?",
     "imageAlt": "Consultation",
     "quote": "\"We consider it a successful outcome when the family feels empowered.\"",
     "steps": {

@@ -8,6 +8,8 @@
   },
   "filters": {
     "heading": "Explora temas",
+    "headingLine1": "Explora ",
+    "headingLine2": "temas",
     "subheading": "Encuentra los recursos y las historias que más te importan.",
     "searchPlaceholder": "Buscar artículos...",
     "all": "Todas"
@@ -30,6 +32,8 @@
   },
   "social": {
     "heading": "Síguenos para más contenido",
+    "headingLine1": "Síguenos para más ",
+    "headingLine2": "contenido",
     "facebookLabel": "Facebook",
     "instagramLabel": "Instagram"
   }
