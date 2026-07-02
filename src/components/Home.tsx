@@ -174,7 +174,7 @@ export default function Home() {
         <div className="absolute top-1/2 right-[-5%] -translate-y-1/2 text-brand-primary/5 pointer-events-none z-0">
           <HeartPulse size={600} strokeWidth={0.2} />
         </div>
-        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-primary/5 blur-[80px] pointer-events-none z-0 transform-gpu will-change-transform">
+        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-primary/5 blur-[80px] pointer-events-none z-0 transform-gpu will-change-transform"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
