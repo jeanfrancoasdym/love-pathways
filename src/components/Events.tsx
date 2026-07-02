@@ -36,16 +36,17 @@ export const EVENTS: LpEvent[] = [
     modality: "Live Webinar",
     image: "/page-hero/event-connection.webp",
   },
-  // "Substance Use & the Teen Trauma Brain" (Bryan Post, /webinar-event1) is
-  // hidden from Events until its GHL registration form is ready. The landing
-  // page still exists; restore this card once the form iframe is provided:
-  // {
-  //   id: "substance-use", title: "Substance Use & the Teen Trauma Brain",
-  //   description: "How trauma affects the developing teen brain, why dopamine and emotional pain drive risky behavior, and how connection builds safety and healthier coping.",
-  //   date: "Tuesday, July 28th", time: "9:00 AM - 10:00 AM PST",
-  //   endsAt: "2026-07-28T17:00:00Z", locationLink: "/webinar-event2",
-  //   modality: "Live Webinar", image: "/page-hero/event-teen.webp",
-  // },
+  {
+    id: "substance-use",
+    title: "Substance Use & the Teen Trauma Brain",
+    description: "How trauma affects the developing teen brain, why dopamine and emotional pain drive risky behavior, and how connection builds safety and healthier coping.",
+    date: "Tuesday, July 28th",
+    time: "9:00 AM - 10:00 AM PST",
+    endsAt: "2026-07-28T17:00:00Z",
+    locationLink: "/webinar-event2",
+    modality: "Live Webinar",
+    image: "/page-hero/event-teen.webp",
+  },
 ];
 
 // Build/navigation-time filter: drop events whose end time has already passed,

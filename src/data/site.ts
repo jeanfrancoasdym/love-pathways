@@ -48,8 +48,8 @@ export const ghl = {
   formBase: "https://go.leafwraparound.com/widget/form",
   contactFormId: "yXT3uwETc1ISIRP2WEbV", // "New Lead Application - English"
   webinar1FormId: "O0bEq8momPzSnmzXNebR", // Event 1: When Love Doesn't Feel Like Enough (Jul 14)
-  webinar2FormIdEn: "JgsTFKb06Ot8qmHm2l2V", // Event 2: Substance Use (Bryan) - TODO replace with real form
-  webinar2FormIdEs: "JgsTFKb06Ot8qmHm2l2V", // TODO Bryan form pending
+  webinar2FormIdEn: "XOoAL6XIN4dOOuq3VuO8", // Event 2: Substance Use & the Teen Trauma Brain (Bryan)
+  webinar2FormIdEs: "XOoAL6XIN4dOOuq3VuO8",
   // Newsletter lives on Revive's GHL domain in the LP source.
   newsletterEmbedScript: "https://go.revivebhc.org/js/form_embed.js",
   newsletterFormBase: "https://go.revivebhc.org/widget/form",
