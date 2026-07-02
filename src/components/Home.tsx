@@ -103,7 +103,7 @@ function HeroCarousel() {
               <div className="max-w-4xl space-y-6 pt-24 pb-16 md:py-10">
                 <p className="font-sans text-lg font-bold uppercase tracking-[0.22em] text-slate-600 md:text-xl">{slide.eyebrow}</p>
                 {slide.brand ? (
-                  <h1 className="font-display text-5xl font-bold leading-[1.02] tracking-tight text-[#232323] sm:text-6xl md:text-7xl lg:text-8xl">
+                  <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-[#232323] sm:text-5xl md:text-6xl lg:text-7xl">
                     <span className="notranslate" translate="no">LOVE PATHWAYS WRAPAROUND</span>
                   </h1>
                 ) : (
@@ -174,7 +174,7 @@ export default function Home() {
         <div className="absolute top-1/2 right-[-5%] -translate-y-1/2 text-brand-primary/5 pointer-events-none z-0">
           <HeartPulse size={600} strokeWidth={0.2} />
         </div>
-        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-blue-500/5 blur-[80px] pointer-events-none z-0"></div>
+        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-primary/5 blur-[80px] pointer-events-none z-0"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -186,7 +186,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-dark leading-tight">
                 {t("crisis.title")}
               </h2>
-              <div className="w-12 h-1.5 bg-blue-500 mt-6 mb-8"></div>
+              <div className="w-12 h-1.5 bg-brand-primary mt-6 mb-8"></div>
               <p className="text-lg text-slate-600 leading-relaxed">
                 {t("crisis.entityDefinition")}
               </p>
@@ -206,15 +206,15 @@ export default function Home() {
                 {t("crisis.description")}
               </p>
 
-              <div className="bg-white/95 backdrop-blur-md shadow-xl shadow-slate-200/50 border-l-4 border-blue-500 p-8 md:p-10 rounded-r-[2rem] rounded-bl-[2rem] relative overflow-hidden">
+              <div className="bg-white/95 backdrop-blur-md shadow-xl shadow-slate-200/50 border-l-4 border-brand-primary p-8 md:p-10 rounded-r-[2rem] rounded-bl-[2rem] relative overflow-hidden">
                 {/* Small inner watermark */}
-                <div className="absolute -right-4 -bottom-4 text-blue-500/5 pointer-events-none">
+                <div className="absolute -right-4 -bottom-4 text-brand-primary/5 pointer-events-none">
                   <ShieldCheck size={180} strokeWidth={0.5} />
                 </div>
                 <p className="text-slate-700 leading-relaxed mb-6 relative z-10 text-lg">
                   {t("crisis.noCostBefore")}<span className="font-bold">{t("crisis.noCostBold")}</span>
                 </p>
-                <a href="#who-qualifies" className="inline-flex items-center gap-2 text-blue-600 font-bold uppercase tracking-wide text-sm hover:text-blue-800 transition-colors relative z-10">
+                <a href="#who-qualifies" className="inline-flex items-center gap-2 text-brand-primary font-bold uppercase tracking-wide text-sm hover:text-brand-dark transition-colors relative z-10">
                   {t("crisis.qualifyLink")} <ArrowRight size={16} />
                 </a>
               </div>

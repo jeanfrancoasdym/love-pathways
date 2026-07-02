@@ -75,7 +75,7 @@ html.lenis,
   left: 8px;
   top: -120px;
   z-index: 80;
-  background: #192847;
+  background: #232323;
   color: #fff;
   padding: 12px 18px;
   border-radius: 10px;
@@ -84,7 +84,7 @@ html.lenis,
 }
 .a11y-skip-link:focus {
   top: 8px;
-  outline: 3px solid #657ef6;
+  outline: 3px solid #f7a4a5;
 }
 
 /* Effects are scoped to #a11y-root so the widget itself stays unaffected */

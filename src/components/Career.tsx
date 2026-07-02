@@ -169,8 +169,8 @@ export default function Career() {
       <section id="resume-form" className="py-10 md:py-14 bg-slate-50 relative overflow-hidden">
         {/* Decorative Background Orbs */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none">
-          <div className="absolute -top-40 -left-40 w-96 h-96 bg-indigo-200/40 rounded-full blur-3xl opacity-70" />
-          <div className="absolute bottom-0 -right-20 w-[30rem] h-[30rem] bg-blue-200/40 rounded-full blur-3xl opacity-70" />
+          <div className="absolute -top-40 -left-40 w-96 h-96 bg-brand-primary/20 rounded-full blur-3xl opacity-70" />
+          <div className="absolute bottom-0 -right-20 w-[30rem] h-[30rem] bg-brand-secondary/20 rounded-full blur-3xl opacity-70" />
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -178,13 +178,13 @@ export default function Career() {
             
             {/* Left Column: Texts */}
             <div className="lg:col-span-5 space-y-8">
-              <div className="w-16 h-16 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-indigo-600 shadow-sm">
+              <div className="w-16 h-16 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-brand-primary shadow-sm">
                 <BookOpen size={28} strokeWidth={1.5} />
               </div>
               
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight text-slate-900">
                 {t("form.titleLead")}<br className="hidden lg:block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">{t("form.titleHighlight")}</span>{" "}{t("form.titleTrail")}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">{t("form.titleHighlight")}</span>{" "}{t("form.titleTrail")}
               </h2>
 
               <p className="text-slate-500 text-lg leading-relaxed max-w-md">
