@@ -8,6 +8,10 @@ type SeoProps = {
   pageKey: string;
   /** Canonical app path WITHOUT locale prefix, e.g. "/about-us" or "/". */
   path: string;
+  /** Explicit title, overrides the `seo.<pageKey>.title` i18n lookup (e.g. per-article blog titles). */
+  title?: string;
+  /** Explicit description, overrides the `seo.<pageKey>.description` i18n lookup. */
+  description?: string;
   /** Open Graph image. Absolute URL or root-relative path (e.g. "/page-hero/foo.webp"). Falls back to page-specific default. */
   image?: string;
   /** og:type - "website" (default) or "article". */
@@ -39,11 +43,11 @@ const PAGE_OG_IMAGES: Record<string, string> = {
 // (en / es / x-default), Open Graph, <html lang>, and JSON-LD.
 // Copy comes from the centralized `seo` namespace; rendered into the prerendered
 // HTML so crawlers and LLMs read it at first byte.
-export default function Seo({ pageKey, path, image, type = "website", jsonLd, noindex }: SeoProps) {
+export default function Seo({ pageKey, path, title: titleOverride, description: descriptionOverride, image, type = "website", jsonLd, noindex }: SeoProps) {
   const { t } = useTranslation("seo");
   const { lng } = useLocale();
-  const title = t(`${pageKey}.title`);
-  const description = t(`${pageKey}.description`);
+  const title = titleOverride ?? t(`${pageKey}.title`);
+  const description = descriptionOverride ?? t(`${pageKey}.description`);
   const enUrl = path === "/" ? `${siteOrigin}/` : `${siteOrigin}${path}`;
   const esUrl = path === "/" ? `${siteOrigin}/es` : `${siteOrigin}/es${path}`;
   const canonical = lng === "es" ? esUrl : enUrl;

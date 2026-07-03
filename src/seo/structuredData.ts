@@ -48,6 +48,7 @@ export function organizationLd() {
     sameAs: org.sameAs,
   };
   if (org.logo) node.logo = org.logo;
+  if (org.image) node.image = org.image;
   return node;
 }
 
@@ -70,7 +71,7 @@ export function webSiteLd(lng: Lng) {
   };
 }
 
-export function serviceLd(lng: Lng, opts: { name: string; description: string; path?: string }) {
+export function serviceLd(lng: Lng, opts: { name: string; description: string }) {
   return {
     "@type": "Service",
     name: opts.name,
@@ -79,7 +80,6 @@ export function serviceLd(lng: Lng, opts: { name: string; description: string; p
     inLanguage: lng,
     provider: { "@id": ORG_ID },
     areaServed: { "@type": "State", name: "California" },
-    url: localeUrl(lng, opts.path ?? "/our-program"),
     isAccessibleForFree: true,
   };
 }
@@ -159,6 +159,21 @@ export function blogPageLd(lng: Lng) {
     url: localeUrl(lng, "/blog"),
     inLanguage: lng,
     publisher: { "@id": ORG_ID },
+  };
+}
+
+export function articleLd(lng: Lng, opts: { title: string; description: string; path: string; image: string; publishedAt: string }) {
+  return {
+    "@type": "Article",
+    headline: opts.title,
+    description: opts.description,
+    url: localeUrl(lng, opts.path),
+    image: opts.image.startsWith("/") ? `${siteOrigin}${opts.image}` : opts.image,
+    datePublished: opts.publishedAt,
+    inLanguage: lng,
+    isPartOf: { "@id": WEBSITE_ID },
+    publisher: { "@id": ORG_ID },
+    author: { "@id": ORG_ID },
   };
 }
 

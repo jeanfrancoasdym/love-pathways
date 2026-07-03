@@ -41,7 +41,6 @@ export default function Program() {
             name: "Love Pathways Wraparound Program",
             description:
               "A team-based, trauma-responsive wraparound program guiding adoptive families through four phases of care (engagement, plan development, implementation, and transition) with in-home support, family coaching, and clinical guidance across 20+ California counties, at no out-of-pocket cost to AAP families.",
-            path: "/our-program",
           }),
           breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Our Program", path: "/our-program" }])
         )}

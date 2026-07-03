@@ -1,10 +1,15 @@
 // Generates dist/sitemap.xml with bilingual (EN/ES) hreflang alternates.
 // Runs automatically after `vite-react-ssg build` via the npm "postbuild" hook.
 // Keep ORIGIN + PATHS in sync with src/data/site.ts (siteOrigin) and src/App.tsx (routes).
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const ORIGIN = "https://lovepathways.org";
+
+// Blog article routes come from the generated index - regex-read the slugs so
+// this build script stays dependency-free (no TS import machinery needed).
+const blogIndexSrc = readFileSync(resolve(process.cwd(), "src", "data", "blogIndex.ts"), "utf8");
+const BLOG_SLUGS = [...blogIndexSrc.matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1]);
 
 // Indexable routes only. Thank-you pages and 404 are intentionally excluded
 // (they render <Seo noindex>), as is the "*" catch-all.
@@ -14,7 +19,7 @@ const PAGES = [
   { path: "/our-program",           priority: "0.9", changefreq: "monthly"   },
   { path: "/about-us",              priority: "0.8", changefreq: "monthly"   },
   { path: "/contact-us",            priority: "0.8", changefreq: "monthly"   },
-  { path: "/faq",                   priority: "0.8", changefreq: "quarterly" },
+  { path: "/faq",                   priority: "0.8", changefreq: "monthly"   },
   { path: "/events",                priority: "0.8", changefreq: "weekly"    },
   { path: "/impact",                priority: "0.7", changefreq: "monthly"   },
   { path: "/our-team",              priority: "0.7", changefreq: "monthly"   },
@@ -24,6 +29,7 @@ const PAGES = [
   { path: "/career",                priority: "0.6", changefreq: "monthly"   },
   { path: "/donate",                priority: "0.6", changefreq: "monthly"   },
   { path: "/resource-hub",          priority: "0.6", changefreq: "monthly"   },
+  ...BLOG_SLUGS.map((slug) => ({ path: `/blog/${slug}`, priority: "0.5", changefreq: "yearly" })),
 ];
 const PATHS = PAGES.map((p) => p.path);
 const TODAY = new Date().toISOString().slice(0, 10);

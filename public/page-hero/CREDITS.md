@@ -58,3 +58,23 @@ These files replaced GoHighLevel-CDN photos that were identical to the LEAF site
 - phase-photo-2.webp: Vitaly Gariev (@vitalygariev) — planning together with sticky notes (Phase 02 Plan Development) — Free to use under the Unsplash License
 - phase-photo-3.webp: cottonbro studio (Pexels) — a blended family reading together in a cozy blanket fort, warmth and shared activity (Phase 03 Implementation) — Free to use under the Pexels License
 - phase-photo-4.webp: Tim Mossholder (@timmossholder) — open road toward sunlit hills at sunrise (Phase 04 Transition) — Free to use under the Unsplash License
+
+## Blog article images (shared with LEAF's native blog migration; same 15 articles)
+
+All sourced from Unsplash (images.unsplash.com, free tier), verified "Free to use under the Unsplash License" at download time. Photographer handles were not logged during the batch migration run — noting the gap here rather than guessing names.
+
+- blog-wraparound-foster-youth.webp, blog-wraparound-inline-1.webp, blog-wraparound-inline-2.webp (wraparound-services-foster-youth) — Free to use under the Unsplash License
+- blog-aap-success.webp, blog-aap-success-inline-1.webp (aap-success-stories-benefits) — Free to use under the Unsplash License
+- blog-aap-faqs.webp, blog-aap-faqs-inline-1.webp (adoption-assistance-program-aap-faqs) — Free to use under the Unsplash License
+- blog-aap-structure.webp, blog-aap-structure-inline-1.webp (aap-structure-guide) — Free to use under the Unsplash License
+- blog-child-therapy.webp, blog-child-therapy-inline-1.webp, blog-child-therapy-inline-2.webp (behavioral-therapy-adopted-children) — Free to use under the Unsplash License
+- blog-attachment-parenting.webp, blog-attachment-parenting-inline-1.webp, blog-attachment-parenting-inline-2.webp (parenting-children-attachment-issues) — Free to use under the Unsplash License
+- blog-adoption-bond.webp, blog-adoption-bond-inline-1.webp, blog-adoption-bond-inline-2.webp (building-bond-adopted-child) — Free to use under the Unsplash License
+- blog-calm-discipline.webp (disciplining-adopted-children-trauma) — Free to use under the Unsplash License
+- blog-adoption-myths.webp (adoption-parenting-myths-vs-reality) — Free to use under the Unsplash License
+- blog-teen-whisperer.webp, blog-teen-whisperer-inline-1.webp, blog-teen-whisperer-inline-2.webp (adopted-teen-whisperer) — Free to use under the Unsplash License
+- blog-teen-struggles.webp, blog-teen-struggles-inline-1.webp (why-adopted-adolescents-struggle) — Free to use under the Unsplash License
+- blog-teen-girls.webp, blog-teen-girls-inline-1.webp, blog-teen-girls-inline-2.webp (impact-adoption-teenage-girls) — Free to use under the Unsplash License
+- blog-birth-parents.webp, blog-birth-parents-inline-1.webp (adopted-teens-finding-birth-parents) — Free to use under the Unsplash License
+- blog-wraparound-families.webp, blog-wraparound-families-inline-1.webp, blog-wraparound-families-inline-2.webp (warparound-services-adoptive-families) — Free to use under the Unsplash License
+- blog-inhome-support.webp (in-home-support-adoptive-families) — Free to use under the Unsplash License

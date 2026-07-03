@@ -18,7 +18,9 @@ import Events, { eventsLoader } from './components/Events';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Career from './components/Career';
-import Blog, { blogLoader } from './components/Blog';
+import Blog from './components/Blog';
+import BlogPost from './components/BlogPost';
+import { BLOG_INDEX } from './data/blogIndex';
 import Donate from './components/Donate';
 import ResourceHub, { resourcesLoader } from './components/ResourceHub';
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -44,6 +46,9 @@ function RootProviders() {
   );
 }
 
+// Lazy per-article content modules (see src/data/blogTypes.ts for the split).
+const postModules = import.meta.glob('./data/posts/*.ts');
+
 // Every page, relative to the locale root. Built fresh per locale branch so the
 // EN tree (root) and ES tree (/es) hold distinct route objects.
 const buildPages = (): RouteRecord[] => [
@@ -56,7 +61,19 @@ const buildPages = (): RouteRecord[] => [
   { path: 'faq', element: <FAQ /> },
   { path: 'contact-us', element: <Contact /> },
   { path: 'career', element: <Career /> },
-  { path: 'blog', element: <Blog />, loader: blogLoader },
+  { path: 'blog', element: <Blog /> },
+  // One literal route per article (known, fixed set) so vite-react-ssg
+  // prerenders real static HTML for each post. Content is code-split: each
+  // route's loader pulls only its own article module, so the full EN+ES text
+  // of every post never lands in the shared JS bundle.
+  ...BLOG_INDEX.map((p) => ({
+    path: `blog/${p.slug}`,
+    element: <BlogPost slugProp={p.slug} />,
+    loader: async () => {
+      const mod = (await postModules[`./data/posts/${p.slug}.ts`]()) as { default: unknown };
+      return mod.default;
+    },
+  })),
   { path: 'donate', element: <Donate /> },
   { path: 'resource-hub', element: <ResourceHub />, loader: resourcesLoader },
   { path: 'privacy-policy', element: <PrivacyPolicy /> },

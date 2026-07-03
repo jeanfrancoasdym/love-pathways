@@ -79,18 +79,18 @@ function HeroCarousel() {
   }, [currentSlide, slides.length]);
 
   return (
-    <section id="ghl-hero-carousel-container" className="relative md:h-[60vh] min-h-[540px] md:min-h-[480px] w-full overflow-hidden bg-brand-dark flex items-center group">
+    <section id="ghl-hero-carousel-container" className="relative grid w-full overflow-hidden bg-brand-dark group">
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ghl-carousel-slide ${
+          className={`relative col-start-1 row-start-1 transition-opacity duration-1000 ghl-carousel-slide ${
             currentSlide === index ? "opacity-100 z-10" : "pointer-events-none opacity-0 z-0"
           }`}
         >
           <img
             src={slide.image}
             alt={t(`hero.slideAlt${index + 1}`)}
-            className="w-full h-full object-cover object-center"
+            className="absolute inset-0 w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
           />
 
@@ -98,9 +98,9 @@ function HeroCarousel() {
           <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent w-full md:w-[85%] lg:w-[68%]" />
 
           {/* per-slide content */}
-          <div className="absolute inset-0 z-20">
-            <div className="mx-auto flex h-full max-w-[88rem] flex-col justify-center px-4 sm:px-6 lg:px-8">
-              <div className="max-w-4xl space-y-6 pt-24 pb-16 md:py-10">
+          <div className="relative z-20">
+            <div className="mx-auto flex min-h-[540px] md:min-h-[max(60vh,480px)] max-w-[88rem] flex-col justify-center px-4 sm:px-6 lg:px-8">
+              <div className="max-w-4xl space-y-6 pt-24 pb-24 md:py-10">
                 <p className="font-sans text-lg font-bold uppercase tracking-[0.22em] text-brand-dark md:text-xl">{slide.eyebrow}</p>
                 {slide.brand ? (
                   <h1 className="font-display text-xl font-bold leading-none tracking-tight text-[#232323] whitespace-nowrap sm:text-3xl md:text-4xl lg:text-5xl">
@@ -161,7 +161,6 @@ export default function Home() {
           name: "Love Pathways Wraparound Services",
           description:
             "Love-based, trauma-responsive wraparound services that help adoptive families in California stay together through education, family coaching, parent groups, and in-home support, at no out-of-pocket cost to AAP families.",
-          path: "/our-program",
         })}
       />
       {/* Hero Carousel Section */}

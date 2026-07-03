@@ -28,7 +28,16 @@
     "readArticle": "Read Article",
     "readMore": "Read more",
     "loadMore": "Load more",
-    "uncategorized": "Uncategorized"
+    "uncategorized": "Uncategorized",
+    "minRead": "min read",
+    "originallyReported": "Originally reported by",
+    "backToBlog": "Back to all articles",
+    "copyLink": "Copy link",
+    "relatedArticles": "Related Articles",
+    "shareArticle": "Share this Article",
+    "inThisArticle": "In this Article",
+    "editorialTeam": "Editorial Team",
+    "blogLabel": "Blog"
   },
   "social": {
     "heading": "Follow us for more content",

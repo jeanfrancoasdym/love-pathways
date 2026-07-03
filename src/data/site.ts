@@ -100,7 +100,8 @@ export const org = {
   name: "Love Pathways Wraparound",
   legalName: "Love Pathways Wraparound", // TODO confirm legal entity name
   url: siteOrigin,
-  logo: "", // TODO: official LP logo asset URL (also used for favicon)
+  logo: `${siteOrigin}/logo-schema.png`,
+  image: `${siteOrigin}/page-hero/hero-landscape.webp`,
   founder: "Bryan Post",
   serviceType: "Adoption wraparound services",
   knowsAbout: [

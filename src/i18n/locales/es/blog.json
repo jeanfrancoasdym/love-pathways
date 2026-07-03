@@ -28,7 +28,16 @@
     "readArticle": "Leer artículo",
     "readMore": "Leer más",
     "loadMore": "Ver más",
-    "uncategorized": "Sin categoría"
+    "uncategorized": "Sin categoría",
+    "minRead": "min. de lectura",
+    "originallyReported": "Publicado originalmente por",
+    "backToBlog": "Volver a todos los artículos",
+    "copyLink": "Copiar enlace",
+    "relatedArticles": "Artículos relacionados",
+    "shareArticle": "Comparte este artículo",
+    "inThisArticle": "En este artículo",
+    "editorialTeam": "Equipo Editorial",
+    "blogLabel": "Blog"
   },
   "social": {
     "heading": "Síguenos para más contenido",
