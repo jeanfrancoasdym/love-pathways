@@ -94,31 +94,34 @@ function HeroCarousel() {
             referrerPolicy="no-referrer"
           />
 
-          {/* readability gradient on the left */}
+          {/* subtle overall darkening so the orange headline keeps contrast
+              against bright areas of the photo, then the readability gradient
+              on the left for the text zone */}
+          <div className="absolute inset-0 bg-brand-dark/15" />
           <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent w-full md:w-[85%] lg:w-[68%]" />
 
           {/* per-slide content */}
           <div className="relative z-20">
-            <div className="mx-auto flex min-h-[540px] md:min-h-[max(60vh,480px)] max-w-[88rem] flex-col justify-center px-4 sm:px-6 lg:px-8">
-              <div className="max-w-4xl space-y-6 pt-24 pb-24 md:py-10">
-                <p className="font-sans text-lg font-bold uppercase tracking-[0.22em] text-brand-dark md:text-xl">{slide.eyebrow}</p>
+            <div className="mx-auto flex min-h-[600px] md:min-h-[max(65vh,540px)] max-w-[88rem] flex-col justify-center px-4 sm:px-6 lg:px-8">
+              <div className="max-w-5xl space-y-8 pt-24 pb-24 md:py-10">
+                <p className="font-sans text-xl font-bold uppercase tracking-[0.22em] text-brand-dark md:text-2xl">{slide.eyebrow}</p>
                 {slide.brand ? (
-                  <h1 className="font-display text-xl font-bold leading-none tracking-tight text-[#232323] whitespace-nowrap sm:text-3xl md:text-4xl lg:text-5xl">
+                  <h1 className="font-display text-2xl font-bold leading-none tracking-tight text-brand-accent whitespace-nowrap sm:text-4xl md:text-5xl lg:text-6xl">
                     <span className="notranslate" translate="no"><span className="text-brand-primary">LOVE PATHWAYS</span> WRAPAROUND</span>
                   </h1>
                 ) : (
-                  <h2 className="font-display text-4xl font-bold leading-[1.06] tracking-tight text-[#232323] md:text-5xl lg:text-6xl">{slide.title}</h2>
+                  <h2 className="font-display text-5xl font-bold leading-[1.06] tracking-tight text-brand-accent md:text-6xl lg:text-7xl">{slide.title}</h2>
                 )}
-                <p className="max-w-2xl font-sans text-xl leading-relaxed text-slate-700 md:text-2xl">{slide.description}</p>
-                <div className="flex flex-col gap-4 pt-4 sm:flex-row sm:flex-wrap">
+                <p className="max-w-2xl font-sans text-2xl leading-relaxed text-slate-700 md:text-3xl">{slide.description}</p>
+                <div className="flex flex-col gap-5 pt-4 sm:flex-row sm:flex-wrap">
                   {slide.ctas.map((cta, i) => (
                     <a
                       key={i}
                       href={cta.href}
                       className={
                         cta.primary
-                          ? "w-full rounded-lg border-2 border-brand-secondary bg-brand-secondary px-10 py-5 text-center text-lg font-bold uppercase tracking-wide text-brand-dark shadow-lg transition-colors hover:border-brand-dark hover:bg-brand-dark hover:text-white sm:w-auto sm:min-w-[15rem]"
-                          : "w-full rounded-lg border-2 border-brand-dark bg-transparent px-10 py-5 text-center text-lg font-bold uppercase tracking-wide text-brand-dark shadow-lg transition-colors hover:bg-brand-dark hover:text-white sm:w-auto sm:min-w-[15rem]"
+                          ? "w-full rounded-lg border-2 border-brand-secondary bg-brand-secondary px-12 py-6 text-center text-xl font-bold uppercase tracking-wide text-brand-dark shadow-lg transition-colors hover:border-brand-dark hover:bg-brand-dark hover:text-white sm:w-auto sm:min-w-[17rem]"
+                          : "w-full rounded-lg border-2 border-brand-dark bg-transparent px-12 py-6 text-center text-xl font-bold uppercase tracking-wide text-brand-dark shadow-lg transition-colors hover:bg-brand-dark hover:text-white sm:w-auto sm:min-w-[17rem]"
                       }
                     >
                       {cta.label}

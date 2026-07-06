@@ -26,8 +26,19 @@ function splitAtParagraph(html: string, count: number): [string, string] {
   return [paragraphs.slice(0, count).join(""), paragraphs.slice(count).join("")];
 }
 
+// NOTE: this project has no @tailwindcss/typography plugin installed, so
+// `prose`/`prose-*` classes are silently inert - every rule below is a plain
+// arbitrary-variant selector instead, which is what actually themes the raw
+// HTML injected via dangerouslySetInnerHTML (headings, links, bold, lists).
+// Literal brand-accent orange (#f8a866), unmodified - same exact color used
+// on the home carousel headlines, per explicit request to keep it consistent.
 const PROSE_CLASSES =
-  "prose prose-slate max-w-none prose-headings:font-display prose-headings:text-brand-dark [&_p]:my-0 [&_p]:mb-4 [&_p]:leading-normal [&_p]:text-slate-700 [&_p:last-child]:mb-0 prose-a:text-brand-primary prose-a:font-semibold prose-strong:text-brand-dark";
+  "max-w-none [&_p]:my-0 [&_p]:mb-4 [&_p]:leading-normal [&_p]:text-slate-700 [&_p:last-child]:mb-0 " +
+  "[&_h3]:mt-8 [&_h3]:mb-3 [&_h3]:font-display [&_h3]:text-xl [&_h3]:font-extrabold [&_h3]:text-brand-accent " +
+  "[&_h4]:mt-6 [&_h4]:mb-2 [&_h4]:font-display [&_h4]:text-lg [&_h4]:font-extrabold [&_h4]:text-brand-accent " +
+  "[&_a]:text-brand-primary [&_a]:font-semibold [&_a]:underline [&_a]:underline-offset-2 " +
+  "[&_strong]:text-brand-dark [&_strong]:font-semibold " +
+  "[&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ol]:my-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2 [&_li]:text-slate-700 [&_li]:leading-normal [&_li_p]:mb-0";
 
 function ShareBlock({ url, title, label }: { url: string; title: string; label: string }) {
   const [copied, setCopied] = useState(false);
@@ -202,7 +213,10 @@ export default function BlogPost({ slugProp }: { slugProp: string }) {
             <span className="max-w-[16rem] truncate text-slate-500 sm:max-w-md">{meta.title[lng]}</span>
           </nav>
 
-          <h1 className="mt-4 text-balance font-display text-3xl font-bold leading-tight text-brand-dark md:text-5xl">
+          {/* Manrope runs wider/taller than LEAF's Fraunces at the same size,
+              so this is a step down (4xl vs 5xl) + extrabold to match the
+              visual weight and line-wrap footprint of the LEAF template. */}
+          <h1 className="mt-4 text-balance font-display text-3xl font-extrabold leading-tight text-brand-dark md:text-4xl">
             {meta.title[lng]}
           </h1>
           <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-slate-100 pt-6 text-sm font-medium text-slate-500">
@@ -235,7 +249,7 @@ export default function BlogPost({ slugProp }: { slugProp: string }) {
                         onClick={jumpToSection(s.id)}
                         className={`-ml-px block border-l-2 py-0.5 pl-4 text-sm transition-colors ${
                           activeSection === s.id
-                            ? "border-brand-primary font-bold text-brand-dark"
+                            ? "border-brand-secondary font-bold text-brand-accent"
                             : "border-transparent text-slate-500 hover:text-brand-primary"
                         }`}
                       >
@@ -261,7 +275,7 @@ export default function BlogPost({ slugProp }: { slugProp: string }) {
           {sections.map((s, i) => (
             <div key={s.id}>
               <section id={s.id} ref={(el) => { sectionRefs.current[s.id] = el; }} className="scroll-mt-28">
-                {hasToc && <h2 className="mb-5 font-display text-2xl font-bold text-brand-dark">{s.heading[lng]}</h2>}
+                {hasToc && <h2 className="mb-5 font-display text-2xl font-extrabold text-brand-accent">{s.heading[lng]}</h2>}
 
                 {s.sideImage ? (
                   (() => {
@@ -304,7 +318,7 @@ export default function BlogPost({ slugProp }: { slugProp: string }) {
               {content.pullQuote && i === 1 && (
                 <blockquote className="relative my-10 border-l-4 border-brand-secondary py-2 pl-8">
                   <Quote size={28} className="absolute -left-1 top-0 text-brand-secondary/40" aria-hidden="true" />
-                  <p className="font-display text-xl font-medium italic leading-snug text-brand-dark md:text-2xl">
+                  <p className="font-display text-xl font-medium italic leading-snug text-brand-accent md:text-2xl">
                     “{content.pullQuote.text[lng]}”
                   </p>
                   <cite className="mt-4 block text-sm font-semibold not-italic text-slate-500">
@@ -353,7 +367,7 @@ export default function BlogPost({ slugProp }: { slugProp: string }) {
       {related.length > 0 && (
         <section className="border-t border-slate-100 bg-slate-50 py-16">
           <div className="mx-auto max-w-[88rem] px-4 sm:px-6 lg:px-8">
-            <h2 className="mb-8 font-display text-2xl font-bold text-brand-dark">
+            <h2 className="mb-8 font-display text-2xl font-extrabold text-brand-dark">
               {t("post.relatedArticles", "Related Articles")}
             </h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
