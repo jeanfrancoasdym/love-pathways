@@ -148,6 +148,22 @@ const bgClasses = [
   'bg-amber-600/80',
 ];
 
+// "2026-04-07" -> "Apr 7, 2026". Falls back to the raw sheet value if it
+// doesn't parse, so a typo'd date still shows something instead of "Invalid Date".
+function formatFriendlyDate(raw: string): string {
+  const d = new Date(raw);
+  if (isNaN(d.getTime())) return raw;
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+}
+
+// Sheet view counts are hand-entered estimates, not exact tallies, so we
+// display them as an approximation: rounded to the nearest whole unit (no
+// decimals) with a "+" prefix, e.g. 8000 -> "+8k", 6500 -> "+7k", 500 -> "+500".
+function formatMetric(n: number): string {
+  if (n < 1000) return `+${n}`;
+  return `+${Math.round(n / 1000)}k`;
+}
+
 // Expected columns: Title, Resource, Date, Description, Link, Image, view count
 function mapResourceRows(rows: string[][]) {
   return rows.slice(1).map((row, index) => {
@@ -155,6 +171,7 @@ function mapResourceRows(rows: string[][]) {
     const colorIdx = index % colorClasses.length;
     const rawLink = row[4]?.trim();
     const formattedLink = rawLink ? (rawLink.startsWith('http') ? rawLink : `https://${rawLink}`) : '';
+    const rawDate = row[2]?.trim();
     return {
       id: 1000 + index,
       category: 'Webinars',
@@ -168,8 +185,8 @@ function mapResourceRows(rows: string[][]) {
       featured: index < 3,
       metric: parseInt(row[6]?.trim() || '0', 10) || 0,
       metricLabel: 'Views',
-      dateDesc: row[2]?.trim(),
-      timestamp: new Date(row[2]?.trim()).getTime() || Date.now(),
+      dateDesc: formatFriendlyDate(rawDate),
+      timestamp: new Date(rawDate).getTime() || Date.now(),
       link: formattedLink,
       isDynamicWebinar: true,
     };
@@ -445,7 +462,7 @@ export default function ResourceHub() {
                       {resource.action === 'Watch Video' && <Play size={16} strokeWidth={2.5} />}
                       {resource.action === 'Listen Now' && <Headphones size={16} strokeWidth={2.5} />}
                       {resource.action === 'Learn More..' && <ArrowRight size={16} strokeWidth={2.5} />}
-                      {resource.metric >= 1000 ? (resource.metric / 1000).toFixed(1) + 'k' : resource.metric}
+                      {formatMetric(resource.metric)}
                     </span>
                   )}
                 </div>
