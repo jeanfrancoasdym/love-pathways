@@ -148,37 +148,40 @@ const bgClasses = [
   'bg-amber-600/80',
 ];
 
-// Runs at BUILD time (and on client navigation): fetches the webinar feed so
-// the dynamic resources are baked into the prerendered HTML.
+// Expected columns: Title, Resource, Date, Description, Link, Image, view count
+function mapResourceRows(rows: string[][]) {
+  return rows.slice(1).map((row, index) => {
+    if (row.length < 5) return null;
+    const colorIdx = index % colorClasses.length;
+    const rawLink = row[4]?.trim();
+    const formattedLink = rawLink ? (rawLink.startsWith('http') ? rawLink : `https://${rawLink}`) : '';
+    return {
+      id: 1000 + index,
+      category: 'Webinars',
+      type: row[1]?.trim() || 'Webinar',
+      title: row[0]?.trim(),
+      description: row[3]?.trim(),
+      image: row[5]?.trim() || brandPlaceholderImg,
+      action: 'Watch Video',
+      colorClass: colorClasses[colorIdx],
+      bgClass: bgClasses[colorIdx],
+      featured: index < 3,
+      metric: parseInt(row[6]?.trim() || '0', 10) || 0,
+      metricLabel: 'Views',
+      dateDesc: row[2]?.trim(),
+      timestamp: new Date(row[2]?.trim()).getTime() || Date.now(),
+      link: formattedLink,
+      isDynamicWebinar: true,
+    };
+  }).filter((e) => e !== null);
+}
+
+// Runs at BUILD time: bakes a snapshot of the webinar feed into the
+// prerendered HTML so the page still paints instantly and has content for SEO.
 export async function resourcesLoader() {
   try {
     const rows = await fetchSheet(feeds.resources);
-    // Expected columns: Title, Resource, Date, Description, Link, Image, view count
-    const dynamicWebinars = rows.slice(1).map((row, index) => {
-      if (row.length < 5) return null;
-      const colorIdx = index % colorClasses.length;
-      const rawLink = row[4]?.trim();
-      const formattedLink = rawLink ? (rawLink.startsWith('http') ? rawLink : `https://${rawLink}`) : '';
-      return {
-        id: 1000 + index,
-        category: 'Webinars',
-        type: row[1]?.trim() || 'Webinar',
-        title: row[0]?.trim(),
-        description: row[3]?.trim(),
-        image: row[5]?.trim() || brandPlaceholderImg,
-        action: 'Watch Video',
-        colorClass: colorClasses[colorIdx],
-        bgClass: bgClasses[colorIdx],
-        featured: index < 3,
-        metric: parseInt(row[6]?.trim() || '0', 10) || 0,
-        metricLabel: 'Views',
-        dateDesc: row[2]?.trim(),
-        timestamp: new Date(row[2]?.trim()).getTime() || Date.now(),
-        link: formattedLink,
-        isDynamicWebinar: true,
-      };
-    }).filter((e) => e !== null);
-    return dynamicWebinars;
+    return mapResourceRows(rows);
   } catch (err) {
     console.error("Error fetching webinars:", err);
     return [];
@@ -195,8 +198,18 @@ export default function ResourceHub() {
   const [activeSort, setActiveSort] = useState('Relevance');
   const [videoState, setVideoState] = useState({ isOpen: false, url: '' });
   const [expandedDesc, setExpandedDesc] = useState<number[]>([]);
-  const dynamicWebinars = (useLoaderData() as any[]) ?? [];
+  const loaderWebinars = (useLoaderData() as any[]) ?? [];
+  const [dynamicWebinars, setDynamicWebinars] = useState(loaderWebinars);
   const resources = [...staticResources, ...dynamicWebinars];
+
+  // Re-fetch the sheet on every page load (not just SSG build/client-nav) so a
+  // new webinar row shows up without needing a redeploy, matching how GHL fed
+  // this section live.
+  useEffect(() => {
+    fetchSheet(feeds.resources)
+      .then((rows) => setDynamicWebinars(mapResourceRows(rows)))
+      .catch((err) => console.error("Error fetching webinars:", err));
+  }, []);
 
   const tabs = [
     { name: 'Additional Tools', key: 'additionalTools', icon: Blocks },
