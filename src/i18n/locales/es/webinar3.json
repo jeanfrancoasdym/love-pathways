@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "badge": "WEBINAR EN VIVO GRATUITO",
+    "titleBefore": "Equilibrar ",
+    "titleHighlight": "a la familia",
+    "titleAfter": ": cuando un hijo necesita más",
+    "subtitle": "Un webinar en vivo y gratuito para cuidadores que enfrentan el efecto que se siente en toda la familia cuando un hijo necesita más atención.",
+    "description": "Cuando un hijo requiere más atención emocional y apoyo, todo el sistema familiar siente el impacto.\n\nEste entrenamiento ayuda a los cuidadores a manejar la dinámica entre hermanos, el agotamiento del verano, la culpa, el resentimiento y el desgaste emocional, mientras siguen creando conexión, equilibrio y seguridad para cada niño en casa."
+  },
+  "details": {
+    "dateLabel": "Fecha",
+    "dateValue": "Martes | 25 de agosto",
+    "timeLabel": "Hora",
+    "timeValue": "9:00 AM - 10:00 AM PST",
+    "languageLabel": "Idioma",
+    "languageValue": "Inglés"
+  },
+  "countdown": {
+    "heading": "La sesión en vivo comienza en",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Min",
+    "seconds": "Seg",
+    "live": "Estamos en vivo. Pasa adelante.",
+    "ended": "Esta sesión terminó. Regístrate para recibir la grabación."
+  },
+  "forYou": {
+    "heading": "Esto es para ti si...",
+    "items": [
+      "Las necesidades de un hijo absorben la mayoría de tu tiempo y energía, y sientes que eso afecta a todos los demás.",
+      "Te sientes culpable sin importar qué hagas, con el hijo que necesita más y con los que reciben menos.",
+      "La falta de estructura del verano ha llevado el estrés de todos al límite.",
+      "Quieres herramientas prácticas para proteger la conexión con cada hijo en casa, no solo con el que está en crisis."
+    ]
+  },
+  "learn": {
+    "heading": "Lo que te llevarás",
+    "items": [
+      "Cómo manejar la dinámica entre hermanos sin tomar partido ni hacer de árbitro.",
+      "Formas de aliviar el agotamiento del verano y recuperar el ritmo familiar.",
+      "Cómo trabajar la culpa y el resentimiento antes de que se acumulen en silencio.",
+      "Estrategias prácticas para proteger la conexión, el equilibrio y la seguridad de cada hijo en casa."
+    ]
+  },
+  "guide": {
+    "eyebrow": "Tu guía",
+    "name": "Bryan Post",
+    "role": "Fundador, experto en adopción y conducta infantil",
+    "bio": "Bryan Post es un experto reconocido internacionalmente en adopción, apego y trauma, y el fundador del enfoque basado en el amor y centrado en la familia detrás de nuestro programa. Durante décadas ha ayudado a las familias a pasar del miedo y el conflicto hacia la conexión, la calma y la sanación duradera."
+  },
+  "trust": {
+    "heading": "Por qué las familias confían en este webinar",
+    "audience": "Únete a familias adoptivas y de crianza de toda California, apoyadas por la metodología Fear to Love y el equipo de Love Pathways Wraparound.",
+    "testimonials": [],
+    "stats": []
+  },
+  "agenda": {
+    "heading": "Cómo fluirá la hora",
+    "items": [
+      { "title": "Entendiendo el desequilibrio", "desc": "Por qué las necesidades de un hijo pueden dominar el sistema familiar, y qué le cuesta eso a los demás." },
+      { "title": "Dinámica entre hermanos", "desc": "Cómo apoyar la relación entre hermanos sin comparaciones, culpa ni resentimiento." },
+      { "title": "Reconstruir el equilibrio", "desc": "Formas prácticas de proteger la conexión y la seguridad de cada hijo en casa." },
+      { "title": "Preguntas en vivo", "desc": "Trae tus preguntas sobre tu familia. Las trabajaremos juntos." }
+    ]
+  },
+  "faq": {
+    "heading": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿De verdad es gratis?", "a": "Sí. Este webinar en vivo es completamente gratuito para familias y profesionales." },
+      { "q": "¿Y si no puedo asistir en vivo?", "a": "Regístrate de todos modos. Te enviaremos la grabación para que la veas cuando te quede bien." },
+      { "q": "¿Se grabará?", "a": "Sí. Todas las personas que se registren reciben la grabación después." },
+      { "q": "¿Para quién es?", "a": "Para padres y cuidadores que manejan la dinámica entre hermanos, familias adoptivas y de crianza, cuidadores de parentesco y los profesionales que los apoyan." }
+    ]
+  },
+  "host": {
+    "imageAlt": "Bryan Post",
+    "label": "Presentado por",
+    "name": "Bryan Post",
+    "bio": "Experto reconocido internacionalmente en adopción, trauma y sanación familiar."
+  },
+  "cta": {
+    "reserve": "Reservar mi lugar ahora"
+  },
+  "ctaFinal": {
+    "line": "Cada hijo en tu hogar merece sentirse visto. Encontremos el equilibrio juntos.",
+    "button": "Sí, guardar mi lugar"
+  },
+  "privacy": "Respetamos tu privacidad. Solo te escribiremos sobre este evento y puedes cancelar la suscripción cuando quieras.",
+  "form": {
+    "title": "Reserva tu lugar",
+    "subtitle": "Reserva tu asiento para este evento gratuito."
+  }
+}

@@ -22,6 +22,10 @@ export type LpEvent = {
   locationLink: string;
   modality: string;
   image: string;
+  /** Human-authored month/year group label (e.g. "July 2026") — kept as a
+   * plain field rather than derived from endsAt so it can't drift a day off
+   * across timezones, and drives the month section headers below. */
+  month: string;
 };
 
 export const EVENTS: LpEvent[] = [
@@ -29,12 +33,13 @@ export const EVENTS: LpEvent[] = [
     id: "when-love",
     title: "When Love Doesn't Feel Like Enough: Understanding Attachment, Behavior, and Healing",
     description: "How early experiences shape attachment, why behavior is often communication, and trauma-informed strategies to strengthen connection and foster healing.",
-    date: "Tuesday, July 14th",
+    date: "Tuesday, August 11th",
     time: "9:00 AM - 10:30 AM PST",
-    endsAt: "2026-07-14T17:30:00Z",
+    endsAt: "2026-08-11T17:30:00Z",
     locationLink: "/webinar-event1",
     modality: "Live Webinar",
     image: "/page-hero/event-connection.webp",
+    month: "August 2026",
   },
   {
     id: "substance-use",
@@ -46,6 +51,19 @@ export const EVENTS: LpEvent[] = [
     locationLink: "/webinar-event2",
     modality: "Live Webinar",
     image: "/page-hero/event-teen.webp",
+    month: "July 2026",
+  },
+  {
+    id: "balancing-family",
+    title: "Balancing the Family: When One Child Needs More",
+    description: "How to navigate sibling dynamics, summer overwhelm, guilt, and resentment while protecting connection and safety for every child in the home.",
+    date: "Tuesday, August 25th",
+    time: "9:00 AM - 10:00 AM PST",
+    endsAt: "2026-08-25T17:00:00Z",
+    locationLink: "/webinar-event3",
+    modality: "Live Webinar",
+    image: "/page-hero/event-calm.webp",
+    month: "August 2026",
   },
 ];
 
@@ -93,6 +111,15 @@ export default function Events() {
   }, []);
   const visibleEvents = now === null ? events : events.filter((e: any) => new Date(e.endsAt).getTime() > now);
 
+  // Group the (already date-sorted) events into month sections so it's clear
+  // at a glance which events are this month vs. next, instead of one long grid.
+  const eventGroups: { month: string; items: any[] }[] = [];
+  for (const event of visibleEvents) {
+    const lastGroup = eventGroups[eventGroups.length - 1];
+    if (lastGroup && lastGroup.month === event.month) lastGroup.items.push(event);
+    else eventGroups.push({ month: event.month, items: [event] });
+  }
+
   return (
     <div className="pb-0">
       <Seo pageKey="events" path="/events" jsonLd={graph(organizationLd(), webSiteLd(lng), collectionPageLd(lng, { name: "Events & Webinars | Love Pathways Wraparound", description: "Upcoming webinars, workshops, and gatherings for adoptive families hosted by Love Pathways Wraparound.", path: "/events" }), breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Events & Webinars", path: "/events" }]))} />
@@ -132,56 +159,67 @@ export default function Events() {
             <h3 className="text-2xl font-display font-bold text-slate-700">{t("list.empty")}</h3>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {visibleEvents.map((event) => (
-              <div
-                key={event.id}
-                className="group relative flex min-h-[22rem] overflow-hidden rounded-[2rem] shadow-sm transition-shadow hover:shadow-xl"
-              >
-                {/* Theme-matched background photo */}
-                <img
-                  src={event.image}
-                  alt=""
-                  aria-hidden="true"
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                {/* Brand overlay: base navy tint + bottom-up gradient for legibility */}
-                <div className="absolute inset-0 bg-brand-dark/55" />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/95 via-brand-dark/45 to-brand-dark/10" />
+          <div className="space-y-12">
+            {eventGroups.map((group) => (
+              <div key={group.month}>
+                <h3 className="mb-5 flex items-center gap-3 font-display text-sm font-bold uppercase tracking-[0.2em] text-brand-primary">
+                  <span className="h-px flex-1 bg-brand-primary/15" aria-hidden="true" />
+                  {group.month}
+                  <span className="h-px flex-1 bg-brand-primary/15" aria-hidden="true" />
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {group.items.map((event) => (
+                    <div
+                      key={event.id}
+                      className="group relative flex min-h-[22rem] overflow-hidden rounded-[2rem] shadow-sm transition-shadow hover:shadow-xl"
+                    >
+                      {/* Theme-matched background photo */}
+                      <img
+                        src={event.image}
+                        alt=""
+                        aria-hidden="true"
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      {/* Brand overlay: base navy tint + bottom-up gradient for legibility */}
+                      <div className="absolute inset-0 bg-brand-dark/55" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/95 via-brand-dark/45 to-brand-dark/10" />
 
-                {/* Content */}
-                <div className="relative z-10 flex w-full flex-col p-8 md:p-10 text-white">
-                  <div className="mb-4 flex flex-wrap items-center gap-2 text-sm">
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm">
-                      <Calendar size={14} className="text-brand-secondary" /> {event.date}
-                    </span>
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm">
-                      <Clock size={14} className="text-brand-secondary" /> {event.time}
-                    </span>
-                    <span className="inline-flex items-center rounded-full bg-brand-primary px-3 py-1 font-display text-xs font-bold">
-                      {event.modality || t("list.modalityFallback")}
-                    </span>
-                    <EnglishContentBadge />
-                  </div>
-                  <h3 className="font-display text-2xl font-bold leading-tight md:text-3xl">
-                    {event.title}
-                  </h3>
-                  <p className="mt-2 max-w-xl text-white/85 line-clamp-2">
-                    {event.description}
-                  </p>
-                  {(() => {
-                    const internal = internalEventRoute(event.locationLink);
-                    const cls = "mt-auto flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-4 font-display font-bold text-brand-primary shadow-lg transition-colors hover:bg-brand-secondary hover:text-brand-dark";
-                    return internal ? (
-                      <Link to={to(internal)} className={cls}>
-                        {t("list.register")} <ArrowRight size={18} />
-                      </Link>
-                    ) : (
-                      <a href={event.locationLink} target="_blank" rel="noopener noreferrer" className={cls}>
-                        {t("list.register")} <ArrowRight size={18} />
-                      </a>
-                    );
-                  })()}
+                      {/* Content */}
+                      <div className="relative z-10 flex w-full flex-col p-8 md:p-10 text-white">
+                        <div className="mb-4 flex flex-wrap items-center gap-2 text-sm">
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm">
+                            <Calendar size={14} className="text-brand-secondary" /> {event.date}
+                          </span>
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm">
+                            <Clock size={14} className="text-brand-secondary" /> {event.time}
+                          </span>
+                          <span className="inline-flex items-center rounded-full bg-brand-primary px-3 py-1 font-display text-xs font-bold">
+                            {event.modality || t("list.modalityFallback")}
+                          </span>
+                          <EnglishContentBadge />
+                        </div>
+                        <h3 className="font-display text-2xl font-bold leading-tight md:text-3xl">
+                          {event.title}
+                        </h3>
+                        <p className="mt-2 max-w-xl text-white/85 line-clamp-2">
+                          {event.description}
+                        </p>
+                        {(() => {
+                          const internal = internalEventRoute(event.locationLink);
+                          const cls = "mt-auto flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-4 font-display font-bold text-brand-primary shadow-lg transition-colors hover:bg-brand-secondary hover:text-brand-dark";
+                          return internal ? (
+                            <Link to={to(internal)} className={cls}>
+                              {t("list.register")} <ArrowRight size={18} />
+                            </Link>
+                          ) : (
+                            <a href={event.locationLink} target="_blank" rel="noopener noreferrer" className={cls}>
+                              {t("list.register")} <ArrowRight size={18} />
+                            </a>
+                          );
+                        })()}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}

@@ -7,62 +7,57 @@ import { breadcrumbLd, eventLd, faqPageLd, graph, localeUrl, organizationLd, web
 import { useLocale } from "../i18n/useLocale";
 import WebinarLanding from "./WebinarLanding";
 
-// Event 1: When Love Doesn't Feel Like Enough — rescheduled to August 11
-// (originally July 14, postponed). Zoom link and form are unchanged.
-const START = "2026-08-11T09:00:00-07:00";
-const END = "2026-08-11T10:30:00-07:00";
+// Event 3: Balancing the Family: When One Child Needs More — August 25 (Bryan Post).
+const START = "2026-08-25T09:00:00-07:00";
+const END = "2026-08-25T10:00:00-07:00";
 
-export default function WebinarRegistration() {
-  const { t } = useTranslation("webinar1");
+export default function WebinarRegistration3() {
+  const { t } = useTranslation("webinar3");
   const { lng } = useLocale();
   const eventName = `${t("hero.titleBefore")}${t("hero.titleHighlight")}${t("hero.titleAfter")}`.trim();
-  const languageValue = t("details.languageValueEn");
   const faqItems = (t("faq.items", { returnObjects: true }) as { q: string; a: string }[]) ?? [];
 
   return (
     <WebinarLanding
-      ns="webinar1"
+      ns="webinar3"
       startDate={START}
-      heroBody="paragraphs"
-      languageValue={languageValue}
-      heroImage="/page-hero/event-connection.webp"
+      heroBody="description"
+      heroImage="/page-hero/event-calm.webp"
       forYouImage="/page-hero/event-family.webp"
-      learnImage="/page-hero/phase-photo-3.webp"
-      presenterImage="/page-hero/presenter-alicia.webp"
-      presenterImageAlt={t("guide.name")}
-      presenterImage2="/page-hero/presenter-jeanette.webp"
-      presenterImageAlt2={t("guide2.name")}
+      learnImage="/page-hero/phase-photo-2.webp"
+      presenterImage="/page-hero/presenter-bryan.webp"
+      presenterImageAlt={t("host.imageAlt")}
       seo={
         <Seo
-          pageKey="webinar1"
-          path="/webinar-event1"
+          pageKey="webinar3"
+          path="/webinar-event3"
           jsonLd={graph(
             organizationLd(),
             webSiteLd(lng),
             faqPageLd(lng, faqItems.map((f) => ({ question: f.q, answer: f.a }))),
             eventLd(lng, {
               name: eventName,
-              description: t("hero.paragraph1"),
+              description: t("hero.description"),
               startDate: START,
               endDate: END,
-              url: localeUrl(lng, "/webinar-event1"),
-              locationUrl: localeUrl(lng, "/webinar-event1"),
+              url: localeUrl(lng, "/webinar-event3"),
+              locationUrl: localeUrl(lng, "/webinar-event3"),
               performer: { "@type": "Organization", name: "Love Pathways Wraparound" },
-              image: `${siteOrigin}/page-hero/event-connection.webp`,
+              image: `${siteOrigin}/page-hero/event-calm.webp`,
             }),
             breadcrumbLd(lng, [
               { name: "Home", path: "/" },
-              { name: "Webinar Registration", path: "/webinar-event1" },
+              { name: "Webinar Registration", path: "/webinar-event3" },
             ])
           )}
         />
       }
       form={
         <GhlForm
-          formId={ghl.webinar1FormId}
-          name="When Love Doesn't Feel Like Enough Webinar"
+          formId={ghl.webinar3FormId}
+          name="Balancing the Family Webinar"
           height={480}
-          onSubmitRedirect="/thank-you1"
+          onSubmitRedirect="/thank-you3"
           className="w-full"
         />
       }

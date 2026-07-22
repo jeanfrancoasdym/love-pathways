@@ -26,8 +26,10 @@ import ResourceHub, { resourcesLoader } from './components/ResourceHub';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import WebinarRegistration from './components/WebinarRegistration';
 import WebinarRegistration2 from './components/WebinarRegistration2';
+import WebinarRegistration3 from './components/WebinarRegistration3';
 import ThankYou from './components/ThankYou';
 import ThankYou2 from './components/ThankYou2';
+import ThankYou3 from './components/ThankYou3';
 import NotFound from './components/NotFound';
 
 // Binds the correct fixed-language i18n instance for the active locale, so each
@@ -79,8 +81,10 @@ const buildPages = (): RouteRecord[] => [
   { path: 'privacy-policy', element: <PrivacyPolicy /> },
   { path: 'webinar-event1', element: <WebinarRegistration /> },
   { path: 'webinar-event2', element: <WebinarRegistration2 /> },
+  { path: 'webinar-event3', element: <WebinarRegistration3 /> },
   { path: 'thank-you1', element: <ThankYou /> },
   { path: 'thank-you2', element: <ThankYou2 /> },
+  { path: 'thank-you3', element: <ThankYou3 /> },
   { path: '404', element: <NotFound /> },
   { path: '*', element: <NotFound /> },
 ];

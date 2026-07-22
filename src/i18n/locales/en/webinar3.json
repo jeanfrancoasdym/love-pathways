@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "badge": "FREE LIVE WEBINAR",
+    "titleBefore": "Balancing ",
+    "titleHighlight": "the Family",
+    "titleAfter": ": When One Child Needs More",
+    "subtitle": "A free live webinar for caregivers navigating the ripple effect when one child's needs pull focus from the rest of the family.",
+    "description": "When one child requires more emotional attention and support, the entire family system can feel the impact.\n\nThis training helps caregivers navigate sibling dynamics, summer overwhelm, guilt, resentment, and emotional exhaustion while still creating connection, balance, and safety for every child in the home."
+  },
+  "details": {
+    "dateLabel": "Date",
+    "dateValue": "Tuesday | August 25th",
+    "timeLabel": "Time",
+    "timeValue": "9:00 AM - 10:00 AM PST",
+    "languageLabel": "Language",
+    "languageValue": "English"
+  },
+  "countdown": {
+    "heading": "The live session begins in",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Min",
+    "seconds": "Sec",
+    "live": "We're live now. Come on in.",
+    "ended": "This session has ended. Register to get the replay."
+  },
+  "forYou": {
+    "heading": "This is for you if...",
+    "items": [
+      "One child's needs are pulling most of your time and energy, and you feel it straining everyone else.",
+      "You feel guilty no matter what you do, for the child who needs more and for the ones who get less.",
+      "Summer's lack of structure has pushed everyone's stress to a breaking point.",
+      "You want practical tools to protect connection with every child in the home, not just the one in crisis."
+    ]
+  },
+  "learn": {
+    "heading": "What you'll walk away with",
+    "items": [
+      "How to navigate sibling dynamics without picking sides or playing referee.",
+      "Ways to ease summer overwhelm and rebuild a sense of family rhythm.",
+      "How to work through guilt and resentment before they quietly build up.",
+      "Practical strategies to protect connection, balance, and safety for every child in the home."
+    ]
+  },
+  "guide": {
+    "eyebrow": "Your guide",
+    "name": "Bryan Post",
+    "role": "Founder, Adoption & Child Behavior Expert",
+    "bio": "Bryan Post is an internationally recognized expert in adoption, attachment, and trauma, and the founder of the love-based, family-centered approach behind our program. For decades he has helped families move from fear and conflict toward connection, calm, and lasting healing."
+  },
+  "trust": {
+    "heading": "Why families trust this webinar",
+    "audience": "Join adoptive and foster families from across California, supported by the Fear to Love methodology and the Love Pathways Wraparound team.",
+    "testimonials": [],
+    "stats": []
+  },
+  "agenda": {
+    "heading": "How the hour will flow",
+    "items": [
+      { "title": "Understanding the imbalance", "desc": "Why one child's needs can dominate a family system, and what that costs everyone else." },
+      { "title": "Sibling dynamics", "desc": "How to support the sibling relationship without comparison, guilt, or resentment." },
+      { "title": "Rebuilding balance", "desc": "Practical ways to protect connection and safety for every child in the home." },
+      { "title": "Live Q&A", "desc": "Bring your questions about your family. We'll work through them together." }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      { "q": "Is it really free?", "a": "Yes. This live webinar is completely free for families and professionals." },
+      { "q": "What if I can't attend live?", "a": "Register anyway. We'll send you the replay so you can watch whenever it works for you." },
+      { "q": "Will it be recorded?", "a": "Yes. Everyone who registers receives the recording afterward." },
+      { "q": "Who is this for?", "a": "Parents and caregivers navigating sibling dynamics, adoptive and foster families, kinship caregivers, and the professionals who support them." }
+    ]
+  },
+  "host": {
+    "imageAlt": "Bryan Post",
+    "label": "Hosted By",
+    "name": "Bryan Post",
+    "bio": "Internationally recognized expert in adoption, trauma, and family healing."
+  },
+  "cta": {
+    "reserve": "Reserve My Spot Now"
+  },
+  "ctaFinal": {
+    "line": "Every child in your home deserves to feel seen. Let's find balance together.",
+    "button": "Yes, Save My Spot"
+  },
+  "privacy": "We respect your privacy. We'll only email you about this event, and you can unsubscribe anytime.",
+  "form": {
+    "title": "Save Your Spot",
+    "subtitle": "Reserve your seat for this free event."
+  }
+}

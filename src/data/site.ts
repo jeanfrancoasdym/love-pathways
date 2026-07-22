@@ -50,6 +50,7 @@ export const ghl = {
   webinar1FormId: "O0bEq8momPzSnmzXNebR", // Event 1: When Love Doesn't Feel Like Enough (Jul 14)
   webinar2FormIdEn: "XOoAL6XIN4dOOuq3VuO8", // Event 2: Substance Use & the Teen Trauma Brain (Bryan)
   webinar2FormIdEs: "XOoAL6XIN4dOOuq3VuO8",
+  webinar3FormId: "o3Nm815ezGKQ0fuPPN8W", // Event 3: Balancing the Family: When One Child Needs More (Bryan)
   // Newsletter lives on Revive's GHL domain in the LP source.
   newsletterEmbedScript: "https://go.revivebhc.org/js/form_embed.js",
   newsletterFormBase: "https://go.revivebhc.org/widget/form",
