@@ -321,7 +321,7 @@ export default function ResourceHub() {
           <h2 id="ghl-resource-title" className="text-2xl font-display font-bold text-brand-dark">
             {activeTab === 'Featured' ? t("section.featured") : tabLabel(activeTab)}
           </h2>
-          <div id="ghl-filter-container" className={`relative z-50 ${activeTab === 'Additional Tools' ? 'hidden' : 'block'}`}>
+          <div id="ghl-filter-container" className={`relative z-30 ${activeTab === 'Additional Tools' ? 'hidden' : 'block'}`}>
             <button
               onClick={(e) => { e.preventDefault(); e.stopPropagation(); setIsFilterOpen(!isFilterOpen); }}
               aria-label="Sort and filter resources"
