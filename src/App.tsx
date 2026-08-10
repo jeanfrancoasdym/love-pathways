@@ -30,6 +30,8 @@ import WebinarRegistration3 from './components/WebinarRegistration3';
 import ThankYou from './components/ThankYou';
 import ThankYou2 from './components/ThankYou2';
 import ThankYou3 from './components/ThankYou3';
+import WorkshopRegistration from './components/WorkshopRegistration';
+import ThankYouWorkshop from './components/ThankYouWorkshop';
 import NotFound from './components/NotFound';
 
 // Binds the correct fixed-language i18n instance for the active locale, so each
@@ -85,6 +87,8 @@ const buildPages = (): RouteRecord[] => [
   { path: 'thank-you1', element: <ThankYou /> },
   { path: 'thank-you2', element: <ThankYou2 /> },
   { path: 'thank-you3', element: <ThankYou3 /> },
+  { path: 'workshop-registration', element: <WorkshopRegistration /> },
+  { path: 'thank-you-workshop', element: <ThankYouWorkshop /> },
   { path: '404', element: <NotFound /> },
   { path: '*', element: <NotFound /> },
 ];
