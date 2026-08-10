@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "badge": "You're registered",
+    "title": "You're in! 🎉",
+    "confirmBefore": "Your spot for the",
+    "highlight": "Living with Confidence",
+    "confirmAfter": "series is officially confirmed."
+  },
+  "countdown": {
+    "heading": "Chapter 1 starts in",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Min",
+    "seconds": "Sec",
+    "live": "We're live now. Come on in.",
+    "ended": "Chapter 1 has started, join whenever you're ready."
+  },
+  "calendar": {
+    "eventTitle": "Living with Confidence, Chapter 1: More Than a Filter",
+    "joinVia": "Join us via Zoom: ",
+    "eventDescription": "A free 5-week workshop series to help you reconnect with your worth, your voice, and your confidence."
+  },
+  "details": {
+    "heading": "Chapter 1 Details",
+    "dateLabel": "Date",
+    "dateValue": "Wednesday, August 26th",
+    "timeLabel": "Time",
+    "timeValue": "6:00 PM - 7:00 PM PST",
+    "locationLabel": "Location",
+    "locationValue": "Live on Zoom",
+    "locationNote": "The same link works for all five chapters, so save it.",
+    "calendarPrompt": "Lock this time in your calendar now:",
+    "googleCalendar": "Google Calendar",
+    "outlookCalendar": "Outlook Calendar"
+  },
+  "schedule": {
+    "heading": "Your Full Schedule",
+    "subheading": "All five chapters run live on Zoom, Wednesdays from 6:00 PM to 7:00 PM PST."
+  },
+  "resources": {
+    "prompt": "Looking for more resources?",
+    "watch": "Watch Past Webinars"
+  },
+  "social": {
+    "heading": "Stay Connected",
+    "description": "We share daily trauma-responsive tools and support for adoptive families on our social channels. Don't wait more to start finding relief.",
+    "facebookLabel": "Facebook",
+    "instagramLabel": "Instagram"
+  }
+}

@@ -59,6 +59,18 @@ These files replaced GoHighLevel-CDN photos that were identical to the LEAF site
 - phase-photo-3.webp: cottonbro studio (Pexels) — a blended family reading together in a cozy blanket fort, warmth and shared activity (Phase 03 Implementation) — Free to use under the Pexels License
 - phase-photo-4.webp: Tim Mossholder (@timmossholder) — open road toward sunlit hills at sunrise (Phase 04 Transition) — Free to use under the Unsplash License
 
+## Living with Confidence workshop series (shared with LEAF)
+
+All sourced from Unsplash (images.unsplash.com, free tier), verified "Free to use under the Unsplash License" at download time. Photographer handles were not logged during selection — noting the gap here rather than guessing names.
+
+- workshop-about.webp: Kelly Sikkema (@kellysikkema) — woman writing in a notebook with a mug in warm window light, faceless (Workshop About the series section) — Free to use under the Unsplash License
+- workshop-hero.webp — silhouette with raised fist against a warm sunset (Workshop series hero) — Free to use under the Unsplash License
+- workshop-ch1-filter.webp — woman lit by phone screen at dusk by a lake (Chapter 1: More Than a Filter) — Free to use under the Unsplash License
+- workshop-ch2-valuable.webp — woman walking a golden-hour path through a field (Chapter 2: Still Valuable) — Free to use under the Unsplash License
+- workshop-ch3-cultures.webp — five hands of different skin tones together on a wood table (Chapter 3: Between Two Cultures, Fully Yourself) — Free to use under the Unsplash License
+- workshop-ch4-productivity.webp — woman resting in a hammock with tea (Chapter 4: Your Worth Is Not Your Productivity) — Free to use under the Unsplash License
+- workshop-ch5-reset.webp — open road through fields at sunset (Chapter 5: The Confidence Reset) — Free to use under the Unsplash License
+
 ## Blog article images (shared with LEAF's native blog migration; same 15 articles)
 
 All sourced from Unsplash (images.unsplash.com, free tier), verified "Free to use under the Unsplash License" at download time. Photographer handles were not logged during the batch migration run — noting the gap here rather than guessing names.

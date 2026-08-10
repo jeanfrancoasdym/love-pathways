@@ -1,0 +1,114 @@
+{
+  "seriesName": "Vivir con Confianza",
+  "hero": {
+    "badge": "SERIE GRATUITA DE 5 SEMANAS",
+    "titleBefore": "Vivir con ",
+    "titleHighlight": "Confianza",
+    "titleAfter": "",
+    "subtitle": "Una serie gratuita de talleres de 5 semanas para reconectar con tu valor, tu voz y tu confianza, no se necesita experiencia, solo tú."
+  },
+  "details": {
+    "dateLabel": "Comienza",
+    "dateValue": "Miércoles, 26 de agosto",
+    "timeLabel": "Hora",
+    "timeValue": "6:00 PM - 7:00 PM PST",
+    "formatLabel": "Formato",
+    "formatValue": "En vivo por Zoom, 5 semanas"
+  },
+  "intro": {
+    "eyebrow": "La serie",
+    "heading": "Sobre Vivir con Confianza",
+    "stats": [
+      {
+        "value": "5",
+        "label": "semanas"
+      },
+      {
+        "value": "5",
+        "label": "capítulos"
+      },
+      {
+        "value": "60",
+        "label": "minutos cada uno"
+      }
+    ],
+    "paragraphs": [
+      "Hay temporadas de la vida que nos piden en silencio que nos achiquemos: que nos filtremos, que probemos nuestro valor a través de lo que producimos, que nos estiremos entre quien fuimos y quien nos estamos convirtiendo.",
+      "Creamos Vivir con Confianza exactamente para esta temporada.",
+      "Esta serie gratuita de 5 semanas está pensada para cualquiera que cargue en silencio el peso de no sentirse \"suficiente\": suficientemente visto, valorado, uno mismo. A lo largo de cinco capítulos, caminaremos con calma desde esconderse detrás de filtros hasta reclamar por completo tu valor, tu identidad y tu confianza. Es cálido, honesto y arraigado en la vida real, no se necesita perfección, solo la disposición de presentarte.",
+      "Cada capítulo incluye un cuadernillo de trabajo, entregado en vivo durante el taller, para que puedas seguir trabajando el material mucho después de que termine cada sesión."
+    ]
+  },
+  "schedule": {
+    "heading": "El calendario completo",
+    "subheading": "Los cinco capítulos son en vivo por Zoom, los miércoles de 6:00 PM a 7:00 PM PST.",
+    "chapters": [
+      {
+        "number": 1,
+        "title": "Más que un filtro",
+        "coreTopic": "Reconstruir la autoestima en la era de las redes sociales",
+        "date": "Miércoles, 26 de agosto",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "Cada día estamos expuestos a imágenes cuidadosamente elegidas de éxito, felicidad, belleza y logros. Con el tiempo, es fácil empezar a medir nuestro valor contra estándares irreales."
+      },
+      {
+        "number": 2,
+        "title": "Sigues siendo valiosa",
+        "coreTopic": "Confianza y propósito en la era de la IA",
+        "date": "Miércoles, 2 de septiembre",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "Exploraremos cómo navegar la incertidumbre, aceptar el cambio y reconocer las fortalezas humanas que la tecnología no puede reemplazar. Descubre que la confianza no viene de saberlo todo, sino de conocer tu valor."
+      },
+      {
+        "number": 3,
+        "title": "Entre dos culturas, plenamente tú",
+        "coreTopic": "Construir confianza en un mundo multicultural",
+        "date": "Miércoles, 9 de septiembre",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "Vivir entre culturas puede ser una fuente de fortaleza, pero también puede traer desafíos. Ya seas bilingüe, multicultural, inmigrante o parte de una familia diversa, puede que te hayas preguntado dónde perteneces de verdad."
+      },
+      {
+        "number": 4,
+        "title": "Tu valor no es tu productividad",
+        "coreTopic": "Redefinir el éxito sin perderte a ti misma",
+        "date": "Miércoles, 16 de septiembre",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "A muchas nos enseñaron que nuestro valor viene de ser productivas, exitosas, serviciales y estar siempre ocupadas. ¿Pero qué pasa cuando no podemos seguir el ritmo?"
+      },
+      {
+        "number": 5,
+        "title": "El reinicio de la confianza",
+        "coreTopic": "Reinventarte sin empezar de cero",
+        "date": "Miércoles, 23 de septiembre",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "Las transiciones de vida pueden dejarnos preguntando qué sigue. Ya sea un cambio de carrera, una transición familiar, un reto personal o una nueva etapa de vida, tus experiencias pasadas siguen importando."
+      }
+    ],
+    "chapterLabel": "Capítulo"
+  },
+  "learn": {
+    "heading": "Lo que te llevarás",
+    "items": [
+      "Una relación más tranquila con las redes sociales y la trampa de la comparación.",
+      "Confianza y propósito renovados, incluso en un mundo transformado por la IA.",
+      "Palabras y confianza para sostener cada parte de tu identidad, sin tener que elegir.",
+      "Una línea clara entre tu valor y tu productividad.",
+      "Un reinicio con los pies en la tierra para la transición que estés viviendo."
+    ]
+  },
+  "presenter": {
+    "eyebrow": "Tu guía",
+    "name": "Dra. Claudia Seegrove",
+    "role": "Logoterapeuta y analista existencial",
+    "bio": "Fundadora de Tu Terapia. Especialista en manejo de crisis emocionales, tanatología y creadora del podcast Vive en Modo Terapia."
+  },
+  "form": {
+    "title": "Reserva tu lugar para la serie completa",
+    "subtitle": "No tienes que asistir a todas las sesiones para beneficiarte, pero nos encantaría tenerte en las cinco."
+  },
+  "ctaFinal": {
+    "line": "Marca tu calendario, invita a una amiga y ven como eres.",
+    "button": "Reservar mi lugar"
+  },
+  "privacy": "Respetamos tu privacidad. Solo te escribiremos sobre esta serie de talleres y puedes cancelar la suscripción cuando quieras."
+}

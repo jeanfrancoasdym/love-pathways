@@ -77,6 +77,32 @@ export async function eventsLoader() {
   );
 }
 
+// Multi-week workshop series — a different shape than single-session
+// webinars (a date range instead of one endsAt), shown in their own section.
+type LpWorkshop = {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  time: string;
+  locationLink: string;
+  modality: string;
+  image: string;
+};
+
+export const WORKSHOPS: LpWorkshop[] = [
+  {
+    id: "living-with-confidence",
+    title: "Living with Confidence",
+    description: "A free 5-week workshop series to help you reconnect with your worth, your voice, and your confidence, no experience needed, just you.",
+    date: "Starts Wednesday, August 26th",
+    time: "6:00 PM - 7:00 PM PST · 5 Wednesdays",
+    locationLink: "/workshop-registration",
+    modality: "5-Week Series",
+    image: "/page-hero/workshop-hero.webp",
+  },
+];
+
 // When an event's link points to THIS site (a relative /path or a
 // leafwraparound.com URL), route it INTERNALLY (SPA, locale-aware) instead of
 // opening the old live site. Legacy webinar routes are bridged to the rebuilt
@@ -91,7 +117,64 @@ function internalEventRoute(link?: string): string | null {
   // GHL registration pages) returns null and opens externally.
   if (/^\/(webinars-2|webinar-event2)\b/i.test(path)) return "/webinar-event2";
   if (/^\/(webinars|webinar-event1)\b/i.test(path)) return "/webinar-event1";
+  if (/^\/webinar-event3\b/i.test(path)) return "/webinar-event3";
+  if (/^\/workshop-registration\b/i.test(path)) return "/workshop-registration";
   return null;
+}
+
+// Shared card used by both the Webinars and Workshops sections — same photo +
+// gradient + white text treatment either way.
+function EventCard({
+  event,
+  to,
+  registerLabel,
+  modalityFallback,
+}: {
+  event: { id: string; title: string; description: string; date: string; time: string; locationLink: string; modality: string; image: string };
+  to: (path: string) => string;
+  registerLabel: string;
+  modalityFallback: string;
+}) {
+  const internal = internalEventRoute(event.locationLink);
+  const cls = "mt-auto flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-4 font-display font-bold text-brand-primary shadow-lg transition-colors hover:bg-brand-secondary hover:text-brand-dark";
+  return (
+    <div className="group relative flex min-h-[22rem] overflow-hidden rounded-[2rem] shadow-sm transition-shadow hover:shadow-xl">
+      <img
+        src={event.image}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+      />
+      <div className="absolute inset-0 bg-brand-dark/55" />
+      <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/95 via-brand-dark/45 to-brand-dark/10" />
+
+      <div className="relative z-10 flex w-full flex-col p-8 md:p-10 text-white">
+        <div className="mb-4 flex flex-wrap items-center gap-2 text-sm">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm">
+            <Calendar size={14} className="text-brand-secondary" /> {event.date}
+          </span>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm">
+            <Clock size={14} className="text-brand-secondary" /> {event.time}
+          </span>
+          <span className="inline-flex items-center rounded-full bg-brand-primary px-3 py-1 font-display text-xs font-bold">
+            {event.modality || modalityFallback}
+          </span>
+          <EnglishContentBadge />
+        </div>
+        <h3 className="font-display text-2xl font-bold leading-tight md:text-3xl">{event.title}</h3>
+        <p className="mt-2 max-w-xl text-white/85 line-clamp-2">{event.description}</p>
+        {internal ? (
+          <Link to={to(internal)} className={cls}>
+            {registerLabel} <ArrowRight size={18} />
+          </Link>
+        ) : (
+          <a href={event.locationLink} target="_blank" rel="noopener noreferrer" className={cls}>
+            {registerLabel} <ArrowRight size={18} />
+          </a>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default function Events() {
@@ -151,7 +234,7 @@ export default function Events() {
           <div className="flex justify-center items-center py-20">
             <div className="w-12 h-12 border-4 border-brand-primary/20 border-t-brand-primary rounded-full animate-spin"></div>
           </div>
-        ) : error || visibleEvents.length === 0 ? (
+        ) : error || (visibleEvents.length === 0 && WORKSHOPS.length === 0) ? (
           <div className="bg-slate-50 border border-slate-200 rounded-[3rem] p-16 text-center space-y-6">
             <div className="w-20 h-20 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto text-brand-primary shadow-sm">
               <Calendar size={40} />
@@ -159,70 +242,41 @@ export default function Events() {
             <h3 className="text-2xl font-display font-bold text-slate-700">{t("list.empty")}</h3>
           </div>
         ) : (
-          <div className="space-y-12">
-            {eventGroups.map((group) => (
-              <div key={group.month}>
-                <h3 className="mb-5 flex items-center gap-3 font-display text-sm font-bold uppercase tracking-[0.2em] text-brand-primary">
-                  <span className="h-px flex-1 bg-brand-primary/15" aria-hidden="true" />
-                  {group.month}
-                  <span className="h-px flex-1 bg-brand-primary/15" aria-hidden="true" />
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {group.items.map((event) => (
-                    <div
-                      key={event.id}
-                      className="group relative flex min-h-[22rem] overflow-hidden rounded-[2rem] shadow-sm transition-shadow hover:shadow-xl"
-                    >
-                      {/* Theme-matched background photo */}
-                      <img
-                        src={event.image}
-                        alt=""
-                        aria-hidden="true"
-                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                      {/* Brand overlay: base navy tint + bottom-up gradient for legibility */}
-                      <div className="absolute inset-0 bg-brand-dark/55" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/95 via-brand-dark/45 to-brand-dark/10" />
-
-                      {/* Content */}
-                      <div className="relative z-10 flex w-full flex-col p-8 md:p-10 text-white">
-                        <div className="mb-4 flex flex-wrap items-center gap-2 text-sm">
-                          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm">
-                            <Calendar size={14} className="text-brand-secondary" /> {event.date}
-                          </span>
-                          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm">
-                            <Clock size={14} className="text-brand-secondary" /> {event.time}
-                          </span>
-                          <span className="inline-flex items-center rounded-full bg-brand-primary px-3 py-1 font-display text-xs font-bold">
-                            {event.modality || t("list.modalityFallback")}
-                          </span>
-                          <EnglishContentBadge />
-                        </div>
-                        <h3 className="font-display text-2xl font-bold leading-tight md:text-3xl">
-                          {event.title}
-                        </h3>
-                        <p className="mt-2 max-w-xl text-white/85 line-clamp-2">
-                          {event.description}
-                        </p>
-                        {(() => {
-                          const internal = internalEventRoute(event.locationLink);
-                          const cls = "mt-auto flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-4 font-display font-bold text-brand-primary shadow-lg transition-colors hover:bg-brand-secondary hover:text-brand-dark";
-                          return internal ? (
-                            <Link to={to(internal)} className={cls}>
-                              {t("list.register")} <ArrowRight size={18} />
-                            </Link>
-                          ) : (
-                            <a href={event.locationLink} target="_blank" rel="noopener noreferrer" className={cls}>
-                              {t("list.register")} <ArrowRight size={18} />
-                            </a>
-                          );
-                        })()}
+          <div className="space-y-16">
+            {/* ===== Webinars ===== */}
+            {visibleEvents.length > 0 && (
+              <div>
+                <h2 className="mb-8 font-display text-2xl font-bold text-brand-dark md:text-3xl">Webinars</h2>
+                <div className="space-y-12">
+                  {eventGroups.map((group) => (
+                    <div key={group.month}>
+                      <h3 className="mb-5 flex items-center gap-3 font-display text-sm font-bold uppercase tracking-[0.2em] text-brand-primary">
+                        <span className="h-px flex-1 bg-brand-primary/15" aria-hidden="true" />
+                        {group.month}
+                        <span className="h-px flex-1 bg-brand-primary/15" aria-hidden="true" />
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {group.items.map((event) => (
+                          <EventCard key={event.id} event={event} to={to} registerLabel={t("list.register")} modalityFallback={t("list.modalityFallback")} />
+                        ))}
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
-            ))}
+            )}
+
+            {/* ===== Workshops ===== */}
+            {WORKSHOPS.length > 0 && (
+              <div>
+                <h2 className="mb-8 font-display text-2xl font-bold text-brand-dark md:text-3xl">Workshops</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {WORKSHOPS.map((workshop) => (
+                    <EventCard key={workshop.id} event={workshop} to={to} registerLabel={t("list.register")} modalityFallback={t("list.modalityFallback")} />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )}
 

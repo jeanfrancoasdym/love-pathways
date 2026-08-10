@@ -1,0 +1,114 @@
+{
+  "seriesName": "Living with Confidence",
+  "hero": {
+    "badge": "FREE 5-WEEK WORKSHOP SERIES",
+    "titleBefore": "Living with ",
+    "titleHighlight": "Confidence",
+    "titleAfter": "",
+    "subtitle": "A free 5-week workshop series to help you reconnect with your worth, your voice, and your confidence, no experience needed, just you."
+  },
+  "details": {
+    "dateLabel": "Starts",
+    "dateValue": "Wednesday, August 26th",
+    "timeLabel": "Time",
+    "timeValue": "6:00 PM - 7:00 PM PST",
+    "formatLabel": "Format",
+    "formatValue": "Live on Zoom, 5 weeks"
+  },
+  "intro": {
+    "eyebrow": "The series",
+    "heading": "About Living with Confidence",
+    "stats": [
+      {
+        "value": "5",
+        "label": "weeks"
+      },
+      {
+        "value": "5",
+        "label": "chapters"
+      },
+      {
+        "value": "60",
+        "label": "minutes each"
+      }
+    ],
+    "paragraphs": [
+      "Some seasons of life quietly ask us to shrink: to filter ourselves, to prove our worth through what we produce, to stretch between who we were and who we're becoming.",
+      "We created Living with Confidence for exactly this season.",
+      "This free 5-week workshop series is built for anyone quietly carrying the weight of not feeling \"enough\": enough seen, enough valued, enough themselves. Across five chapters, we'll gently walk from hiding behind filters to fully reclaiming your worth, identity, and confidence. It's warm, honest, and rooted in real life, no perfection required, just a willingness to show up.",
+      "Each chapter includes a workbook, delivered live during the workshop, so you can keep working through the material long after each session ends."
+    ]
+  },
+  "schedule": {
+    "heading": "The Full Schedule",
+    "subheading": "All five chapters run live on Zoom, Wednesdays from 6:00 PM to 7:00 PM PST.",
+    "chapters": [
+      {
+        "number": 1,
+        "title": "More Than a Filter",
+        "coreTopic": "Rebuilding Self-Worth in the Age of Social Media",
+        "date": "Wednesday, August 26th",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "Every day, we're exposed to carefully curated images of success, happiness, beauty, and achievement. Over time, it's easy to start measuring our worth against unrealistic standards."
+      },
+      {
+        "number": 2,
+        "title": "Still Valuable",
+        "coreTopic": "Confidence and Purpose in the Age of AI",
+        "date": "Wednesday, September 2nd",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "We'll explore how to navigate uncertainty, embrace change, and recognize the uniquely human strengths that technology cannot replace. Discover how confidence comes not from knowing everything, but from knowing your value."
+      },
+      {
+        "number": 3,
+        "title": "Between Two Cultures, Fully Yourself",
+        "coreTopic": "Building Confidence in a Multicultural World",
+        "date": "Wednesday, September 9th",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "Living between cultures can be a source of strength, but it can also bring challenges. Whether you're bilingual, multicultural, an immigrant, or part of a diverse family, you may have wondered where you truly belong."
+      },
+      {
+        "number": 4,
+        "title": "Your Worth Is Not Your Productivity",
+        "coreTopic": "Redefining Success Without Losing Yourself",
+        "date": "Wednesday, September 16th",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "Many of us have been taught that our value comes from being productive, successful, helpful, and constantly busy. But what happens when we can't keep up?"
+      },
+      {
+        "number": 5,
+        "title": "The Confidence Reset",
+        "coreTopic": "Reinventing Yourself Without Starting Over",
+        "date": "Wednesday, September 23rd",
+        "time": "6:00 PM - 7:00 PM PST",
+        "description": "Life transitions can leave us wondering what's next. Whether you're navigating a career change, family transition, personal challenge, or new stage of life, your past experiences still matter."
+      }
+    ],
+    "chapterLabel": "Chapter"
+  },
+  "learn": {
+    "heading": "What you'll walk away with",
+    "items": [
+      "A calmer relationship with social media and the comparison trap it feeds.",
+      "Renewed confidence and purpose, even in a world reshaped by AI.",
+      "Language and confidence to hold every part of your identity, without choosing.",
+      "A clear line between your worth and your productivity.",
+      "A grounded reset for whatever transition you're moving through."
+    ]
+  },
+  "presenter": {
+    "eyebrow": "Your guide",
+    "name": "Dr. Claudia Seegrove",
+    "role": "Logotherapist & Existential Analyst",
+    "bio": "Founder of Tu Terapia. She specializes in emotional crisis management and thanatology, and is the creator of the podcast Vive en Modo Terapia."
+  },
+  "form": {
+    "title": "Reserve Your Spot for the Full Series",
+    "subtitle": "You don't have to attend every session to benefit, but we'd love to have you for all five."
+  },
+  "ctaFinal": {
+    "line": "Mark your calendar, invite a friend, and come as you are.",
+    "button": "Reserve My Spot"
+  },
+  "privacy": "We respect your privacy. We'll only email you about this workshop series, and you can unsubscribe anytime."
+}

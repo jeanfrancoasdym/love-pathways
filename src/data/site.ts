@@ -51,6 +51,9 @@ export const ghl = {
   webinar2FormIdEn: "XOoAL6XIN4dOOuq3VuO8", // Event 2: Substance Use & the Teen Trauma Brain (Bryan)
   webinar2FormIdEs: "XOoAL6XIN4dOOuq3VuO8",
   webinar3FormId: "o3Nm815ezGKQ0fuPPN8W", // Event 3: Balancing the Family: When One Child Needs More (Bryan)
+  // Living with Confidence workshop series — a NEW form is swapped in weekly
+  // (one form per week, not released all at once). This is the current week's form.
+  workshopFormId: "2pIgnonbU7riBweRj1Lh",
   // Newsletter lives on Revive's GHL domain in the LP source.
   newsletterEmbedScript: "https://go.revivebhc.org/js/form_embed.js",
   newsletterFormBase: "https://go.revivebhc.org/widget/form",

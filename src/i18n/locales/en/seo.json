@@ -78,5 +78,13 @@
   "notFound": {
     "title": "Page Not Found | Love Pathways Wraparound",
     "description": "The page you're looking for may have moved or no longer exists. Return to the Love Pathways Wraparound home page."
+  },
+  "workshopRegistration": {
+    "title": "Living with Confidence: Free 5-Week Series | Love Pathways",
+    "description": "A free 5-week online workshop series with Dr. Claudia Seegrove. Five live chapters on Zoom, Wednesdays 6:00 PM to 7:00 PM PST, starting August 26, 2026. Rebuild self-worth, confidence and identity. Reserve your spot."
+  },
+  "thankYouWorkshop": {
+    "title": "You're Registered | Love Pathways Wraparound",
+    "description": "Your spot for the Living with Confidence workshop series is confirmed. Here are your dates, times and Zoom access for all five chapters."
   }
 }

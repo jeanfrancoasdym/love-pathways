@@ -131,6 +131,67 @@ export function eventLd(
   return node;
 }
 
+// A multi-session workshop as an EventSeries whose subEvents are the individual
+// sessions. Search engines and LLMs read every date, topic and time from one
+// node instead of inferring them from prose.
+export function eventSeriesLd(
+  lng: Lng,
+  e: {
+    name: string;
+    description?: string;
+    startDate: string;
+    endDate: string;
+    url: string;
+    image?: string;
+    performer?: { "@type": string; name: string };
+    subEvents?: { name: string; description?: string; startDate: string; endDate: string }[];
+  },
+) {
+  const shared = {
+    inLanguage: lng,
+    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+    eventStatus: "https://schema.org/EventScheduled",
+    organizer: { "@id": ORG_ID },
+    location: { "@type": "VirtualLocation", url: e.url },
+    isAccessibleForFree: true,
+  };
+  const node: Record<string, unknown> = {
+    "@type": "EventSeries",
+    name: e.name,
+    startDate: e.startDate,
+    endDate: e.endDate,
+    url: e.url,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: e.url,
+    },
+    ...shared,
+  };
+  if (e.description) node.description = e.description;
+  if (e.performer) node.performer = e.performer;
+  if (e.image) node.image = e.image;
+  if (e.subEvents?.length) {
+    node.subEvent = e.subEvents.map((s) => {
+      const sub: Record<string, unknown> = {
+        "@type": "Event",
+        name: s.name,
+        startDate: s.startDate,
+        endDate: s.endDate,
+        url: e.url,
+        ...shared,
+      };
+      if (s.description) sub.description = s.description;
+      if (e.performer) sub.performer = e.performer;
+      if (e.image) sub.image = e.image;
+      return sub;
+    });
+  }
+  return node;
+}
+
 export function donateActionLd() {
   return {
     "@type": "DonateAction",
