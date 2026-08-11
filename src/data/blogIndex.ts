@@ -24,7 +24,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     readTimeMinutes: 5,
   },
   {
-    slug: "warparound-services-adoptive-families",
+    slug: "wraparound-services-adoptive-families",
     category: "wraparound",
     title: { en: "What Are Wraparound Services for Adoptive Families?", es: "Qué son los servicios de wraparound para familias adoptivas" },
     description: { en: "How wraparound services offer comprehensive, family-centered support for adoptive parents, with personalized care and long-term permanency.", es: "Cómo los servicios de wraparound ofrecen apoyo integral centrado en la familia para padres adoptivos, con atención personalizada y permanencia a largo plazo." },

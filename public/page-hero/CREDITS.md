@@ -88,5 +88,5 @@ All sourced from Unsplash (images.unsplash.com, free tier), verified "Free to us
 - blog-teen-struggles.webp, blog-teen-struggles-inline-1.webp (why-adopted-adolescents-struggle) — Free to use under the Unsplash License
 - blog-teen-girls.webp, blog-teen-girls-inline-1.webp, blog-teen-girls-inline-2.webp (impact-adoption-teenage-girls) — Free to use under the Unsplash License
 - blog-birth-parents.webp, blog-birth-parents-inline-1.webp (adopted-teens-finding-birth-parents) — Free to use under the Unsplash License
-- blog-wraparound-families.webp, blog-wraparound-families-inline-1.webp, blog-wraparound-families-inline-2.webp (warparound-services-adoptive-families) — Free to use under the Unsplash License
+- blog-wraparound-families.webp, blog-wraparound-families-inline-1.webp, blog-wraparound-families-inline-2.webp (wraparound-services-adoptive-families) — Free to use under the Unsplash License
 - blog-inhome-support.webp (in-home-support-adoptive-families) — Free to use under the Unsplash License

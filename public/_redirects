@@ -1,3 +1,9 @@
 /post/:slug /blog/:slug 301
 /blog/b/:slug /blog/:slug 301
+
+# The slug shipped misspelled as "warparound". Never indexed in either language,
+# so renaming cost nothing, but keep these for any link shared before the fix.
+/blog/warparound-services-adoptive-families /blog/wraparound-services-adoptive-families 301
+/es/blog/warparound-services-adoptive-families /es/blog/wraparound-services-adoptive-families 301
+
 /* /404.html 404
