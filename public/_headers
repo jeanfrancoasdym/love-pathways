@@ -7,3 +7,26 @@ https://:project.pages.dev/*
 
 https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex
+
+# Security headers for the production hostnames only, so the pages.dev
+# hostnames above keep just their noindex rule.
+#
+# HSTS starts at max-age=300 on purpose. Browsers cache the policy, so a long
+# max-age cannot be walked back if something later turns out to need plain
+# HTTP. Raise to 15552000 (6 months) once this is confirmed working live.
+#
+# includeSubDomains is deliberately absent. Cloudflare flags
+# enterpriseenrollment.lovepathways.org and _domainconnect.* as lacking valid
+# TLS, and including subdomains would make browsers refuse them with no quick
+# way back. The apex and www are the only hostnames people browse.
+#
+# No Content-Security-Policy here: the site loads GTM, Google Fonts and GHL
+# embeds, and a CSP written without inventorying every one of those breaks the
+# page silently. Worth doing as its own task, not as a side effect of this one.
+https://lovepathways.org/*
+  Strict-Transport-Security: max-age=300
+  X-Frame-Options: SAMEORIGIN
+
+https://www.lovepathways.org/*
+  Strict-Transport-Security: max-age=300
+  X-Frame-Options: SAMEORIGIN
