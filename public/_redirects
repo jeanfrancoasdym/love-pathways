@@ -6,4 +6,9 @@
 /blog/warparound-services-adoptive-families /blog/wraparound-services-adoptive-families 301
 /es/blog/warparound-services-adoptive-families /es/blog/wraparound-services-adoptive-families 301
 
+# Uppercase locale prefix picked up 3 impressions in Search Console history.
+# This site has no pre-migration legacy URLs to recover: unlike LEAF, its 16-month
+# history contains only its own current paths.
+/ES /es 301
+
 /* /404.html 404
