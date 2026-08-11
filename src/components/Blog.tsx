@@ -68,7 +68,9 @@ export default function Blog() {
 
   return (
     <div className="pb-0 bg-slate-100 relative overflow-hidden">
-      <Seo pageKey="blog" path="/blog" jsonLd={graph(organizationLd(), webSiteLd(lng), blogPageLd(lng), breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }]))} />
+      {/* noindex: the listing only surfaces the 15 rebranded LEAF articles, so it
+          duplicates LEAF's /blog too. Drop the prop once the articles are rewritten. */}
+      <Seo noindex pageKey="blog" path="/blog" jsonLd={graph(organizationLd(), webSiteLd(lng), blogPageLd(lng), breadcrumbLd(lng, [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }]))} />
       {/* Global Background Decorations */}
       <div className="absolute top-[10%] -left-24 w-96 h-96 bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-[40%] -right-24 w-96 h-96 bg-brand-secondary/5 rounded-full blur-[120px] pointer-events-none" />

@@ -11,6 +11,15 @@ const ORIGIN = "https://lovepathways.org";
 const blogIndexSrc = readFileSync(resolve(process.cwd(), "src", "data", "blogIndex.ts"), "utf8");
 const BLOG_SLUGS = [...blogIndexSrc.matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1]);
 
+// The 15 articles are still LEAF's content rebranded, so they are kept out of the
+// sitemap and rendered <Seo noindex> (see components/Blog.tsx + BlogPost.tsx).
+// Google already resolves the duplication in LEAF's favour: for
+// "adoptive wraparound services california" LEAF sits at position 9 and LP at 53,
+// so indexing these earns LP nothing and just spends crawl budget.
+// Flip to true once the articles carry LP-specific framing (own counties, own
+// presenters, own opening scenarios) and drop the noindex in the same change.
+const INCLUDE_BLOG = false;
+
 // Indexable routes only. Thank-you pages and 404 are intentionally excluded
 // (they render <Seo noindex>), as is the "*" catch-all.
 // priority + changefreq per path. /privacy-policy excluded (crawl budget).
@@ -27,11 +36,15 @@ const PAGES = [
   { path: "/webinar-event2",        priority: "0.7", changefreq: "monthly"   },
   { path: "/webinar-event3",        priority: "0.7", changefreq: "monthly"   },
   { path: "/workshop-registration", priority: "0.7", changefreq: "weekly"    },
-  { path: "/blog",                  priority: "0.6", changefreq: "weekly"    },
   { path: "/career",                priority: "0.6", changefreq: "monthly"   },
   { path: "/donate",                priority: "0.6", changefreq: "monthly"   },
   { path: "/resource-hub",          priority: "0.6", changefreq: "monthly"   },
-  ...BLOG_SLUGS.map((slug) => ({ path: `/blog/${slug}`, priority: "0.5", changefreq: "yearly" })),
+  ...(INCLUDE_BLOG
+    ? [
+        { path: "/blog", priority: "0.6", changefreq: "weekly" },
+        ...BLOG_SLUGS.map((slug) => ({ path: `/blog/${slug}`, priority: "0.5", changefreq: "yearly" })),
+      ]
+    : []),
 ];
 const PATHS = PAGES.map((p) => p.path);
 const TODAY = new Date().toISOString().slice(0, 10);

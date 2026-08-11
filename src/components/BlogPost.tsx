@@ -181,7 +181,12 @@ export default function BlogPost({ slugProp }: { slugProp: string }) {
 
   return (
     <article className="bg-white">
+      {/* noindex: still LEAF's articles rebranded. Google resolves the duplication
+          in LEAF's favour, so indexing these earns LP nothing. Remove the prop per
+          article as each one is rewritten with LP-specific framing, and flip
+          INCLUDE_BLOG in scripts/generate-sitemap.mjs at the same time. */}
       <Seo
+        noindex
         pageKey="blog"
         path={`/blog/${meta.slug}`}
         title={`${meta.title[lng]} | Love Pathways Wraparound`}
