@@ -11,9 +11,10 @@ https://:version.:project.pages.dev/*
 # Security headers for the production hostnames only, so the pages.dev
 # hostnames above keep just their noindex rule.
 #
-# HSTS starts at max-age=300 on purpose. Browsers cache the policy, so a long
-# max-age cannot be walked back if something later turns out to need plain
-# HTTP. Raise to 15552000 (6 months) once this is confirmed working live.
+# HSTS is 15552000 (6 months). It shipped at max-age=300 first and was confirmed
+# live on both hostnames before being raised, because browsers cache the policy
+# and a long max-age cannot be walked back if something later needs plain HTTP.
+# Lower it back to 300 and wait 5 minutes before any change that might.
 #
 # includeSubDomains is deliberately absent. Cloudflare flags
 # enterpriseenrollment.lovepathways.org and _domainconnect.* as lacking valid
@@ -24,9 +25,9 @@ https://:version.:project.pages.dev/*
 # embeds, and a CSP written without inventorying every one of those breaks the
 # page silently. Worth doing as its own task, not as a side effect of this one.
 https://lovepathways.org/*
-  Strict-Transport-Security: max-age=300
+  Strict-Transport-Security: max-age=15552000
   X-Frame-Options: SAMEORIGIN
 
 https://www.lovepathways.org/*
-  Strict-Transport-Security: max-age=300
+  Strict-Transport-Security: max-age=15552000
   X-Frame-Options: SAMEORIGIN
