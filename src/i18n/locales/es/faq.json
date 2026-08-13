@@ -20,7 +20,7 @@
     },
     "eligible": {
       "question": "¿Quién es elegible para sus servicios?",
-      "answer": "Nuestros servicios están disponibles para cualquier familia con un hijo adoptado que resida en cualquier condado dentro del estado de California. Apoyamos a las familias en todas las etapas de su camino de adopción."
+      "answer": "Nuestros servicios están disponibles para familias con un hijo adoptado que vivan en uno de los 10 condados de California que atendemos, listados abajo. Apoyamos a las familias en todas las etapas de su camino de adopción."
     },
     "loveBased": {
       "question": "¿Qué significa \"Educación Basada en el Amor\"?",
@@ -36,7 +36,7 @@
     },
     "cost": {
       "question": "¿Tiene algún costo recibir sus servicios?",
-      "answer": "Los costos pueden variar según los servicios específicos que se necesiten y el posible financiamiento del condado. Estamos comprometidos a hacer que nuestro apoyo sea lo más accesible posible y podemos conversar sobre las opciones financieras durante tu consulta inicial."
+      "answer": "No tiene ningún costo para tu familia. El programa wraparound se financia a través del Adoption Assistance Program (AAP), una subvención del estado de California, así que no se te cobra nada, no hay costo de bolsillo, y nada varía según los servicios que tu familia necesite."
     },
     "highFidelity": {
       "question": "¿Qué es el acompañamiento Wraparound High Fidelity (Alta fidelidad)?",

@@ -20,7 +20,7 @@
     },
     "eligible": {
       "question": "Who is eligible for your services?",
-      "answer": "Our services are available to any family with an adopted child residing in any county within the state of California. We support families at all stages of their adoption journey."
+      "answer": "Our services are available to families with an adopted child living in one of the 10 California counties we serve, listed below. We support families at all stages of their adoption journey."
     },
     "loveBased": {
       "question": "What does 'Love-Based Education' mean?",
@@ -36,7 +36,7 @@
     },
     "cost": {
       "question": "Is there a cost for your services?",
-      "answer": "Costs can vary depending on the specific services required and potential county funding. We are committed to making our support as accessible as possible and can discuss financial options during your initial consultation."
+      "answer": "There is no cost to your family. Wraparound is funded through the Adoption Assistance Program (AAP), a California state subsidy, so nothing is billed to you, there is no out-of-pocket cost, and nothing varies with the services your family needs."
     },
     "highFidelity": {
       "question": "What is High Fidelity Wraparound?",
