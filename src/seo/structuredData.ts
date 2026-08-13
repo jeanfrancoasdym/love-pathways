@@ -15,7 +15,7 @@ export const localeUrl = (lng: Lng, path = "/") => {
 // NGO / Organization: the core entity, referenced by @id everywhere.
 export function organizationLd() {
   const node: Record<string, unknown> = {
-    "@type": ["NGO", "Organization", "SocialService"],
+    "@type": ["NGO", "Organization", "SocialService", "LocalBusiness"],
     "@id": ORG_ID,
     name: org.name,
     legalName: org.legalName,
@@ -33,6 +33,14 @@ export function organizationLd() {
       addressCountry: "US",
     },
     areaServed: counties.map((c) => ({ "@type": "AdministrativeArea", name: `${c} County, California` })),
+    // LocalBusiness fields: one office, defined service area, and free
+    priceRange: "Free",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
     knowsAbout: org.knowsAbout,
     founder: { "@type": "Person", name: org.founder },
     parentOrganization: {

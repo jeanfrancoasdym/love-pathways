@@ -76,7 +76,7 @@
     "tagClinical": "Clinical Expertise",
     "statLabel": "Counties",
     "mapTitle": "Map of the 10 California counties served by Love Pathways Wraparound",
-    "mapDesc": "Love Pathways Wraparound serves families across 10 counties in California. Each served county is filled in and marked with a pin.",
+    "mapDesc": "Interactive map of the 10 California counties Love Pathways Wraparound serves.",
     "callLabel": "Or call us",
     "countyName": "{{name}} County",
     "listHeading": "Counties we serve",

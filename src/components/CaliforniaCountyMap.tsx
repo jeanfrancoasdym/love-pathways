@@ -51,11 +51,13 @@ export default function CaliforniaCountyMap({ active, onActive }: SharedProps) {
 
   return (
     <div className="relative w-full">
+      {/* data-nosnippet: Google was quoting the <desc> below as this page search snippet */}
       <svg
         viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`}
         className="h-auto w-full"
         role="img"
         aria-label={t("reach.mapTitle")}
+        data-nosnippet
       >
         <title>{t("reach.mapTitle")}</title>
         <desc>{t("reach.mapDesc")}</desc>

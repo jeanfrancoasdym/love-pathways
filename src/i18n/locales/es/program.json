@@ -76,7 +76,7 @@
     "tagClinical": "Experiencia clínica",
     "statLabel": "Condados",
     "mapTitle": "Mapa de los 10 condados de California que atiende Love Pathways Wraparound",
-    "mapDesc": "Love Pathways Wraparound atiende a familias en 10 condados de California. Cada condado atendido aparece coloreado y marcado con un pin.",
+    "mapDesc": "Mapa interactivo de los 10 condados de California que atiende Love Pathways Wraparound.",
     "callLabel": "O llámanos",
     "countyName": "Condado de {{name}}",
     "listHeading": "Condados que atendemos",
