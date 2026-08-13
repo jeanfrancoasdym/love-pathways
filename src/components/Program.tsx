@@ -53,80 +53,100 @@ export default function Program() {
         subtitle={t("hero.subtitle")}
       />
 
-      {/* Our Approach */}
-      <section id="our-approach" className="relative bg-slate-50 py-10 md:py-14 overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #232323 1.5px, transparent 1.5px)', backgroundSize: '40px 40px' }}></div>
-        <div className="absolute top-1/2 right-[-5%] -translate-y-1/2 text-brand-primary/5 pointer-events-none z-0">
-          <HeartPulse size={600} strokeWidth={0.2} />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="order-2 lg:order-1">
-            <div className="mb-8">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-4 leading-tight">
-                {t("approach.titleLine1")}<span className="text-brand-primary">{t("approach.titleLine2")}</span>
-              </h2>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                {t("approach.intro")}
-              </p>
+
+      {/* Who is on your team — the four roles, ours and theirs */}
+      <section id="your-team" className="relative bg-white py-12 md:py-16 overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <div className="mb-5 inline-flex items-center gap-3">
+              <span className="h-1 w-10 rounded-full bg-brand-secondary" />
+              <span className="font-display text-sm font-bold uppercase tracking-widest text-brand-primary">
+                {t("team.eyebrow")}
+              </span>
             </div>
-
-            <div className="space-y-5">
-              {/* Block 1 */}
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-11 h-11 rounded-xl bg-brand-primary/10 flex items-center justify-center text-brand-primary">
-                    <MessageSquare size={22} />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-display font-bold text-brand-dark mb-1">{t("approach.block1.title")}</h3>
-                  <p className="text-slate-600 leading-relaxed">
-                    {t("approach.block1.desc")}
-                  </p>
-                </div>
-              </div>
-
-              {/* Block 2 */}
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-11 h-11 rounded-xl bg-brand-secondary/20 flex items-center justify-center text-brand-secondary">
-                    <Users size={22} />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-display font-bold text-brand-dark mb-1">{t("approach.block2.title")}</h3>
-                  <p className="text-slate-600 leading-relaxed">
-                    {t("approach.block2.desc")}
-                  </p>
-                </div>
-              </div>
-
-              {/* Block 3 */}
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-11 h-11 rounded-xl bg-brand-dark/10 flex items-center justify-center text-brand-dark">
-                    <ShieldCheck size={22} />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-display font-bold text-brand-dark mb-1">{t("approach.block3.title")}</h3>
-                  <p className="text-slate-600 leading-relaxed">
-                    {t("approach.block3.desc")}
-                  </p>
-                </div>
-              </div>
-            </div>
+            <h2 className="font-display text-3xl font-bold leading-[1.1] tracking-tight text-brand-dark md:text-4xl">
+              {t("team.titleLine1")}
+              <span className="text-brand-primary">{t("team.titleLine2")}</span>
+            </h2>
+            <p className="mt-4 leading-relaxed text-slate-600">{t("team.intro")}</p>
           </div>
-          <div className="order-1 lg:order-2 relative">
-            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-[3rem] shadow-2xl">
-              <img src="/page-hero/program-approach.webp" alt="" className="h-full w-full object-cover" />
-              {/* subtle brand wash so the photo sits on-brand */}
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/55 via-brand-dark/5 to-transparent" />
-              <div className="absolute inset-0 mix-blend-multiply bg-brand-primary/15" />
-            </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { key: "facilitator", icon: Users, tint: "bg-brand-primary/5 text-brand-primary" },
+              { key: "specialist", icon: HeartPulse, tint: "bg-brand-secondary/10 text-brand-secondary" },
+              { key: "parentPartner", icon: MessageSquare, tint: "bg-[#eab308]/10 text-[#ca8a04]" },
+              { key: "yourPeople", icon: Heart, tint: "bg-brand-primary/5 text-brand-primary" },
+            ].map(({ key, icon: Icon, tint }) => (
+              <div
+                key={key}
+                className="flex flex-col rounded-3xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-900/[0.04]"
+              >
+                <div className={`mb-4 flex h-11 w-11 items-center justify-center rounded-xl ${tint}`}>
+                  <Icon size={22} strokeWidth={1.5} />
+                </div>
+                <h3 className="font-display text-lg font-bold text-brand-dark">
+                  {t(`team.roles.${key}.title`)}
+                </h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-slate-600">
+                  {t(`team.roles.${key}.desc`)}
+                </p>
+              </div>
+            ))}
           </div>
+
         </div>
+      </section>
+
+      {/* The ten principles — the state's definition of high fidelity, in plain language */}
+      <section id="ten-principles" className="relative bg-slate-50 py-12 md:py-16 overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <div className="mb-5 inline-flex items-center gap-3">
+              <span className="h-1 w-10 rounded-full bg-brand-secondary" />
+              <span className="font-display text-sm font-bold uppercase tracking-widest text-brand-primary">
+                {t("principles.eyebrow")}
+              </span>
+            </div>
+            <h2 className="font-display text-3xl font-bold leading-[1.1] tracking-tight text-brand-dark md:text-4xl">
+              {t("principles.titleLine1")}
+              <span className="text-brand-primary">{t("principles.titleLine2")}</span>
+              {t("principles.titleAfter")}
+            </h2>
+            <p className="mt-4 leading-relaxed text-slate-600">{t("principles.intro")}</p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
+            {["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10"].map((k, i) => (
+              <div
+                key={k}
+                className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-900/[0.04]"
+              >
+                {/* ghost numeral, same device as the counties stat */}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute -top-3 right-4 font-display text-6xl font-bold leading-none tracking-tighter text-slate-900/[0.05]"
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="relative font-display text-lg font-bold text-brand-dark">
+                  {t(`principles.items.${k}.name`)}
+                </h3>
+                <p className="relative mt-2 text-[15px] leading-relaxed text-slate-600">
+                  {t(`principles.items.${k}.desc`)}
+                </p>
+                <details className="group relative mt-3">
+                  <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 font-display text-sm font-bold text-brand-primary hover:text-brand-dark">
+                    <ArrowRight size={15} className="transition-transform group-open:rotate-90" />
+                    {t("principles.exampleLabel")}
+                  </summary>
+                  <p className="mt-2 border-l-2 border-brand-secondary/40 pl-4 text-[14px] italic leading-relaxed text-slate-500">
+                    {t(`principles.items.${k}.example`)}
+                  </p>
+                </details>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -245,6 +265,59 @@ export default function Program() {
               {/* County name index — under the Circle of Care card */}
               <CountyServeList active={activeCounty} onActive={setActiveCounty} />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Do I qualify — the canonical version. /faq keeps the short answers and links here. */}
+      <section id="do-i-qualify" className="relative overflow-hidden bg-gradient-to-b from-white to-brand-mist py-16 md:py-24">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-5 inline-flex items-center gap-3">
+            <span className="h-1 w-10 rounded-full bg-brand-secondary" />
+            <span className="font-display text-sm font-bold uppercase tracking-widest text-brand-primary">
+              {t("qualify.eyebrow")}
+            </span>
+          </div>
+          <h2 className="font-display text-3xl font-bold leading-[1.1] tracking-tight text-brand-dark md:text-4xl">
+            {t("qualify.titleLine1")}
+            <span className="text-brand-primary">{t("qualify.titleLine2")}</span>
+          </h2>
+
+          <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-12">
+            <div className="lg:col-span-3">
+              {/* the cost answer, given visual weight: no competitor states it at all */}
+              <div className="rounded-3xl border border-brand-secondary/25 bg-white p-6 shadow-lg shadow-slate-900/[0.04]">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-secondary/10 text-brand-secondary">
+                    <ShieldCheck size={22} strokeWidth={1.5} />
+                  </div>
+                  <p className="leading-relaxed text-slate-700">{t("qualify.cost")}</p>
+                </div>
+              </div>
+
+              <p className="mt-5 flex items-start gap-3 text-[15px] leading-relaxed text-slate-600">
+                <CheckCircle2 size={20} strokeWidth={1.5} className="mt-0.5 shrink-0 text-brand-secondary" />
+                {t("qualify.note")}
+              </p>
+
+              <Link
+                to={to("/contact-us")}
+                className="group mt-7 inline-flex w-fit items-center gap-3 rounded-lg bg-brand-primary px-8 py-3.5 font-display text-base font-bold text-white shadow-lg transition-colors duration-300 hover:bg-brand-dark"
+              >
+                {t("qualify.cta")}
+                <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+
+            {/* the statutory framing, deliberately quiet: context, not a sales point */}
+            <aside className="lg:col-span-2">
+              <div className="rounded-3xl border border-slate-200 bg-white/70 p-6">
+                <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-primary/5 text-brand-primary">
+                  <BookOpen size={22} strokeWidth={1.5} />
+                </div>
+                <p className="text-[14px] leading-relaxed text-slate-600">{t("qualify.legal")}</p>
+              </div>
+            </aside>
           </div>
         </div>
       </section>

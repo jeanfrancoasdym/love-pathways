@@ -5,26 +5,7 @@
     "titleBefore": "High Fidelity ",
     "titleHighlight": "Wraparound",
     "titleAfter": " Support for Adoptive Families",
-    "subtitle": "Our goal is to educate and empower parents so they can better understand how to create a long-term healing environment for their children, at no out-of-pocket cost to AAP families."
-  },
-  "approach": {
-    "title": "What is Trauma-Informed, High Fidelity Wraparound Support?",
-    "titleLine1": "What is Trauma-Informed, High Fidelity ",
-    "titleLine2": "Wraparound Support?",
-    "intro": "At Love Pathways, true healing doesn’t come from a one-size-fits-all manual. We build a safety net around your family's unique reality through trauma-informed care coordination.",
-    "block1": {
-      "title": "Empowering Your Voice",
-      "desc": "Our foundation is built entirely on family voice and choice. Your personalized care plan is family-driven, deeply individualized to your specific needs, and completely culturally respectful to your traditions."
-    },
-    "block2": {
-      "title": "Building Your Village",
-      "desc": "A dedicated care coordinator holds your family-centered team together. Professionals work alongside you, and we integrate natural supports (friends, neighbors) so community integration is part of the plan, not an afterthought."
-    },
-    "block3": {
-      "title": "Relentless Commitment",
-      "desc": "We are strictly outcomes-based, with progress monitoring against clear goals. Above all, our promise is persistence: we work alongside you through every challenge until you reach a better place."
-    },
-    "imageAlt": "Our Approach"
+    "subtitle": "Our goal is for your family to stay together, and for your child to stay home. We work toward it with a Child and Family Team, one Care Plan, and the ten principles California requires."
   },
   "gettingStarted": {
     "badge": "Stage 1: First Steps",
@@ -98,5 +79,98 @@
     "mapDesc": "Love Pathways Wraparound serves families across 10 counties in California. Each served county is filled in and marked with a pin.",
     "listHeading": "Counties we serve",
     "servedLabel": "Served"
+  },
+  "team": {
+    "eyebrow": "Who is on your team",
+    "titleLine1": "You are not doing this ",
+    "titleLine2": "on your own",
+    "intro": "High Fidelity Wraparound puts a team around your family instead of sending your child somewhere else. Some of that team is ours. Some of it is yours.",
+    "roles": {
+      "facilitator": {
+        "title": "Facilitator",
+        "desc": "Leads the team and keeps the Care Plan aligned with what your family said it wants."
+      },
+      "specialist": {
+        "title": "Family Specialist",
+        "desc": "Works directly with your family between meetings, in your home and in your community."
+      },
+      "parentPartner": {
+        "title": "Parent Partner",
+        "desc": "A parent who has been through this, sitting on your side of the table."
+      },
+      "yourPeople": {
+        "title": "The People You Choose",
+        "desc": "A grandmother, a neighbor, a coach, a teacher. Anyone who matters to your child can be on the team."
+      }
+    }
+  },
+  "principles": {
+    "eyebrow": "The ten principles",
+    "titleLine1": "What ",
+    "titleLine2": "high fidelity",
+    "titleAfter": " actually means",
+    "intro": "California’s Wraparound Standards define high fidelity as adherence to four phases and ten principles. Not marketing language, a state standard. Here is what each principle means for your family.",
+    "exampleLabel": "See an example",
+    "items": {
+      "p1": {
+        "name": "Family Voice and Choice",
+        "desc": "You and your family have a say in the decisions made. Your ideas, opinions and preferences guide the plan.",
+        "example": "A Facilitator makes sure a mother’s wish to include a trusted relative in her child’s care plan is honored."
+      },
+      "p2": {
+        "name": "Strengths-Based",
+        "desc": "We focus on what your family does well, and use those strengths to solve challenges instead of only looking at problems.",
+        "example": "A Family Specialist notices a child’s artistic ability and builds it into the plan as a way to express difficult feelings."
+      },
+      "p3": {
+        "name": "Individualized",
+        "desc": "Every family is different, and so is every plan. Yours is made only for you, for your specific needs.",
+        "example": "A behavior plan for a child with ADHD is built around daily routines and accommodations that fit that child, not a template."
+      },
+      "p4": {
+        "name": "Natural Supports",
+        "desc": "We help you bring people from your own life into the Care Plan: friends, relatives, neighbors who can be part of your team.",
+        "example": "A family reconnects with a supportive neighbor who becomes part of the care team and keeps helping long after the program ends."
+      },
+      "p5": {
+        "name": "Community-Based",
+        "desc": "Support happens where you live, not only in an office. That keeps you connected and makes the help easier to accept.",
+        "example": "A mentor from the local youth center meets with the child in a place the child already knows."
+      },
+      "p6": {
+        "name": "Culturally Respectful and Relevant",
+        "desc": "Your family’s culture, traditions and beliefs are part of the plan, not an exception to it.",
+        "example": "The plan is built around the family’s own celebrations and rituals rather than asking them to set those aside."
+      },
+      "p7": {
+        "name": "Team-Based",
+        "desc": "You are not alone. Your team includes people who care about you and professionals who coordinate with each other.",
+        "example": "Teachers, therapists and family members meet as one Child and Family Team instead of each working separately."
+      },
+      "p8": {
+        "name": "Collaboration",
+        "desc": "Everyone shares ideas and decisions, so nothing pulls in two directions at once.",
+        "example": "In a team meeting, the Parent Partner makes sure the family’s view is weighed alongside the professionals’ recommendations."
+      },
+      "p9": {
+        "name": "Outcomes-Based",
+        "desc": "Clear goals, tracked. If something is not working, the plan changes.",
+        "example": "The team reviews school attendance every month and adjusts the plan when the numbers say it is not working."
+      },
+      "p10": {
+        "name": "Persistence",
+        "desc": "Setbacks mean the plan needs adjusting, not that your family failed. Your team stays.",
+        "example": "After a hard month the team keeps showing up, changing the plan rather than closing the case."
+      }
+    }
+  },
+  "qualify": {
+    "eyebrow": "Funding and cost",
+    "titleLine1": "How this is funded, and ",
+    "titleLine2": "what it costs you",
+    "legal": "California High Fidelity Wraparound is authorized under Senate Bill 163 and codified in Welfare and Institutions Code 18250 to 18258.",
+    "cost": "The Adoption Assistance Program funds this program. That is why there is no out-of-pocket cost to your family, no billing, and nothing that varies by the services your child needs.",
+    "note": "Your child must be under 18, adopted through the foster system, receiving AAP benefits, and living in one of the counties above.",
+    "cta": "Talk to our team"
   }
 }

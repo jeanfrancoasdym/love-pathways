@@ -216,9 +216,9 @@ export default function Home() {
                 <p className="text-slate-700 leading-relaxed mb-6 relative z-10 text-lg">
                   {t("crisis.noCostBefore")}<span className="font-bold">{t("crisis.noCostBold")}</span>
                 </p>
-                <a href="#who-qualifies" className="inline-flex items-center gap-2 text-brand-primary font-bold uppercase tracking-wide text-sm hover:text-brand-dark transition-colors relative z-10">
+                <Link to={to("/our-program")} className="inline-flex items-center gap-2 text-brand-primary font-bold uppercase tracking-wide text-sm hover:text-brand-dark transition-colors relative z-10">
                   {t("crisis.qualifyLink")} <ArrowRight size={16} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -323,7 +323,7 @@ export default function Home() {
 
       {/* Who Qualifies */}
       {/* Are we here for you — warm, minimal, fits one screen */}
-      <section id="who-qualifies" className="relative overflow-hidden bg-gradient-to-b from-white to-brand-mist py-16 md:py-24">
+      <section id="who-qualifies" className="relative overflow-hidden bg-gradient-to-b from-white to-brand-mist py-12 md:py-16">
         <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -335,14 +335,14 @@ export default function Home() {
               <Heart size={14} className="fill-brand-primary/30" />
               {t("qualifies.eyebrow")}
             </span>
-            <h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-brand-dark md:text-5xl">
+            <h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-brand-dark md:text-4xl">
               {t("qualifies.titleLine1")} <span className="text-brand-primary">{t("qualifies.titleLine2")}</span>
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">{t("qualifies.intro")}</p>
+            <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-slate-600">{t("qualifies.intro")}</p>
           </motion.div>
 
           {/* the four reasons — full-width, icon-forward, symmetric */}
-          <div className="mx-auto mt-14 grid max-w-5xl grid-cols-2 gap-y-12 lg:grid-cols-4">
+          <div className="mx-auto mt-10 grid max-w-5xl grid-cols-2 gap-y-8 lg:grid-cols-4">
             {[
               { icon: MapPin, key: "point1" },
               { icon: Baby, key: "point2" },
@@ -359,14 +359,21 @@ export default function Home() {
                   transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
                   className="flex flex-col items-center px-5 text-center lg:px-8 lg:[&:not(:first-child)]:border-l lg:[&:not(:first-child)]:border-slate-200"
                 >
-                  <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-primary/10 text-brand-primary shadow-sm ring-1 ring-brand-primary/10">
-                    <Icon size={30} strokeWidth={1.8} />
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-primary/10 text-brand-primary shadow-sm ring-1 ring-brand-primary/10">
+                    <Icon size={26} strokeWidth={1.8} />
                   </div>
-                  <p className="min-h-[3.25rem] text-base font-medium leading-snug text-brand-dark md:text-[17px]">{t(`qualifies.${p.key}`)}</p>
+                  <p className="text-[15px] font-medium leading-snug text-brand-dark">{t(`qualifies.${p.key}`)}</p>
                 </motion.div>
               );
             })}
           </div>
+
+          {/* statutory framing sits with the eligibility points it explains, not
+              orphaned at the foot of the section. Quiet on purpose: context that
+              earns trust, not a selling point. */}
+          <p className="mx-auto mt-6 max-w-2xl text-[12px] leading-relaxed text-slate-400">
+            {t("qualifies.legal")}
+          </p>
 
           {/* reassurance + single warm CTA */}
           <motion.div
@@ -374,7 +381,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-            className="mt-12 flex flex-col items-center gap-7"
+            className="mt-9 flex flex-col items-center gap-5"
           >
             <div className="inline-flex items-center gap-3 rounded-full bg-brand-dark px-7 py-3.5 text-white shadow-lg">
               <CheckCircle2 size={20} className="shrink-0 text-brand-secondary" />

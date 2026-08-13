@@ -5,26 +5,7 @@
     "titleBefore": "Wraparound ",
     "titleHighlight": "High Fidelity",
     "titleAfter": " para familias adoptivas",
-    "subtitle": "Nuestra meta es educar y empoderar a los padres para que comprendan mejor cómo crear un entorno de sanación duradero para sus hijos, sin costo de bolsillo para familias del AAP."
-  },
-  "approach": {
-    "title": "¿Qué es el apoyo Wraparound High Fidelity (Alta fidelidad)?",
-    "titleLine1": "¿Qué es el apoyo ",
-    "titleLine2": "Wraparound High Fidelity (Alta fidelidad)?",
-    "intro": "En Love Pathways, la verdadera sanación no proviene de un manual único para todos. Construimos una red de apoyo en torno a la realidad única de tu familia.",
-    "block1": {
-      "title": "Empoderar tu voz",
-      "desc": "Nuestra base se construye por completo sobre la voz y las decisiones de la familia. Tu plan está profundamente individualizado según tus necesidades específicas y es completamente respetuoso de tus tradiciones culturales."
-    },
-    "block2": {
-      "title": "Construir tu comunidad",
-      "desc": "Usamos un modelo basado en fortalezas y en equipo. Los profesionales trabajan junto a ti, pero también integramos apoyos naturales (amigos, vecinos) para que tu cuidado sea verdaderamente comunitario."
-    },
-    "block3": {
-      "title": "Compromiso incansable",
-      "desc": "Nos enfocamos estrictamente en resultados, dando seguimiento a metas claras. Por encima de todo, nuestra promesa es la persistencia: trabajamos junto a ti en cada desafío hasta que alcances un lugar mejor."
-    },
-    "imageAlt": "Nuestro enfoque"
+    "subtitle": "Nuestra meta es que tu familia permanezca junta y que tu hijo se quede en casa. Trabajamos para lograrlo con un Child and Family Team, un solo Care Plan y los diez principios que California exige."
   },
   "gettingStarted": {
     "badge": "Etapa 1: primeros pasos",
@@ -98,5 +79,98 @@
     "mapDesc": "Love Pathways Wraparound atiende a familias en 10 condados de California. Cada condado atendido aparece coloreado y marcado con un pin.",
     "listHeading": "Condados que atendemos",
     "servedLabel": "Atendido"
+  },
+  "team": {
+    "eyebrow": "Quién forma tu equipo",
+    "titleLine1": "No estás haciendo esto ",
+    "titleLine2": "por tu cuenta",
+    "intro": "Wraparound High Fidelity pone un equipo alrededor de tu familia en vez de enviar a tu hijo a otro lugar. Parte de ese equipo es nuestro. Parte es tuyo.",
+    "roles": {
+      "facilitator": {
+        "title": "Facilitator",
+        "desc": "Guía al equipo y mantiene el Care Plan alineado con lo que tu familia dijo que quiere."
+      },
+      "specialist": {
+        "title": "Family Specialist",
+        "desc": "Trabaja directamente con tu familia entre reuniones, en tu casa y en tu comunidad."
+      },
+      "parentPartner": {
+        "title": "Parent Partner",
+        "desc": "Un padre que ya pasó por esto, sentado de tu lado de la mesa."
+      },
+      "yourPeople": {
+        "title": "Las personas que tú elijas",
+        "desc": "Una abuela, un vecino, un entrenador, un maestro. Cualquiera que le importe a tu hijo puede estar en el equipo."
+      }
+    }
+  },
+  "principles": {
+    "eyebrow": "Los diez principios",
+    "titleLine1": "Qué significa ",
+    "titleLine2": "high fidelity",
+    "titleAfter": " en la práctica",
+    "intro": "Los California Wraparound Standards definen high fidelity como el cumplimiento de cuatro fases y diez principios. No es lenguaje de marketing, es un estándar del estado. Esto significa cada principio para tu familia.",
+    "exampleLabel": "Ver un ejemplo",
+    "items": {
+      "p1": {
+        "name": "Voz y decisiones de la familia",
+        "desc": "Tú y tu familia tienen voz en las decisiones. Sus ideas, opiniones y preferencias guían el plan.",
+        "example": "El Facilitator se asegura de que se respete el deseo de una madre de incluir a un familiar de confianza en el plan de su hijo."
+      },
+      "p2": {
+        "name": "Basado en fortalezas",
+        "desc": "Nos enfocamos en lo que tu familia hace bien y usamos esas fortalezas para resolver retos, en vez de mirar solo los problemas.",
+        "example": "Una Family Specialist nota la habilidad artística de un niño y la integra al plan como forma de expresar lo que le cuesta decir."
+      },
+      "p3": {
+        "name": "Individualizado",
+        "desc": "Cada familia es distinta, y cada plan también. El tuyo se hace solo para ustedes, para sus necesidades específicas.",
+        "example": "Un plan de conducta para un niño con TDAH se construye alrededor de rutinas y adaptaciones que le sirven a ese niño, no de una plantilla."
+      },
+      "p4": {
+        "name": "Apoyos naturales",
+        "desc": "Te ayudamos a traer al Care Plan personas de tu propia vida: amigos, familiares, vecinos que pueden ser parte del equipo.",
+        "example": "Una familia retoma el contacto con un vecino solidario que pasa a ser parte del equipo y sigue ayudando mucho después de que el programa termina."
+      },
+      "p5": {
+        "name": "Basado en la comunidad",
+        "desc": "El apoyo ocurre donde ustedes viven, no solo en una oficina. Eso los mantiene conectados y hace la ayuda más fácil de aceptar.",
+        "example": "Un mentor del centro juvenil del barrio se reúne con el niño en un lugar que el niño ya conoce."
+      },
+      "p6": {
+        "name": "Culturalmente respetuoso y relevante",
+        "desc": "La cultura, las tradiciones y las creencias de tu familia son parte del plan, no una excepción a él.",
+        "example": "El plan se construye alrededor de las propias celebraciones y rituales de la familia en vez de pedirles que los dejen de lado."
+      },
+      "p7": {
+        "name": "Basado en el equipo",
+        "desc": "No estás solo. Tu equipo incluye personas que se preocupan por ustedes y profesionales que se coordinan entre sí.",
+        "example": "Maestros, terapeutas y familiares se reúnen como un solo Child and Family Team en vez de trabajar cada uno por su lado."
+      },
+      "p8": {
+        "name": "Colaboración",
+        "desc": "Todos comparten ideas y decisiones, para que nada tire en dos direcciones a la vez.",
+        "example": "En una reunión del equipo, el Parent Partner se asegura de que la mirada de la familia pese igual que las recomendaciones de los profesionales."
+      },
+      "p9": {
+        "name": "Basado en resultados",
+        "desc": "Metas claras, con seguimiento. Si algo no funciona, el plan cambia.",
+        "example": "El equipo revisa la asistencia escolar cada mes y ajusta el plan cuando los números dicen que no está funcionando."
+      },
+      "p10": {
+        "name": "Persistencia",
+        "desc": "Un retroceso significa que hay que ajustar el plan, no que tu familia falló. Tu equipo se queda.",
+        "example": "Después de un mes difícil el equipo sigue presente, cambiando el plan en vez de cerrar el caso."
+      }
+    }
+  },
+  "qualify": {
+    "eyebrow": "Financiamiento y costo",
+    "titleLine1": "Cómo se financia y ",
+    "titleLine2": "qué te cuesta a ti",
+    "legal": "El programa California High Fidelity Wraparound está autorizado por el Senate Bill 163 y codificado en el Welfare and Institutions Code 18250 a 18258.",
+    "cost": "El Adoption Assistance Program financia este programa. Por eso no tiene ningún costo de bolsillo para tu familia, no se te factura nada, y nada varía según los servicios que tu hijo necesite.",
+    "note": "Tu hijo debe ser menor de 18 años, haber sido adoptado a través del sistema de crianza temporal, recibir beneficios del AAP y vivir en uno de los condados de arriba.",
+    "cta": "Habla con nuestro equipo"
   }
 }
