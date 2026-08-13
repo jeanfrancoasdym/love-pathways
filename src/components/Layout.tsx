@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
 import { Link, useLocation, Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Menu, X, ChevronDown, ArrowRight, Heart, MapPin, Mail } from "lucide-react";
+import { Menu, X, ChevronDown, ArrowRight, Heart, MapPin, Mail, Phone } from "lucide-react";
 import AccessibilityMenu from "./AccessibilityMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLocale } from "../i18n/useLocale";
@@ -257,6 +257,12 @@ export default function Layout() {
                   <Mail size={18} className="text-brand-primary shrink-0 mt-0.5" />
                   <a href={contact.emailHref} className="hover:text-brand-primary transition-colors">
                     {contact.email}
+                  </a>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Phone size={18} className="text-brand-primary shrink-0 mt-0.5" />
+                  <a href={contact.phoneHref} className="hover:text-brand-primary transition-colors">
+                    {contact.phone}
                   </a>
                 </li>
               </ul>

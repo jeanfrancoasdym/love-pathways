@@ -66,10 +66,10 @@
     "titleLine1": "OUR",
     "titleLine2": "REACH",
     "serving": "Serving 10 California Counties",
-    "description": "We've strategically expanded our footprint to ensure that no adoptive family in Northern and Central California has to walk their journey alone.",
+    "description": "We deliver in-home Wraparound services across 10 counties in California's Central Valley and Bay Area, so no adoptive family has to walk their journey alone.",
     "cardTitleLine1": "Expanding our",
     "cardTitleLine2": "Circle of Care.",
-    "cardDescription": "Our mission is to reach every family in need. If you reside outside these counties, please reach out. We are constantly evaluating new areas for expansion to bring healing where it's needed most.",
+    "cardDescription": "Our mission is to reach every family in need. If your county is not on this list, please reach out. We are constantly evaluating new areas to bring Wraparound support where it is needed most.",
     "cta": "Contact Our Team",
     "tagInHome": "In-Home Support",
     "tagFamilyCoaching": "Parent Coaching",
@@ -77,6 +77,8 @@
     "statLabel": "Counties",
     "mapTitle": "Map of the 10 California counties served by Love Pathways Wraparound",
     "mapDesc": "Love Pathways Wraparound serves families across 10 counties in California. Each served county is filled in and marked with a pin.",
+    "callLabel": "Or call us",
+    "countyName": "{{name}} County",
     "listHeading": "Counties we serve",
     "servedLabel": "Served"
   },
@@ -84,7 +86,7 @@
     "eyebrow": "Who is on your team",
     "titleLine1": "You are not doing this ",
     "titleLine2": "on your own",
-    "intro": "High Fidelity Wraparound puts a team around your family instead of sending your child somewhere else. Some of that team is ours. Some of it is yours.",
+    "intro": "High Fidelity Wraparound puts a team around your family instead of sending your child somewhere else. Preventing that placement disruption is the whole point of Wraparound. Some of the team is ours. Some of it is yours.",
     "roles": {
       "facilitator": {
         "title": "Facilitator",
@@ -109,7 +111,7 @@
     "titleLine1": "What ",
     "titleLine2": "high fidelity",
     "titleAfter": " actually means",
-    "intro": "California’s Wraparound Standards define high fidelity as adherence to four phases and ten principles. Not marketing language, a state standard. Here is what each principle means for your family.",
+    "intro": "California’s Wraparound Standards define high fidelity as adherence to four phases and the 10 principles of the National Wraparound Initiative, which the state adopted. Not marketing language, a state standard. Here is what each of the ten principles means for your family.",
     "exampleLabel": "See an example",
     "items": {
       "p1": {
@@ -164,13 +166,10 @@
       }
     }
   },
-  "qualify": {
-    "eyebrow": "Funding and cost",
-    "titleLine1": "How this is funded, and ",
-    "titleLine2": "what it costs you",
-    "legal": "California High Fidelity Wraparound is authorized under Senate Bill 163 and codified in Welfare and Institutions Code 18250 to 18258.",
-    "cost": "The Adoption Assistance Program funds this program. That is why there is no out-of-pocket cost to your family, no billing, and nothing that varies by the services your child needs.",
-    "note": "Your child must be under 18, adopted through the foster system, receiving AAP benefits, and living in one of the counties above.",
-    "cta": "Talk to our team"
+  "funding": {
+    "label": "Funding and cost",
+    "lead": "There is no cost to your family.",
+    "cost": "The Adoption Assistance Program (AAP) funds this Wraparound program, so there is no out-of-pocket cost to your family, nothing is billed to you, and nothing varies by the services your child needs.",
+    "legal": "California High Fidelity Wraparound is authorized under SB 163, codified in Welfare and Institutions Code 18250 to 18258."
   }
 }

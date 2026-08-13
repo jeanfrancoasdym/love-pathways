@@ -79,7 +79,9 @@ export function serviceLd(lng: Lng, opts: { name: string; description: string })
     description: opts.description,
     inLanguage: lng,
     provider: { "@id": ORG_ID },
-    areaServed: { "@type": "State", name: "California" },
+    // the served counties, not the whole state: the Organization node and the
+    // FAQ both say counties, and this claimed more coverage than we have
+    areaServed: counties.map((c) => ({ "@type": "AdministrativeArea", name: `${c} County, California` })),
     isAccessibleForFree: true,
   };
 }

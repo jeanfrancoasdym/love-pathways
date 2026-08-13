@@ -176,7 +176,7 @@ export function CountyServeList({ active, onActive }: SharedProps) {
                     isActive ? "text-brand-primary" : "text-brand-dark group-hover:text-brand-primary"
                   }`}
                 >
-                  {c.name}
+                  {t("reach.countyName", { name: c.name })}
                 </span>
               </button>
             </li>

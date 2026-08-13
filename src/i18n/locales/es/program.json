@@ -66,10 +66,10 @@
     "titleLine1": "NUESTRO",
     "titleLine2": "ALCANCE",
     "serving": "Atendemos 10 condados de California",
-    "description": "Hemos ampliado estratégicamente nuestra presencia para asegurar que ninguna familia adoptiva de California tenga que recorrer su camino sola.",
+    "description": "Brindamos servicios Wraparound en el hogar en 10 condados del Valle Central y el Área de la Bahía de California, para que ninguna familia adoptiva tenga que recorrer su camino sola.",
     "cardTitleLine1": "Ampliando nuestro",
     "cardTitleLine2": "círculo de cuidado.",
-    "cardDescription": "Nuestra misión es llegar a cada familia que lo necesite. Si vives fuera de estos condados, comunícate con nosotros. Evaluamos constantemente nuevas zonas para expandirnos y llevar sanación donde más se necesita.",
+    "cardDescription": "Nuestra misión es llegar a cada familia que lo necesite. Si tu condado no está en esta lista, comunícate con nosotros. Evaluamos constantemente nuevas zonas para llevar el apoyo Wraparound donde más se necesita.",
     "cta": "Contacta a nuestro equipo",
     "tagInHome": "Apoyo en el hogar",
     "tagFamilyCoaching": "Acompañamiento familiar",
@@ -77,6 +77,8 @@
     "statLabel": "Condados",
     "mapTitle": "Mapa de los 10 condados de California que atiende Love Pathways Wraparound",
     "mapDesc": "Love Pathways Wraparound atiende a familias en 10 condados de California. Cada condado atendido aparece coloreado y marcado con un pin.",
+    "callLabel": "O llámanos",
+    "countyName": "Condado de {{name}}",
     "listHeading": "Condados que atendemos",
     "servedLabel": "Atendido"
   },
@@ -84,7 +86,7 @@
     "eyebrow": "Quién forma tu equipo",
     "titleLine1": "No estás haciendo esto ",
     "titleLine2": "por tu cuenta",
-    "intro": "Wraparound High Fidelity pone un equipo alrededor de tu familia en vez de enviar a tu hijo a otro lugar. Parte de ese equipo es nuestro. Parte es tuyo.",
+    "intro": "Wraparound High Fidelity pone un equipo alrededor de tu familia en vez de enviar a tu hijo a otro lugar. Evitar esa separación es justamente el propósito del Wraparound. Parte de ese equipo es nuestro. Parte es tuyo.",
     "roles": {
       "facilitator": {
         "title": "Facilitator",
@@ -109,7 +111,7 @@
     "titleLine1": "Qué significa ",
     "titleLine2": "high fidelity",
     "titleAfter": " en la práctica",
-    "intro": "Los California Wraparound Standards definen high fidelity como el cumplimiento de cuatro fases y diez principios. No es lenguaje de marketing, es un estándar del estado. Esto significa cada principio para tu familia.",
+    "intro": "Los California Wraparound Standards definen high fidelity como el cumplimiento de cuatro fases y los 10 principios de la National Wraparound Initiative, que el estado adoptó. No es lenguaje de marketing, es un estándar del estado. Esto es lo que cada uno de los diez principios significa para tu familia.",
     "exampleLabel": "Ver un ejemplo",
     "items": {
       "p1": {
@@ -164,13 +166,10 @@
       }
     }
   },
-  "qualify": {
-    "eyebrow": "Financiamiento y costo",
-    "titleLine1": "Cómo se financia y ",
-    "titleLine2": "qué te cuesta a ti",
-    "legal": "El programa California High Fidelity Wraparound está autorizado por el Senate Bill 163 y codificado en el Welfare and Institutions Code 18250 a 18258.",
-    "cost": "El Adoption Assistance Program financia este programa. Por eso no tiene ningún costo de bolsillo para tu familia, no se te factura nada, y nada varía según los servicios que tu hijo necesite.",
-    "note": "Tu hijo debe ser menor de 18 años, haber sido adoptado a través del sistema de crianza temporal, recibir beneficios del AAP y vivir en uno de los condados de arriba.",
-    "cta": "Habla con nuestro equipo"
+  "funding": {
+    "label": "Financiamiento y costo",
+    "lead": "No tiene ningún costo para tu familia.",
+    "cost": "El Adoption Assistance Program (AAP) financia este programa Wraparound, así que no hay ningún costo de bolsillo para tu familia, no se te cobra nada, y nada varía según los servicios que tu hijo necesite.",
+    "legal": "El programa California High Fidelity Wraparound está autorizado por la SB 163 y codificado en el Welfare and Institutions Code 18250 a 18258."
   }
 }

@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Heart, Users, BookOpen, Sparkles, CheckCircle2, ArrowRight, ClipboardCheck, MessageSquare, ShieldCheck, MapPin, User, AlertTriangle, HeartPulse } from "lucide-react";
+import { Heart, Users, Sparkles, ArrowRight, ClipboardCheck, MessageSquare, ShieldCheck, MapPin, User, AlertTriangle, HeartPulse, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useLocale } from "../i18n/useLocale";
+import { contact } from "../data/site";
 import Seo from "./Seo";
 import PageHero from "./PageHero";
 import CaliforniaCountyMap, { CountyServeList } from "./CaliforniaCountyMap";
@@ -53,6 +54,27 @@ export default function Program() {
         subtitle={t("hero.subtitle")}
       />
 
+      {/* The money question, answered before anything else. A parent who assumes
+          this costs money stops reading before the ten principles, and no
+          competitor on page one states cost at all, so it earns the first slot. */}
+      <section id="funding" aria-label={t("funding.label")} className="border-b border-slate-100 bg-brand-mist">
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 md:py-7 lg:px-8">
+          <div className="flex flex-col gap-x-10 gap-y-4 md:flex-row md:items-center md:justify-between">
+            <div className="flex items-start gap-4">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-secondary/10 text-brand-secondary">
+                <ShieldCheck size={22} strokeWidth={1.5} />
+              </div>
+              <p className="max-w-2xl text-[15px] leading-relaxed text-slate-700 md:text-base">
+                <span className="font-display font-bold text-brand-dark">{t("funding.lead")}</span>{" "}
+                {t("funding.cost")}
+              </p>
+            </div>
+            <p className="shrink-0 text-[13px] leading-relaxed text-slate-500 md:max-w-[20rem] md:border-l md:border-slate-200 md:pl-10">
+              {t("funding.legal")}
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Who is on your team — the four roles, ours and theirs */}
       <section id="your-team" className="relative bg-white py-12 md:py-16 overflow-hidden">
@@ -244,6 +266,15 @@ export default function Program() {
                       <ArrowRight className="group-hover/btn:translate-x-2 transition-transform" />
                     </a>
 
+                    {/* one shared number, and until now it rendered on 4 of 74 pages */}
+                    <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-white/70">
+                      <Phone size={18} className="shrink-0 text-brand-secondary" />
+                      <span className="text-sm">{t("reach.callLabel")}</span>
+                      <a href={contact.phoneHref} className="font-display text-lg font-bold text-white hover:text-brand-secondary transition-colors">
+                        {contact.phone}
+                      </a>
+                    </p>
+
                     <div className="flex flex-wrap gap-x-6 gap-y-4">
                       <div className="flex items-center gap-2 text-xs text-brand-dark font-display font-bold uppercase tracking-widest">
                         <div className="w-1.5 h-1.5 rounded-full bg-brand-primary" />
@@ -265,59 +296,6 @@ export default function Program() {
               {/* County name index — under the Circle of Care card */}
               <CountyServeList active={activeCounty} onActive={setActiveCounty} />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Do I qualify — the canonical version. /faq keeps the short answers and links here. */}
-      <section id="do-i-qualify" className="relative overflow-hidden bg-gradient-to-b from-white to-brand-mist py-16 md:py-24">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-5 inline-flex items-center gap-3">
-            <span className="h-1 w-10 rounded-full bg-brand-secondary" />
-            <span className="font-display text-sm font-bold uppercase tracking-widest text-brand-primary">
-              {t("qualify.eyebrow")}
-            </span>
-          </div>
-          <h2 className="font-display text-3xl font-bold leading-[1.1] tracking-tight text-brand-dark md:text-4xl">
-            {t("qualify.titleLine1")}
-            <span className="text-brand-primary">{t("qualify.titleLine2")}</span>
-          </h2>
-
-          <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-12">
-            <div className="lg:col-span-3">
-              {/* the cost answer, given visual weight: no competitor states it at all */}
-              <div className="rounded-3xl border border-brand-secondary/25 bg-white p-6 shadow-lg shadow-slate-900/[0.04]">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-secondary/10 text-brand-secondary">
-                    <ShieldCheck size={22} strokeWidth={1.5} />
-                  </div>
-                  <p className="leading-relaxed text-slate-700">{t("qualify.cost")}</p>
-                </div>
-              </div>
-
-              <p className="mt-5 flex items-start gap-3 text-[15px] leading-relaxed text-slate-600">
-                <CheckCircle2 size={20} strokeWidth={1.5} className="mt-0.5 shrink-0 text-brand-secondary" />
-                {t("qualify.note")}
-              </p>
-
-              <Link
-                to={to("/contact-us")}
-                className="group mt-7 inline-flex w-fit items-center gap-3 rounded-lg bg-brand-primary px-8 py-3.5 font-display text-base font-bold text-white shadow-lg transition-colors duration-300 hover:bg-brand-dark"
-              >
-                {t("qualify.cta")}
-                <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
-              </Link>
-            </div>
-
-            {/* the statutory framing, deliberately quiet: context, not a sales point */}
-            <aside className="lg:col-span-2">
-              <div className="rounded-3xl border border-slate-200 bg-white/70 p-6">
-                <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-primary/5 text-brand-primary">
-                  <BookOpen size={22} strokeWidth={1.5} />
-                </div>
-                <p className="text-[14px] leading-relaxed text-slate-600">{t("qualify.legal")}</p>
-              </div>
-            </aside>
           </div>
         </div>
       </section>
