@@ -5,24 +5,24 @@
     "titleBefore": "High-Fidelity ",
     "titleHighlight": "Wraparound",
     "titleAfter": " Support for Adoptive Families",
-    "subtitle": "Our goal is to educate and empower parents so they can better understand how to create a long-term healing environment for their children."
+    "subtitle": "Our goal is to educate and empower parents so they can better understand how to create a long-term healing environment for their children, at no out-of-pocket cost to AAP families."
   },
   "approach": {
-    "title": "What is High-Fidelity Wraparound support?",
-    "titleLine1": "What is High-Fidelity ",
-    "titleLine2": "Wraparound support?",
-    "intro": "At Love Pathways, true healing doesn’t come from a one-size-fits-all manual. We build a safety net around your family's unique reality.",
+    "title": "What is Trauma-Informed, High-Fidelity Wraparound Support?",
+    "titleLine1": "What is Trauma-Informed, High-Fidelity ",
+    "titleLine2": "Wraparound Support?",
+    "intro": "At Love Pathways, true healing doesn’t come from a one-size-fits-all manual. We build a safety net around your family's unique reality through trauma-informed care coordination.",
     "block1": {
       "title": "Empowering Your Voice",
-      "desc": "Our foundation is built entirely on family voice and choice. Your plan is deeply individualized to your specific needs, and completely culturally respectful to your traditions."
+      "desc": "Our foundation is built entirely on family voice and choice. Your personalized care plan is family-driven, deeply individualized to your specific needs, and completely culturally respectful to your traditions."
     },
     "block2": {
       "title": "Building Your Village",
-      "desc": "We use a strengths-based, team-based model. Professionals work alongside you, but we also integrate natural supports (friends, neighbors) so your care is truly community-based."
+      "desc": "We use a strengths-based, team-based model with active care coordination. Professionals work alongside you, and we integrate natural supports (friends, neighbors) so community integration is part of the plan, not an afterthought."
     },
     "block3": {
       "title": "Relentless Commitment",
-      "desc": "We are strictly outcomes-based, tracking clear goals. Above all, our promise is persistence: we work alongside you through every challenge until you reach a better place."
+      "desc": "We are strictly outcomes-based, with progress monitoring against clear goals. Above all, our promise is persistence: we work alongside you through every challenge until you reach a better place."
     },
     "imageAlt": "Our Approach"
   },
@@ -44,7 +44,7 @@
         "desc": "Once the initial form is completed, a representative will be in touch to discuss the program and explain the requirements."
       },
       "consultation": {
-        "title": "Personal Consultation",
+        "title": "Initial Consultation",
         "desc": "We'll discuss your specific situation and how our love-based methodology can best support your family."
       }
     }
@@ -54,7 +54,7 @@
     "title": "The 4 Phases of Wraparound Care",
     "titleLead": "The 4 Phases of ",
     "titleAccent": "Wraparound Care",
-    "intro": "Following your personal consultation, our High Fidelity Wraparound model kicks in. We use four distinct phases to guide and support your family's journey toward independence.",
+    "intro": "Following your initial consultation, our High Fidelity Wraparound model kicks in. We use four distinct phases to guide and support your family's journey toward independence.",
     "label": "Phase",
     "corePrinciple": "Core Principle",
     "cta": "Contact Us Now",
@@ -66,17 +66,17 @@
       },
       "planDevelopment": {
         "title": "Plan Development",
-        "desc": "Creating a personalized strategy that reflects your culture and unique strengths.",
+        "desc": "Building your personalized care plan around your culture and unique strengths.",
         "principle": "Individualized & Culturally Respectful"
       },
       "implementation": {
         "title": "Implementation",
-        "desc": "Putting the plan into action, tracking progress, and making adjustments with your team.",
+        "desc": "Putting the plan into action, with ongoing progress monitoring and adjustments made with your team.",
         "principle": "Team-Based & Outcomes-Based"
       },
       "transition": {
         "title": "Transition",
-        "desc": "Preparing for independence by strengthening natural community supports.",
+        "desc": "Preparing for independence through community integration and stronger natural supports.",
         "principle": "Natural Supports & Persistence"
       }
     }
@@ -91,7 +91,7 @@
     "cardDescription": "Our mission is to reach every family in need. If you reside outside these counties, please reach out. We are constantly evaluating new areas for expansion to bring healing where it's needed most.",
     "cta": "Contact Our Team",
     "tagInHome": "In-Home Support",
-    "tagFamilyCoaching": "Family Coaching",
+    "tagFamilyCoaching": "Parent Coaching",
     "tagClinical": "Clinical Expertise",
     "statLabel": "Counties",
     "mapTitle": "Map of the 10 California counties served by Love Pathways Wraparound",
