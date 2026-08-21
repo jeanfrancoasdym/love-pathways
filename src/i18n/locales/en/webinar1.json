@@ -1,21 +1,19 @@
 {
   "hero": {
     "badge": "FREE LIVE WEBINAR",
-    "titleBefore": "When Love Doesn't ",
-    "titleHighlight": "Feel Like Enough",
+    "titleBefore": "Caring for the ",
+    "titleHighlight": "Caregiver",
     "titleAfter": "",
-    "subtitle": "A free live webinar for adoptive and foster parents on why behavior is often a form of communication, and how attachment and connection support real healing.",
-    "paragraph1": "Parenting a child who has experienced trauma can be both rewarding and incredibly challenging. This presentation explores how early experiences shape attachment, why behavior is often a form of communication, and how trauma can influence a child's brain, body, and relationships.",
-    "paragraph2": "Participants will gain practical, trauma-informed strategies to better understand challenging behaviors, strengthen connection, and foster healing. The session also introduces the science of epigenetics, offering hope that safe, nurturing relationships can support resilience and positive change over time."
+    "subtitle": "A free live webinar on self-care for adoptive parents: real restoration, boundaries, and sustainable well-being.",
+    "description": "Supporting children impacted by trauma, loss, foster care, and adoption can be deeply meaningful, but can also be emotionally exhausting. This webinar focuses on the importance of caregiver wellness, emotional regulation, boundaries, rest, and sustainable self-care practices.\n\nParticipants will explore the difference between true restoration and \"faux self-care,\" while learning practical strategies to reduce burnout, increase resilience, and care for themselves without guilt. Caregivers will leave with tools to strengthen their own well-being so they can continue showing up with connection, patience, and compassion for their families."
   },
   "details": {
     "dateLabel": "Date",
-    "dateValue": "Tuesday | August 11th",
+    "dateValue": "Tuesday | September 15th",
     "timeLabel": "Time",
-    "timeValue": "9:00 AM - 10:30 AM PST",
+    "timeValue": "Time TBD",
     "languageLabel": "Language",
-    "languageValueEs": "Español",
-    "languageValueEn": "English"
+    "languageValue": "English"
   },
   "countdown": {
     "heading": "The live session begins in",
@@ -29,31 +27,26 @@
   "forYou": {
     "heading": "This is for you if...",
     "items": [
-      "You love your child deeply, but love alone doesn't seem to calm the hard moments.",
-      "The behavior feels confusing, and you're not sure what it's trying to tell you.",
-      "You want to understand what is happening in your child's brain and body.",
-      "You're looking for practical, trauma-informed tools, not just theory."
+      "You give so much to the children in your care that your own tank runs empty.",
+      "You've confused \"faux self-care\" with real restoration, and it isn't working.",
+      "You want practical tools for boundaries, rest, and emotional regulation, not just permission to relax.",
+      "You want to keep showing up with connection and patience, without burning out."
     ]
   },
   "learn": {
     "heading": "What you'll walk away with",
     "items": [
-      "How early experiences shape attachment, and why behavior is often communication.",
-      "How trauma can influence a child's brain, body, and relationships.",
-      "Practical, trauma-informed strategies to understand behavior and strengthen connection.",
-      "The science of epigenetics, and the hope that nurturing relationships bring lasting change."
+      "The difference between true restoration and \"faux self-care.\"",
+      "Practical strategies to reduce burnout and increase resilience.",
+      "How to set boundaries and protect rest without guilt.",
+      "Tools to strengthen your own well-being so you can keep showing up for your family."
     ]
   },
   "guide": {
-    "eyebrow": "Your guides",
+    "eyebrow": "Your guide",
     "name": "Dr. Alicia Williams",
     "role": "Executive Director",
     "bio": "Blends 25+ years in education and social work with trauma-informed care to guide families toward regulation."
-  },
-  "guide2": {
-    "name": "Jeanette Yoffe, M.A., LMFT",
-    "role": "Guest Presenter, Adoptee & Psychotherapist",
-    "bio": "An adoptee psychotherapist who helps foster and adoptive families turn conflict into connection."
   },
   "trust": {
     "heading": "Why families trust this webinar",
@@ -62,34 +55,34 @@
     "stats": []
   },
   "agenda": {
-    "heading": "How the session will flow",
+    "heading": "How the hour will flow",
     "items": [
-      { "title": "Attachment 101", "desc": "How early experiences shape the way a child bonds and responds." },
-      { "title": "Behavior as communication", "desc": "What challenging behavior is really trying to say." },
-      { "title": "Brain, body & epigenetics", "desc": "How trauma, and healing, reach the brain, body, and even our biology." },
-      { "title": "Tools & live Q&A", "desc": "Practical strategies you can use, plus time for your questions." }
+      { "title": "Naming caregiver wellness", "desc": "Why your own regulation is part of caring well for your family, not separate from it." },
+      { "title": "Faux self-care vs. real restoration", "desc": "How to tell the difference, and why it matters." },
+      { "title": "Boundaries & regulation", "desc": "Practical ways to protect rest and set limits without guilt." },
+      { "title": "Live Q&A", "desc": "Bring your questions about caregiver burnout. We'll work through them together." }
     ]
   },
   "faq": {
     "heading": "Frequently asked questions",
     "items": [
       { "q": "Is it really free?", "a": "Yes. This live webinar is completely free for families and professionals." },
-      { "q": "Is it available in Spanish?", "a": "Yes. You can register and attend in either English or Spanish." },
       { "q": "What if I can't attend live?", "a": "Register anyway. We'll send you the replay so you can watch whenever it works for you." },
-      { "q": "Who is this for?", "a": "Adoptive and foster parents, kinship caregivers, and anyone supporting a child through big emotions." }
+      { "q": "Will it be recorded?", "a": "Yes. Everyone who registers receives the recording afterward." },
+      { "q": "Who is this for?", "a": "Adoptive and foster parents, kinship caregivers, and anyone supporting a child through trauma, loss, or big transitions." }
     ]
   },
   "host": {
-    "label": "Hosted By",
-    "name": "Dr. Alicia Williams & Jeanette Yoffe",
     "imageAlt": "Dr. Alicia Williams",
-    "bio": "Executive Director Dr. Alicia Williams, with guest presenter Jeanette Yoffe, M.A., LMFT."
+    "label": "Hosted By",
+    "name": "Dr. Alicia Williams",
+    "bio": "Executive Director, blending 25+ years in education and social work with trauma-informed care."
   },
   "cta": {
     "mobileButton": "Reserve My Spot Now"
   },
   "ctaFinal": {
-    "line": "When love alone doesn't feel like enough, understanding is the bridge. Let's build it together.",
+    "line": "You can't pour from an empty cup. Let's fill yours back up.",
     "button": "Yes, Save My Spot"
   },
   "privacy": "We respect your privacy. We'll only email you about this event, and you can unsubscribe anytime.",

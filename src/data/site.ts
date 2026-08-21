@@ -47,9 +47,9 @@ export const ghl = {
   embedScript: "https://go.leafwraparound.com/js/form_embed.js",
   formBase: "https://go.leafwraparound.com/widget/form",
   contactFormId: "yXT3uwETc1ISIRP2WEbV", // "New Lead Application - English"
-  webinar1FormId: "O0bEq8momPzSnmzXNebR", // Event 1: When Love Doesn't Feel Like Enough (Jul 14)
-  webinar2FormIdEn: "XOoAL6XIN4dOOuq3VuO8", // Event 2: Substance Use & the Teen Trauma Brain (Bryan)
-  webinar2FormIdEs: "XOoAL6XIN4dOOuq3VuO8",
+  webinar1FormId: "evXayA0sknEJm0zWNzLR", // Event 1: Caring for the Caregiver (Sep 15, Alicia)
+  webinar2FormIdEn: "CyJkLVvKnNf6iDf4jMN7", // Event 2: Adoption Parenting with Love and Limits (Sep 22, Bryan)
+  webinar2FormIdEs: "CyJkLVvKnNf6iDf4jMN7",
   webinar3FormId: "o3Nm815ezGKQ0fuPPN8W", // Event 3: Balancing the Family: When One Child Needs More (Bryan)
   // Living with Confidence workshop series — a NEW form is swapped in weekly
   // (one form per week, not released all at once). This is the current week's form.

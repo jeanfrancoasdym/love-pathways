@@ -7,9 +7,9 @@ import { breadcrumbLd, eventLd, faqPageLd, graph, localeUrl, organizationLd, web
 import { useLocale } from "../i18n/useLocale";
 import WebinarLanding from "./WebinarLanding";
 
-// Event 2 (next by date): Substance Use & the Teen Trauma Brain — July 28 (Bryan Post).
-const START = "2026-07-28T09:00:00-07:00";
-const END = "2026-07-28T10:00:00-07:00";
+// Event 2: Adoption Parenting with Love and Limits — September 22 (Bryan Post).
+const START = "2026-09-22T09:00:00-07:00";
+const END = "2026-09-22T10:00:00-07:00";
 
 export default function WebinarRegistration2() {
   const { t } = useTranslation("webinar2");
@@ -22,8 +22,8 @@ export default function WebinarRegistration2() {
       ns="webinar2"
       startDate={START}
       heroBody="description"
-      heroImage="/page-hero/event-teen.webp"
-      forYouImage="/page-hero/event-family.webp"
+      heroImage="/page-hero/event-family.webp"
+      forYouImage="/page-hero/event-connection.webp"
       learnImage="/page-hero/phase-photo-1.webp"
       presenterImage="/page-hero/presenter-bryan.webp"
       presenterImageAlt={t("host.imageAlt")}
@@ -43,7 +43,7 @@ export default function WebinarRegistration2() {
               url: localeUrl(lng, "/webinar-event2"),
               locationUrl: localeUrl(lng, "/webinar-event2"),
               performer: { "@type": "Organization", name: "Love Pathways Wraparound" },
-              image: `${siteOrigin}/page-hero/event-teen.webp`,
+              image: `${siteOrigin}/page-hero/event-family.webp`,
             }),
             breadcrumbLd(lng, [
               { name: "Home", path: "/" },
@@ -55,7 +55,7 @@ export default function WebinarRegistration2() {
       form={
         <GhlForm
           formId={ghl.webinar2FormIdEn}
-          name="Substance Use & the Teen Trauma Brain Webinar"
+          name="Adoption Parenting with Love and Limits Webinar"
           height={480}
           onSubmitRedirect="/thank-you2"
           className="w-full"

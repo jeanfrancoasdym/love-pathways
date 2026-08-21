@@ -1,15 +1,15 @@
 {
   "hero": {
     "badge": "WEBINAR EN VIVO GRATUITO",
-    "titleBefore": "El uso de sustancias y el ",
-    "titleHighlight": "cerebro adolescente",
+    "titleBefore": "Crianza adoptiva con ",
+    "titleHighlight": "amor y límites",
     "titleAfter": "",
-    "subtitle": "Un webinar en vivo y gratuito para padres y profesionales que quieren entender qué hay detrás de las conductas de riesgo de un adolescente, y cómo la conexión puede ayudar a sanar.",
-    "description": "Este webinar examina la relación entre el trauma, el estrés y el uso de sustancias en la adolescencia.\n\nLos participantes aprenderán cómo el trauma afecta el cerebro adolescente en desarrollo, por qué la dopamina y el dolor emocional pueden aumentar la vulnerabilidad a conductas de riesgo, y cómo el apoyo basado en la conexión puede crear seguridad, regulación y estrategias de afrontamiento más sanas."
+    "subtitle": "Un webinar en vivo y gratuito para familias adoptivas sobre guiar a los niños con compasión y estructura a la vez.",
+    "description": "Este webinar se enfoca en ayudar a los niños a tener éxito a través de la conexión, el aliento y la seguridad emocional, en vez de la disciplina basada en el miedo.\n\nLas familias explorarán los desafíos de la función ejecutiva, la motivación y los límites saludables, mientras aprenden a guiar a los niños con compasión y estructura."
   },
   "details": {
     "dateLabel": "Fecha",
-    "dateValue": "Martes | 28 de julio",
+    "dateValue": "Martes | 22 de septiembre",
     "timeLabel": "Hora",
     "timeValue": "9:00 AM - 10:00 AM PST",
     "languageLabel": "Idioma",
@@ -27,19 +27,19 @@
   "forYou": {
     "heading": "Esto es para ti si...",
     "items": [
-      "Tu adolescente se inclina hacia decisiones de riesgo y te asusta a dónde puede llevar.",
-      "Ya intentaste reglas y consecuencias, pero la conducta sigue escalando.",
-      "Sientes que hay dolor debajo de la conducta, no solo rebeldía.",
-      "Quieres entender el cerebro de tu adolescente en lugar de pelear contra él."
+      "Quieres guiar la conducta de tu hijo sin depender de la disciplina basada en el miedo.",
+      "Estás navegando desafíos de función ejecutiva y no sabes por dónde empezar.",
+      "Quieres que tu hijo se sienta seguro y conectado, mientras mantiene límites saludables.",
+      "Buscas herramientas prácticas que combinen compasión con estructura real."
     ]
   },
   "learn": {
     "heading": "Lo que te llevarás",
     "items": [
-      "Cómo el trauma y el estrés crónico moldean el cerebro adolescente en desarrollo.",
-      "Por qué la dopamina y el dolor emocional pueden empujar hacia conductas de riesgo.",
-      "Cómo el apoyo basado en la conexión crea seguridad y regulación real.",
-      "Estrategias de afrontamiento más sanas que puedes fomentar en casa, sin miedo ni vergüenza."
+      "Cómo ayudar a los niños a tener éxito a través de la conexión y la seguridad emocional.",
+      "Formas de apoyar la función ejecutiva y la motivación.",
+      "Cómo poner límites saludables sin perder la conexión.",
+      "Cómo guiar con compasión y estructura a la vez."
     ]
   },
   "guide": {
@@ -57,10 +57,10 @@
   "agenda": {
     "heading": "Cómo fluirá la hora",
     "items": [
-      { "title": "El cerebro adolescente bajo estrés", "desc": "Qué le hacen el trauma y el estrés crónico a un cerebro adolescente en desarrollo." },
-      { "title": "Dopamina y dolor", "desc": "Por qué el dolor emocional y la búsqueda de recompensa impulsan conductas de riesgo." },
-      { "title": "La conexión como regulación", "desc": "Cómo la seguridad y la relación crean una regulación real y duradera." },
-      { "title": "Preguntas en vivo", "desc": "Trae tus preguntas sobre tu adolescente. Las trabajaremos juntos." }
+      { "title": "Conexión antes que miedo", "desc": "Por qué la seguridad emocional, no la disciplina basada en el miedo, ayuda a los niños a tener éxito." },
+      { "title": "Función ejecutiva y motivación", "desc": "Entender los verdaderos desafíos detrás de la conducta." },
+      { "title": "Límites saludables", "desc": "Cómo la estructura y la compasión trabajan juntas, no en contra." },
+      { "title": "Preguntas en vivo", "desc": "Trae tus preguntas sobre tu hijo. Las trabajaremos juntos." }
     ]
   },
   "faq": {
@@ -69,7 +69,7 @@
       { "q": "¿De verdad es gratis?", "a": "Sí. Este webinar en vivo es completamente gratuito para familias y profesionales." },
       { "q": "¿Y si no puedo asistir en vivo?", "a": "Regístrate de todos modos. Te enviaremos la grabación para que la veas cuando te quede bien." },
       { "q": "¿Se grabará?", "a": "Sí. Todas las personas que se registren reciben la grabación después." },
-      { "q": "¿Para quién es?", "a": "Para padres de adolescentes, familias adoptivas y de crianza, cuidadores de parentesco y profesionales que apoyan a adolescentes." }
+      { "q": "¿Para quién es?", "a": "Para familias adoptivas y de crianza, cuidadores de parentesco y profesionales que apoyan a niños con desafíos de conducta." }
     ]
   },
   "host": {
@@ -82,7 +82,7 @@
     "reserve": "Reservar mi lugar ahora"
   },
   "ctaFinal": {
-    "line": "Debajo de la conducta de riesgo hay un adolescente que sufre. Aprendamos cómo la conexión puede ayudarlo a sanar.",
+    "line": "Estructura y compasión no son opuestos. Aprendamos a sostener las dos.",
     "button": "Sí, guardar mi lugar"
   },
   "privacy": "Respetamos tu privacidad. Solo te escribiremos sobre este evento y puedes cancelar la suscripción cuando quieras.",

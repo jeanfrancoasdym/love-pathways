@@ -1,15 +1,15 @@
 {
   "hero": {
     "badge": "FREE LIVE WEBINAR",
-    "titleBefore": "Substance Use & the ",
-    "titleHighlight": "Teen Trauma",
-    "titleAfter": " Brain",
-    "subtitle": "A free live webinar for parents and professionals who want to understand what is really driving a teen's risky behavior, and how connection can help them heal.",
-    "description": "This webinar examines the relationship between trauma, stress, and substance use in adolescents.\n\nParticipants will learn how trauma affects the developing teen brain, why dopamine and emotional pain can increase vulnerability to risky behaviors, and how connection-based support can create safety, regulation, and healthier coping strategies for teens."
+    "titleBefore": "Adoption Parenting with ",
+    "titleHighlight": "Love and Limits",
+    "titleAfter": "",
+    "subtitle": "A free live webinar for adoptive families on guiding children with both compassion and structure.",
+    "description": "This webinar focuses on helping children succeed through connection, encouragement, and emotional safety rather than fear-based discipline.\n\nFamilies will explore executive functioning challenges, motivation, and healthy boundaries while learning how to guide children with both compassion and structure."
   },
   "details": {
     "dateLabel": "Date",
-    "dateValue": "Tuesday | July 28th",
+    "dateValue": "Tuesday | September 22nd",
     "timeLabel": "Time",
     "timeValue": "9:00 AM - 10:00 AM PST",
     "languageLabel": "Language",
@@ -27,19 +27,19 @@
   "forYou": {
     "heading": "This is for you if...",
     "items": [
-      "Your teen is pulling toward risky choices and you're scared of where it leads.",
-      "You've tried rules and consequences, but the behavior keeps escalating.",
-      "You sense there is pain underneath the behavior, not just rebellion.",
-      "You want to understand your teen's brain instead of fighting it."
+      "You want to guide your child's behavior without relying on fear-based discipline.",
+      "You're navigating executive functioning challenges and don't know where to start.",
+      "You want your child to feel safe and connected, while still having healthy boundaries.",
+      "You're looking for practical tools that combine compassion with real structure."
     ]
   },
   "learn": {
     "heading": "What you'll walk away with",
     "items": [
-      "How trauma and chronic stress reshape the developing teen brain.",
-      "Why dopamine and emotional pain can pull teens toward risky, numbing behaviors.",
-      "How connection-based support creates safety and real regulation.",
-      "Healthier coping strategies you can foster at home, without fear or shame."
+      "How to help children succeed through connection and emotional safety.",
+      "Ways to support executive functioning and motivation.",
+      "How to set healthy boundaries without losing connection.",
+      "How to guide with both compassion and structure."
     ]
   },
   "guide": {
@@ -57,10 +57,10 @@
   "agenda": {
     "heading": "How the hour will flow",
     "items": [
-      { "title": "The teen brain under stress", "desc": "What trauma and chronic stress actually do to a developing adolescent brain." },
-      { "title": "Dopamine & pain", "desc": "Why emotional pain and reward-seeking can drive risky, numbing behavior." },
-      { "title": "Connection as regulation", "desc": "How safety and relationship create real, lasting regulation." },
-      { "title": "Live Q&A", "desc": "Bring your questions about your teen. We'll work through them together." }
+      { "title": "Connection over fear", "desc": "Why emotional safety, not fear-based discipline, is what helps children succeed." },
+      { "title": "Executive functioning & motivation", "desc": "Understanding the real challenges behind the behavior." },
+      { "title": "Healthy boundaries", "desc": "How structure and compassion work together, not against each other." },
+      { "title": "Live Q&A", "desc": "Bring your questions about your child. We'll work through them together." }
     ]
   },
   "faq": {
@@ -69,7 +69,7 @@
       { "q": "Is it really free?", "a": "Yes. This live webinar is completely free for families and professionals." },
       { "q": "What if I can't attend live?", "a": "Register anyway. We'll send you the replay so you can watch whenever it works for you." },
       { "q": "Will it be recorded?", "a": "Yes. Everyone who registers receives the recording afterward." },
-      { "q": "Who is this for?", "a": "Parents of teens, adoptive and foster families, kinship caregivers, and professionals who support adolescents." }
+      { "q": "Who is this for?", "a": "Adoptive and foster families, kinship caregivers, and professionals who support children through behavior challenges." }
     ]
   },
   "host": {
@@ -82,7 +82,7 @@
     "reserve": "Reserve My Spot Now"
   },
   "ctaFinal": {
-    "line": "Beneath the risky behavior is a teen in pain. Let's learn how connection can help them heal.",
+    "line": "Structure and compassion aren't opposites. Let's learn how to hold both.",
     "button": "Yes, Save My Spot"
   },
   "privacy": "We respect your privacy. We'll only email you about this event, and you can unsubscribe anytime.",

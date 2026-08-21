@@ -3,7 +3,7 @@
     "badge": "You're registered",
     "title": "You're in! 🎉",
     "confirmBefore": "Your spot for the",
-    "highlight": "Substance Use & the Teen Trauma Brain",
+    "highlight": "Adoption Parenting with Love and Limits",
     "confirmAfter": "webinar is officially confirmed."
   },
   "countdown": {
@@ -16,13 +16,14 @@
     "ended": "This webinar has ended. Catch the replay below."
   },
   "calendar": {
-    "eventTitle": "Substance Use & the Teen Trauma Brain",
-    "joinVia": "Join us via Zoom: "
+    "eventTitle": "Adoption Parenting with Love and Limits",
+    "joinVia": "Join us via Zoom: ",
+    "eventDescription": "This webinar focuses on helping children succeed through connection, encouragement, and emotional safety rather than fear-based discipline, and how to guide children with both compassion and structure."
   },
   "details": {
     "heading": "Webinar Details",
     "dateLabel": "Date",
-    "dateValue": "Tuesday, July 28th",
+    "dateValue": "Tuesday | September 22nd",
     "timeLabel": "Time",
     "timeValue": "9:00 AM - 10:00 AM PST",
     "locationLabel": "Location",

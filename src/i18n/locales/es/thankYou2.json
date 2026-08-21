@@ -3,7 +3,7 @@
     "badge": "Estás registrado",
     "title": "¡Ya estás dentro! 🎉",
     "confirmBefore": "Tu lugar para el webinar",
-    "highlight": "El uso de sustancias y el cerebro adolescente",
+    "highlight": "Crianza adoptiva con amor y límites",
     "confirmAfter": "está oficialmente confirmado."
   },
   "countdown": {
@@ -16,19 +16,20 @@
     "ended": "Este webinar ya terminó. Mira la grabación más abajo."
   },
   "calendar": {
-    "eventTitle": "El uso de sustancias y el cerebro adolescente",
-    "joinVia": "Únete por Zoom: "
+    "eventTitle": "Crianza adoptiva con amor y límites",
+    "joinVia": "Únete por Zoom: ",
+    "eventDescription": "Este webinar se enfoca en ayudar a los niños a tener éxito a través de la conexión, el aliento y la seguridad emocional, en vez de la disciplina basada en el miedo, y cómo guiar a los niños con compasión y estructura."
   },
   "details": {
     "heading": "Detalles del webinar",
     "dateLabel": "Fecha",
-    "dateValue": "martes 28 de julio",
+    "dateValue": "martes | 22 de septiembre",
     "timeLabel": "Hora",
     "timeValue": "9:00 AM - 10:00 AM PST",
     "locationLabel": "Ubicación",
     "locationValue": "En vivo por Zoom",
-    "locationNote": "Revisa tu bandeja de entrada para encontrar el enlace exacto.",
-    "calendarPrompt": "Reserva este horario en tu calendario ahora:",
+    "locationNote": "Revisa tu bandeja de entrada para el enlace exacto.",
+    "calendarPrompt": "Reserva esta fecha en tu calendario ahora:",
     "googleCalendar": "Google Calendar",
     "outlookCalendar": "Outlook Calendar"
   },
@@ -38,7 +39,7 @@
   },
   "social": {
     "heading": "Mantente conectado",
-    "description": "Cada día compartimos herramientas sensibles al trauma y apoyo para familias adoptivas en nuestras redes sociales. No esperes más para empezar a encontrar alivio.",
+    "description": "Compartimos a diario herramientas sensibles al trauma y apoyo para familias adoptivas en nuestras redes sociales. No esperes más para empezar a encontrar alivio.",
     "facebookLabel": "Facebook",
     "instagramLabel": "Instagram"
   }

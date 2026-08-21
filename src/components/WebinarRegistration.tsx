@@ -7,31 +7,29 @@ import { breadcrumbLd, eventLd, faqPageLd, graph, localeUrl, organizationLd, web
 import { useLocale } from "../i18n/useLocale";
 import WebinarLanding from "./WebinarLanding";
 
-// Event 1: When Love Doesn't Feel Like Enough — rescheduled to August 11
-// (originally July 14, postponed). Zoom link and form are unchanged.
-const START = "2026-08-11T09:00:00-07:00";
-const END = "2026-08-11T10:30:00-07:00";
+// Event 1: Caring for the Caregiver: Self-Care for Adoptive Parents — September 15
+// (Dr. Alicia Williams). TIME NOT YET CONFIRMED — the sheet says "Time: TBD".
+// 9:00 AM PST below is a PLACEHOLDER only, used so the countdown/structured
+// data don't break. Update START/END the moment the real time is confirmed.
+const START = "2026-09-15T09:00:00-07:00";
+const END = "2026-09-15T10:00:00-07:00";
 
 export default function WebinarRegistration() {
   const { t } = useTranslation("webinar1");
   const { lng } = useLocale();
   const eventName = `${t("hero.titleBefore")}${t("hero.titleHighlight")}${t("hero.titleAfter")}`.trim();
-  const languageValue = t("details.languageValueEn");
   const faqItems = (t("faq.items", { returnObjects: true }) as { q: string; a: string }[]) ?? [];
 
   return (
     <WebinarLanding
       ns="webinar1"
       startDate={START}
-      heroBody="paragraphs"
-      languageValue={languageValue}
-      heroImage="/page-hero/event-connection.webp"
-      forYouImage="/page-hero/event-family.webp"
-      learnImage="/page-hero/phase-photo-3.webp"
+      heroBody="description"
+      heroImage="/page-hero/hero-support.webp"
+      forYouImage="/page-hero/mission-hands.webp"
+      learnImage="/page-hero/phase-photo-4.webp"
       presenterImage="/page-hero/presenter-alicia.webp"
-      presenterImageAlt={t("guide.name")}
-      presenterImage2="/page-hero/presenter-jeanette.webp"
-      presenterImageAlt2={t("guide2.name")}
+      presenterImageAlt={t("host.imageAlt")}
       seo={
         <Seo
           pageKey="webinar1"
@@ -42,13 +40,13 @@ export default function WebinarRegistration() {
             faqPageLd(lng, faqItems.map((f) => ({ question: f.q, answer: f.a }))),
             eventLd(lng, {
               name: eventName,
-              description: t("hero.paragraph1"),
+              description: t("hero.description"),
               startDate: START,
               endDate: END,
               url: localeUrl(lng, "/webinar-event1"),
               locationUrl: localeUrl(lng, "/webinar-event1"),
               performer: { "@type": "Organization", name: "Love Pathways Wraparound" },
-              image: `${siteOrigin}/page-hero/event-connection.webp`,
+              image: `${siteOrigin}/page-hero/hero-support.webp`,
             }),
             breadcrumbLd(lng, [
               { name: "Home", path: "/" },
@@ -60,7 +58,7 @@ export default function WebinarRegistration() {
       form={
         <GhlForm
           formId={ghl.webinar1FormId}
-          name="When Love Doesn't Feel Like Enough Webinar"
+          name="Caring for the Caregiver Webinar"
           height={480}
           onSubmitRedirect="/thank-you1"
           className="w-full"

@@ -1,21 +1,19 @@
 {
   "hero": {
     "badge": "WEBINAR EN VIVO GRATUITO",
-    "titleBefore": "Cuando el amor no ",
-    "titleHighlight": "parece suficiente",
+    "titleBefore": "Cuidar a quien ",
+    "titleHighlight": "cuida",
     "titleAfter": "",
-    "subtitle": "Un webinar en vivo y gratuito para padres adoptivos y de crianza sobre por qué la conducta suele ser una forma de comunicación, y cómo el apego y la conexión apoyan la sanación real.",
-    "paragraph1": "Criar a un niño que ha vivido trauma puede ser a la vez gratificante e increíblemente desafiante. Esta presentación explora cómo las experiencias tempranas moldean el apego, por qué la conducta suele ser una forma de comunicación, y cómo el trauma puede influir en el cerebro, el cuerpo y las relaciones de un niño.",
-    "paragraph2": "Los participantes obtendrán estrategias prácticas e informadas por el trauma para comprender mejor las conductas desafiantes, fortalecer la conexión y fomentar la sanación. La sesión también presenta la ciencia de la epigenética, que ofrece esperanza de que las relaciones seguras y afectuosas pueden apoyar la resiliencia y el cambio positivo con el tiempo."
+    "subtitle": "Un webinar en vivo y gratuito sobre autocuidado para padres adoptivos: descanso real, límites y bienestar sostenible.",
+    "description": "Apoyar a niños afectados por el trauma, la pérdida, el sistema de crianza temporal y la adopción puede ser profundamente significativo, pero también puede ser agotador emocionalmente. Este webinar se enfoca en la importancia del bienestar del cuidador, la regulación emocional, los límites, el descanso y las prácticas de autocuidado sostenibles.\n\nLos participantes explorarán la diferencia entre el descanso real y el \"autocuidado falso\", mientras aprenden estrategias prácticas para reducir el agotamiento, aumentar la resiliencia y cuidarse a sí mismos sin culpa. Los cuidadores se irán con herramientas para fortalecer su propio bienestar, para poder seguir mostrándose con conexión, paciencia y compasión hacia sus familias."
   },
   "details": {
     "dateLabel": "Fecha",
-    "dateValue": "Martes | 11 de agosto",
+    "dateValue": "Martes | 15 de septiembre",
     "timeLabel": "Hora",
-    "timeValue": "9:00 AM - 10:30 AM PST",
+    "timeValue": "Hora por confirmar",
     "languageLabel": "Idioma",
-    "languageValueEs": "Español",
-    "languageValueEn": "Inglés"
+    "languageValue": "Inglés"
   },
   "countdown": {
     "heading": "La sesión en vivo comienza en",
@@ -29,31 +27,26 @@
   "forYou": {
     "heading": "Esto es para ti si...",
     "items": [
-      "Amas profundamente a tu hijo, pero el amor por sí solo no parece calmar los momentos difíciles.",
-      "La conducta se siente confusa y no sabes qué está tratando de decirte.",
-      "Quieres entender qué está pasando en el cerebro y el cuerpo de tu hijo.",
-      "Buscas herramientas prácticas e informadas por el trauma, no solo teoría."
+      "Le das tanto a los niños bajo tu cuidado que tu propio tanque se queda vacío.",
+      "Has confundido el \"autocuidado falso\" con el descanso real, y no está funcionando.",
+      "Quieres herramientas prácticas para límites, descanso y regulación emocional, no solo permiso para relajarte.",
+      "Quieres seguir mostrándote con conexión y paciencia, sin llegar al agotamiento."
     ]
   },
   "learn": {
     "heading": "Lo que te llevarás",
     "items": [
-      "Cómo las experiencias tempranas moldean el apego, y por qué la conducta suele ser comunicación.",
-      "Cómo el trauma puede influir en el cerebro, el cuerpo y las relaciones de un niño.",
-      "Estrategias prácticas e informadas por el trauma para entender la conducta y fortalecer la conexión.",
-      "La ciencia de la epigenética, y la esperanza de que las relaciones afectuosas traen cambios duraderos."
+      "La diferencia entre el descanso real y el \"autocuidado falso.\"",
+      "Estrategias prácticas para reducir el agotamiento y aumentar la resiliencia.",
+      "Cómo poner límites y proteger tu descanso sin culpa.",
+      "Herramientas para fortalecer tu propio bienestar y seguir mostrándote para tu familia."
     ]
   },
   "guide": {
-    "eyebrow": "Tus guías",
+    "eyebrow": "Tu guía",
     "name": "Dra. Alicia Williams",
     "role": "Directora Ejecutiva",
-    "bio": "Combina 25+ años en educación y trabajo social con cuidado informado por el trauma para guiar a las familias."
-  },
-  "guide2": {
-    "name": "Jeanette Yoffe, M.A., LMFT",
-    "role": "Presentadora invitada, adoptada y psicoterapeuta",
-    "bio": "Psicoterapeuta adoptada que ayuda a familias adoptivas y de acogida a transformar el conflicto en conexión."
+    "bio": "Combina 25+ años en educación y trabajo social con cuidado informado por el trauma para guiar a las familias hacia la regulación."
   },
   "trust": {
     "heading": "Por qué las familias confían en este webinar",
@@ -62,34 +55,34 @@
     "stats": []
   },
   "agenda": {
-    "heading": "Cómo fluirá la sesión",
+    "heading": "Cómo fluirá la hora",
     "items": [
-      { "title": "Apego 101", "desc": "Cómo las experiencias tempranas moldean la forma en que un niño se vincula y responde." },
-      { "title": "La conducta como comunicación", "desc": "Lo que la conducta desafiante realmente está tratando de decir." },
-      { "title": "Cerebro, cuerpo y epigenética", "desc": "Cómo el trauma, y la sanación, llegan al cerebro, el cuerpo e incluso nuestra biología." },
-      { "title": "Herramientas y preguntas en vivo", "desc": "Estrategias prácticas que puedes usar, además de tiempo para tus preguntas." }
+      { "title": "Nombrar el bienestar del cuidador", "desc": "Por qué tu propia regulación es parte de cuidar bien a tu familia, no algo separado." },
+      { "title": "Autocuidado falso vs. descanso real", "desc": "Cómo notar la diferencia, y por qué importa." },
+      { "title": "Límites y regulación", "desc": "Formas prácticas de proteger tu descanso y poner límites sin culpa." },
+      { "title": "Preguntas en vivo", "desc": "Trae tus preguntas sobre el agotamiento del cuidador. Las trabajaremos juntos." }
     ]
   },
   "faq": {
     "heading": "Preguntas frecuentes",
     "items": [
       { "q": "¿De verdad es gratis?", "a": "Sí. Este webinar en vivo es completamente gratuito para familias y profesionales." },
-      { "q": "¿Está disponible en español?", "a": "Sí. Puedes registrarte y asistir en inglés o en español." },
       { "q": "¿Y si no puedo asistir en vivo?", "a": "Regístrate de todos modos. Te enviaremos la grabación para que la veas cuando te quede bien." },
-      { "q": "¿Para quién es?", "a": "Para padres adoptivos y de crianza, cuidadores de parentesco y cualquier persona que acompañe a un niño a través de emociones intensas." }
+      { "q": "¿Se grabará?", "a": "Sí. Todas las personas que se registren reciben la grabación después." },
+      { "q": "¿Para quién es?", "a": "Para padres adoptivos y de crianza, cuidadores de parentesco y cualquier persona que acompañe a un niño a través del trauma, la pérdida o grandes transiciones." }
     ]
   },
   "host": {
-    "label": "Presentado por",
-    "name": "Dra. Alicia Williams y Jeanette Yoffe",
     "imageAlt": "Dra. Alicia Williams",
-    "bio": "La Directora Ejecutiva Dra. Alicia Williams, junto con la presentadora invitada Jeanette Yoffe, M.A., LMFT."
+    "label": "Presentado por",
+    "name": "Dra. Alicia Williams",
+    "bio": "Directora Ejecutiva, combina 25+ años en educación y trabajo social con cuidado informado por el trauma."
   },
   "cta": {
     "mobileButton": "Reservar mi lugar ahora"
   },
   "ctaFinal": {
-    "line": "Cuando el amor por sí solo no parece suficiente, la comprensión es el puente. Construyámoslo juntos.",
+    "line": "No puedes dar de una taza vacía. Llenemos la tuya de nuevo.",
     "button": "Sí, guardar mi lugar"
   },
   "privacy": "Respetamos tu privacidad. Solo te escribiremos sobre este evento y puedes cancelar la suscripción cuando quieras.",
