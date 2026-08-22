@@ -7,10 +7,8 @@ import { breadcrumbLd, eventLd, faqPageLd, graph, localeUrl, organizationLd, web
 import { useLocale } from "../i18n/useLocale";
 import WebinarLanding from "./WebinarLanding";
 
-// Event 1: Caring for the Caregiver: Self-Care for Adoptive Parents — September 15
-// (Dr. Alicia Williams). TIME NOT YET CONFIRMED — the sheet says "Time: TBD".
-// 9:00 AM PST below is a PLACEHOLDER only, used so the countdown/structured
-// data don't break. Update START/END the moment the real time is confirmed.
+// Event 1: Caring for the Caregiver: Self-Care for Adoptive Parents — September 15,
+// 9:00 AM PST (Dr. Alicia Williams).
 const START = "2026-09-15T09:00:00-07:00";
 const END = "2026-09-15T10:00:00-07:00";
 
