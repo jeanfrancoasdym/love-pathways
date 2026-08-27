@@ -137,9 +137,17 @@ export default function WorkshopRegistration() {
   const chapters = rawChapters.map((c, i) => ({ ...c, image: CHAPTER_IMAGES[i] }));
   const learnItems = t("learn.items", { returnObjects: true }) as string[];
 
+  // The series runs week by week, so the hero/detail-bar should always point
+  // at the next chapter that hasn't happened yet, not stay pinned to Chapter
+  // 1. The full schedule below is untouched and always shows all five.
+  let nextChapterIndex = CHAPTER_TIMES.findIndex(([, end]) => new Date(end).getTime() > Date.now());
+  if (nextChapterIndex === -1) nextChapterIndex = CHAPTER_TIMES.length - 1;
+  const nextChapter = chapters[nextChapterIndex];
+  const nextChapterStart = CHAPTER_TIMES[nextChapterIndex][0];
+
   const details = [
-    { icon: Calendar, value: t("details.dateValue") },
-    { icon: Clock, value: t("details.timeValue") },
+    { icon: Calendar, value: nextChapter.date },
+    { icon: Clock, value: nextChapter.time },
     { icon: Repeat, value: t("details.formatValue") },
   ];
 
@@ -232,7 +240,10 @@ export default function WorkshopRegistration() {
       {/* ===================== 2 · DETAILS + COUNTDOWN BAR ===================== */}
       <section className="bg-brand-primary text-white">
         <div className="mx-auto flex max-w-[85rem] flex-col items-center justify-between gap-5 px-4 py-6 sm:px-6 md:flex-row lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:gap-x-7">
+            <span className="inline-flex items-center rounded-full bg-white/15 px-4 py-1.5 font-display font-bold ring-1 ring-white/25">
+              {t("schedule.chapterLabel")} {nextChapter.number}: {nextChapter.title}
+            </span>
             {details.map((d, i) => (
               <span key={i} className="inline-flex items-center gap-2 font-display font-semibold">
                 <d.icon size={18} className="text-white/80" />
@@ -241,9 +252,9 @@ export default function WorkshopRegistration() {
             ))}
           </div>
           <Countdown
-            startDate={SERIES_START}
+            startDate={nextChapterStart}
             liveLabel="We're live now. Come on in."
-            headingLabel="Chapter 1 begins in"
+            headingLabel={`Chapter ${nextChapter.number} begins in`}
             units={[
               { key: "days", label: "Days" },
               { key: "hours", label: "Hours" },
@@ -347,32 +358,7 @@ export default function WorkshopRegistration() {
         </div>
       </section>
 
-      {/* ===================== 5 · WHAT YOU'LL LEARN (over image) ===================== */}
-      <section className="relative overflow-hidden py-20 md:py-28">
-        <img src="/page-hero/values-sunset.webp" alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover object-center" />
-        <div aria-hidden className="absolute inset-0 bg-brand-dark/80" />
-        <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <Reveal>
-            <div className="rounded-[2.5rem] bg-white/95 p-8 shadow-2xl backdrop-blur-sm md:p-12">
-              <h2 className="font-display text-3xl font-bold text-brand-dark md:text-4xl">{t("learn.heading")}</h2>
-              <div className="mt-8 space-y-3">
-                {learnItems.map((item, i) => (
-                  <Reveal key={i} delay={i * 0.08}>
-                    <div className="flex min-h-[64px] items-center gap-4">
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-secondary text-brand-dark">
-                        <Check size={20} strokeWidth={3} />
-                      </span>
-                      <p className="text-base leading-relaxed text-slate-700 md:text-lg">{item}</p>
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ===================== 6 · PRESENTER + REGISTER ===================== */}
+      {/* ===================== 5 · PRESENTER + REGISTER ===================== */}
       <section className="relative overflow-hidden bg-brand-dark pt-16 pb-14 md:pt-20 md:pb-20">
         <div aria-hidden className="pointer-events-none absolute -right-40 -top-40 h-[40rem] w-[40rem] rounded-full bg-brand-primary/15 blur-[120px]" />
         <div className="relative z-10 mx-auto grid max-w-[85rem] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-20 lg:px-8">
@@ -418,10 +404,35 @@ export default function WorkshopRegistration() {
         </div>
       </section>
 
+      {/* ===================== 6 · WHAT YOU'LL LEARN (over image) ===================== */}
+      <section className="relative overflow-hidden py-20 md:py-28">
+        <img src="/page-hero/values-sunset.webp" alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover object-center" />
+        <div aria-hidden className="absolute inset-0 bg-brand-dark/80" />
+        <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <div className="rounded-[2.5rem] bg-white/95 p-8 shadow-2xl backdrop-blur-sm md:p-12">
+              <h2 className="font-display text-3xl font-bold text-brand-dark md:text-4xl">{t("learn.heading")}</h2>
+              <div className="mt-8 space-y-3">
+                {learnItems.map((item, i) => (
+                  <Reveal key={i} delay={i * 0.08}>
+                    <div className="flex min-h-[64px] items-center gap-4">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-secondary text-brand-dark">
+                        <Check size={20} strokeWidth={3} />
+                      </span>
+                      <p className="text-base leading-relaxed text-slate-700 md:text-lg">{item}</p>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ===================== 7 · FINAL CTA ===================== */}
-      {/* Deliberately brand-primary (not brand-dark) — the Presenter/Register
-          section right above is already brand-dark, and stacking two
-          identically-colored sections back to back reads as one giant block. */}
+      {/* Deliberately brand-primary (not brand-dark) — the section right above
+          already reads dark (image with a brand-dark overlay), and stacking
+          two identically-toned sections back to back reads as one giant block. */}
       <section className="relative overflow-hidden bg-brand-primary py-20 md:py-28">
         <div className="pointer-events-none absolute -right-20 -top-20 h-96 w-96 rounded-full bg-white/15 blur-[100px]" />
         <div className="pointer-events-none absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-brand-secondary/25 blur-[100px]" />

@@ -95,7 +95,7 @@ export const WORKSHOPS: LpWorkshop[] = [
     id: "living-with-confidence",
     title: "Living with Confidence",
     description: "A free 5-week workshop series to help you reconnect with your worth, your voice, and your confidence, no experience needed, just you.",
-    date: "Starts Wednesday, August 26th",
+    date: "Next: Wednesday, September 2nd (Chapter 2: Still Valuable)",
     time: "6:00 PM - 7:00 PM PST · 5 Wednesdays",
     locationLink: "/workshop-registration",
     modality: "5-Week Series",

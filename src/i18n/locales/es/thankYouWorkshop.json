@@ -7,25 +7,23 @@
     "confirmAfter": "está oficialmente confirmado."
   },
   "countdown": {
-    "heading": "El capítulo 1 comienza en",
+    "heading": "El capítulo {{number}} comienza en",
     "days": "Días",
     "hours": "Horas",
     "minutes": "Min",
     "seconds": "Seg",
     "live": "Estamos en vivo. Pasa adelante.",
-    "ended": "El capítulo 1 ya comenzó, únete cuando estés lista."
+    "ended": "El capítulo {{number}} ya comenzó, únete cuando estés lista."
   },
   "calendar": {
-    "eventTitle": "Vivir con Confianza, Capítulo 1: Más que un filtro",
+    "eventTitle": "Vivir con Confianza, Capítulo {{number}}: {{title}}",
     "joinVia": "Únete por Zoom: ",
     "eventDescription": "Una serie gratuita de talleres de 5 semanas para reconectar con tu valor, tu voz y tu confianza."
   },
   "details": {
-    "heading": "Detalles del capítulo 1",
+    "heading": "Detalles del capítulo {{number}}",
     "dateLabel": "Fecha",
-    "dateValue": "Miércoles, 26 de agosto",
     "timeLabel": "Hora",
-    "timeValue": "6:00 PM - 7:00 PM PST",
     "locationLabel": "Ubicación",
     "locationValue": "En vivo por Zoom",
     "locationNote": "El mismo enlace funciona para los cinco capítulos, así que guárdalo.",

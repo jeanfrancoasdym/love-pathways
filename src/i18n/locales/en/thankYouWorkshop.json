@@ -7,25 +7,23 @@
     "confirmAfter": "series is officially confirmed."
   },
   "countdown": {
-    "heading": "Chapter 1 starts in",
+    "heading": "Chapter {{number}} starts in",
     "days": "Days",
     "hours": "Hours",
     "minutes": "Min",
     "seconds": "Sec",
     "live": "We're live now. Come on in.",
-    "ended": "Chapter 1 has started, join whenever you're ready."
+    "ended": "Chapter {{number}} has started, join whenever you're ready."
   },
   "calendar": {
-    "eventTitle": "Living with Confidence, Chapter 1: More Than a Filter",
+    "eventTitle": "Living with Confidence, Chapter {{number}}: {{title}}",
     "joinVia": "Join us via Zoom: ",
     "eventDescription": "A free 5-week workshop series to help you reconnect with your worth, your voice, and your confidence."
   },
   "details": {
-    "heading": "Chapter 1 Details",
+    "heading": "Chapter {{number}} Details",
     "dateLabel": "Date",
-    "dateValue": "Wednesday, August 26th",
     "timeLabel": "Time",
-    "timeValue": "6:00 PM - 7:00 PM PST",
     "locationLabel": "Location",
     "locationValue": "Live on Zoom",
     "locationNote": "The same link works for all five chapters, so save it.",

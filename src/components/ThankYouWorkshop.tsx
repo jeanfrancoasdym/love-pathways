@@ -7,9 +7,16 @@ import { useLocale } from "../i18n/useLocale";
 import Seo from "./Seo";
 import WorkshopSchedule from "./WorkshopSchedule";
 
-// Chapter 1: Wednesday, August 26th, 6:00-7:00 PM PDT.
-const CHAPTER1_START_ISO = "2026-08-27T01:00:00Z";
-const CHAPTER1_END_ISO = "2026-08-27T02:00:00Z";
+// Wednesdays, 6:00 to 7:00 PM PDT. Same list/order as WorkshopRegistration's
+// CHAPTER_TIMES, used to find whichever chapter hasn't happened yet.
+const CHAPTER_TIMES: [string, string][] = [
+  ["2026-08-26T18:00:00-07:00", "2026-08-26T19:00:00-07:00"],
+  ["2026-09-02T18:00:00-07:00", "2026-09-02T19:00:00-07:00"],
+  ["2026-09-09T18:00:00-07:00", "2026-09-09T19:00:00-07:00"],
+  ["2026-09-16T18:00:00-07:00", "2026-09-16T19:00:00-07:00"],
+  ["2026-09-23T18:00:00-07:00", "2026-09-23T19:00:00-07:00"],
+];
+// Same recurring Zoom room every week (see details.locationNote).
 const ZOOM_LINK = "https://us06web.zoom.us/j/88934710739";
 
 const CHAPTER_IMAGES = [
@@ -89,9 +96,18 @@ export default function ThankYouWorkshop() {
   const rawChapters = tSeries("schedule.chapters", { returnObjects: true }) as Chapter[];
   const chapters = rawChapters.map((c, i) => ({ ...c, image: CHAPTER_IMAGES[i] }));
 
-  const startCal = toCal(CHAPTER1_START_ISO);
-  const endCal = toCal(CHAPTER1_END_ISO);
-  const title = encodeURIComponent(t("calendar.eventTitle"));
+  // Same "find the next chapter that hasn't happened yet" logic as
+  // WorkshopRegistration, so this page never stays pinned to a past chapter.
+  let nextChapterIndex = CHAPTER_TIMES.findIndex(([, end]) => new Date(end).getTime() > Date.now());
+  if (nextChapterIndex === -1) nextChapterIndex = CHAPTER_TIMES.length - 1;
+  const nextChapter = chapters[nextChapterIndex];
+  const [nextChapterStartIso, nextChapterEndIso] = CHAPTER_TIMES[nextChapterIndex];
+  const chapterVars = { number: nextChapter.number, title: nextChapter.title };
+
+  const startCal = toCal(nextChapterStartIso);
+  const endCal = toCal(nextChapterEndIso);
+  const eventTitle = t("calendar.eventTitle", chapterVars);
+  const title = encodeURIComponent(eventTitle);
   const descText = `${t("calendar.joinVia")}${ZOOM_LINK}\n\n${t("calendar.eventDescription")}`;
   const details = encodeURIComponent(descText);
   const location = encodeURIComponent(ZOOM_LINK);
@@ -103,11 +119,11 @@ export default function ThankYouWorkshop() {
     "VERSION:2.0",
     "PRODID:-//Love Pathways Wraparound//Workshop//EN",
     "BEGIN:VEVENT",
-    `UID:workshop-ch1-${startCal}@lovepathways.org`,
+    `UID:workshop-ch${nextChapter.number}-${startCal}@lovepathways.org`,
     `DTSTAMP:${startCal}`,
     `DTSTART:${startCal}`,
     `DTEND:${endCal}`,
-    `SUMMARY:${t("calendar.eventTitle")}`,
+    `SUMMARY:${eventTitle}`,
     `DESCRIPTION:${icsDescription}`,
     `LOCATION:${ZOOM_LINK}`,
     "END:VEVENT",
@@ -171,11 +187,11 @@ export default function ThankYouWorkshop() {
         >
           <div className="flex items-center gap-3 bg-brand-primary px-7 py-5 text-white md:px-10">
             <Calendar size={22} />
-            <span className="font-display text-sm font-bold uppercase tracking-[0.18em]">{t("countdown.heading")}</span>
+            <span className="font-display text-sm font-bold uppercase tracking-[0.18em]">{t("countdown.heading", chapterVars)}</span>
           </div>
 
           <div className="p-7 md:p-10">
-            <Countdown startIso={CHAPTER1_START_ISO} t={t} />
+            <Countdown startIso={nextChapterStartIso} t={t} />
 
             <div className="mt-8 grid grid-cols-1 gap-6 border-t border-slate-100 pt-8 sm:grid-cols-3">
               <div className="flex items-start gap-3">
@@ -184,7 +200,7 @@ export default function ThankYouWorkshop() {
                 </span>
                 <span className="leading-tight">
                   <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400">{t("details.dateLabel")}</span>
-                  <span className="block font-display font-semibold text-brand-dark">{t("details.dateValue")}</span>
+                  <span className="block font-display font-semibold text-brand-dark">{nextChapter.date}</span>
                 </span>
               </div>
               <div className="flex items-start gap-3">
@@ -193,7 +209,7 @@ export default function ThankYouWorkshop() {
                 </span>
                 <span className="leading-tight">
                   <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400">{t("details.timeLabel")}</span>
-                  <span className="block font-display font-semibold text-brand-dark">{t("details.timeValue")}</span>
+                  <span className="block font-display font-semibold text-brand-dark">{nextChapter.time}</span>
                 </span>
               </div>
               <div className="flex items-start gap-3">
@@ -225,7 +241,7 @@ export default function ThankYouWorkshop() {
                 </a>
                 <a
                   href={outlookCalLink}
-                  download="living-with-confidence-chapter1.ics"
+                  download={`living-with-confidence-chapter${nextChapter.number}.ics`}
                   className="flex flex-1 items-center justify-center gap-3 rounded-xl bg-brand-dark py-4 px-6 font-medium text-white transition-all hover:bg-brand-primary hover:shadow-md"
                 >
                   <Calendar size={20} />
