@@ -384,18 +384,23 @@ export default function ResourceHub() {
               data-timestamp={resource.timestamp}
               data-id={resource.id}
               data-dynamic-webinar={resource.isDynamicWebinar ? 'true' : 'false'}
-              className={`ghl-resource-card relative overflow-hidden rounded-2xl aspect-square group shadow-sm hover:shadow-md transition-shadow ${isVisible ? 'block' : 'hidden'}`}
+              className={`ghl-resource-card relative overflow-hidden rounded-2xl group shadow-sm hover:shadow-md transition-shadow ${expandedDesc.includes(resource.id) ? '' : 'aspect-square'} ${isVisible ? 'block' : 'hidden'}`}
             >
-              <img 
-                src={resource.image} 
-                alt={resource.type} 
+              <img
+                src={resource.image}
+                alt={resource.type}
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
               <div className={`absolute inset-0 ${resource.bgClass} mix-blend-multiply`}></div>
               <div className={`absolute inset-0 bg-gradient-to-t ${resource.colorClass}`}></div>
-              <div className="absolute inset-0 p-6 flex flex-col justify-between z-10">
+              {/* Absolutely positioned (clipped to the square) by default so a
+                  long title/description can never stretch the card — clamped
+                  to 2 lines each instead. Switches to an in-flow box only when
+                  this card's description is expanded, so the full text has
+                  somewhere to go without being cut off. */}
+              <div className={`${expandedDesc.includes(resource.id) ? 'relative min-h-full' : 'absolute inset-0'} p-6 flex flex-col justify-between z-10`}>
                 <div>
                   <div className="flex justify-between items-start mb-2">
                     <span className="text-brand-secondary text-[11px] font-bold uppercase tracking-widest block">
@@ -407,7 +412,7 @@ export default function ResourceHub() {
                       </span>
                     )}
                   </div>
-                  <h3 className="text-white text-xl font-display font-bold leading-tight mt-1">
+                  <h3 className="text-white text-xl font-display font-bold leading-tight mt-1 line-clamp-2">
                     {resource.title}
                   </h3>
                   <EnglishContentBadge className="mt-2" />
