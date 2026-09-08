@@ -58,7 +58,9 @@ export const ghl = {
   newsletterEmbedScript: "https://go.revivebhc.org/js/form_embed.js",
   newsletterFormBase: "https://go.revivebhc.org/widget/form",
   newsletterFormId: "8asB4SU6ZWg9kAVQASrY",
-  careerFormId: "TODO_LP_CAREER_FORM_ID", // LP source uses a plain (non-GHL) career form
+  // Shares LEAF's career form on purpose: applications for both programs go to
+  // the same team, and LP never had its own. Lives on go.leafwraparound.com.
+  careerFormId: "ynD7ZloTY5w1Yzq4CVFr",
   // Donate is still a placeholder until a real form id is provided.
   donateEmbedScript: "https://api.leadconnectorhq.com/js/form_embed.js",
   donateFormBase: "https://api.leadconnectorhq.com/widget/form",

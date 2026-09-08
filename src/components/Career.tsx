@@ -192,8 +192,10 @@ export default function Career() {
               </p>
             </div>
 
-            {/* Right Column: Form Card */}
-            <div className="lg:col-span-7 bg-white rounded-[32px] p-8 md:p-12 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] border border-slate-100 relative">
+            {/* Right Column: the form. No card wrapper here on purpose: the GHL
+                embed renders its own white card with its own shadow, so adding
+                one around it read as two stacked boxes. */}
+            <div className="relative lg:col-span-7">
               <GhlForm formId={ghl.careerFormId} name="CV upload love pathways website" height={620} className="w-full" />
             </div>
             
