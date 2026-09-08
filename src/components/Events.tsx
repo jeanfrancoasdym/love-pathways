@@ -5,6 +5,8 @@ import { useTranslation } from "react-i18next";
 import { ghl } from "../data/site";
 import { breadcrumbLd, collectionPageLd, graph, organizationLd, webSiteLd } from "../seo/structuredData";
 import { useLocale } from "../i18n/useLocale";
+import { useNextChapterIndex } from "../data/workshopSchedule";
+import workshopSeriesEn from "../i18n/locales/en/workshopSeries.json";
 import Seo from "./Seo";
 import PageHero from "./PageHero";
 import EnglishContentBadge from "./EnglishContentBadge";
@@ -90,18 +92,35 @@ type LpWorkshop = {
   image: string;
 };
 
-export const WORKSHOPS: LpWorkshop[] = [
+// `date` is omitted here on purpose: for a running series it would go stale
+// every week. useWorkshops() below fills it in from the shared schedule.
+export const WORKSHOPS: Omit<LpWorkshop, "date">[] = [
   {
     id: "living-with-confidence",
     title: "Living with Confidence",
     description: "A free 5-week workshop series to help you reconnect with your worth, your voice, and your confidence, no experience needed, just you.",
-    date: "Next: Wednesday, September 2nd (Chapter 2: Still Valuable)",
     time: "6:00 PM - 7:00 PM PST · 5 Wednesdays",
     locationLink: "/workshop-registration",
     modality: "5-Week Series",
     image: "/page-hero/workshop-hero.webp",
   },
 ];
+
+// The workshop card advertises the NEXT session of a series that runs weekly,
+// so its date is derived from the same schedule the registration page uses
+// instead of being written out by hand. Chapter labels come from the English
+// locale file because this whole events data layer is English-only (see the
+// webinar entries above and EnglishContentBadge).
+function useWorkshops(): LpWorkshop[] {
+  const chapterIndex = useNextChapterIndex();
+  const { chapters, chapterLabel } = workshopSeriesEn.schedule;
+  const chapter = chapters[chapterIndex];
+  return WORKSHOPS.map((w) =>
+    w.id === "living-with-confidence"
+      ? { ...w, date: `Next: ${chapter.date} (${chapterLabel} ${chapter.number}: ${chapter.title})` }
+      : { ...w, date: "" }
+  );
+}
 
 // When an event's link points to THIS site (a relative /path or a
 // leafwraparound.com URL), route it INTERNALLY (SPA, locale-aware) instead of
@@ -184,6 +203,7 @@ export default function Events() {
   const loading = false;
   const error = false;
   const [subscribed, setSubscribed] = useState(false);
+  const workshops = useWorkshops();
 
   // Client-side re-filter: an event drops off the moment its end time passes.
   const [now, setNow] = useState<number | null>(null);
@@ -234,7 +254,7 @@ export default function Events() {
           <div className="flex justify-center items-center py-20">
             <div className="w-12 h-12 border-4 border-brand-primary/20 border-t-brand-primary rounded-full animate-spin"></div>
           </div>
-        ) : error || (visibleEvents.length === 0 && WORKSHOPS.length === 0) ? (
+        ) : error || (visibleEvents.length === 0 && workshops.length === 0) ? (
           <div className="bg-slate-50 border border-slate-200 rounded-[3rem] p-16 text-center space-y-6">
             <div className="w-20 h-20 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto text-brand-primary shadow-sm">
               <Calendar size={40} />
@@ -267,11 +287,11 @@ export default function Events() {
             )}
 
             {/* ===== Workshops ===== */}
-            {WORKSHOPS.length > 0 && (
+            {workshops.length > 0 && (
               <div>
                 <h2 className="mb-8 font-display text-2xl font-bold text-brand-dark md:text-3xl">Workshops</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {WORKSHOPS.map((workshop) => (
+                  {workshops.map((workshop) => (
                     <EventCard key={workshop.id} event={workshop} to={to} registerLabel={t("list.register")} modalityFallback={t("list.modalityFallback")} />
                   ))}
                 </div>

@@ -8,29 +8,13 @@ import Seo from "./Seo";
 import { breadcrumbLd, eventSeriesLd, graph, localeUrl, organizationLd, webSiteLd } from "../seo/structuredData";
 import { useLocale } from "../i18n/useLocale";
 import WorkshopSchedule from "./WorkshopSchedule";
+import { CHAPTER_IMAGES, CHAPTER_TIMES, useNextChapterIndex } from "../data/workshopSchedule";
 
-// Chapter 1 (Aug 26, 6:00 PM PDT) — the countdown bar targets the series
-// start, since the schedule below covers all five dates.
-const SERIES_START = "2026-08-26T18:00:00-07:00";
-const SERIES_END = "2026-09-23T19:00:00-07:00";
-
-// Wednesdays, 6:00 to 7:00 PM PDT. Drives the EventSeries subEvent nodes so the
-// five sessions are machine readable, not just rendered as card text.
-const CHAPTER_TIMES: [string, string][] = [
-  ["2026-08-26T18:00:00-07:00", "2026-08-26T19:00:00-07:00"],
-  ["2026-09-02T18:00:00-07:00", "2026-09-02T19:00:00-07:00"],
-  ["2026-09-09T18:00:00-07:00", "2026-09-09T19:00:00-07:00"],
-  ["2026-09-16T18:00:00-07:00", "2026-09-16T19:00:00-07:00"],
-  ["2026-09-23T18:00:00-07:00", "2026-09-23T19:00:00-07:00"],
-];
-
-const CHAPTER_IMAGES = [
-  "/page-hero/workshop-ch1-filter.webp",
-  "/page-hero/workshop-ch2-valuable.webp",
-  "/page-hero/workshop-ch3-cultures.webp",
-  "/page-hero/workshop-ch4-productivity.webp",
-  "/page-hero/workshop-ch5-reset.webp",
-];
+// The series as a whole (first chapter's start to last chapter's end), used for
+// the EventSeries node. Which single chapter the page FEATURES is decided by
+// useNextChapterIndex, not by these.
+const SERIES_START = CHAPTER_TIMES[0][0];
+const SERIES_END = CHAPTER_TIMES[CHAPTER_TIMES.length - 1][1];
 
 type Chapter = { number: number; title: string; coreTopic: string; date: string; time: string; description: string };
 
@@ -137,11 +121,10 @@ export default function WorkshopRegistration() {
   const chapters = rawChapters.map((c, i) => ({ ...c, image: CHAPTER_IMAGES[i] }));
   const learnItems = t("learn.items", { returnObjects: true }) as string[];
 
-  // The series runs week by week, so the hero/detail-bar should always point
-  // at the next chapter that hasn't happened yet, not stay pinned to Chapter
-  // 1. The full schedule below is untouched and always shows all five.
-  let nextChapterIndex = CHAPTER_TIMES.findIndex(([, end]) => new Date(end).getTime() > Date.now());
-  if (nextChapterIndex === -1) nextChapterIndex = CHAPTER_TIMES.length - 1;
+  // The series runs week by week, so the hero/detail-bar always points at the
+  // next chapter that hasn't happened yet, never staying pinned to Chapter 1.
+  // The full schedule below is untouched and always shows all five.
+  const nextChapterIndex = useNextChapterIndex();
   const nextChapter = chapters[nextChapterIndex];
   const nextChapterStart = CHAPTER_TIMES[nextChapterIndex][0];
 

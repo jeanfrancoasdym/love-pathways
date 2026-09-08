@@ -7,6 +7,8 @@ export type WorkshopChapter = {
   date: string;
   time: string;
   description: string;
+  /** From CHAPTER_IMAGES in src/data/workshopSchedule.ts, joined on by the caller. */
+  image: string;
 };
 
 // Horizontal rail of chapter cards (photo background + gradient, same treatment

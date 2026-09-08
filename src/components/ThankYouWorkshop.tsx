@@ -6,26 +6,10 @@ import { CheckCircle2, Calendar, Clock, Video, Play, Facebook, Instagram } from 
 import { useLocale } from "../i18n/useLocale";
 import Seo from "./Seo";
 import WorkshopSchedule from "./WorkshopSchedule";
+import { CHAPTER_IMAGES, CHAPTER_TIMES, useNextChapterIndex } from "../data/workshopSchedule";
 
-// Wednesdays, 6:00 to 7:00 PM PDT. Same list/order as WorkshopRegistration's
-// CHAPTER_TIMES, used to find whichever chapter hasn't happened yet.
-const CHAPTER_TIMES: [string, string][] = [
-  ["2026-08-26T18:00:00-07:00", "2026-08-26T19:00:00-07:00"],
-  ["2026-09-02T18:00:00-07:00", "2026-09-02T19:00:00-07:00"],
-  ["2026-09-09T18:00:00-07:00", "2026-09-09T19:00:00-07:00"],
-  ["2026-09-16T18:00:00-07:00", "2026-09-16T19:00:00-07:00"],
-  ["2026-09-23T18:00:00-07:00", "2026-09-23T19:00:00-07:00"],
-];
 // Same recurring Zoom room every week (see details.locationNote).
 const ZOOM_LINK = "https://us06web.zoom.us/j/88934710739";
-
-const CHAPTER_IMAGES = [
-  "/page-hero/workshop-ch1-filter.webp",
-  "/page-hero/workshop-ch2-valuable.webp",
-  "/page-hero/workshop-ch3-cultures.webp",
-  "/page-hero/workshop-ch4-productivity.webp",
-  "/page-hero/workshop-ch5-reset.webp",
-];
 
 type Chapter = { number: number; title: string; coreTopic: string; date: string; time: string; description: string };
 
@@ -96,10 +80,9 @@ export default function ThankYouWorkshop() {
   const rawChapters = tSeries("schedule.chapters", { returnObjects: true }) as Chapter[];
   const chapters = rawChapters.map((c, i) => ({ ...c, image: CHAPTER_IMAGES[i] }));
 
-  // Same "find the next chapter that hasn't happened yet" logic as
+  // Same "next chapter that hasn't happened yet" source as
   // WorkshopRegistration, so this page never stays pinned to a past chapter.
-  let nextChapterIndex = CHAPTER_TIMES.findIndex(([, end]) => new Date(end).getTime() > Date.now());
-  if (nextChapterIndex === -1) nextChapterIndex = CHAPTER_TIMES.length - 1;
+  const nextChapterIndex = useNextChapterIndex();
   const nextChapter = chapters[nextChapterIndex];
   const [nextChapterStartIso, nextChapterEndIso] = CHAPTER_TIMES[nextChapterIndex];
   const chapterVars = { number: nextChapter.number, title: nextChapter.title };
