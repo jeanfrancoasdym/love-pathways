@@ -48,7 +48,7 @@
     "description": "Guías de crianza sensible al trauma, webinars grabados y libros recomendados para familias adoptivas. Gratis, seleccionados por el equipo de Love Pathways."
   },
   "privacy": {
-    "title": "Política de privacidad | Love Pathways Wraparound",
+    "title": "Política de privacidad",
     "description": "Cómo Love Pathways Wraparound recopila, usa y protege la información de los visitantes y las familias que usan nuestros servicios."
   },
   "webinar1": {
@@ -60,11 +60,11 @@
     "description": "Webinar gratuito en vivo con Bryan Post sobre cómo el trauma afecta el cerebro adolescente y cómo la conexión crea seguridad y regulación."
   },
   "thankYou": {
-    "title": "Estás registrado | Love Pathways Wraparound",
+    "title": "Estás registrado",
     "description": "Tu lugar para el webinar Cuando el amor no parece suficiente está confirmado. Agrégalo a tu calendario y nos vemos allí."
   },
   "thankYou2": {
-    "title": "Estás registrado | Love Pathways Wraparound",
+    "title": "Estás registrado",
     "description": "Tu lugar para el webinar El uso de sustancias y el cerebro adolescente está confirmado. Agrégalo a tu calendario y nos vemos allí."
   },
   "webinar3": {
@@ -72,11 +72,11 @@
     "description": "Webinar gratuito en vivo con Bryan Post sobre la dinámica entre hermanos, la culpa y el desgaste emocional cuando un hijo necesita más atención de la familia."
   },
   "thankYou3": {
-    "title": "Estás registrado | Love Pathways Wraparound",
+    "title": "Estás registrado",
     "description": "Tu lugar para el webinar Equilibrar a la familia está confirmado. Agrégalo a tu calendario y nos vemos allí."
   },
   "notFound": {
-    "title": "Página no encontrada | Love Pathways Wraparound",
+    "title": "Página no encontrada",
     "description": "La página que buscas pudo haberse movido o ya no existe. Regresa a la página de inicio de Love Pathways Wraparound."
   },
   "workshopRegistration": {
@@ -84,7 +84,7 @@
     "description": "Serie gratuita de 5 talleres con la Dra. Claudia Seegrove. En vivo por Zoom, miércoles de 6 a 7 PM PST, desde el 26 de agosto de 2026. Reserva tu lugar."
   },
   "thankYouWorkshop": {
-    "title": "Ya estás registrado | Love Pathways Wraparound",
+    "title": "Ya estás registrado",
     "description": "Tu lugar en la serie Vivir con Confianza está confirmado. Aquí tienes las fechas, los horarios y el acceso por Zoom de los cinco capítulos."
   }
 }

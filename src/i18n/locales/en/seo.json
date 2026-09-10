@@ -48,7 +48,7 @@
     "description": "Trauma-responsive parenting guides, recorded webinars, and book recommendations for adoptive families. Free to download, curated by the Love Pathways team."
   },
   "privacy": {
-    "title": "Privacy Policy | Love Pathways Wraparound",
+    "title": "Privacy Policy",
     "description": "How Love Pathways Wraparound collects, uses, and protects the information of visitors and families who use our services."
   },
   "webinar1": {
@@ -60,11 +60,11 @@
     "description": "Free live webinar with Bryan Post on how trauma affects the developing teen brain, and how connection builds safety, regulation and healthier coping."
   },
   "thankYou": {
-    "title": "You're Registered | Love Pathways Wraparound",
+    "title": "You're Registered",
     "description": "Your spot for the When Love Doesn't Feel Like Enough webinar is confirmed. Add it to your calendar and we'll see you there."
   },
   "thankYou2": {
-    "title": "You're Registered | Love Pathways Wraparound",
+    "title": "You're Registered",
     "description": "Your spot for the Substance Use & the Teen Trauma Brain webinar is confirmed. Add it to your calendar and we'll see you there."
   },
   "webinar3": {
@@ -72,11 +72,11 @@
     "description": "Free live webinar with Bryan Post on navigating sibling dynamics, guilt, and emotional exhaustion when one child needs more of the family's attention."
   },
   "thankYou3": {
-    "title": "You're Registered | Love Pathways Wraparound",
+    "title": "You're Registered",
     "description": "Your spot for the Balancing the Family webinar is confirmed. Add it to your calendar and we'll see you there."
   },
   "notFound": {
-    "title": "Page Not Found | Love Pathways Wraparound",
+    "title": "Page Not Found",
     "description": "The page you're looking for may have moved or no longer exists. Return to the Love Pathways Wraparound home page."
   },
   "workshopRegistration": {
@@ -84,7 +84,7 @@
     "description": "A free 5-week online workshop series with Dr. Claudia Seegrove. Live on Zoom, Wednesdays 6 to 7 PM PST, starting August 26, 2026. Reserve your spot."
   },
   "thankYouWorkshop": {
-    "title": "You're Registered | Love Pathways Wraparound",
+    "title": "You're Registered",
     "description": "Your spot for the Living with Confidence workshop series is confirmed. Here are your dates, times and Zoom access for all five chapters."
   }
 }

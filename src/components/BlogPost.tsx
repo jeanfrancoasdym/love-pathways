@@ -189,7 +189,7 @@ export default function BlogPost({ slugProp }: { slugProp: string }) {
         noindex
         pageKey="blog"
         path={`/blog/${meta.slug}`}
-        title={`${meta.title[lng]} | Love Pathways Wraparound`}
+        title={meta.title[lng]}
         description={meta.description[lng]}
         image={meta.image}
         type="article"
