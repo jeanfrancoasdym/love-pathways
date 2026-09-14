@@ -8,7 +8,9 @@ import { useLocale } from "../i18n/useLocale";
 import WebinarLanding from "./WebinarLanding";
 
 // Event 1: Caring for the Caregiver: Self-Care for Adoptive Parents — September 15,
-// 9:00 AM PST (Dr. Alicia Williams).
+// 9:00 AM PST (Bryan Post; swapped in for the originally-announced presenter,
+// who is no longer available. guide/host copy in webinar1.json carries his
+// real bio, same one already used on webinar2).
 const START = "2026-09-15T09:00:00-07:00";
 const END = "2026-09-15T10:00:00-07:00";
 
@@ -26,7 +28,7 @@ export default function WebinarRegistration() {
       heroImage="/page-hero/hero-support.webp"
       forYouImage="/page-hero/mission-hands.webp"
       learnImage="/page-hero/phase-photo-4.webp"
-      presenterImage="/page-hero/presenter-alicia.webp"
+      presenterImage="/page-hero/presenter-bryan.webp"
       presenterImageAlt={t("host.imageAlt")}
       seo={
         <Seo

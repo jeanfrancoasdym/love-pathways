@@ -44,9 +44,9 @@
   },
   "guide": {
     "eyebrow": "Your guide",
-    "name": "Dr. Alicia Williams",
-    "role": "Executive Director",
-    "bio": "Blends 25+ years in education and social work with trauma-informed care to guide families toward regulation."
+    "name": "Bryan Post",
+    "role": "Founder, Adoption & Child Behavior Expert",
+    "bio": "Bryan Post is an internationally recognized expert in adoption, attachment, and trauma, and the founder of the love-based, family-centered approach behind our program. For decades he has helped families move from fear and conflict toward connection, calm, and lasting healing."
   },
   "trust": {
     "heading": "Why families trust this webinar",
@@ -73,10 +73,10 @@
     ]
   },
   "host": {
-    "imageAlt": "Dr. Alicia Williams",
+    "imageAlt": "Bryan Post",
     "label": "Hosted By",
-    "name": "Dr. Alicia Williams",
-    "bio": "Executive Director, blending 25+ years in education and social work with trauma-informed care."
+    "name": "Bryan Post",
+    "bio": "Internationally recognized expert in adoption, trauma, and family healing."
   },
   "cta": {
     "mobileButton": "Reserve My Spot Now"

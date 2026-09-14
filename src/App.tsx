@@ -81,12 +81,10 @@ const buildPages = (): RouteRecord[] => [
   { path: 'donate', element: <Donate /> },
   { path: 'resource-hub', element: <ResourceHub />, loader: resourcesLoader },
   { path: 'privacy-policy', element: <PrivacyPolicy /> },
-  // webinar-event1 / thank-you1 unregistered: "Caring for the Caregiver" was
-  // cancelled by the presenter on 2026-09-14. public/_redirects sends both
-  // paths to /events instead of 404ing. WebinarRegistration and ThankYou stay
-  // imported below for whenever this slot gets a new webinar.
+  { path: 'webinar-event1', element: <WebinarRegistration /> },
   { path: 'webinar-event2', element: <WebinarRegistration2 /> },
   { path: 'webinar-event3', element: <WebinarRegistration3 /> },
+  { path: 'thank-you1', element: <ThankYou /> },
   { path: 'thank-you2', element: <ThankYou2 /> },
   { path: 'thank-you3', element: <ThankYou3 /> },
   { path: 'workshop-registration', element: <WorkshopRegistration /> },
