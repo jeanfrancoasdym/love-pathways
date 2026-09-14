@@ -32,7 +32,6 @@ const PAGES = [
   { path: "/events",                priority: "0.8", changefreq: "weekly"    },
   { path: "/impact",                priority: "0.7", changefreq: "monthly"   },
   { path: "/our-team",              priority: "0.7", changefreq: "monthly"   },
-  { path: "/webinar-event1",        priority: "0.7", changefreq: "monthly"   },
   { path: "/webinar-event2",        priority: "0.7", changefreq: "monthly"   },
   { path: "/webinar-event3",        priority: "0.7", changefreq: "monthly"   },
   { path: "/workshop-registration", priority: "0.7", changefreq: "weekly"    },

@@ -31,18 +31,11 @@ export type LpEvent = {
 };
 
 export const EVENTS: LpEvent[] = [
-  {
-    id: "caring-for-caregiver",
-    title: "Caring for the Caregiver: Self-Care for Adoptive Parents",
-    description: "Caregiver wellness, emotional regulation, boundaries, rest, and sustainable self-care practices — the difference between real restoration and \"faux self-care.\"",
-    date: "Tuesday, September 15th",
-    time: "9:00 AM - 10:00 AM PST",
-    endsAt: "2026-09-15T17:00:00Z",
-    locationLink: "/webinar-event1",
-    modality: "Live Webinar",
-    image: "/page-hero/hero-support.webp",
-    month: "September 2026",
-  },
+  // "Caring for the Caregiver" (Sept 15, Dr. Alicia Williams) was cancelled by
+  // the presenter on 2026-09-14, the day before it was due to run. Route and
+  // component are left in place (not deleted) since this /webinar-event1 slot
+  // has been recycled for a new webinar before; see public/_redirects for the
+  // redirect sending existing links to /events instead of 404ing.
   {
     id: "love-and-limits",
     title: "Adoption Parenting with Love and Limits",

@@ -15,12 +15,16 @@ declare const __BUILD_TIME__: string;
  * Wednesdays, 6:00 to 7:00 PM PDT. Index matches schedule.chapters in
  * workshopSeries.json, so CHAPTER_TIMES[i] describes chapters[i].
  */
+// Chapter 4 moved from Sept 16 to Sept 23, and Chapter 5 from Sept 23 to
+// Oct 7 (confirmed 2026-09-14). Both new dates are still Wednesdays and Oct 7
+// is still Pacific Daylight Time (-07:00; DST doesn't end until Nov 1, 2026),
+// so only the two dates below changed, nothing else.
 export const CHAPTER_TIMES: [string, string][] = [
   ["2026-08-26T18:00:00-07:00", "2026-08-26T19:00:00-07:00"],
   ["2026-09-02T18:00:00-07:00", "2026-09-02T19:00:00-07:00"],
   ["2026-09-09T18:00:00-07:00", "2026-09-09T19:00:00-07:00"],
-  ["2026-09-16T18:00:00-07:00", "2026-09-16T19:00:00-07:00"],
   ["2026-09-23T18:00:00-07:00", "2026-09-23T19:00:00-07:00"],
+  ["2026-10-07T18:00:00-07:00", "2026-10-07T19:00:00-07:00"],
 ];
 
 export const CHAPTER_IMAGES = [

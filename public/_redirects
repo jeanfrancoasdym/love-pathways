@@ -1,6 +1,14 @@
 /post/:slug /blog/:slug 301
 /blog/b/:slug /blog/:slug 301
 
+# "Caring for the Caregiver" (Sept 15) cancelled by the presenter 2026-09-14,
+# the day before it was due to run. 302 (temporary) since /webinar-event1 has
+# been recycled for a new webinar before and probably will be again.
+/webinar-event1 /events 302
+/es/webinar-event1 /es/events 302
+/thank-you1 /events 302
+/es/thank-you1 /es/events 302
+
 # The slug shipped misspelled as "warparound". Never indexed in either language,
 # so renaming cost nothing, but keep these for any link shared before the fix.
 /blog/warparound-services-adoptive-families /blog/wraparound-services-adoptive-families 301
